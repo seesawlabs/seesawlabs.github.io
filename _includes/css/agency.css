@@ -266,13 +266,28 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-color: #000;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    position: relative;
+}
+
+header .container {
+    position: relative;
+    z-index: 10;
+}
+
+header .slider-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .5;
+    z-index: 1;
 }
 
 header .intro-text {
@@ -336,7 +351,6 @@ section h3.section-subheading {
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
-    font-style: italic;
     font-weight: 400;
 }
 
@@ -495,13 +509,29 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #{{ site.color.primary }};
+    background-color: #C91738;
 }
+
+.timeline>li .timeline-image.color-0 {
+    background-color: #{{site.color.primary}};
+}
+
+.timeline>li .timeline-image.color-1 {
+    background-color: #E4DA1A;
+}
+
+.timeline>li .timeline-image.color-2 {
+    background-color: #E4851A;
+}
+
 
 .timeline>li .timeline-image h4 {
     margin-top: 12px;
     font-size: 10px;
     line-height: 14px;
+}
+.timeline>li .timeline-image a {
+    color: #FFF;
 }
 
 .timeline>li.timeline-inverted>.timeline-panel {
