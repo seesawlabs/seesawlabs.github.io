@@ -249,7 +249,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
-@media(min-width:992px) {
+@media(min-width:1200px) {
 
     .slider-video {
         width: 100%;
