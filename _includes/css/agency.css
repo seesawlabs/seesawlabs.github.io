@@ -249,6 +249,17 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+@media(min-width:992px) {
+
+    .slider-video {
+        width: 100%;
+        height: auto;
+    }
+    body > header {
+        overflow: hidden;
+    }
+}
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
