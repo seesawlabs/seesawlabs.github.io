@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="app">
-  <head>
-    <meta charset="UTF-8">
-    <title>Behr</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
-  </head>
-  <body ng-controller="HomeCtrl as vm">
+---
+layout: intersection
+title: Behr
+directory:
+  - behr
+---
     <div class="content">
-      <div ng-class="{visible:vm.sun}" class="sun hidden"><img src="assets/images/sun.png"></div>
-      <div ng-class="{visible:vm.rain}" class="rain hidden"><img src="assets/images/rain.png"></div>
+      <div ng-class="{visible:vm.sun}" class="sun hidden"><img src="{{ "intersection/tropicana/assets/images/sun.png" | prepend: site.baseurl }}"></div>
+      <div ng-class="{visible:vm.rain}" class="rain hidden"><img src="{{ "intersection/tropicana/assets/images/rain.png" | prepend: site.baseurl }}"></div>
     </div>
-    <script src="vendor/angular/angular.min.js"></script>
-    <script src="js/bundle.min.js"></script>
-  </body>
-</html>
