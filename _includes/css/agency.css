@@ -447,7 +447,7 @@ section#clients {
     background-color: transparent;
     background-repeat:  repeat;    
     background-image: url(../img/background-pattern-geometry.png);
-    height:461px;    
+    min-height:461px;
     padding:100px 0;
 }
 
