@@ -428,10 +428,12 @@ section.project .intro-text .intro-project-heading {
     border-bottom: 2px dotted white;
 }
 section.project#recent .intro-text .intro-project-heading{
-    width: 320px;
+    display: inline-block;
+    padding-right:10px;
 }
 section.project#playground .intro-text .intro-project-heading{
-    width: 555px;
+    display: inline-block;
+    padding-right:10px;
 }
 section.project#playground .intro-text .intro-lead-in{
     margin-bottom: 5px;
@@ -511,7 +513,8 @@ section h2.section-heading {
     color:#39687B;
     border-bottom: 2px dotted #39687B;
     display: inline-block;
-    width: 450px;
+    padding-left:10px;
+    padding-right:10px;
     padding-bottom: 10px;
 }
 
