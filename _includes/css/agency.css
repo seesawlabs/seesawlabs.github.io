@@ -177,12 +177,13 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    padding: 15px 0;
+    padding: 0;
     color: #{{ site.color.primary }};
 }
 
 .navbar-default .navbar-brand img {
-    max-height: 36px;
+    /*max-height: 69px;
+    max-width:220px;*/
 }
 
 
@@ -213,10 +214,11 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size:14px;    
     letter-spacing: 1px;
-    color: #fff;
+    color: #39687B;
 }
 
 .navbar-default .nav li a:hover,
@@ -236,16 +238,31 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
     background-color: #{{ site.color.secondary }};
 }
-
+header .intro-text .intro-lead-in {
+    margin-bottom: 18px;
+    font-family: "Open Sans";
+    font-size: 31px;
+    font-weight: lighter;
+    line-height: 31px;
+    color:#fff;
+}
 @media(max-width:767px) {
     body > header {
         width: 100%;
         overflow: hidden;
         text-align: center;
-
+        margin-top:0;
         video {
             margin: 0 auto;
         }
+    }
+    .navbar-default .navbar-brand img {
+        width:180px;
+        margin-left:10px;
+    }
+    header .intro-text .intro-lead-in{
+        font-size:22px;
+        line-height: 22px;
     }
 }
 
@@ -262,9 +279,9 @@ fieldset[disabled] .btn-xl.active {
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
+        padding: 15px 0;
         border: 0;
-        background-color: transparent;
+        background-color: white;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -282,8 +299,8 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
-        background-color: #222;
+        padding: 15px 0;
+        background-color: white;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -295,42 +312,40 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-color: #000;
+    background-color: transparent;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    position: relative;
+    background-image: url(../img/header-bg.png);
+    margin-top:97px;
 }
 
 header .container {
-    position: relative;
-    z-index: 10;
+    /*position: relative;
+    z-index: 10;*/
 }
 
-header .slider-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: .5;
-    z-index: 1;
-}
+
 
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
 }
 
-header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
-    font-style: italic;
-    line-height: 22px;
+header a.page-scroll,header a.page-scroll:hover,header a.page-scroll:focus{
+    border-color: #fff;
+    border-width: 2px;
+    color: #fff;
+    background-color: transparent;
+    margin-top:22px;
+    font-size:15px;
+    font-weight:bold;
+    font-family: "Roboto";
 }
+
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
@@ -341,18 +356,136 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+section.project {
+    text-align: left;
+    color: #fff;
+    
+    
+}
+section#recent{
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-image: url(../img/project-bg.png);
+}
+section#playground{
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-image: url(../img/playground-bg.png);
+}
+section.project .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+section.project a.page-scroll,section.project a.page-scroll:hover,section.project a.page-scroll:focus{
+    border-color: #fff;
+    border-width: 2px;
+    color: #fff;
+    background-color: transparent;
+    margin-top:14px;
+    font-size:15px;
+    font-weight:bold;
+    font-family: "Roboto";
+    padding:7px 30px;
+}
+
+section.project .intro-text .intro-lead-in {
+    margin-bottom: 31px;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 17px;
+    color:#fff;
+}
+
+section.project .intro-text .intro-heading {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    text-shadow:2px 0 2px #000;
+}
+section.project .intro-text .intro-project-heading {
+    margin-bottom: 12px;
+    padding-bottom:10px;
+    font-family: "Open Sans";
+    font-size: 31px;
+    line-height: 31px;
+    border-bottom: 2px dotted white;
+}
+section.project#recent .intro-text .intro-project-heading{
+    width: 320px;
+}
+section.project#playground .intro-text .intro-project-heading{
+    width: 555px;
+}
+section.project#playground .intro-text .intro-lead-in{
+    margin-bottom: 5px;
+}
+section.project#playground a.page-scroll{
+    margin-top:28px;
+}
+section#clients {
+    text-align: left;
+    color: #fff;    
+    background-color: transparent;
+    background-repeat:  repeat;    
+    background-image: url(../img/background-pattern-geometry.png);
+    height:461px;    
+    padding:100px 0;
+}
+
+section#clients h3.section-subheading{
+    margin-bottom: 30px;
+}
+
+section#contact a.page-scroll,section#contact a.page-scroll:hover,section#contact a.page-scroll:focus{
+    border-color: #fff;
+    border-width: 2px;
+    color: #fff;
+    background-color: transparent;
+    margin-top:14px;
+    font-size:15px;
+    font-weight:bold;
+    font-family: "Roboto";
+    padding:10px 50px;
+}
+section#contact .intro-text .intro-heading {
+    margin-bottom: 12px;
+    padding-bottom:10px;
+    font-family: "Open Sans";
+    font-size: 31px;
+    line-height: 31px;
+    color:white;
+    margin-top:25px;
+    font-weight: lighter;
+}
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-top: 100px;
+        padding-bottom: 120px;
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
+        margin-bottom: 18px;
+        font-family: "Open Sans";
+        font-size: 31px;
+        font-weight: lighter;
+        line-height: 31px;
     }
 
     header .intro-text .intro-heading {
@@ -372,17 +505,43 @@ section {
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 31px;
+    font-family: "Open Sans";
+    font-weight:400;
+    color:#39687B;
+    border-bottom: 2px dotted #39687B;
+    display: inline-block;
+    width: 450px;
+    padding-bottom: 10px;
 }
 
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight:500;
+    color:#4D4D4D;
 }
 
+h4.service-heading{
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size:18px;
+    color:#39687B;
+}
+p.intro-text{
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 15px;
+    color:#4D4D4D;
+}
+a.more-info{
+    color:#d54e30;
+    text-decoration: underline;
+    font-family: "Roboto";
+    font-weight: bold;
+}
 @media(min-width:768px) {
     section {
         padding: 150px 0;
@@ -713,10 +872,8 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
-    background-image: url(../img/map-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #e8b826;
+    padding:50px 0;   
 }
 
 section#contact .section-heading {
@@ -785,8 +942,17 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+    font-family: "Roboto";
+    line-height: 12px;
+    font-size:12px;
+}
+footer span.email {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: "Roboto";
+    line-height: 14px;
+    font-size:14px;
+    color:red;
 }
 
 footer ul.quicklinks {
@@ -920,4 +1086,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.color.primary }};
+}
+.navbar-brand
+{
+    height:67px;
 }
