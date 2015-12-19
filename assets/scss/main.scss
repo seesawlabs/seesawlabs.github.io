@@ -1,9 +1,5 @@
-@import  "../node_modules/bootstrap/scss/bootstrap.scss";
-
-
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 //Variables
-
-
 //Colors from top to bottom on styleguide document 
 $color1: #6cb7d7;
 $color2: #39687b;
@@ -13,652 +9,898 @@ $color5: #e8b826;
 $color6: #d58242;
 $color7: #3b2314;
 $color8: #4d4d4d;
-
-
-
 //Fonts
-
 $h1Font: openSansLight;
 $h1FontSize: 31px;
-
 $h2Font: openSansLight;
 $h2FontSize: 22px;
-
 $h3Font: openSansBold;
 $h3FontSize: 18px;
-
 $h4Font: openSansRegular;
 $h4FontSize: 17px;
-
 $h5Font: openSansItalic;
 $h5FontSize: 17px;
-
 $bodyFont: robotoRegular;
 $bodyFontSize: 14px;
-
 $navPaddingTop: 2em;
-
-
 @font-face {
     font-family: 'openSansBold';
     src: url('../fonts/OpenSans-Bold-webfont.eot');
-    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'openSansBoldItalic';
     src: url('../fonts/OpenSans-BoldItalic-webfont.eot');
-    src: url('../fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic') format('svg');
+    src: url('../fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-BoldItalic-webfont.woff') format('woff'), url('../fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 @font-face {
     font-family: 'openSansExtraBold';
     src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
-    src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: '../fonts/openSanExtraBoldItalic';
     src: url('../fonts/OpenSans-ExtraBoldItalic-webfont.eot');
-    src: url('../fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-ExtraBoldItalic-webfont.svg#open_sansextrabold_italic') format('svg');
+    src: url('../fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'), url('../fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans-ExtraBoldItalic-webfont.svg#open_sansextrabold_italic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'openSansLight';
     src: url('../fonts/OpenSans-Light-webfont.eot');
-    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'openSansLightItalic';
     src: url('../fonts/OpenSans-LightItalic-webfont.eot');
-    src: url('../fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-LightItalic-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-LightItalic-webfont.svg#open_sanslight_italic') format('svg');
+    src: url('../fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-LightItalic-webfont.woff') format('woff'), url('../fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans-LightItalic-webfont.svg#open_sanslight_italic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 @font-face {
     font-family: 'openSansItalic';
     src: url('OpenSans-Italic-webfont.eot');
-    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Italic-webfont.woff') format('woff'), url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'openSansRegular';
     src: url('../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'robotoBold';
     src: url('../fonts/Roboto-Bold-webfont.eot');
-    src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
-         url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Bold-webfont.woff') format('woff'), url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'), url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 @font-face {
     font-family: 'robotoRegular';
     src: url('../fonts/Roboto-Regular-webfont.eot');
-    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Roboto-Regular-webfont.woff') format('woff'),
-         url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    src: url('../fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Regular-webfont.woff') format('woff'), url('../fonts/Roboto-Regular-webfont.ttf') format('truetype'), url('../fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 @font-face {
     font-family: 'robotoItalic';
     src: url('Roboto-Italic-webfont.eot');
-    src: url('Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Italic-webfont.woff') format('woff'),
-         url('Roboto-Italic-webfont.ttf') format('truetype'),
-         url('Roboto-Italic-webfont.svg#robotoitalic') format('svg');
+    src: url('Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('Roboto-Italic-webfont.woff') format('woff'), url('Roboto-Italic-webfont.ttf') format('truetype'), url('Roboto-Italic-webfont.svg#robotoitalic') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
-
 @mixin rounded($amount) {
-  -moz-border-radius: $amount;
-  -webkit-border-radius: $amount;
-  border-radius: $amount;
-
-
-
+    -moz-border-radius: $amount;
+    -webkit-border-radius: $amount;
+    border-radius: $amount;
 }
 
 .box {
-  border: 3px solid #777;
-  @include rounded(0.5em);
+    border: 3px solid #777;
+    @include rounded(0.5em);
+}
+
+#heresHowWeCanHelpBorder {
+   border-bottom: 3px dotted #39687b;
+    margin-top: 0;
+}
+
+#featuredCaseStudyBorder {
+    border-bottom: 3px dotted #fff;
 }
 
 .uppercase {
-
-	text-transform: uppercase;
-
+    text-transform: uppercase;
 }
 
-.marginRight { 
-
-	margin-right: 1.5em;
-
+.marginRight {
+    margin-right: 1.5em;
 }
 
 .navLogoDiv {
-	z-index: 999;
+    z-index: 999;
 }
 
-.navLogoImage{
+.row {
+    margin: 0;
+}
 
-	padding-top: 0.5em;
+.navLogoImage {
+    padding-top: 0.5em;
+}
+
+.colorWhite {
+    color: #fff;
+}
+
+
+//Start Featured Cases Section
+
+#homeFeaturedCaseStudy {
+      font-family: openSansBold;
+      font-size: 14px; 
+      color: #fff;
+      position: relative;
+      top: 5em;
+}
+
+#featuredCaseStudyBorder {
+    width: 90%;
+}
+
+#featuredStudyCaseH5 {
+    font-size: 12pt;
+}
+
+#featuredCaseStudyH2{
+    margin-top: 3.5em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    font-size: 24px;
+}
+
+
+#featureCaseStudyDiv {
+    height: 531px;
+    text-align: center;
+    background-image: url('../images/featuredCaseStudyBackground.png');
+    background-position: 60% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#featuredCaseParagraph {
+
+    border: 2px solid white;
+    width: 90%;
+    height: 9%;
+    margin-top: 3em;
+    text-align: center;
+    margin-left: 1em;
+
+
+}
+
+#featuredCaseButton{
+    border-color: none;
+    border: none;
+}
+
+#featuredCaseButtonParagraph {
+
+    position: relative;
+    top: 0.2em;
+    font-family: openSansBold;
+
+}
+
+//End Feature Cases Section 
+//Start Playground Section
+
+#homePlayGroundProject {
+      font-family: openSansBold;
+      font-size: 14px; 
+      color: #fff;
+      position: relative;
+      top: 5em;
+}
+
+#playgroundProjectBorder {
+    width: 90%;
+    border: 1px dotted white;
+}
+
+#playgroundProjectH5 {
+    font-size: 12pt;
+    font-family: openSansItalic; 
+}
+
+#playgroundProjectH1{
+    margin-top: 3.5em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+#playgroundProjectDiv {
+    height: 700px;
+    text-align: center;
+    background-image: url('../images/playgroundProjectBackground.png');
+    background-position: 40% 50%;
+    background-size: cover;
+}
+
+#playgroundProjectParagraph1 {
+  font-family: openSansRegular;
+  font-size: 17px; 
+}
+
+#playgroundProjectParagraph2 {
+
+    border: 2px solid white;
+    width: 90%;
+    height: 6%;
+    margin-top: 3em;
+    text-align: center;
+    margin-left: 1em;
+
+
+}
+
+#playgroundProjectButton{
+    border-color: none;
+    border: none;
+}
+
+#playgroundProjectButtonParagraph {
+
+    position: relative;
+    top: 0.2em;
+    font-family: openSansBold;
+
+}
+
+//End Playground Project Section 
+
+
+//Start Want To Work With Us Section 
+
+#wantToWorkWithUs {      
+
+    background-color: #E8B826;
+    font-family: openSansBold;
+      font-size: 14px; 
+      color: #fff;
+      position: relative;
+      text-align: center;
+      height: 320px
+
+}
+
+#wantToWorkWithUsImage {
+    position: relative;
+    top: 2em;
+
+}
+#wantToWorkWithUsParagraph1 {
+      font-family: openSansLight;
+  font-size: 24px; 
+      margin: 1em;
+    margin-top: 2em;
+
+}
+#wantToWorkWithUsParagraph2 {
+        border: 3px solid white;
+    width: 70%;
+    height: 17%;
+    text-align: center;
+    margin-left: 3em;
+
+}
+
+#wantToWorkWithUsButton {
+        border-color: none;
+    border: none;
+
+}
+
+#wantToWorkWithUsButtonParagraph{
+    position: relative;
+    top: 0.5em;
+    font-family: openSansBold;
+}
+
+
+//End wantToWorkWithUsSection 
+
+//Start Footer 
+
+#footer {
+    height: 200px; 
+    text-align: center;
+}
+
+.robotoRegular {
+    font-family: robotoRegular;
+    font-size: 14px; 
+}
+
+#footerEmail {
+    color: $color3;
+}
+
+#footerEmailRow {
+        margin-top: 2em;
+}
+
+#footerCopyRight{
+    color: #231f20;
+}
+
+#socialMediaBar {
+    position: relative;
+    top: 1em;
+}
+
+
+#facebookIcon {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.socialMediaIcon {
+
+}
+
+//Style Guide Section 
+
+.styleGuideH1 {
+
+    font-family: openSansLight; 
+    font-size: 31px;
+}
+
+
+
+.styleGuideH2 {
+
+    font-family: openSansLight;
+    font-size: 25px;
+
+}
+
+.styleGuideH5 {
+
+    font-family: openSansItalic;
+    font-size: 17px;
+
+}
+
+//End Style Guide Section
+
+
+
+//Start Happy Clients Section 
+
+#happyClientsDiv {
+    text-align: center;
+}
+
+
+.marginTop1Em {
+    margin-top: 1em;
+}
+
+
+#playgroundProjectDivBackground {
+    background-image: url('../images/')
+}
+
+#happyClientsBorder {
+        border: 1px dashed $color2;
+    width: 60%;
+    margin-top: 0;
+}
+
+#happyClientsParagraph {
+    font-family: openSansItalic;
+    font-size: 14px;
+    color: $color2;
+        margin: 0.4em;
+    margin-bottom: 2em;
+}
+
+.imgFiller {
+    height: 100px;
+    width: 120px;
+    margin: 0.2em;
+    margin-bottom: 2em;
+}
+
+.inlineBlock {
+
+    display: inline-block;
+
 }
 
 #hamburgerMobile {
-	color: $color3;
+    color: $color3;
 }
 
 #mobileNavBar {
-     
     width: 50%;
-    	 display: inline;
+    display: inline;
     position: relative;
     top: 0.7em;
     left: 1.1em;
-
 }
 
-
 #mobileNavLogo {
-	
     position: relative;
     left: 1.5em;
     z-index: 999;
     width: 55%;
-
 }
 
-.navBarLinks{
-
-	padding-top: $navPaddingTop;
-	padding-bottom: 2em;
-	padding-right: 6em;
-
+.navBarLinks {
+    padding-top: $navPaddingTop;
+    padding-bottom: 2em;
+    padding-right: 6em;
 }
 
 .navbar-nav {
-
-	a {
+    a {
         color: $color2;
         font-family: 'openSansBold';
         font-size: $h3FontSize;
-	}
-
-	a:hover{
-		color: $color3;
-		text-decoration: none;
-	}
+    }
+    a:hover {
+        color: $color3;
+        text-decoration: none;
+    }
 }
 
 .mobileNav {
-	display: initial; 
+    display: initial;
 }
 
 
 #nonCollapsedMenu {
-	background-color: $color1;
-	text-align: center;
-
-	ul {
-		list-style: none;
-		text-align: center;
-		display: inline;
-		padding: 0;
-		margin: 0;
-
-		li {
-             
-             margin: 0.5em;
-
-		}
-	}
-
-	a {
-		    color: #fff;
-    font-family: openSansBold;
-    font-size: 18px;
+    background-color: $color1;
+    text-align: center;
+    ul {
+        list-style: none;
+        text-align: center;
+        display: inline;
+        padding: 0;
+        margin: 0;
+        li {
+            margin: 0.5em;
+        }
+    }
+    a {
+        color: #fff;
+        font-family: openSansBold;
+        font-size: 18px;
+    }
+    a:hover {
+        color: $color3;
+        text-decoration: none;
+    }
 }
-
-
-a:hover {
-	color: $color3;
-	text-decoration: none;
-	}
-}
-
 
 .homepageHelpBox {
-
-	h1 {
-		  border-bottom: 3px dotted $color2;
-    line-height: 2em;
-    color: $color2;
-    font-family: openSansLight;
-    font-size: 2em;
-    text-align: center;
-    padding-top: 1em;
-	}
-
-
-	p {
-		    font-family: openSansRegular;
-    font-size: 17px;
-    color: $color2;
-    text-align: center;
-    padding-top: 1em;
-	}
-
-
+    h1 {
+        line-height: 2em;
+        color: $color2;
+        font-family: openSansLight;
+        font-size: 2em;
+        text-align: center;
+        padding-top: 1em;
+    }
+    p {
+        font-family: openSansRegular;
+        font-size: 17px;
+        color: $color2;
+        text-align: center;
+        padding-top: 1em;
+    }
 }
 
 .homepageServiceBox {
-
-
-	h3 {
-		    font-family: openSansBold;
-    font-size: 18pt;
-    font-color: $color8;
-    color: $color8;
-    text-align: center;
-    padding-bottom: 1em;
-	}
-
-
-p {
-	font-family: robotoRegular;
-    size: 14pt;
-    text-align: center;
-}
-
-a {
-	color: $color3;
-			font-family: openSansBold;
-		font-size: 14px;
-}
-
-
-		.serviceImageDiv {
-		    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 2em;
-	}
-
-	.callToAction {
-		text-align: center;
-		padding-bottom: 2em;
-		text-decoration: underline;
-	}
-
-
-}
-
-
-
-#homepageHeroText {
-position: relative;
-top: 3em;
-
-}
-
-
-.homepageHero{
-	min-height: 100%;
-    height: 400px;
-    width: 100%;
-   background-image: url('../images/homepageHeroMobile.png');
-background-position: center;
-    background-size: cover;
+    h3 {
+        font-family: openSansBold;
+        font-size: 18pt;
+        font-color: $color8;
+        color: $color8;
+        text-align: center;
+        padding-bottom: 1em;
+    }
     p {
-        color: #fff;
-        font-family: openSansLight;
-        font-size: 18px;
+        font-family: robotoRegular;
+        size: 14pt;
+        text-align: center;
     }
-
-}
-
-#desktopNav {
-	display: none;
-}
-
-
-	
-	#exploreCaseStudies  {
-
-		position: relative;
-		top: 2em;
-
-   span {
-   	font-family: robotoRegular;text-transform: uppercase;font-size: 15px;color: #fff;position: relative;
-   }
-
-	button {
-
-    border: 2px solid white;
-    padding: 0.5em;
-    position: relative;
-    top: 2em;
-    width: 100%
-}
-
-	}
-
-//Media Queries
-
-@include media-breakpoint-up(xs) {  
-
-	#tabletNavLinks {
-     display: none;
-	}
-
-	#tabletNavLogo {
-	   display: none; 
-	}
-
-    #desktopNavLinks {
-    	display: none; 
+    a {
+        color: $color3;
+        font-family: openSansBold;
+        font-size: 14px;
     }
-
-    #desktopNavLogo {
-    	display: none;
+    .serviceImageDiv {
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 2em;
     }
-
-
-}
-@include media-breakpoint-up(sm) {
-
-	#homepageHeroText {
-		top: 4em;
-	}
-
-	#exploreCaseStudies {
-
-		button {
-			top: 4em;
-		}
-	}
-
-	
-  #mobileNavBar {
-
-     left: 6em;
-
-    } 
-
-  #mobileNavLogo {
-
-  	 left: 4em;
-
-  }
-
-  }
-
-@media only screen and (min-width: 28.125em) and (max-width: 33.6875em ) { 
-
-#mobileNavBar {
-
-	left: 3em;
+    .callToAction {
+        text-align: center;
+        padding-bottom: 2em;
+        text-decoration: underline;
+    }
 }
 
+#mainSiteContainer {
+    padding: 0;
 }
 
-
-@include media-breakpoint-up(md) { 
-
-
-		#exploreCaseStudies {
-
-		button {
-		}
-	}
-
-	.navbar-toggler{
-		padding-bottom: 2em;
-	}
-
-	#tabletNavLinks {
-     display: initial;
-    position: relative;
-     top: 2em;
-     padding: 0;
-	}
-
-	#tabletNavLogo {
-	   display: initial; 
-	   position: relative;
-	   top: 1em;
-	}
-
-    #desktopNavLinks {
-    	display: none; 
-    }
-
-    #desktopNavLogo {
-    	display: none;
-    }
-
-	#desktopNav {
-		display: initial;
-	}
-	.mobileNav {
-		display: none;
-	}
-	.homepageHero{
-   background-image: url('../images/homepageHero.png');
-	min-height: 100%;
-    height: 489px;
-    width: 1161px;
+#homepageHeroContainer {
+    background-image: url(../images/homepageHero.png);
+    min-height: 100%;
+    height: 320px;
     background-repeat: no-repeat;
     width: 100%;
     min-width: 100%;
     background-size: cover;
     background-position: 100% 20%;
-        p {
-        font-size: 28px;
-            width: 70%;
-    position: relative;
-    left: 15%;
-    top: -50px;
-    }
-  }
-
-  }
-@include media-breakpoint-up(lg) { 
-
-
-
-#exploreCaseStudies {
-
-	top: 0;
-
-		button {
-
-			    width: 30%;
-    margin: 0 auto;
-    left: 13em;
-		}
-	}       
+}
 
 #homepageHeroText {
-   		position: relative; 
-   		top: initial;
-   		left: 13em;
-   	}
 
+    padding-top: 2em;
+}
 
 .homepageHero {
-
-   	p {
-
-   		top: 40px;
-   		width: 100%;
-   		left: initial; 
-   		right: 17%;
-
-   	}
-
-
-   }
-
-
-
-		.navbar-toggler{
-		padding-bottom: 0;
-	}
-
-	#tabletNavLinks {
-     display: none;
-
-	}
-
-	#tabletNavLogo {
-	   display: none; 
-	}
-
-    #desktopNavLinks {
-    	display:  initial; 
+    padding: 0 !important;
+    p {
+        color: #fff;
+        font-family: openSansLight;
+        font-size: 17px;
+        display: inline-block;
+        text-align: center;
     }
+}
 
-    #desktopNavLogo {
-    	display: initial;
-    	position: relative;
-    	left: 4em;
-    }
+#desktopNav {
+    display: none;
+}
 
-
-
- }
-@include media-breakpoint-up(xl) { 
-
+#exploreCaseStudiesRow {
+    width: 85%;
+}
 
 #exploreCaseStudies {
+    span {
+        font-family: robotoRegular;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #fff;
+    }
+    button {
+        border: 2px solid white;
+        padding: 0.5em;
+        width: 100%
+    }
+}
 
-	top: 0;
+#largeClientImages {
+    display: none;
+    text-align: center;
+}
 
-		button {
-
-			    width: 30%;
-    margin: 0 auto;
-    left: 10em;
-		}
-	}       
-
-	  
-   	#homepageHeroText {
-   		position: relative; 
-   		top: 3em;
-   		left: 10em
-   	}
-
-
-	   .homepageHero {
-
-   	p {
-   		
-   		width: 65%; 
-   		left: 10%;
-   		top: 20px
-
-   	}
+#largeClientImagesRow1 {
+    display: inline-block;
+    margin-left: 5em;
+}
+#largeClientImagesRow2 {
+    margin-left: 15em;
+}
+.largeClientImage{
+    margin: 0.5em;
+}
 
 
-   }
+//Media Queries
+@include media-breakpoint-up(xs) {
 
- }
+    #heresHowWeCanHelpBorder {
+        width: 100%;
+    }
 
+    #tabletNavLinks {
+        display: none;
+    }
+    #tabletNavLogo {
+        display: none;
+    }
+    #desktopNavLinks {
+        display: none;
+    }
+    #desktopNavLogo {
+        display: none;
+    }
+    #exploreCaseStudies {
+        p {
+            margin-top: 0;
+        }
+    }
+    #exploreCaseStudiesRow {
+        text-align: center;
+        display: inline;
+    }
+    #homepageHeroText {
+        p {
+            margin-left: 0.7em;
+            margin-right: 0.5em;
+        }
+    }
+}
+
+@media only screen and (min-width:24.375em) and (max-width: 33.75em) {
+
+	    #homepageHeroText {
+        p {
+            font-size: 18px;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
+
+        #exploreCaseStudies {
+        p {
+            margin-top: 2em;
+        }
+    }
+
+
+}
+
+
+@include media-breakpoint-up(sm) {
+    #homepageHeroText {
+        p {
+            font-size: 18px;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
+
+    #exploreCaseStudiesRow {}
+    #exploreCaseStudies {
+
+    	p {
+    		margin-top: 2em;
+    	}
+
+    	button {
+            width: 50%;
+        }
+    }
+    #mobileNavBar {
+        left: 6em;
+    }
+    #mobileNavLogo {
+        left: 4em;
+    }
+}
+
+@media only screen and (min-width: 28.125em) and (max-width: 33.6875em) {
+
+    #mobileNavBar {
+        left: 3em;
+    }
+
+          #heresHowWeCanHelpBorder {
+        width: 60%;
+      }
+}
+
+@include media-breakpoint-up(md) {
+
+     #heresHowWeCanHelpBorder {
+        width: 40%;
+     }
+
+    #exploreCaseStudies {
+        button {
+            width: 50%;
+        }
+    }
+    .navbar-toggler {
+        padding-bottom: 2em;
+    }
+    #tabletNavLinks {
+        display: initial;
+        position: relative;
+        top: 2em;
+        padding: 0;
+    }
+    #tabletNavLogo {
+        display: initial;
+        position: relative;
+        top: 1em;
+    }
+    #desktopNavLinks {
+        display: none;
+    }
+    #desktopNavLogo {
+        display: none;
+    }
+    #desktopNav {
+        display: initial;
+    }
+    .mobileNav {
+        display: none;
+    }
+    .homepageHero {
+        p {
+            font-size: 18px;
+            width: 70%;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    #mobileClientImages {
+        display: none;
+    }
+    #largeClientImages {
+        display: initial;
+    }
+    #exploreCaseStudiesRow {
+        text-align: center;
+    }
+    #homepageHeroContainer {
+        height: 600px;
+    }
+    #homepageServiceBoxContainer {
+        text-align: center;
+    }
+    .homepageServiceBox {
+        width: 25%;
+        display: inline-block;
+    }
+    #exploreCaseStudies {
+        button {
+            width: 50%;
+        }
+    }
+    #homepageHeroText {
+
+        padding-top: 8em;
+        p {
+            width: 75%;
+            font-size: 31px !important;
+        }
+    }
+    .navbar-toggler {
+        padding-bottom: 0;
+    }
+    #tabletNavLinks {
+        display: none;
+    }
+    #tabletNavLogo {
+        display: none;
+    }
+    #desktopNavLinks {
+        display: initial;
+    }
+    #desktopNavLogo {
+        display: initial;
+        position: relative;
+        left: 4em;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+
+    #largeClientImagesRow2 {
+        margin-left: 18em;
+    }
+
+    #exploreCaseStudiesRow {
+        text-align: center;
+    }
+    #exploreCaseStudies {
+        button {
+            width: 30%;
+            margin: 0 auto;
+        }
+        p {
+            margin-top: 4em;
+        }
+    }
+    .homepageHero {
+        p {
+            width: 65%;
+            margin-left: 8em;
+        }
+    }
+}
 
 // Foundation Media Queries
-
 // Small screens
-@media only screen { } /* Define mobile styles */
-
-@media only screen and (max-width: 40em) { 
+@media only screen {}
 
 
-} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* Define mobile styles */
+
+@media only screen and (max-width: 40em) {}
+
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {}
 
-} /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {}
+
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {}
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {}
+
+
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 // XLarge screens
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) {}
 
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
+
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
 // XXLarge screens
-@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) {}
+
+
+/* min-width 1921px, xxlarge screens */
