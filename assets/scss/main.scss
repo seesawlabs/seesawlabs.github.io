@@ -111,19 +111,8 @@ $navPaddingTop: 2em;
     font-style: normal;
 }
 
-@mixin rounded($amount) {
-    -moz-border-radius: $amount;
-    -webkit-border-radius: $amount;
-    border-radius: $amount;
-}
-
-.box {
-    border: 3px solid #777;
-    @include rounded(0.5em);
-}
-
 #heresHowWeCanHelpBorder {
-   border-bottom: 3px dotted #39687b;
+    border-bottom: 3px dotted #39687b;
     margin-top: 0;
 }
 
@@ -155,34 +144,31 @@ $navPaddingTop: 2em;
     color: #fff;
 }
 
-
 //Start Featured Cases Section
-
 #homeFeaturedCaseStudy {
-      font-family: openSansBold;
-      font-size: 14px; 
-      color: #fff;
-      position: relative;
-      top: 5em;
+    font-family: openSansBold;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    top: 5em;
 }
 
 #featuredCaseStudyBorder {
     width: 90%;
 }
 
-#featuredStudyCaseH5 {
-    font-size: 12pt;
+#featuredCaseStudyH5 {
+    font-size: 10pt;
 }
 
-#featuredCaseStudyH2{
+#featuredCaseStudyH2 {
     margin-top: 3.5em;
     margin-left: 0.1em;
     margin-right: 0.1em;
     font-size: 24px;
 }
 
-
-#featureCaseStudyDiv {
+#featuredCaseStudyDiv {
     height: 531px;
     text-align: center;
     background-image: url('../images/featuredCaseStudyBackground.png');
@@ -192,39 +178,40 @@ $navPaddingTop: 2em;
 }
 
 #featuredCaseParagraph {
-
     border: 2px solid white;
-    width: 90%;
+    width: 200px;
     height: 9%;
     margin-top: 3em;
     text-align: center;
     margin-left: 1em;
-
-
+    margin-left: 20%;
 }
 
-#featuredCaseButton{
+#featuredCaseButton {
     border-color: none;
     border: none;
+    width: 100%;
+    height: 100%;
+}
+
+#featuredCaseButton:hover {
+    color: #fff;
 }
 
 #featuredCaseButtonParagraph {
-
     position: relative;
     top: 0.2em;
     font-family: openSansBold;
-
 }
 
 //End Feature Cases Section 
 //Start Playground Section
-
 #homePlayGroundProject {
-      font-family: openSansBold;
-      font-size: 14px; 
-      color: #fff;
-      position: relative;
-      top: 5em;
+    font-family: openSansBold;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    top: 5em;
 }
 
 #playgroundProjectBorder {
@@ -234,17 +221,16 @@ $navPaddingTop: 2em;
 
 #playgroundProjectH5 {
     font-size: 12pt;
-    font-family: openSansItalic; 
+    font-family: openSansItalic;
 }
 
-#playgroundProjectH1{
+#playgroundProjectH1 {
     margin-top: 3.5em;
     margin-left: 0.1em;
     margin-right: 0.1em;
-    font-size: 24px;
+    font-size: 31px;
     color: #fff;
 }
-
 
 #playgroundProjectDiv {
     height: 700px;
@@ -252,112 +238,108 @@ $navPaddingTop: 2em;
     background-image: url('../images/playgroundProjectBackground.png');
     background-position: 40% 50%;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #playgroundProjectParagraph1 {
-  font-family: openSansRegular;
-  font-size: 17px; 
+    font-family: openSansRegular;
+    font-size: 17px;
 }
 
 #playgroundProjectParagraph2 {
-
     border: 2px solid white;
     width: 90%;
     height: 6%;
     margin-top: 3em;
     text-align: center;
     margin-left: 1em;
-
-
 }
 
-#playgroundProjectButton{
+#playgroundProjectButton {
     border-color: none;
     border: none;
 }
 
 #playgroundProjectButtonParagraph {
-
     position: relative;
     top: 0.2em;
     font-family: openSansBold;
-
 }
 
 //End Playground Project Section 
-
-
 //Start Want To Work With Us Section 
-
-#wantToWorkWithUs {      
-
+#wantToWorkWithUs {
     background-color: #E8B826;
     font-family: openSansBold;
-      font-size: 14px; 
-      color: #fff;
-      position: relative;
-      text-align: center;
-      height: 320px
-
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    height: 360px
 }
 
 #wantToWorkWithUsImage {
     position: relative;
     top: 2em;
-
 }
+
 #wantToWorkWithUsParagraph1 {
-      font-family: openSansLight;
-  font-size: 24px; 
-      margin: 1em;
-    margin-top: 2em;
-
+    font-family: openSansLight;
+    font-size: 24px;
+        margin: 2em 1em 2em;
+    text-align: left;
 }
+
 #wantToWorkWithUsParagraph2 {
-        border: 3px solid white;
-    width: 70%;
+    border: 3px solid white;
+     width: 180px;
     height: 17%;
     text-align: center;
-    margin-left: 3em;
-
+    margin-left: 5em;
+    position: relative;
+    top: -1em;
 }
 
 #wantToWorkWithUsButton {
-        border-color: none;
+    border-color: none;
     border: none;
-
+    height: 100%;
+    width: 100%;
 }
 
-#wantToWorkWithUsButtonParagraph{
+#wantToWorkWithUsButtonParagraph {
     position: relative;
     top: 0.5em;
     font-family: openSansBold;
 }
-
-
+ 
 //End wantToWorkWithUsSection 
-
 //Start Footer 
-
 #footer {
-    height: 200px; 
+    height: 200px;
     text-align: center;
+    padding-top: 2em;
 }
 
 .robotoRegular {
     font-family: robotoRegular;
-    font-size: 14px; 
+    font-size: 14px;
 }
 
-#footerEmail {
+#footerEmail  {
+
+    margin-top: 2.5em;
+
+    a {
     color: $color3;
+      }
 }
 
 #footerEmailRow {
-        margin-top: 2em;
+    margin-top: 2em;
 }
 
-#footerCopyRight{
+#footerCopyRight {
     color: #231f20;
 }
 
@@ -366,62 +348,45 @@ $navPaddingTop: 2em;
     top: 1em;
 }
 
-
 #facebookIcon {
     margin-left: 2em;
     margin-right: 2em;
 }
 
-.socialMediaIcon {
-
-}
+.socialMediaIcon {}
 
 //Style Guide Section 
-
 .styleGuideH1 {
-
-    font-family: openSansLight; 
+    font-family: openSansLight;
     font-size: 31px;
 }
 
-
-
 .styleGuideH2 {
-
     font-family: openSansLight;
     font-size: 25px;
-
 }
 
 .styleGuideH5 {
-
     font-family: openSansItalic;
     font-size: 17px;
-
 }
 
 //End Style Guide Section
-
-
-
 //Start Happy Clients Section 
-
 #happyClientsDiv {
     text-align: center;
 }
 
-
 .marginTop1Em {
     margin-top: 1em;
 }
-
 
 #playgroundProjectDivBackground {
     background-image: url('../images/')
 }
 
 #happyClientsBorder {
-        border: 1px dashed $color2;
+    border: 1px dashed $color2;
     width: 60%;
     margin-top: 0;
 }
@@ -430,21 +395,18 @@ $navPaddingTop: 2em;
     font-family: openSansItalic;
     font-size: 14px;
     color: $color2;
-        margin: 0.4em;
+    margin: 0.4em;
     margin-bottom: 2em;
 }
 
 .imgFiller {
     height: 100px;
-    width: 120px;
     margin: 0.2em;
     margin-bottom: 2em;
 }
 
 .inlineBlock {
-
     display: inline-block;
-
 }
 
 #hamburgerMobile {
@@ -459,6 +421,16 @@ $navPaddingTop: 2em;
     left: 1.1em;
 }
 
+#exploreCaseStudiesButton {
+    border-radius: 0;
+}
+
+
+#happyClientsDiv {
+    padding-bottom: 1em;
+    padding-top: 2em;
+}
+
 #mobileNavLogo {
     position: relative;
     left: 1.5em;
@@ -466,10 +438,26 @@ $navPaddingTop: 2em;
     width: 55%;
 }
 
+.noMarginTop {
+    margin-top: 0 !important;
+}
+
+.marginLeft {
+    margin-left: 7% !important; 
+}
+
+.paddingTop {
+    padding-top: 2em !important; 
+}
 .navBarLinks {
     padding-top: $navPaddingTop;
     padding-bottom: 2em;
     padding-right: 6em;
+}
+
+#largeFooterEmail {
+        position: relative;
+    top: -2.4em;
 }
 
 .navbar-nav {
@@ -484,10 +472,14 @@ $navPaddingTop: 2em;
     }
 }
 
+a:hover{
+    text-decoration: none;
+    color: #fff; 
+}
+
 .mobileNav {
     display: initial;
 }
-
 
 #nonCollapsedMenu {
     background-color: $color1;
@@ -531,7 +523,8 @@ $navPaddingTop: 2em;
     }
 }
 
-.homepageServiceBox {
+#homepageServiceBoxContainer {
+    text-align: center;
     h3 {
         font-family: openSansBold;
         font-size: 18pt;
@@ -550,8 +543,11 @@ $navPaddingTop: 2em;
         font-family: openSansBold;
         font-size: 14px;
     }
+    .serviceImage {
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
     .serviceImageDiv {
-        text-align: center;
         padding-top: 1em;
         padding-bottom: 2em;
     }
@@ -578,7 +574,6 @@ $navPaddingTop: 2em;
 }
 
 #homepageHeroText {
-
     padding-top: 2em;
 }
 
@@ -603,7 +598,7 @@ $navPaddingTop: 2em;
 
 #exploreCaseStudies {
     span {
-        font-family: robotoRegular;
+        font-family: robotoBold;
         text-transform: uppercase;
         font-size: 15px;
         color: #fff;
@@ -624,21 +619,43 @@ $navPaddingTop: 2em;
     display: inline-block;
     margin-left: 5em;
 }
+
 #largeClientImagesRow2 {
     margin-left: 15em;
 }
-.largeClientImage{
+
+.largeClientImage {
     margin: 0.5em;
 }
 
+#serviceImagesBottomRow {
+    padding-bottom: 4em;
+}
+
+#playgroundProjectButton {
+    width: 100%;
+    height: 100%;
+}
+
+
+   #largeSocialMediaBar, #largeFooterEmail, #largeFooterCopyrightRow {
+    display: none;
+   }
 
 //Media Queries
 @include media-breakpoint-up(xs) {
-
+    #playgroundProjectParagraph1 {
+        padding-top: 2em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #playgroundProjectParagraph2 {
+        margin-left: 17%;
+        width: 230px;
+    }
     #heresHowWeCanHelpBorder {
         width: 100%;
     }
-
     #tabletNavLinks {
         display: none;
     }
@@ -669,26 +686,15 @@ $navPaddingTop: 2em;
 }
 
 @media only screen and (min-width:24.375em) and (max-width: 33.75em) {
-
-	    #homepageHeroText {
-        p {
-            font-size: 18px;
-            margin-left: 1em;
-            margin-right: 1em;
-        }
+    #playgroundProjectParagraph2 {
+        margin-left: 19%;
+        width: 250px;
+        margin-right: 0;
+        text-align: center;
     }
-
-        #exploreCaseStudies {
-        p {
-            margin-top: 2em;
-        }
+    #featuredCaseParagraph {
+        margin-left: 27%;
     }
-
-
-}
-
-
-@include media-breakpoint-up(sm) {
     #homepageHeroText {
         p {
             font-size: 18px;
@@ -696,15 +702,76 @@ $navPaddingTop: 2em;
             margin-right: 1em;
         }
     }
+    #exploreCaseStudies {
+        p {
+            margin-top: 2em;
+        }
+    }
 
+
+       #wantToWorkWithUsParagraph1 {
+     padding-left: 0;
+     text-align: center;
+   }
+   #wantToWorkWithUsParagraph2 {
+         margin-left: 30%;
+   }
+}
+
+@media only screen and (min-width: 28.125em) and (max-width: 33.6875em) {
+    #featuredCaseParagraph {
+        margin-left: 29%;
+    }
+    #mobileNavBar {
+        left: 3em;
+    }
+    #heresHowWeCanHelpBorder {
+        width: 60%;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+
+    #facebookIcon {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #socialMediaBar{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+   #wantToWorkWithUsParagraph2 {
+         margin-left: 34%;
+   }
+
+   #wantToWorkWithUsParagraph1 {
+     margin-right: 0;
+     text-align: center;
+     padding-left: 0;
+   }
+
+    #playgroundProjectParagraph2 {
+        margin-left: 25%;
+        width: 250px;
+    }
+    #featuredCaseParagraph {
+        margin-left: 31%;
+    }
+    #homepageHeroText {
+        p {
+            font-size: 18px;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
     #exploreCaseStudiesRow {}
     #exploreCaseStudies {
-
-    	p {
-    		margin-top: 2em;
-    	}
-
-    	button {
+        p {
+            margin-top: 2em;
+        }
+        button {
             width: 50%;
         }
     }
@@ -716,23 +783,71 @@ $navPaddingTop: 2em;
     }
 }
 
-@media only screen and (min-width: 28.125em) and (max-width: 33.6875em) {
-
-    #mobileNavBar {
-        left: 3em;
+@media only screen and (min-width: 34.0625em) and (max-width: 40.624em) {
+    #playgroundProjectParagraph2 {
+        margin-left: 30%;
+        width: 250px;
+    }
+    #mobileClientImages {
+        padding: 0 15%;
     }
 
-          #heresHowWeCanHelpBorder {
-        width: 60%;
-      }
+
+   #wantToWorkWithUsParagraph2 {
+         margin-left: 35%;
+   }
+}
+
+@media only screen and (min-width: 40.625em) {
+    #playgroundProjectParagraph2 {
+        margin-left: 34%;
+        width: 250px;
+    }
+    #mobileClientImages {
+        padding: 0 20%;
+    }
+       #wantToWorkWithUsParagraph2 {
+         margin-left: 36%;
+   }
+}
+
+@media only screen and (min-width: 36.875em) and (max-width: 43.6875em) {
+    #featuredCaseParagraph {
+        margin-left: 33%;
+    }
+}
+
+@media only screen and (min-width: 43.876em) and (max-width: 47.9375em) {
+       #wantToWorkWithUsParagraph2 {
+         margin-left: 37%;
+   }
+    #playgroundProjectParagraph2 {
+        margin-left: 34%;
+        width: 250px;
+    }
+    #featuredCaseParagraph {
+        margin-left: 35%;
+    }
 }
 
 @include media-breakpoint-up(md) {
 
-     #heresHowWeCanHelpBorder {
+       #wantToWorkWithUsParagraph2 {
+         margin-left: 41%;
+   }
+    #playgroundProjectParagraph2 {
+        margin-left: 37%;
+        width: 250px;
+    }
+    #featuredCaseParagraph {
+        margin-left: 38%;
+    }
+    .homepageHelpBox p {
+        margin-bottom: 2em;
+    }
+    #heresHowWeCanHelpBorder {
         width: 40%;
-     }
-
+    }
     #exploreCaseStudies {
         button {
             width: 50%;
@@ -777,11 +892,113 @@ $navPaddingTop: 2em;
 
 @include media-breakpoint-up(lg) {
 
+
+   #footerEmailRow, #socialMediaBar, #footerCopyrightRow {
+    display: none;
+   }
+
+      #largeSocialMediaBar, #largeFooterEmail, #largeFooterCopyrightRow {
+    display: initial;
+   }
+
+   #largeFooterCopyright {
+     position: relative;
+     top: 0.5em;
+   }
+     
+     #footer {
+        height: 100px; 
+     }
+
+     #largeSocialMediaBar {
+        position: relative;
+        top: 1em;
+        img {
+                margin-left: 0.7em;
+    margin-right: 0.7em;
+        }
+     }
+    #wantToWorkWithUsParagraph2 {
+        margin-left: 42%;
+    }
+
+    #homePlayGroundProject {
+        margin-left: 8%;
+        position: relative;
+        top: 6em;
+    }
+    #playgroundProjectDiv {
+        text-align: left;
+                    background-attachment: fixed;
+    }
+    #homePlaygroundProject {
+        margin-left: 8%;
+    }
+    #playgroundProjectH1 {
+        margin-left: 8%;
+    }
+    #playgroundProjectBorder {
+        margin-left: 8%;
+        width: 43%;
+    }
+    #playgroundProjectH5 {
+        margin-left: 8%;
+    }
+    #playgroundProjectParagraph1 {
+        margin-left: 4%;
+        padding-right: 55%;
+    }
+    #playgroundProjectParagraph2 {
+        margin-left: 9%;
+    }
+    #homeFeaturedCaseStudy {
+        font-size: 16px;
+        top: 6em;
+    }
+    #featuredCaseStudyDiv {
+        text-align: left;
+    }
+    #homeFeaturedCaseStudy {
+        margin-left: 12.4%;
+    }
+    #featuredCaseParagraph,
+    #featuredCaseStudyH5,
+    #featuredCaseStudyBorder,
+    #featuredCaseStudyH2 {
+        margin-left: 12.3%;
+    }
+    #featuredCaseStudyBorder {
+        display: inline-block;
+        width: 39%;
+    }
+    #featuredCaseStudyH2 {
+        font-size: 31px;
+    }
+    #featuredCaseStudyH5 {
+        font-size: 17px;
+    }
+    .heresHowWeCanHelpParagraph {
+        width: 70%;
+        margin-left: 16%;
+    }
     #mobileClientImages {
         display: none;
     }
     #largeClientImages {
         display: initial;
+        padding-left: 1em;
+    }
+    .imgFiller {
+        width: 140px;
+    }
+    #largeClientImagesRow1 {
+        margin-left: -0.3em;
+    }
+    .largeClientImage {
+        margin-right: 0.6em;
+    }
+    #largeClientImagesRow2 {
+        margin-left: 9em;
     }
     #exploreCaseStudiesRow {
         text-align: center;
@@ -792,17 +1009,12 @@ $navPaddingTop: 2em;
     #homepageServiceBoxContainer {
         text-align: center;
     }
-    .homepageServiceBox {
-        width: 25%;
-        display: inline-block;
-    }
     #exploreCaseStudies {
         button {
             width: 50%;
         }
     }
     #homepageHeroText {
-
         padding-top: 8em;
         p {
             width: 75%;
@@ -828,12 +1040,22 @@ $navPaddingTop: 2em;
     }
 }
 
-@include media-breakpoint-up(xl) {
-
+@media only screen and (min-width: 68.75em) {
     #largeClientImagesRow2 {
-        margin-left: 18em;
+        padding-left: 80px;
     }
+}
 
+@include media-breakpoint-up(xl) {
+    #largeClientImagesRow1 {
+        margin-left: 4em;
+    }
+    #featuredCaseStudyBorder {
+        width: 33%;
+    }
+    #largeClientImagesRow2 {
+        padding-left: 9.375em;
+    }
     #exploreCaseStudiesRow {
         text-align: center;
     }
@@ -854,53 +1076,54 @@ $navPaddingTop: 2em;
     }
 }
 
-// Foundation Media Queries
-// Small screens
-@media only screen {}
+@media only screen and (min-width: 81.25em) {
+    #largeClientImagesRow2 {
+        padding-left: 12em;
+    }
+}
+
+@media only screen and (min-width: 87.55em) {
+    #largeClientImagesRow2 {
+        padding-left: 15em;
+        padding-right: 6em;
+    }
+}
+
+@media only screen and (min-width: 93.75em) {
+    #largeClientImagesRow2 {
+        padding-left: 17em;
+        padding-right: 10em;
+    }
 
 
-/* Define mobile styles */
-
-@media only screen and (max-width: 40em) {}
 
 
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+    #wantToWorkWithUsParagraph2 {
+        margin-left: 45%;
+    }
 
-// Medium screens
-@media only screen and (min-width: 40.063em) {}
+}
 
+@media only screen and (min-width: 100em) {
+    #featuredCaseStudyBorder {
+        width: 25%;
+    }
+    #largeClientImagesRow2 {
+        padding-left: 20em;
+        padding-right: 10em;
+    }
+}
 
-/* min-width 641px, medium screens */
+@media only screen and (min-width: 106.25em) {
+    #largeClientImagesRow2 {
+        padding-left: 23em;
+        padding-right: 16em;
+    }
+}
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {}
-
-
-/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-// Large screens
-@media only screen and (min-width: 64.063em) {}
-
-
-/* min-width 1025px, large screens */
-
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {}
-
-
-/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-
-// XLarge screens
-@media only screen and (min-width: 90.063em) {}
-
-
-/* min-width 1441px, xlarge screens */
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
-
-
-/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
-// XXLarge screens
-@media only screen and (min-width: 120.063em) {}
-
-
-/* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 111.25em) {
+    #largeClientImagesRow2 {
+        padding-left: 25em;
+        padding-right: 18em;
+    }
+}
