@@ -438,17 +438,6 @@ $navPaddingTop: 2em;
     width: 55%;
 }
 
-.noMarginTop {
-    margin-top: 0 !important;
-}
-
-.marginLeft {
-    margin-left: 7% !important; 
-}
-
-.paddingTop {
-    padding-top: 2em !important; 
-}
 .navBarLinks {
     padding-top: $navPaddingTop;
     padding-bottom: 2em;
@@ -480,6 +469,91 @@ a:hover{
 .mobileNav {
     display: initial;
 }
+
+
+
+
+
+//Case Study Section Starts 
+
+
+
+.marginLeft {
+    margin-left: 12.3%;
+}
+
+.caseStudyDiv {
+    background-attachment: fixed;
+    height: 531px;
+    background-image: url(../images/featuredCaseStudyBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fullColorBackground {
+    background-color: #929D68;
+}
+
+.caseStudyH2 {
+    position: relative;
+    font-size: 31px;
+}
+
+.caseStudyBorder {
+        display: inline-block;
+    position: relative;
+        border-bottom: 3px dotted #fff;
+}
+
+.caseStudyH5{
+    font-size: 17px;
+    position: relative;
+}
+
+.caseStudyParagraph1 {
+
+        font-family: openSansRegular;
+    font-size: 17px;
+    position: relative;
+}
+
+.caseStudyParagraph2 {
+ 
+ text-align: center;
+
+}
+
+.caseStudyButton {
+        border: none;
+    width: 100%;
+    height: 100%;
+        border: 2px solid #fff;
+
+
+}
+
+.caseStudyButtonParagraph {
+
+    position: relative;
+    font-family: openSansBold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//Case Study Section Ends
+
+
+
+
 
 #nonCollapsedMenu {
     background-color: $color1;
@@ -644,6 +718,48 @@ a:hover{
 
 //Media Queries
 @include media-breakpoint-up(xs) {
+
+
+    .caseStudyH2 {
+    font-size: 24px;
+    padding-top: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+    .fullColorBackground {
+        background-color: initial;
+        text-align: center;
+    }
+
+    .caseStudyBorder {
+            width: 93%;
+    padding-left: 0;
+    margin-left: 0;
+    }
+
+    .caseStudyH5 {
+        font-size: 12pt;
+        margin-left: 0;
+    }
+    .caseStudyParagraph2 {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 5em;
+}
+
+        .caseStudyParagraph1 {
+        padding-top: 2em;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 0;
+    }
+
+    .caseStudyButtonParagraph {
+    position: relative;
+    top: .2em;
+}
     #playgroundProjectParagraph1 {
         padding-top: 2em;
         padding-left: 5%;
@@ -695,6 +811,9 @@ a:hover{
     #featuredCaseParagraph {
         margin-left: 27%;
     }
+       .caseStudyParagraph2 {
+        margin-left: 27%;
+    }
     #homepageHeroText {
         p {
             font-size: 18px;
@@ -720,6 +839,9 @@ a:hover{
 
 @media only screen and (min-width: 28.125em) and (max-width: 33.6875em) {
     #featuredCaseParagraph {
+        margin-left: 29%;
+    }
+    .caseStudyParagraph2 {
         margin-left: 29%;
     }
     #mobileNavBar {
@@ -757,6 +879,10 @@ a:hover{
         width: 250px;
     }
     #featuredCaseParagraph {
+        margin-left: 31%;
+    }
+
+       .caseStudyParagraph2 {
         margin-left: 31%;
     }
     #homepageHeroText {
@@ -815,6 +941,9 @@ a:hover{
     #featuredCaseParagraph {
         margin-left: 33%;
     }
+       .caseStudyParagraph2 {
+        margin-left: 33%;
+    }
 }
 
 @media only screen and (min-width: 43.876em) and (max-width: 47.9375em) {
@@ -826,6 +955,9 @@ a:hover{
         width: 250px;
     }
     #featuredCaseParagraph {
+        margin-left: 35%;
+    }
+        .caseStudyParagraph2 {
         margin-left: 35%;
     }
 }
@@ -840,6 +972,10 @@ a:hover{
         width: 250px;
     }
     #featuredCaseParagraph {
+        margin-left: 38%;
+    }
+
+    .caseStudyParagraph2 {
         margin-left: 38%;
     }
     .homepageHelpBox p {
@@ -892,6 +1028,112 @@ a:hover{
 
 @include media-breakpoint-up(lg) {
 
+
+.caseStudyParagraph2 {
+
+    margin-left: 31%;
+    margin-top: 0;
+
+}
+
+.caseStudyDiv {
+    padding-left: 3em;
+    padding-top: 2em;
+    background-attachment: fixed;
+    height: 531px;
+    background-image: url(../images/caseStudiesBackgroundColor.png);
+    background-position: 60% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.caseStudyDiv2 {
+
+        background-image: url(../images/caseStudiesBackgroundDark2.png);
+
+    .fullColorBackground {
+        background-color: initial;
+    }
+}
+
+.caseStudyDiv3 {
+
+
+    background-image: url(../images/caseStudiesBackgroundDark.png);
+
+    .fullColorBackground {
+        background-color: rgba(#D54E30 ,0.8);
+    }
+}
+
+
+
+.fullColorBackground {
+    width: 550px;
+    height: 390px;
+    background-color: #929D68;
+    padding-right: 3em;
+}
+
+.caseStudyH2 {
+    bottom: 1em;
+    font-size: 31px;
+    margin-right: .1em;
+    padding-top: 2em;
+    margin-top: 0;
+
+}
+
+.caseStudyBorder {
+        display: inline-block;
+    width: 76%;
+    margin-top: 0;
+    bottom: 1.5em;
+        border-bottom: 3px dotted #fff;
+}
+
+.caseStudyH5{
+    font-size: 17px;
+    position: relative;
+    bottom: 2em;
+}
+
+.caseStudyParagraph1 {
+        font-family: robotoRegular;
+    font-size: 14px;
+        margin-left: 7% ;
+            padding-top: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    bottom: 2em;
+}
+
+.caseStudyParagraph2 {
+
+ text-align: center;
+border: 2px solid #fff;
+    width: 200px;
+    height: 11%;
+
+}
+
+.caseStudyButton {
+    
+    border: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+.caseStudyButtonParagraph {
+
+        position: relative;
+    top: .2em;
+    font-family: openSansBold;
+
+}
 
    #footerEmailRow, #socialMediaBar, #footerCopyrightRow {
     display: none;
@@ -1105,6 +1347,7 @@ a:hover{
 }
 
 @media only screen and (min-width: 100em) {
+    
     #featuredCaseStudyBorder {
         width: 25%;
     }
