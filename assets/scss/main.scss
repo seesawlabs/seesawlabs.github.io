@@ -371,6 +371,10 @@ $navPaddingTop: 2em;
     font-size: 17px;
 }
 
+.styleGuideP {
+    font-family: robotoRegular; 
+}
+
 //End Style Guide Section
 //Start Happy Clients Section 
 #happyClientsDiv {
@@ -597,6 +601,122 @@ a:hover{
     }
 }
 
+.section1 {
+    background-color: $color2;
+    text-align: center;
+    height: 850px;
+}
+
+
+.section1H1HeaderDesktop {
+    display: none; 
+}
+
+.section1H3Header {
+    color: #fff;
+    font-family: openSansBold;
+    font-size: 18px;
+    padding-top: 1.5em;
+}
+
+.section1H1Header {
+    color: #fff;
+}
+
+.section1HeaderContainer {
+    padding-top: 0.5em;
+}
+
+.section1Paragraph {
+    color: #fff;
+    padding: 1em;
+    font-family: robotoRegular;
+    font-size: 18px;
+}
+
+.section1Paragraph2 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+.section1Paragraph1 {
+ padding-top: 1em;
+ padding-left: 1em;
+ padding-right: 1em; 
+}
+
+.section1Paragraph3 {
+padding-left: 1em;
+padding-right: 1em;
+padding-bottom: 0;
+}
+
+.section2 {
+    text-align: center;
+}
+
+.section2Image {
+    padding: 2em;
+}
+
+.section2H2Header {
+    color: $color2;
+}
+
+.section2H3Header {
+    color: $color4;
+    font-family: openSansBold;
+    font-size: 18px;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+
+.section3 {
+    text-align: center;
+}
+
+
+.section3H2Header{
+    color: $color4;
+}
+
+.section3H5Header {
+    color: $color2;
+}
+
+.section3H3Header{
+        color: $color4;
+        font-family: openSansBold;
+    font-size: 18px;
+    padding-top: 1.5em;
+}
+
+.section3H1Header {
+    color: $color2;
+}
+
+.section3Image {
+    padding-top: 2em;
+}
+
+
+.section4 {
+    text-align: center;
+}
+
+
+.section4H3Header {
+    color: $color4;
+    padding-top: 1.5em;
+}
+
+.section4H5Header {
+    color: $color2;
+}
+
+
 #homepageServiceBoxContainer {
     text-align: center;
     h3 {
@@ -631,6 +751,8 @@ a:hover{
         text-decoration: underline;
     }
 }
+
+
 
 #mainSiteContainer {
     padding: 0;
@@ -964,6 +1086,24 @@ a:hover{
 
 @include media-breakpoint-up(md) {
 
+    .section1 {
+    height: 400px; 
+}
+
+.section1HeaderContainer {
+    padding-top: 2em;
+}pip
+
+    .section1MobileHeader {
+        display: none; 
+    }
+
+    .section1H1HeaderDesktop {
+        display: initial; 
+    }
+
+
+
        #wantToWorkWithUsParagraph2 {
          margin-left: 41%;
    }
@@ -1027,6 +1167,7 @@ a:hover{
 }
 
 @include media-breakpoint-up(lg) {
+
 
 
 .caseStudyParagraph2 {
