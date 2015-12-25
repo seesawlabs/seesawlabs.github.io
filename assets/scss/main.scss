@@ -366,13 +366,19 @@ $navPaddingTop: 2em;
     font-size: 25px;
 }
 
+.styleGuideH3 {
+    font-family: openSansBold;
+    font-size: 18pt; 
+}
+
 .styleGuideH5 {
     font-family: openSansItalic;
     font-size: 17px;
 }
 
 .styleGuideP {
-    font-family: robotoRegular; 
+    font-family: robotoRegular;
+    size: 14pt; 
 }
 
 //End Style Guide Section
@@ -601,10 +607,14 @@ a:hover{
     }
 }
 
+
+.desktopImages {
+    display: none;
+}
 .section1 {
     background-color: $color2;
     text-align: center;
-    height: 850px;
+    height: 800px;
 }
 
 
@@ -658,7 +668,9 @@ padding-bottom: 0;
 
 .section2Image {
     padding: 2em;
+    padding-top: 5em;
 }
+
 
 .section2H2Header {
     color: $color2;
@@ -679,26 +691,57 @@ padding-bottom: 0;
 
 
 .section3H2Header{
-    color: $color4;
+    color: $color2;
 }
 
 .section3H5Header {
-    color: $color2;
+    color: $color4;
 }
 
 .section3H3Header{
         color: $color4;
         font-family: openSansBold;
-    font-size: 18px;
+    font-size: 18pt;
     padding-top: 1.5em;
+
 }
 
 .section3H1Header {
     color: $color2;
+        padding-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .section3Image {
-    padding-top: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 150px;
+    width: 150px;
+    border-radius: 5em;
+}
+
+.section3Paragraph {
+    font-family: robotoRegular;
+    font-size: 14pt;
+    padding-left: 2em;
+    padding-right: 1em;
+    text-align: left;
+}
+
+.section3Hr {
+        border: 2px dotted #39687b;
+    width: 85%;
+}
+
+.section3SocialMedia {
+    text-align: left;
+    padding-left: 2em;
+    padding-top: 0.5em;
+        img {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
 }
 
 
@@ -706,14 +749,61 @@ padding-bottom: 0;
     text-align: center;
 }
 
+.section4H1Header{
+    padding-top: 1em;
+    color: $color2;
+        padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+.section4H2Header {
+        text-align: left;
+    padding-left: 1.2em;
+}
 
 .section4H3Header {
     color: $color4;
-    padding-top: 1.5em;
+    padding-top: 3em;
 }
 
 .section4H5Header {
     color: $color2;
+}
+
+.section4Paragraph {
+    padding-top: 1em;
+        padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+
+.section4Image {
+        width: 350px;
+    padding-top: 2em;
+    padding-bottom: 1.4em;
+}
+
+
+.section4ButtonDiv {
+    text-align: left;
+        padding-left: 2em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+.section4Button {
+        color: #d54e30;
+    border-color: #d54e30;
+    border-radius: 0;
+    border: 2px solid #d54e30;
+    font-family: openSansBold;
+    font-size: 15px;
+}
+
+
+.section4Button:hover {
+            color: #fff;
+    background-color: #d54e30;
 }
 
 
@@ -1031,7 +1121,15 @@ padding-bottom: 0;
     }
 }
 
+@media only screen and (min-width: 34.0625em) {
+        .section1 {
+        height: 680px;
+    }
+
+}
+
 @media only screen and (min-width: 34.0625em) and (max-width: 40.624em) {
+
     #playgroundProjectParagraph2 {
         margin-left: 30%;
         width: 250px;
@@ -1047,6 +1145,10 @@ padding-bottom: 0;
 }
 
 @media only screen and (min-width: 40.625em) {
+
+           .section1 {
+        height: 620px;
+    }
     #playgroundProjectParagraph2 {
         margin-left: 34%;
         width: 250px;
@@ -1087,22 +1189,26 @@ padding-bottom: 0;
 @include media-breakpoint-up(md) {
 
     .section1 {
-    height: 400px; 
+    height: 450px; 
+    padding-left: 0.3em;
+    padding-right: 0.3em; 
+}
+
+.section1H1Header {
+    font-size: 24px;
 }
 
 .section1HeaderContainer {
     padding-top: 2em;
-}pip
+}
 
-    .section1MobileHeader {
+    .section1HeaderContainer .section1MobileHeader {
         display: none; 
     }
 
     .section1H1HeaderDesktop {
         display: initial; 
     }
-
-
 
        #wantToWorkWithUsParagraph2 {
          margin-left: 41%;
@@ -1168,7 +1274,47 @@ padding-bottom: 0;
 
 @include media-breakpoint-up(lg) {
 
+.desktopImages {
+    display: initial;
+}
+.aboutDesktopImage1 {
+    background-image: url('../images/aboutImage1.png');
+    height: 200px;
+    background-position: 50% 50%;
+    background-position-y: 200px;
+    padding: 0;
+    margin: 0;
+}
 
+.aboutDesktopImage2 {
+    background-image: url('../images/aboutImage2.png');
+    height: 200px;
+     background-position-y: -23px;
+
+}
+
+.section1 {
+    height: 500px;
+}
+
+.section1HeaderContainer {
+    padding-top: 0;
+}
+.section1H1Header {
+    font-size: 31px;
+}
+
+.section1H1Header {
+    padding-top: 3em;
+}
+
+.section1Paragraph {
+    font-size: 14pt; 
+}
+
+.section1Paragraph1 {
+    padding-top: 3em;
+}
 
 .caseStudyParagraph2 {
 
@@ -1430,6 +1576,45 @@ border: 2px solid #fff;
 }
 
 @include media-breakpoint-up(xl) {
+
+   .section3Image {
+    float: left;
+    position: relative;
+    right: 1.5em;
+   }
+
+   .section3H2Header {
+    float: right;
+    padding-right: 12em;
+    padding-top: 1em;
+
+   }
+
+   .section3H5Header {
+    float: right;
+    padding-right: 13em;
+    padding-top: 1em;
+   }
+ 
+  .section3Hr{ 
+    width: 0%;
+    position: relative;
+    top: 0.5em;
+    padding-right: 25em;
+  }
+
+  .section3SocialMedia {
+    text-align: left;
+        padding-top: 0.5em;
+    float: left;
+    padding-left: 9em;
+  }
+
+.section3Paragraph {
+        width: 600px;
+    padding-left: 8.5em;
+}
+
     #largeClientImagesRow1 {
         margin-left: 4em;
     }
