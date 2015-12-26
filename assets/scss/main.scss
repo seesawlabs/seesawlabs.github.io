@@ -598,6 +598,87 @@ a:hover{
     }
 }
 
+//Services Page
+
+.sSection1 {
+    background-color: $color2;
+    text-align: center;
+    padding: 2em;
+
+}
+
+.sSection2 {
+
+        .callToAction {
+        color: $color3;
+        text-decoration: underline;
+        margin-bottom: 2em;
+        font-family: openSansBold;
+        font-size: 14pt;
+    }
+}
+
+
+.sSection2ContentDiv {
+    margin-top: 6em;
+}
+
+.sSection2ContentDiv6 {
+    padding-bottom: 2em;
+}
+
+.sSection1H3Header {
+    color: #fff;
+}
+
+.sSection1H1Header {
+    color: #fff;
+    margin-top: 1em;
+}
+
+.sSection1H3Header {
+    color: #fff;
+}
+
+.sSection1Paragraph {
+    color: #fff;
+    font-family: openSansRegular;
+    margin-top: 3em;
+    font-size: 17pt;
+}
+
+.sSection2 {
+    text-align: center;
+}
+
+.sSection2Paragraph {
+  color: $color8;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+.sSection2ImageDiv {
+    margin-bottom: 2em; 
+}
+
+.sSection2H3Header {
+    color: $color2;
+}
+
+#nonCollapsedMenu .serviceServicesLink {
+    color: $color3;
+}
+
+#desktopNavLinks .serviceServicesLink {
+    color: $color3; 
+}
+
+#tabletNavLinks .serviceServicesLink {
+    color: $color3;
+}
+
+//About Page
 
 
 .desktopImages {
@@ -840,7 +921,6 @@ padding-bottom: 0;
 
 
 
-
 #tabletNavLinks .aboutAboutLink {
     color: #d54e30;
 }
@@ -849,6 +929,8 @@ padding-bottom: 0;
     color: #d54e30;
 }
 
+
+//End About Page
 
 #homepageServiceBoxContainer {
     text-align: center;
@@ -1358,7 +1440,39 @@ padding-bottom: 0;
 @include media-breakpoint-up(lg) {
 
 
-        .section4H2Header:before {
+.sSection2ContentDiv {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.sSection2ImageDiv {
+  
+  float: left;
+  margin-left: 1.2em;
+  margin-right: 2em;
+}
+
+.sSection2Border {
+    border-width: 5px;
+    -moz-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
+    -webkit-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
+    -webkit-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
+    -o-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
+    border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
+    width: 95%;
+    margin-top: 2em;
+}
+
+
+.sSection2 {
+
+     text-align: initial; 
+
+    .callToAction {
+        margin-left: 7.6em;
+    }
+}
+
+.section4H2Header:before {
     height: 200px;
     width: 400px;
 }
@@ -1681,6 +1795,15 @@ border: 2px solid #fff;
 }
 
 @include media-breakpoint-up(xl) {
+
+.sSection2ContentDiv {
+        padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sSection2Border {
+    width: 80%;
+}
 
      .section2DesktopContentDiv1 {
     bottom: 1em;
