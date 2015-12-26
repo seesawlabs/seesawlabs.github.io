@@ -656,6 +656,10 @@ padding-bottom: 0;
 
 .section2 {
     text-align: center;
+
+     p {
+        color: #4d4d4d;
+     }
 }
 
 .section2Image {
@@ -676,6 +680,10 @@ padding-bottom: 0;
     text-align: center;
 }
 
+
+.section2Desktop {
+    display: none;
+}
 
 .section3 {
     text-align: center;
@@ -707,6 +715,7 @@ padding-bottom: 0;
         padding-top: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
+    padding-bottom: 1em;
 }
 
 .section3Image {
@@ -966,6 +975,21 @@ padding-bottom: 0;
 @include media-breakpoint-up(xs) {
 
 
+    .section4H1Header {
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    
+    .section4Paragraph15 {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .section4Paragraph1 {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+     
     .caseStudyH2 {
     font-size: 24px;
     padding-top: 2em;
@@ -1333,6 +1357,7 @@ padding-bottom: 0;
 
 @include media-breakpoint-up(lg) {
 
+
         .section4H2Header:before {
     height: 200px;
     width: 400px;
@@ -1348,9 +1373,12 @@ padding-bottom: 0;
     background-image: url('../images/aboutImage1.png');
     height: 200px;
     background-position: 50% 50%;
-    background-position-y: 200px;
     padding: 0;
     margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
 
 .aboutDesktopImage2 {
@@ -1368,7 +1396,7 @@ padding-bottom: 0;
     padding-top: 0;
 }
 .section1H1Header {
-    font-size: 31px;
+    font-size: 31pt;
 }
 
 .section1H1Header {
@@ -1654,6 +1682,55 @@ border: 2px solid #fff;
 
 @include media-breakpoint-up(xl) {
 
+     .section2DesktopContentDiv1 {
+    bottom: 1em;
+    right: 5em;
+     }
+
+.section2DesktopContentDiv2 {
+    right: 5em;
+    top: 12em;
+}
+
+.section2DesktopContentDiv3 {
+        top: 24em;
+    right: 5em;
+}
+
+    .section2DesktopContentDiv4 {
+    top: 10.5em;
+    left: 5em;
+
+    }
+
+    .section2DesktopContentDiv5 {
+         top: 20.5em;
+         left: 5em;
+
+    }
+
+
+    .section2Mobile {
+        display: none;
+    }
+
+  .section2Desktop {
+    display: initial;
+  }
+
+  .section2DesktopColumn {
+    margin-top: 4em;
+  }
+
+  .section2DesktopContentDivRight {
+    text-align: left;
+    position: relative;
+  }
+
+  .section2DesktopContentDivLeft {
+    text-align: right; 
+    position: relative;
+  }
 
 .section4H2Header:before {
             content: " ";
@@ -1672,6 +1749,18 @@ border: 2px solid #fff;
     right: 5.4em;
 }
 
+.section4Paragraph1 {
+        padding-left: 1em;
+        padding-right: 0;
+    padding-top: 2em;
+}
+
+
+.section4Paragraph15 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
     .section3ContentDiv {
         display: inline-block;
     width: 400px;
@@ -1688,6 +1777,10 @@ border: 2px solid #fff;
    .section3H2Header {
     padding-left: 1em;
 
+   }
+
+   .section3H3Header {
+    padding-top: 8em;
    }
 
    .section3H5Header {
@@ -1742,6 +1835,12 @@ border: 2px solid #fff;
     }
 }
 
+@media only screen and (min-width: 85.9375em) {
+    .section2DesktopContentDiv3{
+        top: 26em;
+    }
+}
+
 @media only screen and (min-width: 86.25em) {
     
    .section3ContentDiv {
@@ -1775,6 +1874,12 @@ border: 2px solid #fff;
 
 }
 
+
+@media only screen and (min-width: 98.5em) {
+    .section2DesktopContentDiv3 {
+        top: 29em;
+    }
+}
 @media only screen and (min-width: 100em) {
 
     .section3Column {
@@ -1787,6 +1892,12 @@ border: 2px solid #fff;
     #largeClientImagesRow2 {
         padding-left: 20em;
         padding-right: 10em;
+    }
+}
+
+@media only screen and (min-width:104.25em) {
+    .section2DesktopDontentDiv5{
+        top: 23.5em;
     }
 }
 
