@@ -549,17 +549,8 @@ a:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 //Case Study Section Ends
+
 
 
 
@@ -606,6 +597,7 @@ a:hover{
         padding-top: 1em;
     }
 }
+
 
 
 .desktopImages {
@@ -689,6 +681,10 @@ padding-bottom: 0;
     text-align: center;
 }
 
+.section3Column {
+   padding-bottom: 3em;
+}
+
 
 .section3H2Header{
     color: $color2;
@@ -747,6 +743,7 @@ padding-bottom: 0;
 
 .section4 {
     text-align: center;
+    background-color: #e6e6e6;
 }
 
 .section4H1Header{
@@ -757,9 +754,24 @@ padding-bottom: 0;
 }
 
 .section4H2Header {
-        text-align: left;
-    padding-left: 1.2em;
+   text-align: left;
+    padding-left: 1em;
+    padding-top: 2em;
+    font-size: 25pt;
+    color: #39687b;
 }
+
+    .section4H2Header:before {
+          content: " ";
+    display: block;
+    background-image: url(../images/playgroundProjectMobile.png);
+    height: 150px;
+    width: 270px;
+    background-size: cover;
+    margin-bottom: 1em;
+    }
+
+
 
 .section4H3Header {
     color: $color4;
@@ -771,18 +783,29 @@ padding-bottom: 0;
 }
 
 .section4Paragraph {
-    padding-top: 1em;
-        padding-left: 1.2em;
-    padding-right: 1.2em;
+    margin-top: 1em;
+    color: #4d4d4d;
 }
 
+.section4Paragraph1 {
 
-.section4Image {
-        width: 350px;
-    padding-top: 2em;
-    padding-bottom: 1.4em;
+        font-family: openSansItalic;
+    font-size: 17px;
+    display: inline-block;
 }
 
+.section4Paragraph1.5 {
+    display: inline-block;
+}
+
+.section4Paragraph2, .section4Paragraph3 {
+   text-align: left;
+}
+
+.section4ParagraphContainer {
+    padding-left: 2em;
+    text-align: left;
+}
 
 .section4ButtonDiv {
     text-align: left;
@@ -804,6 +827,17 @@ padding-bottom: 0;
 .section4Button:hover {
             color: #fff;
     background-color: #d54e30;
+}
+
+
+
+
+#tabletNavLinks .aboutAboutLink {
+    color: #d54e30;
+}
+
+#desktopNavLinks .aboutAboutLink {
+    color: #d54e30;
 }
 
 
@@ -1066,6 +1100,17 @@ padding-bottom: 0;
 
 @include media-breakpoint-up(sm) {
 
+
+.section4H2Header:before {
+    content: " ";
+    display: block;
+    background-image: url(../images/playgroundProjectMobile.png);
+    height: 150px;
+    width: 200px;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+
     #facebookIcon {
         margin-left: 0;
         margin-right: 0;
@@ -1130,6 +1175,7 @@ padding-bottom: 0;
 
 @media only screen and (min-width: 34.0625em) and (max-width: 40.624em) {
 
+
     #playgroundProjectParagraph2 {
         margin-left: 30%;
         width: 250px;
@@ -1145,6 +1191,8 @@ padding-bottom: 0;
 }
 
 @media only screen and (min-width: 40.625em) {
+
+
 
            .section1 {
         height: 620px;
@@ -1162,6 +1210,7 @@ padding-bottom: 0;
 }
 
 @media only screen and (min-width: 36.875em) and (max-width: 43.6875em) {
+
     #featuredCaseParagraph {
         margin-left: 33%;
     }
@@ -1171,6 +1220,7 @@ padding-bottom: 0;
 }
 
 @media only screen and (min-width: 43.876em) and (max-width: 47.9375em) {
+
        #wantToWorkWithUsParagraph2 {
          margin-left: 37%;
    }
@@ -1186,7 +1236,16 @@ padding-bottom: 0;
     }
 }
 
+
+@media only screen and (min-width: 45em) {
+    .section4H2Header:before {
+    height: 200px;
+    width: 300px;
+}
+}
+
 @include media-breakpoint-up(md) {
+
 
     .section1 {
     height: 450px; 
@@ -1274,9 +1333,17 @@ padding-bottom: 0;
 
 @include media-breakpoint-up(lg) {
 
+        .section4H2Header:before {
+    height: 200px;
+    width: 400px;
+}
+
+
+
 .desktopImages {
     display: initial;
 }
+
 .aboutDesktopImage1 {
     background-image: url('../images/aboutImage1.png');
     height: 200px;
@@ -1308,12 +1375,22 @@ padding-bottom: 0;
     padding-top: 3em;
 }
 
+.section1H3Header{
+    padding-top: 3em;
+}
+
 .section1Paragraph {
     font-size: 14pt; 
 }
 
 .section1Paragraph1 {
     padding-top: 3em;
+}
+
+
+.section4Image {
+    position: relative;
+    right: 1.4em;
 }
 
 .caseStudyParagraph2 {
@@ -1577,42 +1654,51 @@ border: 2px solid #fff;
 
 @include media-breakpoint-up(xl) {
 
+
+.section4H2Header:before {
+            content: " ";
+    display: block;
+    background-image: url(../images/playgroundProjectDesktop.png);
+    height: 300px;
+    width: 530px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+}
+
+
+.section4Image {
+    position: relative;
+    right: 5.4em;
+}
+
+    .section3ContentDiv {
+        display: inline-block;
+    width: 400px;
+    text-align: left;
+    padding-top: 4em;
+        }
+
    .section3Image {
     float: left;
     position: relative;
-    right: 1.5em;
+        margin-left: 0.7em;
    }
 
    .section3H2Header {
-    float: right;
-    padding-right: 12em;
-    padding-top: 1em;
+    padding-left: 1em;
 
    }
 
    .section3H5Header {
-    float: right;
-    padding-right: 13em;
-    padding-top: 1em;
+    position: relative;
+    left: .4em;
+    margin: 1em;
    }
  
-  .section3Hr{ 
-    width: 0%;
-    position: relative;
-    top: 0.5em;
-    padding-right: 25em;
-  }
-
-  .section3SocialMedia {
-    text-align: left;
-        padding-top: 0.5em;
-    float: left;
-    padding-left: 9em;
-  }
 
 .section3Paragraph {
-        width: 600px;
-    padding-left: 8.5em;
+      font-size: 14px;
 }
 
     #largeClientImagesRow1 {
@@ -1644,10 +1730,25 @@ border: 2px solid #fff;
     }
 }
 
+@media only screen and (min-width: 78em) {
+    .aboutDesktopImage2 {
+        background-size: cover;
+    }
+}
+
 @media only screen and (min-width: 81.25em) {
     #largeClientImagesRow2 {
         padding-left: 12em;
     }
+}
+
+@media only screen and (min-width: 86.25em) {
+    
+   .section3ContentDiv {
+    float: initial; 
+    position: relative;
+    right: 2em;
+   }
 }
 
 @media only screen and (min-width: 87.55em) {
@@ -1664,7 +1765,9 @@ border: 2px solid #fff;
     }
 
 
-
+   .section3Column {
+    padding-left: 4em;
+   }
 
     #wantToWorkWithUsParagraph2 {
         margin-left: 45%;
@@ -1673,6 +1776,10 @@ border: 2px solid #fff;
 }
 
 @media only screen and (min-width: 100em) {
+
+    .section3Column {
+        padding-left: 8em;
+    }
     
     #featuredCaseStudyBorder {
         width: 25%;
