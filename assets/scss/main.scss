@@ -319,6 +319,7 @@ $navPaddingTop: 2em;
     height: 200px;
     text-align: center;
     padding-top: 2em;
+    background-color: #fff;
 }
 
 
@@ -436,11 +437,21 @@ $navPaddingTop: 2em;
 }
 
 #mobileNavBar {
-    width: 50%;
+    width: 50%; 
     display: inline;
     position: relative;
     top: 0.7em;
     left: 1.1em;
+}
+
+
+.exploreCaseStudiesLink {
+    color: #fff;
+    font-family: openSansBold;
+    font-size: 12pt;
+    button {
+        text-transform: uppercase;
+    }
 }
 
 #exploreCaseStudiesButton {
@@ -489,7 +500,7 @@ a:hover{
 }
 
 .mobileNav {
-    display: initial;
+    display: inline;
 }
 
 
@@ -522,7 +533,7 @@ a:hover{
 .caseStudyDiv {
     background-attachment: fixed;
     height: 531px;
-     background-image: url(../images/caseStudiesBackgroundColor.png);
+     background-image: url("../images/caseStudiesBackgroundColor.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -532,14 +543,14 @@ a:hover{
 }
 
 .caseStudyDiv2 {
-            background-image: url(../images/caseStudiesBackgroundDark2.png);
+            background-image: url("../images/caseStudiesBackgroundDark2.png");
             margin-top: 1em;
 }
 
 .caseStudyDiv3{
 
    margin-top: 1em;
-      background-image: url(../images/caseStudiesBackgroundDark.png);
+      background-image: url("../images/caseStudiesBackgroundDark.png");
 
 }
 
@@ -650,12 +661,8 @@ a:hover{
 }
 
 .vSection3Border {
-       border-width: 3px;
-    border-top-width: 3px;
-    border-right-width: 3px;
-    border-bottom-width: 3px;
-    border-left-width: 3px;
-    border-image: url(../images/dottedBorderSingle.jpg) 0 0 5 0 repeat;
+    border: 3px dotted #39687b;
+    border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
     width: 94%;
     margin-top: 0;
     margin-left:0;
@@ -1210,7 +1217,7 @@ padding-bottom: 0;
     .section4H2Header:before {
           content: " ";
     display: block;
-    background-image: url(../images/playgroundProjectMobile.png);
+    background-image: url("../images/playgroundProjectMobile.png");
     height: 150px;
     width: 270px;
     background-size: cover;
@@ -1289,6 +1296,7 @@ padding-bottom: 0;
 //End About Page
 
 .sSection2Border {
+        border: 1px dotted #39687b;
     border-width: 5px;
     -moz-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
     -webkit-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
@@ -1358,7 +1366,7 @@ padding-bottom: 0;
 }
 
 #homepageHeroContainer {
-    background-image: url(../images/homepageHero.png);
+    background-image: url("../images/homepageHero.png");
     min-height: 100%;
     height: 320px;
     background-repeat: no-repeat;
@@ -1467,7 +1475,7 @@ padding-bottom: 0;
     }
 
     .fullColorBackground {
-        background-color: initial;
+        background-color: inline;
         text-align: center;
     }
 
@@ -1540,7 +1548,7 @@ padding-bottom: 0;
     }
 }
 
-@media only screen and (min-width:24.375em) {
+@media all and (min-width:24.375em) {
 
        .projectNavigation {  
   padding-left: 7em;
@@ -1548,14 +1556,14 @@ padding-bottom: 0;
 
 }
 
-@media only screen and (min-width:26.875em) {
+@media all and (min-width:26.875em) {
            .projectNavigation {  
   padding-left: 39%;
 }
 
 }
 
-@media only screen and (min-width:24.375em) and (max-width: 33.75em) {
+@media all and (min-width:24.375em) and (max-width: 33.75em) {
 
     #playgroundProjectParagraph2 {
         margin-left: 19%;
@@ -1592,7 +1600,7 @@ padding-bottom: 0;
    }
 }
 
-@media only screen and (min-width: 28.125em) and (max-width: 33.6875em) {
+@media all and (min-width: 28.125em) and (max-width: 33.6875em) {
     #featuredCaseParagraph {
         margin-left: 29%;
     }
@@ -1607,7 +1615,7 @@ padding-bottom: 0;
     }
 }
 
-@include media-breakpoint-up(sm) {
+ @media all and (min-width: 34em){
 
 
     .vSection3Image {
@@ -1641,7 +1649,7 @@ padding-bottom: 0;
 .section4H2Header:before {
     content: " ";
     display: block;
-    background-image: url(../images/playgroundProjectMobile.png);
+    background-image: url("../images/playgroundProjectMobile.png");
     height: 150px;
     width: 200px;
     background-size: cover;
@@ -1706,14 +1714,14 @@ padding-bottom: 0;
     }
 }
 
-@media only screen and (min-width: 34.0625em) {
+@media all and (min-width: 34.0625em) {
         .section1 {
         height: 680px;
     }
 
 }
 
-@media only screen and (min-width: 34.0625em) and (max-width: 40.624em) {
+@media all and (min-width: 34.0625em) and (max-width: 40.624em) {
 
 
     #playgroundProjectParagraph2 {
@@ -1730,13 +1738,13 @@ padding-bottom: 0;
    }
 }
 
-@media only screen and (min-width: 40em) {
+@media all and (min-width: 40em) {
     .projectNavigation {
         padding-left: 55%;
      }
 }
 
-@media only screen and (min-width: 40.625em) {
+@media all and (min-width: 40.625em) {
 
  .cSection1 {
     height: 250px;
@@ -1757,7 +1765,7 @@ padding-bottom: 0;
    }
 }
 
-@media only screen and (min-width: 36.875em) and (max-width: 43.6875em) {
+@media all and (min-width: 36.875em) and (max-width: 43.6875em) {
 
     #featuredCaseParagraph {
         margin-left: 33%;
@@ -1767,7 +1775,7 @@ padding-bottom: 0;
     }
 }
 
-@media only screen and (min-width: 43.876em) and (max-width: 47.9375em) {
+@media all and (min-width: 43.876em) and (max-width: 47.9375em) {
 
        #wantToWorkWithUsParagraph2 {
          margin-left: 37%;
@@ -1785,14 +1793,14 @@ padding-bottom: 0;
 }
 
 
-@media only screen and (min-width: 45em) {
+@media all and (min-width: 45em) {
     .section4H2Header:before {
     height: 200px;
     width: 300px;
 }
 }
 
-@include media-breakpoint-up(md) {
+@media all and (min-width: 48em) {
 
 .projectNavigation {
     padding-left: 65%;
@@ -1823,7 +1831,7 @@ padding-bottom: 0;
     }
 
     .section1H1HeaderDesktop {
-        display: initial; 
+        display: inline; 
     }
 
        #wantToWorkWithUsParagraph2 {
@@ -1855,13 +1863,13 @@ padding-bottom: 0;
         padding-bottom: 2em;
     }
     #tabletNavLinks {
-        display: initial;
+        display: inline;
         position: relative;
         top: 2em;
         padding: 0;
     }
     #tabletNavLogo {
-        display: initial;
+        display: inline;
         position: relative;
         top: 1em;
     }
@@ -1872,7 +1880,7 @@ padding-bottom: 0;
         display: none;
     }
     #desktopNav {
-        display: initial;
+        display: inline;
     }
     .mobileNav {
         display: none;
@@ -1894,7 +1902,7 @@ padding-bottom: 0;
     }
 }
 
-@include media-breakpoint-up(lg) {
+@media all and (min-width: 62em) {
 
   .vSection3 {
     width: 50%;
@@ -1932,7 +1940,7 @@ padding-bottom: 0;
 
 
 .vSection1Link3 {
-    display: initial;
+    display: inline;
 
     color: #fff;
     font-family: openSansBold;
@@ -1946,7 +1954,7 @@ padding-bottom: 0;
 }
 
 .vSection1Link5 {
-    display: initial;
+    display: inline;
 
     color: #fff;
     font-family: openSansBold;
@@ -1981,8 +1989,7 @@ padding-bottom: 0;
     border-width: 5px;
     -moz-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
     -webkit-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
-    -webkit-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
-    -o-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
+    _border: 2px solid $color2;
     border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
     width: 95%;
     margin-top: 2em;
@@ -1991,7 +1998,7 @@ padding-bottom: 0;
 
 .sSection2 {
 
-     text-align: initial; 
+     text-align: inline; 
 
     .callToAction {
         margin-left: 7.6em;
@@ -2006,7 +2013,7 @@ padding-bottom: 0;
 
 
 .desktopImages {
-    display: initial;
+    display: inline;
 }
 
 .aboutDesktopImage1 {
@@ -2171,7 +2178,7 @@ border: 2px solid #fff;
    }
 
       #largeSocialMediaBar, #largeFooterEmail, #largeFooterCopyrightRow {
-    display: initial;
+    display: inline;
    }
 
    #largeFooterCopyright {
@@ -2258,7 +2265,7 @@ border: 2px solid #fff;
         display: none;
     }
     #largeClientImages {
-        display: initial;
+        display: inline;
         padding-left: 1em;
     }
     .imgFiller {
@@ -2305,22 +2312,22 @@ border: 2px solid #fff;
         display: none;
     }
     #desktopNavLinks { 
-        display: initial;
+        display: inline;
     }
     #desktopNavLogo {
-        display: initial;
+        display: inline;
         position: relative;
         left: 4em;
     }
 }
 
-@media only screen and (min-width: 68.75em) {
+@media all and (min-width: 68.75em) {
     #largeClientImagesRow2 {
         padding-left: 80px;
     }
 }
 
-@include media-breakpoint-up(xl) {
+@media all and (min-width: 75em)  {
 
 
     #wantToWorkWithUs{
@@ -2361,8 +2368,7 @@ border: 2px solid #fff;
 
 .locationInfo {
 
-    width: initial;
-
+    width: 30%;
 }
 
 .cSection1H1Header {
@@ -2437,7 +2443,7 @@ border: 2px solid #fff;
     }
 
   .section2Desktop {
-    display: initial;
+    display: inline;
   }
 
   .section2DesktopColumn {
@@ -2457,7 +2463,7 @@ border: 2px solid #fff;
 .section4H2Header:before {
             content: " ";
     display: block;
-    background-image: url(../images/playgroundProjectDesktop.png);
+    background-image: url("../images/playgroundProjectDesktop.png");
     height: 300px;
     width: 530px;
     background-size: cover;
@@ -2542,13 +2548,13 @@ border: 2px solid #fff;
     }
 }
 
-@media only screen and (min-width: 78em) {
+@media all and (min-width: 78em) {
     .aboutDesktopImage2 {
         background-size: cover;
     }
 }
 
-@media only screen and (min-width: 81.25em) {
+@media all and (min-width: 81.25em) {
     #largeClientImagesRow2 {
         padding-left: 12em;
     }
@@ -2560,29 +2566,29 @@ border: 2px solid #fff;
 
 }
 
-@media only screen and (min-width: 85.9375em) {
+@media all and (min-width: 85.9375em) {
     .section2DesktopContentDiv3{
         top: 26em;
     }
 }
 
-@media only screen and (min-width: 86.25em) {
+@media all and (min-width: 86.25em) {
     
    .section3ContentDiv {
-    float: initial; 
+    float: inline; 
     position: relative;
     right: 2em;
    }
 }
 
-@media only screen and (min-width: 87.5em) {
+@media all and (min-width: 87.5em) {
     #exploreCaseStudies {
         button {
             width: 50%;
         }
     }
 }
-@media only screen and (min-width: 87.55em) {
+@media all and (min-width: 87.55em) {
 
     #largeClientImagesRow2 {
         padding-left: 15em;
@@ -2590,7 +2596,7 @@ border: 2px solid #fff;
     }
 }
 
-@media only screen and (min-width: 93.75em) {
+@media all and (min-width: 93.75em) {
     #largeClientImagesRow2 {
         padding-left: 17em;
         padding-right: 10em;
@@ -2613,12 +2619,12 @@ border: 2px solid #fff;
 }
 
 
-@media only screen and (min-width: 98.5em) {
+@media all and (min-width: 98.5em) {
     .section2DesktopContentDiv3 {
         top: 29em;
     }
 }
-@media only screen and (min-width: 100em) {
+@media all and (min-width: 100em) {
 
     .section3Column {
         padding-left: 8em;
@@ -2633,7 +2639,7 @@ border: 2px solid #fff;
     }
 }
 
-@media only screen and (min-width: 101.85em) {
+@media all and (min-width: 101.85em) {
     #homepageHeroText {
         p {
             margin-left: 7em;
@@ -2642,20 +2648,20 @@ border: 2px solid #fff;
 }
 
 
-@media only screen and (min-width:104.25em) {
+@media all and (min-width:104.25em) {
     .section2DesktopDontentDiv5{
         top: 23.5em;
     }
 }
 
-@media only screen and (min-width: 106.25em) {
+@media all and (min-width: 106.25em) {
     #largeClientImagesRow2 {
         padding-left: 23em;
         padding-right: 16em;
     }
 }
 
-@media only screen and (min-width: 111.25em) {
+@media all and (min-width: 111.25em) {
     #largeClientImagesRow2 {
         padding-left: 25em;
         padding-right: 18em;
