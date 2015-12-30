@@ -2,19 +2,249 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<body>
+    <div id="indexContainer">
+        <div id="desktopNav">
+            <nav class="navbar navbar-nav navbar-toggler">
+                <div class="row">
+                    <div id="tabletNavLogo" class="col-sm-4 inline text-xs-center navLogoDiv">
+                        <img id="navLogoImage" src="assets/images/navLogo.png" />
+                    </div>
+                    <div id="desktopNavLogo" class="col-sm-2 inline text-xs-center navLogoDiv">
+                        <img class="navLogoImage" src="assets/images/navLogo.png" />
+                    </div>
+                    <div id="tabletNavLinks" class="col-sm-8 inline navBarLinks text-xs-right">
+                        <a class="uppercase marginRight" href="services.html">Services</a>
+                        <a class="uppercase marginRight" href="caseStudies.html">Case Studies</a>
+                        <a class="uppercase marginRight" href="about.html">About</a>
+                        <a class="uppercase marginRight" href="contact.html">Contact</a>
+                    </div>
+                    <div id="desktopNavLinks" class="col-sm-10 inline navBarLinks text-xs-right">
+                        <a class="uppercase marginRight" href="services.html">Services</a>
+                        <a class="uppercase marginRight" href="./caseStudies.html">Case Studies</a>
+                        <a class="uppercase marginRight" href="about.html">About</a>
+                        <a class="uppercase marginRight" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="mobileNav">
+            <div class="row">
+                <img id="mobileNavLogo" class="navLogoImage" src="assets/images/navLogo.png" />
+                <nav id="mobileNavBar" class="navbar navbar-light inline">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <span id="hamburgerMobile" class="fa-stack fa-2x">
+  <i class="fa fa-circle-thin fa-stack-2x"></i>
+  <i class="fa fa-bars fa-stack-1x"></i>
+</span>
+                    </button>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="collapse" id="exCollapsingNavbar">
+                    <div id="nonCollapsedMenu" class="bg-inverse p-a-1">
+                        <ul>
+                            <li>
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li></li>
+                            <a href="caseStudies.html">Case Studies</a>
+                            <li></li>
+                            <a href="about.html">About</a>
+                            <li></li>
+                            <a href="contact.html">Contact</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="homepageHeroContainer">
+            <div class="row">
+                <div class="col-sm-12 homepageHero p-a-2 text-xs-center">
+                    <div id="homepageHeroText">
+                        <p>SeeSaw Labs is a digital design and build shop.</p>
+                        <p>Like the fulcrum of a see saw, we use our technical and design skills to multiply the benefits and profits for your business.</p>
+                        <p>
+                            <i>...And</i> we have fun doing it. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="exploreCaseStudiesRow" class="row">
+                <div class="col-sm-12" id="exploreCaseStudies">
+                <a class="exploreCaseStudiesLink" href="caseStudies.html">
+                    <p>
+                        <button id="exploreCaseStudiesButton" type="button" class="btn btn-secondary-outline">Explore Our Case Studies</button>
+                    </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="homepageHelpBox">
+            <div class="row">
+                <div id="heresHowWeCanHelpHeader" class="col-sm-12">
+                    <h1>Here's How We Can Help </h1>
+                    <hr id="heresHowWeCanHelpBorder">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="heresHowWeCanHelpParagraph">Our goal is to create new and improve existing applications to help businesses do their job better and increase the value of their products to the end-user. Here are some of the ways we help do this.</p>
+                </div>
+            </div>
+        </div>
+        <div id="homepageServiceBoxContainer" class="container-fluid">
+            <div id="serviceImagesTopRow" class="row">
+                <div class="col-sm-4 serviceImageDiv">
+                    <img class="serviceImage" src="./assets/images/iconTechAssesment.png" />
+                    <h3>TECHNOLOGY ASSESMENTS & STRATEGY</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                    <a class="callToAction" href='viewProjectsPage.html'>SEE US IN ACTION ></a>
+                </div>
+                <div class="col-sm-4 serviceImageDiv">
+                    <img class="serviceImage" src="./assets/images/iconRapidPrototyping.png" />
+                    <h3>RAPID PROTOTYPING</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                    <a class="callToAction" href='caseStudies.html'>SEE A RELATED CASE STUDY ></a>
+                </div>
+                <div class="col-sm-4 serviceImageDiv">
+                    <img class="serviceImage"  src="./assets/images/iconEcommerce.png" />
+                    <h3>E-COMMERCE SOLUTIONS</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                    <a class="callToAction" href='viewProjectsPage.html'>SEE A RELATED PROJECT ></a>
+                </div>
+            </div>
+            <div id="serviceImagesBottomRow" class="row">
+                <div class="col-sm-4 serviceImageDiv">
+                    <img class="serviceImage" src="./assets/images/iconSocialMedia.png" />
+                    <h3>SOCIAL MEDIA SOLUTIONS & INTEGRATIONS</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <a class="callToAction" href='viewProjectsPage.html'>SEE A RELATED PROJECT ></a>
+                </div>
+                <div class="col-sm-4 serviceImageDiv">
+                    <img class="serviceImage" src="./assets/images/iconCustomCloud.png" />
+                    <h3>CUSTOM CLOUD ARCHITECTURE</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <a class="callToAction" href='services.html'>SEE A REAL LIFE EXAMPLE ></a>
+                </div>
+                <div class="col-sm-4 serviceImageDiv">
+                    <img class="serviceImage" src="./assets/images/iconMobileSoftware.png" />
+                    <h3>MOBILE SOFTWARE</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <a class="callToAction" href='services.html'>LEARN MORE ></a>
+                </div>
+            </div>
+        </div>
+    <div id="featuredCaseStudyDiv">
+        <p id="homeFeaturedCaseStudy">FEATURED CASE STUDY</p>
+        <h2 id="featuredCaseStudyH2" class="colorWhite styleGuideH2">Example Mobile App Project</h2>
+        <hr id="featuredCaseStudyBorder">
+        <h5 id="featuredCaseStudyH5" class="colorWhite styleGuideH5">Mobile Software, Rapid Prototyping, Design</h5>
+        <a class="colorWhite" href="viewProjectsPage.html">
+        <p id="featuredCaseParagraph">
+            <button type="button" id="featuredCaseButton" class="btn btn-secondary-outline">
+                <p class="colorWhite" id="featuredCaseButtonParagraph">SEE CASE STUDY</p>
+            </button>
+        </p></a>
+    </div>
+    <div id="happyClientsDiv">
+        <h1 class="styleGuideH1 marginTop1Em">Happy Clients</h1>
+        <hr id="happyClientsBorder">
+        <p id="happyClientsParagraph">We love helping businesses large and small launch their digital product</p>
+        <div id="largeClientImages">
+            <div id="largeClientImagesRow1" class="row">
+                <div class="col-sm-2 largeClientImage inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+                <div class="col-sm-2 largeClientImage inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+                <div class="col-sm-2 largeClientImage inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+                <div class="col-sm-2 largeClientImage inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+                <div class="col-sm-2 largeClientImage inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+            </div>
+            <div id="largeClientImagesRow2" class="row">
+                <div class="col-sm-2 largeClientImage inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+                <div class="col-sm-2 largeClientImage inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+                <div class="col-sm-2 largeClientImage inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+                <div class="col-sm-2 largeClientImage inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+            </div>
+        </div>
+        <div id="mobileClientImages">
+            <div class="row">
+                <div class="col-sm-6 inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+                <div class="col-sm-6 inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+                <div class="col-sm-6 inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+                <div class="col-sm-6 inlineBlock">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="imgFiller img-circle" src="./assets/images/imgFillerBackground.jpg"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="playgroundProjectDiv">
+        <p id="homePlayGroundProject">PLAYGROUND PROJECT</p>
+        <h1 id="playgroundProjectH1" class="styleGuideH1 colorWhite">Lemlet Private Event Communication</h1>
+        <hr id="playgroundProjectBorder">
+        <h5 id="playgroundProjectH5" class="colorWhite styleGuideH5">Work we do in house, because we love development that much.</h5>
+        <p class="colorWhite" id="playgroundProjectParagraph1"> Lemlet is a private event management and communication tool. We made it especially for groups like your kids sports teams, bachelor parties, pub crawls and other events where it’s like trying to wrangle cats.</p>
+        <a class="colorWhite" href="#"> 
+        <p id="playgroundProjectParagraph2">
+            <button type="button" id="playgroundProjectButton" class="btn btn-secondary-outline">
+                <p id="playgroundProjectButtonParagraph" class="colorWhite">GO TO LEMLET ></p>
+            </button>
+        </p></a>
+    </div>
+    <div id="wantToWorkWithUs">
+        <img id="wantToWorkWithUsImage" src="./assets/images/iconContactUsLightBulb.png">
+        <p id="wantToWorkWithUsParagraph1"> Want to work with us on your next digital project?</p>
+        <p id="wantToWorkWithUsParagraph2">
+        <a class="colorWhite" href="#">
+            <button type="button" id="wantToWorkWithUsButton" class="btn btn-secondary-outline">
+                <p id="wantToWorkWithUsButtonParagraph" class="colorWhite">CONTACT US</p>
+            </button></a>
+    </div>
