@@ -3,10 +3,8 @@
   "version": "0.0.1",
   "description": "The main website for SeeSawLabs.",
   "private": true,
-  "directories": {
-  },
-  "scripts": {
-  },
+  "directories": {},
+  "scripts": {},
   "repository": "",
   "engines": {
     "node": ">= 0.10.0"
@@ -14,17 +12,18 @@
   "author": "Matthew Shaver",
   "license": "MIT",
   "devDependencies": {
-    "gulp-plumber": "1.0.1",
-    "gulp-jshint": "2.0.0",
+    "bootstrap": "4.0.0-alpha.2",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-concat": "2.6.0",
     "gulp-cssmin": "0.1.7",
+    "gulp-jshint": "^2.0.0",
+    "gulp-notify": "2.2.0",
+    "gulp-plumber": "1.0.1",
+    "gulp-rename": "1.1.0",
     "gulp-sass": "2.1.1",
     "gulp-sourcemaps": "1.6.0",
-    "gulp-concat": "2.6.0",
     "gulp-uglify": "1.5.1",
-    "gulp-rename": "1.1.0",
-    "gulp-autoprefixer": "3.1.0",
-    "gulp-notify": "2.2.0",
-    "merge-stream": "1.0.0",
-    "bootstrap": "4.0.0-alpha.2"
+    "jshint": "^2.9.2",
+    "merge-stream": "1.0.0"
   }
 }
