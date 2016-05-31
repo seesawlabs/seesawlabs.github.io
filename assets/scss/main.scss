@@ -2732,8 +2732,24 @@ border: 2px solid #fff;
 .navbar{
     position: fixed;
     background-color: #fff;
+    top:0px;
     width: 100%;
     z-index: 1000;
     border: 1px #ccc solid;
 
+}
+
+@media all and (min-width: 1200px) {
+    #howWeWork {
+        height: 1100px;
+    }
+}
+
+
+#serviceImagesBottomRow{
+    padding-bottom: 0px;
+}
+
+#indexContainer{
+    margin-top: 110px;
 }

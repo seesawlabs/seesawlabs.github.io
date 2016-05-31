@@ -59,10 +59,11 @@ $(document).ready(function (){
 		e.preventDefault();
 		ref= $(this).attr("href");
 
-		console.log(ref);
+		scroll = parseInt( $(ref).offset().top) -110;
+		console.log(scroll);
 
 		$('html, body').animate({
-			scrollTop: $(ref).offset().top
+			scrollTop: parseInt(scroll)
 		}, 1000);
 	});
 
