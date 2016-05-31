@@ -1444,9 +1444,7 @@ padding-bottom: 0;
     margin-left: 5em;
 }
 
-#largeClientImagesRow2 {
-    margin-left: 15em;
-}
+
 
 .largeClientImage {
     margin: 0.5em;
@@ -2321,6 +2319,7 @@ border: 2px solid #fff;
     }
     .imgFiller {
         width: 140px;
+        height: auto;
     }
     #largeClientImagesRow1 {
         margin-left: -0.3em;
@@ -2741,7 +2740,7 @@ border: 2px solid #fff;
 
 @media all and (min-width: 1200px) {
     #howWeWork {
-        height: 1100px;
+        height: 1200px;
     }
 }
 
@@ -2752,4 +2751,8 @@ border: 2px solid #fff;
 
 #indexContainer{
     margin-top: 110px;
+}
+
+#wantToWorkWithUs{
+    height: 100%;
 }
