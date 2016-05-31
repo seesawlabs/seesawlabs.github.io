@@ -287,13 +287,13 @@ $navPaddingTop: 2em;
 #wantToWorkWithUsParagraph1 {
     font-family: openSansLight;
     font-size: 24px;
-        margin: 2em 1em 2em;
+    margin: 2em 1em 2em;
     text-align: left;
 }
 
 #wantToWorkWithUsParagraph2 {
     border: 3px solid white;
-     width: 180px;
+    width: 180px;
     height: 17%;
     text-align: center;
     margin-left: 5em;
@@ -313,7 +313,7 @@ $navPaddingTop: 2em;
     top: 0.5em;
     font-family: openSansBold;
 }
- 
+
 //End wantToWorkWithUsSection 
 //Start Footer 
 #footer {
@@ -333,15 +333,15 @@ $navPaddingTop: 2em;
 
 
     a {
-    color: $color3;
-      }
+        color: $color3;
+    }
 }
 
 #footerEmailLarge {
 
     a {
-    color: $color3;
-      }
+        color: $color3;
+    }
 }
 
 #footerEmailRow {
@@ -395,7 +395,7 @@ $navPaddingTop: 2em;
 
 .styleGuideH3 {
     font-family: openSansBold;
-    font-size: 18pt; 
+    font-size: 18pt;
 }
 
 .styleGuideH5 {
@@ -405,7 +405,7 @@ $navPaddingTop: 2em;
 
 .styleGuideP {
     font-family: robotoRegular;
-    size: 14pt; 
+    size: 14pt;
 }
 
 //End Style Guide Section
@@ -451,7 +451,7 @@ $navPaddingTop: 2em;
 }
 
 #mobileNavBar {
-    width: 50%; 
+    width: 50%;
     display: inline;
     position: relative;
     top: 0.7em;
@@ -492,7 +492,7 @@ $navPaddingTop: 2em;
 }
 
 #footerEmailLarge {
-        position: relative;
+    position: relative;
     top: -2.4em;
 }
 
@@ -510,7 +510,7 @@ $navPaddingTop: 2em;
 
 a:hover{
     text-decoration: none;
-    color: #fff; 
+    color: #fff;
 }
 
 .mobileNav {
@@ -536,7 +536,7 @@ a:hover{
 }
 
 #desktopNavLinks  .caseStudiesCaseStudiesLink {
-    color: $color3; 
+    color: $color3;
 }
 
 #tabletNavLinks .caseStudiesCaseStudiesLink {
@@ -547,7 +547,7 @@ a:hover{
 .caseStudyDiv {
     background-attachment: fixed;
     height: 531px;
-     background-image: url("../images/caseStudiesBackgroundColor.png");
+    background-image: url("../images/caseStudiesBackgroundColor.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -557,14 +557,14 @@ a:hover{
 }
 
 .caseStudyDiv2 {
-            background-image: url("../images/caseStudiesBackgroundDark2.png");
-            margin-top: 1em;
+    background-image: url("../images/caseStudiesBackgroundDark2.png");
+    margin-top: 1em;
 }
 
 .caseStudyDiv3{
 
-   margin-top: 1em;
-      background-image: url("../images/caseStudiesBackgroundDark.png");
+    margin-top: 1em;
+    background-image: url("../images/caseStudiesBackgroundDark.png");
 
 }
 
@@ -580,9 +580,9 @@ a:hover{
 }
 
 .caseStudyBorder {
-        display: inline-block;
+    display: inline-block;
     position: relative;
-        border-bottom: 3px dotted #fff;
+    border-bottom: 3px dotted #fff;
 }
 
 .caseStudyH5{
@@ -592,23 +592,23 @@ a:hover{
 
 .caseStudyParagraph1 {
 
-        font-family: robotoRegular;
+    font-family: robotoRegular;
     font-size: 14pt;
     position: relative;
 }
 
 .caseStudyParagraph2 {
- font-family: robotoRegular;
- font-size: 14pt; 
- text-align: center;
+    font-family: robotoRegular;
+    font-size: 14pt;
+    text-align: center;
 
 }
 
 .caseStudyButton {
-        border: none;
+    border: none;
     width: 100%;
     height: 100%;
-        border: 2px solid #fff;
+    border: 2px solid #fff;
 
 
 }
@@ -625,7 +625,7 @@ a:hover{
 //View Projects Section Starts 
 
 .vSection1Link2{
-        margin-right: 1em;
+    margin-right: 1em;
 }
 
 .vSection1Link3 {
@@ -633,7 +633,7 @@ a:hover{
 }
 
 .vSection1Link5 {
-    display: none; 
+    display: none;
 }
 
 .vSection1Link1 {
@@ -654,7 +654,7 @@ a:hover{
 }
 
 .vAllProjectsDiv, .projectNavigation {
-    display: inline-block; 
+    display: inline-block;
 }
 
 .vSection1Link:hover{
@@ -665,13 +665,13 @@ a:hover{
     width: 90%;
     margin-top: 1em;
     margin-bottom: 1em;
-        margin-left: 1em;
+    margin-left: 1em;
     margin-right: 0.4em;
 }
 
 .vSection3H1Header{
     font-size: 31pt;
-    color: $color2; 
+    color: $color2;
 }
 
 .vSection3Border {
@@ -687,9 +687,9 @@ a:hover{
 .vSection3 {
     padding-left: 1.5em;
 
-.vSection3Paragraph2 {
-    padding-left: 0;
-}
+    .vSection3Paragraph2 {
+        padding-left: 0;
+    }
 
 }
 
@@ -728,7 +728,7 @@ a:hover{
 }
 
 .vSection3Paragraph5 {
-    font-family: robotoItalic; 
+    font-family: robotoItalic;
     font-size: 15pt;
     color: $color8;
 }
@@ -744,7 +744,7 @@ a:hover{
 
 
 .vSectionButtonLink1 {
-        color: #d54e30;
+    color: #d54e30;
     border-radius: 0;
     border: 2px solid #d54e30;
     font-family: openSansBold;
@@ -766,7 +766,7 @@ a:hover{
 }
 
 #desktopNavLinks  .contactContactLink {
-    color: $color3; 
+    color: $color3;
 }
 
 #tabletNavLinks .contactContactLink {
@@ -779,7 +779,7 @@ a:hover{
 }
 
 
- 
+
 .locationInfo{
     background-color: #fff;
     display: inline-block;
@@ -811,14 +811,14 @@ a:hover{
 }
 
 .cSectionParagraph {
-    color: $color2; 
+    color: $color2;
     font-family: openSansBold;
     font-size: 18pt;
 }
 
 
 .cSectionParagraph1 {
-    color: $color3; 
+    color: $color3;
     margin-top: 1em;
 }
 
@@ -846,16 +846,16 @@ a:hover{
 .cSection2 {
     text-align: center;
     .contactForm {
-            padding-top: 2em;
-    margin-top: 2em;
-    width: 100%;
-    height: 520px;
+        padding-top: 2em;
+        margin-top: 2em;
+        width: 100%;
+        height: 520px;
     }
 }
 
 .contactForm {
     display: inline-block;
-        background-color: $color5;
+    background-color: $color5;
 }
 
 .contactFormInput {
@@ -865,41 +865,41 @@ a:hover{
 }
 
 .contactFormTextStyle{
-        color: #fff;
+    color: #fff;
     font-family: openSansBold;
     font-size: 18pt;
 }
 
 .success {
-  padding: 1em;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #468847;
-  background-color: #dff0d8;
-  border: 1px solid #d6e9c6;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+    padding: 1em;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #468847;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .error {
-  padding: 1em;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #b94a48;
-  background-color: #f2dede;
-  border: 1px solid rgba(185, 74, 72, 0.3);
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+    padding: 1em;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #b94a48;
+    background-color: #f2dede;
+    border: 1px solid rgba(185, 74, 72, 0.3);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .contactFormHelpMessage {
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .cSubmitButton {
-        border: 3px solid#fff;
+    border: 3px solid#fff;
     width: 200px;
     font-family: openSansBold;
     font-size: 18pt;
@@ -937,6 +937,10 @@ a:hover{
         font-size: 2em;
         text-align: center;
         padding-top: 1em;
+
+        @media all and (max-width: 900px) {
+            line-height: 1em;
+        }
     }
     p {
         font-family: openSansRegular;
@@ -969,7 +973,7 @@ a:hover{
 
 .sSection2 {
 
-        .callToAction {
+    .callToAction {
         color: $color3;
         text-decoration: underline;
         margin-bottom: 2em;
@@ -1011,21 +1015,21 @@ a:hover{
 }
 
 .sSection2Paragraph {
-  color: $color8;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+    color: $color8;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 
 .sSection2ImageDiv {
-    margin-bottom: 2em; 
+    margin-bottom: 2em;
 }
 
 .sSection2H3Header {
     color: $color2;
-        padding-left: 1em;
+    padding-left: 1em;
     padding-right: 1em;
 }
 
@@ -1034,7 +1038,7 @@ a:hover{
 }
 
 #desktopNavLinks .serviceServicesLink {
-    color: $color3; 
+    color: $color3;
 }
 
 #tabletNavLinks .serviceServicesLink {
@@ -1051,7 +1055,7 @@ a:hover{
 }
 
 #desktopNavLinks  .aboutAboutLink {
-    color: $color3; 
+    color: $color3;
 }
 
 #tabletNavLinks .aboutAboutLink {
@@ -1073,7 +1077,7 @@ a:hover{
 
 
 .section1H1HeaderDesktop {
-    display: none; 
+    display: none;
 }
 
 .section1H3Header {
@@ -1099,31 +1103,31 @@ a:hover{
 }
 
 .section1Paragraph2 {
-  padding-top: 0;
-  padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 
 .section1Paragraph1 {
- padding-top: 1em;
- padding-left: 1em;
- padding-right: 1em; 
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .section1Paragraph3 {
-padding-left: 1em;
-padding-right: 1em;
-padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0;
 }
 
 .section2 {
     text-align: center;
 
-     p {
+    p {
         color: #4d4d4d;
         padding-left: 0.5em;
         padding-right: 0.5em;
-     }
+    }
 }
 
 .section2Image {
@@ -1154,7 +1158,7 @@ padding-bottom: 0;
 }
 
 .section3Column {
-   padding-bottom: 3em;
+    padding-bottom: 3em;
 }
 
 
@@ -1167,8 +1171,8 @@ padding-bottom: 0;
 }
 
 .section3H3Header{
-        color: $color4;
-        font-family: openSansBold;
+    color: $color4;
+    font-family: openSansBold;
     font-size: 18pt;
     padding-top: 1.5em;
 
@@ -1176,7 +1180,7 @@ padding-bottom: 0;
 
 .section3H1Header {
     color: $color2;
-        padding-top: 0.5em;
+    padding-top: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 1em;
@@ -1199,7 +1203,7 @@ padding-bottom: 0;
 }
 
 .section3Hr {
-        border: 2px dotted #39687b;
+    border: 2px dotted #39687b;
     width: 85%;
 }
 
@@ -1207,11 +1211,11 @@ padding-bottom: 0;
     text-align: left;
     padding-left: 2em;
     padding-top: 0.5em;
-        img {
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-            height: 25px;
-        }
+    img {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        height: 25px;
+    }
 }
 
 
@@ -1223,27 +1227,27 @@ padding-bottom: 0;
 .section4H1Header{
     padding-top: 1em;
     color: $color2;
-        padding-left: 0.2em;
+    padding-left: 0.2em;
     padding-right: 0.2em;
 }
 
 .section4H2Header {
-   text-align: left;
+    text-align: left;
     padding-left: 1em;
     padding-top: 2em;
     font-size: 25pt;
     color: #39687b;
 }
 
-    .section4H2Header:before {
-          content: " ";
+.section4H2Header:before {
+    content: " ";
     display: block;
     background-image: url("../images/playgroundProjectMobile.png");
     height: 150px;
     width: 270px;
     background-size: cover;
     margin-bottom: 1em;
-    }
+}
 
 
 
@@ -1263,7 +1267,7 @@ padding-bottom: 0;
 
 .section4Paragraph1 {
 
-        font-family: openSansItalic;
+    font-family: openSansItalic;
     font-size: 17px;
     display: inline-block;
 }
@@ -1273,7 +1277,7 @@ padding-bottom: 0;
 }
 
 .section4Paragraph2, .section4Paragraph3 {
-   text-align: left;
+    text-align: left;
 }
 
 .section4ParagraphContainer {
@@ -1283,13 +1287,13 @@ padding-bottom: 0;
 
 .section4ButtonDiv {
     text-align: left;
-        padding-left: 2em;
+    padding-left: 2em;
     padding-bottom: 2em;
     padding-top: 1em;
 }
 
 .section4Button {
-        color: #d54e30;
+    color: #d54e30;
     border-color: #d54e30;
     border-radius: 0;
     border: 2px solid #d54e30;
@@ -1299,7 +1303,7 @@ padding-bottom: 0;
 
 
 .section4Button:hover {
-            color: #fff;
+    color: #fff;
     background-color: #d54e30;
 }
 
@@ -1317,7 +1321,7 @@ padding-bottom: 0;
 //End About Page
 
 .sSection2Border {
-        border: 1px dotted #39687b;
+    border: 1px dotted #39687b;
     border-width: 5px;
     -moz-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
     -webkit-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
@@ -1444,9 +1448,7 @@ padding-bottom: 0;
     margin-left: 5em;
 }
 
-#largeClientImagesRow2 {
-    margin-left: 15em;
-}
+
 
 .largeClientImage {
     margin: 0.5em;
@@ -1462,9 +1464,9 @@ padding-bottom: 0;
 }
 
 
-   #largeSocialMediaBar, #largeFooterEmail, #largeFooterCopyrightRow {
+#largeSocialMediaBar, #largeFooterEmail, #largeFooterCopyrightRow {
     display: none;
-   }
+}
 
 //Media Queries
 @include media-breakpoint-up(xs) {
@@ -1479,17 +1481,17 @@ padding-bottom: 0;
     }
 
     #socialMediaBar img {
-    height: 25px;
-}
-.projectNavigation {  
-  padding-left: 2em;
-}
+        height: 25px;
+    }
+    .projectNavigation {
+        padding-left: 2em;
+    }
 
     .section4H1Header {
         padding-left: .5em;
         padding-right: .5em;
     }
-    
+
     .section4Paragraph15 {
         padding-left: 1em;
         padding-right: 1em;
@@ -1499,12 +1501,12 @@ padding-bottom: 0;
         padding-left: 1em;
         padding-right: 1em;
     }
-     
+
     .caseStudyH2 {
-    font-size: 24px;
-    padding-top: 2em;
-    margin-left: 0;
-    margin-right: 0;
+        font-size: 24px;
+        padding-top: 2em;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .fullColorBackground {
@@ -1513,9 +1515,9 @@ padding-bottom: 0;
     }
 
     .caseStudyBorder {
-            width: 93%;
-    padding-left: 0;
-    margin-left: 0;
+        width: 93%;
+        padding-left: 0;
+        margin-left: 0;
     }
 
     .caseStudyH5 {
@@ -1523,13 +1525,13 @@ padding-bottom: 0;
         margin-left: 0;
     }
     .caseStudyParagraph2 {
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    margin-top: 5em;
-}
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        margin-top: 5em;
+    }
 
-        .caseStudyParagraph1 {
+    .caseStudyParagraph1 {
         padding-top: 2em;
         padding-left: 5%;
         padding-right: 5%;
@@ -1537,9 +1539,9 @@ padding-bottom: 0;
     }
 
     .caseStudyButtonParagraph {
-    position: relative;
-    top: .2em;
-}
+        position: relative;
+        top: .2em;
+    }
     #playgroundProjectParagraph1 {
         padding-top: 2em;
         padding-left: 5%;
@@ -1583,24 +1585,24 @@ padding-bottom: 0;
 
 @media all and (min-width:24.375em) {
 
-       .projectNavigation {  
-  padding-left: 7em;
-}
+    .projectNavigation {
+        padding-left: 7em;
+    }
 
-#socialMediaBar img {
-    height: 35px;
-}
+    #socialMediaBar img {
+        height: 35px;
+    }
 
-#facebookIcon > a > img {
-    height: 30px;
-}
+    #facebookIcon > a > img {
+        height: 30px;
+    }
 
 }
 
 @media all and (min-width:26.875em) {
-           .projectNavigation {  
-  padding-left: 39%;
-}
+    .projectNavigation {
+        padding-left: 39%;
+    }
 
 }
 
@@ -1617,7 +1619,7 @@ padding-bottom: 0;
     #featuredCaseParagraph {
         margin-left: 27%;
     }
-       .caseStudyParagraph2 {
+    .caseStudyParagraph2 {
         margin-left: 27%;
     }
     #homepageHeroText {
@@ -1634,13 +1636,13 @@ padding-bottom: 0;
     }
 
 
-       #wantToWorkWithUsParagraph1 {
-     padding-left: 0;
-     text-align: center;
-   }
-   #wantToWorkWithUsParagraph2 {
-         margin-left: 30%;
-   }
+    #wantToWorkWithUsParagraph1 {
+        padding-left: 0;
+        text-align: center;
+    }
+    #wantToWorkWithUsParagraph2 {
+        margin-left: 30%;
+    }
 }
 
 @media all and (min-width: 28.125em) and (max-width: 33.6875em) {
@@ -1660,46 +1662,46 @@ padding-bottom: 0;
     }
 }
 
- @media all and (min-width: 34em){
+@media all and (min-width: 34em){
 
 
     .vSection3Image {
         margin-right: 3em;
     }
 
-.vSection1Link2 {
-    margin-right: 1.5em;
-}
+    .vSection1Link2 {
+        margin-right: 1.5em;
+    }
 
-       .projectNavigation {  
-  padding-left: 16em;
-}
+    .projectNavigation {
+        padding-left: 16em;
+    }
 
 
 
     .cSection1 {
-    height: 320px;
-}
-.contactForm {
-  padding-left: 1.5em;
-}
+        height: 320px;
+    }
+    .contactForm {
+        padding-left: 1.5em;
+    }
 
 
-  .contactFormButtonDiv{
-    padding-right: 1.5em;
-  }
+    .contactFormButtonDiv{
+        padding-right: 1.5em;
+    }
 
 
 
-.section4H2Header:before {
-    content: " ";
-    display: block;
-    background-image: url("../images/playgroundProjectMobile.png");
-    height: 150px;
-    width: 200px;
-    background-size: cover;
-    margin-bottom: 1em;
-}
+    .section4H2Header:before {
+        content: " ";
+        display: block;
+        background-image: url("../images/playgroundProjectMobile.png");
+        height: 150px;
+        width: 200px;
+        background-size: cover;
+        margin-bottom: 1em;
+    }
 
     #facebookIcon {
         margin-left: 0;
@@ -1716,15 +1718,15 @@ padding-bottom: 0;
         margin-top: 2em;
     }
 
-   #wantToWorkWithUsParagraph2 {
-         margin-left: 34%;
-   }
+    #wantToWorkWithUsParagraph2 {
+        margin-left: 34%;
+    }
 
-   #wantToWorkWithUsParagraph1 {
-     margin-right: 0;
-     text-align: center;
-     padding-left: 0;
-   }
+    #wantToWorkWithUsParagraph1 {
+        margin-right: 0;
+        text-align: center;
+        padding-left: 0;
+    }
 
     #playgroundProjectParagraph2 {
         margin-left: 25%;
@@ -1734,7 +1736,7 @@ padding-bottom: 0;
         margin-left: 31%;
     }
 
-       .caseStudyParagraph2 {
+    .caseStudyParagraph2 {
         margin-left: 31%;
     }
     #homepageHeroText {
@@ -1760,7 +1762,7 @@ padding-bottom: 0;
 }
 
 @media all and (min-width: 34.0625em) {
-        .section1 {
+    .section1 {
         height: 640px;
     }
 
@@ -1779,24 +1781,24 @@ padding-bottom: 0;
     }
 
 
-   #wantToWorkWithUsParagraph2 {
-         margin-left: 35%;
-   }
+    #wantToWorkWithUsParagraph2 {
+        margin-left: 35%;
+    }
 }
 
 @media all and (min-width: 40em) {
     .projectNavigation {
         padding-left: 55%;
-     }
+    }
 }
 
 @media all and (min-width: 40.625em) {
 
- .cSection1 {
-    height: 250px;
- }
+    .cSection1 {
+        height: 250px;
+    }
 
-           .section1 {
+    .section1 {
         height: 620px;
     }
     #playgroundProjectParagraph2 {
@@ -1806,9 +1808,9 @@ padding-bottom: 0;
     #mobileClientImages {
         padding: 0 20%;
     }
-       #wantToWorkWithUsParagraph2 {
-         margin-left: 36%;
-   }
+    #wantToWorkWithUsParagraph2 {
+        margin-left: 36%;
+    }
 }
 
 @media all and (min-width: 36.875em) and (max-width: 43.6875em) {
@@ -1816,16 +1818,16 @@ padding-bottom: 0;
     #featuredCaseParagraph {
         margin-left: 33%;
     }
-       .caseStudyParagraph2 {
+    .caseStudyParagraph2 {
         margin-left: 33%;
     }
 }
 
 @media all and (min-width: 43.876em) and (max-width: 47.9375em) {
 
-       #wantToWorkWithUsParagraph2 {
-         margin-left: 37%;
-   }
+    #wantToWorkWithUsParagraph2 {
+        margin-left: 37%;
+    }
     #playgroundProjectParagraph2 {
         margin-left: 34%;
         width: 250px;
@@ -1833,7 +1835,7 @@ padding-bottom: 0;
     #featuredCaseParagraph {
         margin-left: 35%;
     }
-        .caseStudyParagraph2 {
+    .caseStudyParagraph2 {
         margin-left: 35%;
     }
 }
@@ -1841,48 +1843,48 @@ padding-bottom: 0;
 
 @media all and (min-width: 45em) {
     .section4H2Header:before {
-    height: 200px;
-    width: 300px;
-}
+        height: 200px;
+        width: 300px;
+    }
 }
 
 @media all and (min-width: 48em) {
 
-.projectNavigation {
-    padding-left: 65%;
-}
+    .projectNavigation {
+        padding-left: 65%;
+    }
 
-  .cSection2 {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
+    .cSection2 {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 
 
     .section1 {
-    height: 450px; 
-    padding-left: 0.3em;
-    padding-right: 0.3em; 
-}
+        height: 450px;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }
 
-.section1H1Header {
-    font-size: 24px;
-}
+    .section1H1Header {
+        font-size: 24px;
+    }
 
-.section1HeaderContainer {
-    padding-top: 2em;
-}
+    .section1HeaderContainer {
+        padding-top: 2em;
+    }
 
     .section1HeaderContainer .section1MobileHeader {
-        display: none; 
+        display: none;
     }
 
     .section1H1HeaderDesktop {
-        display: inline; 
+        display: inline;
     }
 
-       #wantToWorkWithUsParagraph2 {
-         margin-left: 41%;
-   }
+    #wantToWorkWithUsParagraph2 {
+        margin-left: 41%;
+    }
     #playgroundProjectParagraph2 {
         margin-left: 37%;
         width: 250px;
@@ -1952,303 +1954,303 @@ padding-bottom: 0;
 
 
 
-        .navLogoImage{
-            padding-top: 0.5em;
+    .navLogoImage{
+        padding-top: 0.5em;
         height: 100px;
     }
 
 
-  .vSection3 {
-    width: 50%;
-  }
+    .vSection3 {
+        width: 50%;
+    }
 
-  .vSection3Border5{
-    width: 47%;
-  }
+    .vSection3Border5{
+        width: 47%;
+    }
 
-  .vSection3H1Header1 {
-    text-align: left;
-    padding-top: 1em;
-  }
+    .vSection3H1Header1 {
+        text-align: left;
+        padding-top: 1em;
+    }
 
-  .vSection3Paragraph6{
-    width: 50%;
-  }
+    .vSection3Paragraph6{
+        width: 50%;
+    }
 
 
     .vSection2 {
-            width: 50%;
-    float: right;
-    padding-left: 3em;
-    margin-top: 2em;
-    padding-bottom: 2em;
+        width: 50%;
+        float: right;
+        padding-left: 3em;
+        margin-top: 2em;
+        padding-bottom: 2em;
     }
 
     .vSection2Image {
-    width: 90%;
-}
+        width: 90%;
+    }
 
-.vSection1Link2 {
-    margin-right: 0.3em;
-}
+    .vSection1Link2 {
+        margin-right: 0.3em;
+    }
 
 
-.vSection1Link3 {
-    display: inline;
+    .vSection1Link3 {
+        display: inline;
 
-    color: #fff;
-    font-family: openSansBold;
-    font-size: 12pt;
-    margin-right: 2em;
-}
+        color: #fff;
+        font-family: openSansBold;
+        font-size: 12pt;
+        margin-right: 2em;
+    }
 
-.vSection1Link4 {
+    .vSection1Link4 {
 
-    margin-left: 0.3em;
-}
+        margin-left: 0.3em;
+    }
 
-.vSection1Link5 {
-    display: inline;
+    .vSection1Link5 {
+        display: inline;
 
-    color: #fff;
-    font-family: openSansBold;
-    font-size: 12pt;
+        color: #fff;
+        font-family: openSansBold;
+        font-size: 12pt;
 
-}
+    }
 
-.vAllProjectsDiv {
-    padding-left: 10%;
-}
+    .vAllProjectsDiv {
+        padding-left: 10%;
+    }
 
     .projectNavigation {
-    padding-left: 14em;
-}
-
-
-#footerEmail{
-    margin-top: 0;
-}
-.sSection2ContentDiv {
-    margin-top: 4em;
-    margin-bottom: 4em;
-}
-.sSection2ImageDiv {
-  
-  float: left;
-  margin-left: 1.2em;
-  margin-right: 2em;
-}
-
-.sSection2Border {
-    border-width: 5px;
-    -moz-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
-    -webkit-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
-    _border: 2px solid $color2;
-    border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
-    width: 95%;
-    margin-top: 2em;
-}
-
-
-.sSection2 {
-
-     text-align: inline; 
-
-    .callToAction {
-        margin-left: 7.6em;
+        padding-left: 14em;
     }
-}
-
-.section4H2Header:before {
-    height: 200px;
-    width: 400px;
-}
 
 
+    #footerEmail{
+        margin-top: 0;
+    }
+    .sSection2ContentDiv {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+    .sSection2ImageDiv {
 
-.desktopImages {
-    display: inline;
-}
+        float: left;
+        margin-left: 1.2em;
+        margin-right: 2em;
+    }
 
-.aboutDesktopImage1 {
-    background-image: url('../images/aboutImage1.png');
-    height: 200px;
-    background-position: 50% 50%;
-    padding: 0;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
-
-
-
-}
-
-.aboutDesktopImage2 {
-    background-image: url('../images/aboutImage2.png');
-    height: 200px;
-     background-position-y: -23px;
-     box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
-
-
-}
-
-.section1 {
-    height: 530px;
-}
-
-.section1HeaderContainer {
-    padding-top: 0;
-}
-.section1H1Header {
-    font-size: 31pt;
-}
-
-.section1H1Header {
-    padding-top: 3em;
-}
-
-.section1H3Header{
-    padding-top: 3em;
-}
-
-.section1Paragraph {
-    font-size: 14pt; 
-}
-
-.section1Paragraph1 {
-    padding-top: 3em;
-}
+    .sSection2Border {
+        border-width: 5px;
+        -moz-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
+        -webkit-border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
+        _border: 2px solid $color2;
+        border-image: url("../images/dottedBorderSingle.jpg") 0 0 5 0 repeat;
+        width: 95%;
+        margin-top: 2em;
+    }
 
 
-.section4Image {
-    position: relative;
-    right: 1.4em;
-}
+    .sSection2 {
 
-.caseStudyParagraph2 {
+        text-align: inline;
 
-    margin-left: 31%;
-    margin-top: 0;
+        .callToAction {
+            margin-left: 7.6em;
+        }
+    }
 
-}
+    .section4H2Header:before {
+        height: 200px;
+        width: 400px;
+    }
 
-.caseStudyDiv {
-    padding-left: 3em;
-    padding-top: 2em;
-    background-attachment: fixed;
-    height: 531px;
-    background-position: 60% 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: left;
-    margin-top: 1em;
-}
 
-.caseStudyDiv2 {
+
+    .desktopImages {
+        display: inline;
+    }
+
+    .aboutDesktopImage1 {
+        background-image: url('../images/aboutImage1.png');
+        height: 200px;
+        background-position: 50% 50%;
+        padding: 0;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+
+
+
+    }
+
+    .aboutDesktopImage2 {
+        background-image: url('../images/aboutImage2.png');
+        height: 200px;
+        background-position-y: -23px;
+        box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+
+
+    }
+
+    .section1 {
+        height: 530px;
+    }
+
+    .section1HeaderContainer {
+        padding-top: 0;
+    }
+    .section1H1Header {
+        font-size: 31pt;
+    }
+
+    .section1H1Header {
+        padding-top: 3em;
+    }
+
+    .section1H3Header{
+        padding-top: 3em;
+    }
+
+    .section1Paragraph {
+        font-size: 14pt;
+    }
+
+    .section1Paragraph1 {
+        padding-top: 3em;
+    }
+
+
+    .section4Image {
+        position: relative;
+        right: 1.4em;
+    }
+
+    .caseStudyParagraph2 {
+
+        margin-left: 31%;
+        margin-top: 0;
+
+    }
+
+    .caseStudyDiv {
+        padding-left: 3em;
+        padding-top: 2em;
+        background-attachment: fixed;
+        height: 531px;
+        background-position: 60% 30%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: left;
+        margin-top: 1em;
+    }
+
+    .caseStudyDiv2 {
+
+        .fullColorBackground {
+            background-color: initial;
+        }
+    }
+
+    .caseStudyDiv3 {
+
+
+        .fullColorBackground {
+            background-color: rgba(#D54E30 ,0.8);
+        }
+    }
+
+
 
     .fullColorBackground {
-        background-color: initial;
+        width: 550px;
+        height: 390px;
+        background-color: #929D68;
+        padding-right: 3em;
     }
-}
 
-.caseStudyDiv3 {
+    .caseStudyH2 {
+        bottom: 1em;
+        font-size: 31px;
+        margin-right: .1em;
+        padding-top: 2em;
+        margin-top: 0;
 
-
-    .fullColorBackground {
-        background-color: rgba(#D54E30 ,0.8);
     }
-}
 
-
-
-.fullColorBackground {
-    width: 550px;
-    height: 390px;
-    background-color: #929D68;
-    padding-right: 3em;
-}
-
-.caseStudyH2 {
-    bottom: 1em;
-    font-size: 31px;
-    margin-right: .1em;
-    padding-top: 2em;
-    margin-top: 0;
-
-}
-
-.caseStudyBorder {
+    .caseStudyBorder {
         display: inline-block;
-    width: 76%;
-    margin-top: 0;
-    bottom: 1.5em;
+        width: 76%;
+        margin-top: 0;
+        bottom: 1.5em;
         border-bottom: 3px dotted #fff;
-}
+    }
 
-.caseStudyH5{
-    font-size: 17px;
-    position: relative;
-    bottom: 2em;
-}
+    .caseStudyH5{
+        font-size: 17px;
+        position: relative;
+        bottom: 2em;
+    }
 
-.caseStudyParagraph1 {
+    .caseStudyParagraph1 {
         font-family: robotoRegular;
-    font-size: 14pt;
+        font-size: 14pt;
         margin-left: 7% ;
-            padding-top: 2em;
-    padding-left: 5%;
-    padding-right: 5%;
-    bottom: 2em;
-}
+        padding-top: 2em;
+        padding-left: 5%;
+        padding-right: 5%;
+        bottom: 2em;
+    }
 
-.caseStudyParagraph2 {
+    .caseStudyParagraph2 {
 
- text-align: center;
-border: 2px solid #fff;
-    width: 200px;
-    height: 11%;
+        text-align: center;
+        border: 2px solid #fff;
+        width: 200px;
+        height: 11%;
 
-}
+    }
 
-.caseStudyButton {
-    
-    border: none;
-    width: 100%;
-    height: 100%;
+    .caseStudyButton {
 
-}
+        border: none;
+        width: 100%;
+        height: 100%;
 
-.caseStudyButtonParagraph {
+    }
+
+    .caseStudyButtonParagraph {
 
         position: relative;
-    top: .2em;
-    font-family: openSansBold;
+        top: .2em;
+        font-family: openSansBold;
 
-}
+    }
 
-   #footerEmailRow, #socialMediaBar, #footerCopyrightRow {
-    display: none;
-   }
+    #footerEmailRow, #socialMediaBar, #footerCopyrightRow {
+        display: none;
+    }
 
-      #largeSocialMediaBar, #largeFooterEmail, #largeFooterCopyrightRow {
-    display: inline;
-   }
+    #largeSocialMediaBar, #largeFooterEmail, #largeFooterCopyrightRow {
+        display: inline;
+    }
 
-   #largeFooterCopyright {
-     position: relative;
-     top: 0.5em;
-   }
-     
-     #footer {
-        height: 100px; 
+    #largeFooterCopyright {
+        position: relative;
+        top: 0.5em;
+    }
+
+    #footer {
+        height: 100px;
         padding-bottom: 6em;
-     }
+    }
 
-     #largeSocialMediaBar {
+    #largeSocialMediaBar {
         position: relative;
         top: 1em;
-     }
+    }
     #wantToWorkWithUsParagraph2 {
         margin-left: 42%;
     }
@@ -2260,7 +2262,7 @@ border: 2px solid #fff;
     }
     #playgroundProjectDiv {
         text-align: left;
-                    background-attachment: fixed;
+        background-attachment: fixed;
     }
     #homePlaygroundProject {
         margin-left: 8%;
@@ -2321,6 +2323,11 @@ border: 2px solid #fff;
     }
     .imgFiller {
         width: 140px;
+        height: auto;
+        @media all and (max-width: 900px){
+            width: 100px;
+            height: auto;
+        }
     }
     #largeClientImagesRow1 {
         margin-left: -0.3em;
@@ -2362,13 +2369,13 @@ border: 2px solid #fff;
     #tabletNavLogo {
         display: none;
     }
-    #desktopNavLinks { 
+    #desktopNavLinks {
         display: inline;
     }
     #desktopNavLogo {
         display: inline;
         position: relative;
-        left: 4em;
+        // left: 4em;
     }
 }
 
@@ -2384,25 +2391,25 @@ border: 2px solid #fff;
     #wantToWorkWithUs{
         clear: both;
     }
-  
-   .vSection3 {
-    padding-left: 6em;
-  }
+
+    .vSection3 {
+        padding-left: 6em;
+    }
 
     .vSection1Link1 {
         margin-left: 1em;
     }
 
     .projectNavigation {
-            float: right;
-    padding-left: 0;
-    margin-right: 11em;
+        float: right;
+        padding-left: 0;
+        margin-right: 11em;
     }
-   
 
-   .vSectionButtonLink1{
-    margin-left: 6em;
-   }
+
+    .vSectionButtonLink1{
+        margin-left: 6em;
+    }
 
 
 
@@ -2412,37 +2419,37 @@ border: 2px solid #fff;
         width: 43%;
     }
 
-   .vSection3Paragraph6{
-     padding-left: 6em;
-   }
-
-
-.locationInfo {
-
-    width: 30%;
-}
-
-.cSection1H1Header {
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.cSection2 {
-    padding-bottom: 20em;
-    padding-top: 2em;
-    padding-left: 5em;
-    padding-right: 5em;
-
-    .contactForm {
-            padding-top: 2em;
-    margin-top: 2em;
-    width: 500px;
-    height: 520px;
-    background-color: #e8b826;
-    margin-right: 5em;
-    float: left;
+    .vSection3Paragraph6{
+        padding-left: 6em;
     }
-}
+
+
+    .locationInfo {
+
+        width: 30%;
+    }
+
+    .cSection1H1Header {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .cSection2 {
+        padding-bottom: 20em;
+        padding-top: 2em;
+        padding-left: 5em;
+        padding-right: 5em;
+
+        .contactForm {
+            padding-top: 2em;
+            margin-top: 2em;
+            width: 500px;
+            height: 520px;
+            background-color: #e8b826;
+            margin-right: 5em;
+            float: left;
+        }
+    }
 
 
     #homepageHeroText{
@@ -2452,39 +2459,39 @@ border: 2px solid #fff;
         }
     }
 
-.sSection2ContentDiv {
+    .sSection2ContentDiv {
         padding-left: 100px;
-    padding-right: 100px;
-}
+        padding-right: 100px;
+    }
 
-.sSection2Border {
-    width: 80%;
-}
+    .sSection2Border {
+        width: 80%;
+    }
 
-     .section2DesktopContentDiv1 {
-    bottom: 1em;
-    right: 5em;
-     }
+    .section2DesktopContentDiv1 {
+        bottom: 1em;
+        right: 5em;
+    }
 
-.section2DesktopContentDiv2 {
-    right: 5em;
-    top: 12em;
-}
+    .section2DesktopContentDiv2 {
+        right: 5em;
+        top: 12em;
+    }
 
-.section2DesktopContentDiv3 {
+    .section2DesktopContentDiv3 {
         top: 24em;
-    right: 5em;
-}
+        right: 5em;
+    }
 
     .section2DesktopContentDiv4 {
-    top: 10.5em;
-    left: 5em;
+        top: 10.5em;
+        left: 5em;
 
     }
 
     .section2DesktopContentDiv5 {
-         top: 20.5em;
-         left: 5em;
+        top: 20.5em;
+        left: 5em;
 
     }
 
@@ -2493,85 +2500,85 @@ border: 2px solid #fff;
         display: none;
     }
 
-  .section2Desktop {
-    display: inline;
-  }
+    .section2Desktop {
+        display: inline;
+    }
 
-  .section2DesktopColumn {
-    margin-top: 4em;
-  }
+    .section2DesktopColumn {
+        margin-top: 4em;
+    }
 
-  .section2DesktopContentDivRight {
-    text-align: left;
-    position: relative;
-  }
+    .section2DesktopContentDivRight {
+        text-align: left;
+        position: relative;
+    }
 
-  .section2DesktopContentDivLeft {
-    text-align: right; 
-    position: relative;
-  }
+    .section2DesktopContentDivLeft {
+        text-align: right;
+        position: relative;
+    }
 
-.section4H2Header:before {
-            content: " ";
-    display: block;
-    background-image: url("../images/playgroundProjectDesktop.png");
-    height: 300px;
-    width: 530px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 1em;
-}
+    .section4H2Header:before {
+        content: " ";
+        display: block;
+        background-image: url("../images/playgroundProjectDesktop.png");
+        height: 300px;
+        width: 530px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 1em;
+    }
 
 
-.section4Image {
-    position: relative;
-    right: 5.4em;
-}
+    .section4Image {
+        position: relative;
+        right: 5.4em;
+    }
 
-.section4Paragraph1 {
+    .section4Paragraph1 {
         padding-left: 1em;
         padding-right: 0;
-    padding-top: 2em;
-}
+        padding-top: 2em;
+    }
 
 
-.section4Paragraph15 {
-    padding-left: 0;
-    padding-right: 0;
-}
+    .section4Paragraph15 {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .section3ContentDiv {
         display: inline-block;
-    width: 400px;
-    text-align: left;
-    padding-top: 4em;
-        }
+        width: 400px;
+        text-align: left;
+        padding-top: 4em;
+    }
 
-   .section3Image {
-    float: left;
-    position: relative;
+    .section3Image {
+        float: left;
+        position: relative;
         margin-left: 0.7em;
-   }
+    }
 
-   .section3H2Header {
-    padding-left: 1em;
+    .section3H2Header {
+        padding-left: 1em;
 
-   }
+    }
 
-   .section3H3Header {
-    padding-top: 8em;
-   }
+    .section3H3Header {
+        padding-top: 8em;
+    }
 
-   .section3H5Header {
-    position: relative;
-    left: .4em;
-    margin: 1em;
-   }
- 
+    .section3H5Header {
+        position: relative;
+        left: .4em;
+        margin: 1em;
+    }
 
-.section3Paragraph {
-      font-size: 14px;
-}
+
+    .section3Paragraph {
+        font-size: 14px;
+    }
 
     #largeClientImagesRow1 {
         margin-left: 4em;
@@ -2624,12 +2631,12 @@ border: 2px solid #fff;
 }
 
 @media all and (min-width: 86.25em) {
-    
-   .section3ContentDiv {
-    float: inline; 
-    position: relative;
-    right: 2em;
-   }
+
+    .section3ContentDiv {
+        float: inline;
+        position: relative;
+        right: 2em;
+    }
 }
 
 @media all and (min-width: 87.5em) {
@@ -2654,14 +2661,14 @@ border: 2px solid #fff;
     }
 
 
-.cSection2 {
+    .cSection2 {
         padding-left: 20em;
 
-}
+    }
 
-   .section3Column {
-    padding-left: 4em;
-   }
+    .section3Column {
+        padding-left: 4em;
+    }
 
     #wantToWorkWithUsParagraph2 {
         margin-left: 45%;
@@ -2680,7 +2687,7 @@ border: 2px solid #fff;
     .section3Column {
         padding-left: 8em;
     }
-    
+
     #featuredCaseStudyBorder {
         width: 25%;
     }
@@ -2717,4 +2724,101 @@ border: 2px solid #fff;
         padding-left: 25em;
         padding-right: 18em;
     }
+}
+
+
+
+
+/*** Serna class hack **/
+.current{
+    color: $color3 !important;
+}
+
+
+
+.navbar , .mobileNav{
+    position: fixed;
+    background-color: #fff;
+    top:0px;
+    width: 100%;
+    z-index: 1000;
+    @media all and (min-width: 800px) {
+        border-bottom: 1px solid #ccc;
+    }
+
+}
+
+@media all and (min-width: 1200px) {
+
+
+    #howWeWork {
+        height: 1200px;
+    }
+}
+
+
+#serviceImagesBottomRow{
+    padding-bottom: 0px;
+}
+
+#indexContainer {
+    margin-top: 110px;
+}
+
+#wantToWorkWithUs{
+    height: 100%;
+}
+
+#mobileNavBar{
+    background-color: transparent;
+    border-bottom-color: transparent;
+}
+
+#tabletNavLinks .uppercase {
+    font-size: 75%;
+}
+
+
+.smallClientImage img {
+    width: 90%;
+    height: auto;
+}
+
+@media all and (min-width: 995px) {
+    #largeClientImages{
+        display: inline-block;
+    }
+    #mobileClientImages{
+        display: none !important;
+    }
+    #tabletClientImages{
+        display: none;
+    }
+}
+
+@media all and (max-width:994px) and (min-width:541px) {
+    #largeClientImages{
+        display: none;
+    }
+    #mobileClientImages{
+        display: none !important;
+    }
+    #tabletClientImages{
+        display: block;
+    }
+
+
+
+}
+
+@media all and (max-width: 540px) {
+
+    #tabletClientImages{
+        display: none;
+    }
+}
+
+.dark{
+    background-color: #2b2d2f;
+
 }
