@@ -60,11 +60,12 @@ $(document).ready(function (){
 		ref= $(this).attr("href");
 
 		scroll = parseInt( $(ref).offset().top) -110;
-		console.log(scroll);
+		$(this).css({overflow:'hidden'});
 
 		$('html, body').animate({
 			scrollTop: parseInt(scroll)
 		}, 1000);
+			$(this).css({overflow:'scroll'});
 	});
 
 });
