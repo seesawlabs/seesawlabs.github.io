@@ -36,7 +36,7 @@
         <nav id="mobileNavBar" class="navbar navbar-light inline">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                     <span id="hamburgerMobile" class="fa-stack fa-2x">
-  <i class="fa fa-circle-thin fa-stack-2x"></i>
+  <!--<i class="fa fa-circle-thin fa-stack-2x"></i>-->
   <i class="fa fa-bars fa-stack-1x"></i>
 </span>
             </button>
@@ -47,16 +47,16 @@
             <div id="nonCollapsedMenu" class="bg-inverse p-a-1">
                 <ul>
                     <li>
-                         <a class="uppercase marginRight {% if current[1] == 'services.html' %} current{% endif %} scroll" href="#heresHowWeCanHelpHeader">What We Do</a>
+                         <a class="uppercase marginRight {% if current[1] == 'services.html' %} current{% endif %} scroll" href="#heresHowWeCanHelpHeader" data-toggle="collapse" data-target="#exCollapsingNavbar">What We Do</a>
                     </li>
                     <li>
-                        <a class="uppercase marginRight {% if current[1] == 'process.html' %} current{% endif %} scroll" href="#howWeWork">How We Work</a>
+                        <a class="uppercase marginRight {% if current[1] == 'process.html' %} current{% endif %} scroll" href="#howWeWork" data-toggle="collapse" data-target="#exCollapsingNavbar">How We Work</a>
                     </li>
                     <li>
-                        <a class="uppercase marginRight {% if current[1] == 'about.html' %} current{% endif %}  scroll" href="#about">Who We Are</a>
+                        <a class="uppercase marginRight {% if current[1] == 'about.html' %} current{% endif %}  scroll" href="#about" data-toggle="collapse" data-target="#exCollapsingNavbar">Who We Are</a>
                     </li>
                     <li>
-                        <a class="uppercase marginRight {% if current[1] == 'contact.html' %} current{% endif %}  scroll" href="#wantToWorkWithUs">Let's Chat</a>
+                        <a class="uppercase marginRight {% if current[1] == 'contact.html' %} current{% endif %}  scroll" href="#wantToWorkWithUs" data-toggle="collapse" data-target="#exCollapsingNavbar">Let's Chat</a>
                     </li>
 
 

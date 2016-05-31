@@ -937,6 +937,10 @@ a:hover{
         font-size: 2em;
         text-align: center;
         padding-top: 1em;
+
+        @media all and (max-width: 900px) {
+            line-height: 1em;
+        }
     }
     p {
         font-family: openSansRegular;
@@ -2320,6 +2324,10 @@ border: 2px solid #fff;
     .imgFiller {
         width: 140px;
         height: auto;
+        @media all and (max-width: 900px){
+            width: 100px;
+            height: auto;
+        }
     }
     #largeClientImagesRow1 {
         margin-left: -0.3em;
@@ -2367,7 +2375,7 @@ border: 2px solid #fff;
     #desktopNavLogo {
         display: inline;
         position: relative;
-        left: 4em;
+       // left: 4em;
     }
 }
 
@@ -2728,17 +2736,21 @@ border: 2px solid #fff;
 
 
 
-.navbar{
+.navbar , .mobileNav{
     position: fixed;
     background-color: #fff;
     top:0px;
     width: 100%;
     z-index: 1000;
-    border: 1px #ccc solid;
+    @media all and (min-width: 800px) {
+        border-bottom: 1px solid #ccc;
+    }
 
 }
 
 @media all and (min-width: 1200px) {
+
+
     #howWeWork {
         height: 1200px;
     }
@@ -2749,10 +2761,25 @@ border: 2px solid #fff;
     padding-bottom: 0px;
 }
 
-#indexContainer{
+#indexContainer {
     margin-top: 110px;
 }
 
 #wantToWorkWithUs{
     height: 100%;
 }
+
+#mobileNavBar{
+    background-color: transparent;
+    border-bottom-color: transparent;
+}
+
+#tabletNavLinks .uppercase {
+    font-size: 75%;
+}
+
+
+    .smallClientImage img {
+        width: 64%;
+        height: auto;
+    }
