@@ -2726,3 +2726,14 @@ border: 2px solid #fff;
 .current{
     color: $color3 !important;
 }
+
+
+
+.navbar{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1000;
+    border: 1px #ccc solid;
+
+}

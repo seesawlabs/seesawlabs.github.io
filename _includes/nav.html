@@ -5,7 +5,7 @@
     <nav class="navbar navbar-nav navbar-toggler">
 
         <div class="row">
-           <a href="/">
+           <a class='scroll' href="#indexContainer">
             <div id="tabletNavLogo" class="col-sm-4 inline text-xs-center navLogoDiv">
                 <img id="navLogoImage" src="assets/images/navLogo.svg" alt="Tablet SeeSaw Logo" />
             </div>
@@ -15,16 +15,16 @@
                </a>
             {% assign current = page.url | downcase | split: '/' %}
             <div id="tabletNavLinks" class="col-sm-8 inline navBarLinks text-xs-right">
-                <a class="uppercase marginRight  {% if current[1] == 'services.html' %} current {% endif %} " href="services.html">What We Do</a>
-                <a class="uppercase marginRight {% if current[1] == 'services.html' %} current {% endif %} " href="process.html">How We Work</a>
-                <a class="uppercase marginRight {% if current[1] == 'services.html' %} current {% endif %} " href="about.html">Who We Are</a>
-                <a class="uppercase marginRight {% if current[1] == 'services.html' %} current {% endif %}  " href="contact.html">Let's Chat</a>
+                <a class="uppercase marginRight  {% if current[1] == 'services.html' %} current {% endif %} scroll" href="#heresHowWeCanHelpHeader" >What We Do</a>
+                <a class="uppercase marginRight {% if current[1] == 'services.html' %} current {% endif %} scroll" href="#howWeWork">How We Work</a>
+                <a class="uppercase marginRight {% if current[1] == 'services.html' %} current {% endif %} scroll" href="#about">Who We Are</a>
+                <a class="uppercase marginRight {% if current[1] == 'services.html' %} current {% endif %}  scroll" href="#wantToWorkWithUs">Let's Chat</a>
             </div>
             <div id="desktopNavLinks" class="col-sm-10 inline navBarLinks text-xs-right">
-                <a class="uppercase marginRight {% if current[1] == 'services.html' %} current{% endif %} " href="services.html">What We Do</a>
-                <a class="uppercase marginRight {% if current[1] == 'process.html' %} current{% endif %} " href="process.html">How We Work</a>
-                <a class="uppercase marginRight {% if current[1] == 'about.html' %} current{% endif %}  " href="about.html">Who We Are</a>
-                <a class="uppercase marginRight {% if current[1] == 'contact.html' %} current{% endif %}  " href="contact.html">Let's Chat</a>
+                <a class="uppercase marginRight {% if current[1] == 'services.html' %} current{% endif %} scroll" href="#heresHowWeCanHelpHeader">What We Do</a>
+                <a class="uppercase marginRight {% if current[1] == 'process.html' %} current{% endif %} scroll" href="#howWeWork">How We Work</a>
+                <a class="uppercase marginRight {% if current[1] == 'about.html' %} current{% endif %}  scroll" href="#about">Who We Are</a>
+                <a class="uppercase marginRight {% if current[1] == 'contact.html' %} current{% endif %}  scroll" href="#wantToWorkWithUs">Let's Chat</a>
             </div>
         </div>
 
@@ -32,7 +32,7 @@
 </div>
 <div class="mobileNav">
     <div class="row">
-       <a href="/"><img id="mobileNavLogo" class="navLogoImage" src="assets/images/navLogo.svg" alt="Mobile SeeSaw Logo" /> </a>
+        <a class='scroll' href="#indexContainer"><img id="mobileNavLogo" class="navLogoImage" src="assets/images/navLogo.svg" alt="Mobile SeeSaw Logo" /> </a>
         <nav id="mobileNavBar" class="navbar navbar-light inline">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                     <span id="hamburgerMobile" class="fa-stack fa-2x">
@@ -47,17 +47,19 @@
             <div id="nonCollapsedMenu" class="bg-inverse p-a-1">
                 <ul>
                     <li>
-                        <a class="{% if current[1] == 'services.html' %} current {% endif %}" href="services.html">What We Do</a>
+                         <a class="uppercase marginRight {% if current[1] == 'services.html' %} current{% endif %} scroll" href="#heresHowWeCanHelpHeader">What We Do</a>
                     </li>
                     <li>
-                        <a class="{% if current[1] == 'process.html' %} current {% endif %}" href="process.html">How We Work</a>
+                        <a class="uppercase marginRight {% if current[1] == 'process.html' %} current{% endif %} scroll" href="#howWeWork">How We Work</a>
                     </li>
                     <li>
-                        <a class="{% if current[1] == 'about.html' %} current {% endif %}" href="about.html">Who We Are</a>
+                        <a class="uppercase marginRight {% if current[1] == 'about.html' %} current{% endif %}  scroll" href="#about">Who We Are</a>
                     </li>
                     <li>
-                        <a class="{% if current[1] == 'contact.html' %} current {% endif %}" href="contact.html">Let's Chat</a>
+                        <a class="uppercase marginRight {% if current[1] == 'contact.html' %} current{% endif %}  scroll" href="#wantToWorkWithUs">Let's Chat</a>
                     </li>
+
+
                 </ul>
             </div>
         </div>

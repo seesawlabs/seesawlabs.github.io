@@ -49,3 +49,21 @@ $(function() {
 	});
 
 });
+
+
+$(document).ready(function (){
+
+
+	$(".scroll").click(function (e) {
+
+		e.preventDefault();
+		ref= $(this).attr("href");
+
+		console.log(ref);
+
+		$('html, body').animate({
+			scrollTop: $(ref).offset().top
+		}, 1000);
+	});
+
+});
