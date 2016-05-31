@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56182fd2-2b80-49cb-8aae-8826b616a1e7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/maps/main.css.map" afterPath="$PROJECT_DIR$/assets/css/maps/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/main.scss" afterPath="$PROJECT_DIR$/assets/scss/main.scss" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="456" column="14" selection-start-line="444" selection-start-column="3" selection-end-line="456" selection-end-column="14" />
+            <state relative-caret-position="405">
+              <caret line="398" column="26" selection-start-line="394" selection-start-column="20" selection-end-line="398" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -41,8 +40,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="2814" column="0" selection-start-line="2814" selection-start-column="0" selection-end-line="2814" selection-end-column="0" />
+            <state relative-caret-position="451">
+              <caret line="2822" column="0" selection-start-line="2822" selection-start-column="0" selection-end-line="2822" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,10 +51,10 @@
         <entry file="file://$PROJECT_DIR$/_site/assets/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="2797" column="0" selection-start-line="2797" selection-start-column="0" selection-end-line="2797" selection-end-column="0" />
+              <caret line="2800" column="0" selection-start-line="2800" selection-start-column="0" selection-end-line="2800" selection-end-column="0" />
               <folding>
-                <marker date="1464724414000" expanded="true" signature="48635:48636" ph="{...}" />
-                <marker date="1464724414000" expanded="true" signature="48672:48781" ph="{...}" />
+                <marker date="1464724772000" expanded="true" signature="48635:48636" ph="{...}" />
+                <marker date="1464724772000" expanded="true" signature="48672:48781" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -354,12 +353,12 @@
       <updated>1464377112223</updated>
       <workItem from="1464377113539" duration="21148000" />
       <workItem from="1464657486493" duration="16121000" />
-      <workItem from="1464722909500" duration="1581000" />
+      <workItem from="1464722909500" duration="1931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38850000" />
+    <option name="totallyTimeSpent" value="39200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="87" width="1271" height="709" extended-state="0" />
@@ -617,26 +616,26 @@
     <entry file="file://$PROJECT_DIR$/_site/assets/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="2797" column="0" selection-start-line="2797" selection-start-column="0" selection-end-line="2797" selection-end-column="0" />
+          <caret line="2800" column="0" selection-start-line="2800" selection-start-column="0" selection-end-line="2800" selection-end-column="0" />
           <folding>
-            <marker date="1464724414000" expanded="true" signature="48635:48636" ph="{...}" />
-            <marker date="1464724414000" expanded="true" signature="48672:48781" ph="{...}" />
+            <marker date="1464724772000" expanded="true" signature="48635:48636" ph="{...}" />
+            <marker date="1464724772000" expanded="true" signature="48672:48781" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="2814" column="0" selection-start-line="2814" selection-start-column="0" selection-end-line="2814" selection-end-column="0" />
+        <state relative-caret-position="451">
+          <caret line="2822" column="0" selection-start-line="2822" selection-start-column="0" selection-end-line="2822" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="456" column="14" selection-start-line="444" selection-start-column="3" selection-end-line="456" selection-end-column="14" />
+        <state relative-caret-position="405">
+          <caret line="398" column="26" selection-start-line="394" selection-start-column="20" selection-end-line="398" selection-end-column="26" />
           <folding />
         </state>
       </provider>
