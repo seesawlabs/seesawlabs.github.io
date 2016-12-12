@@ -1,6 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 //Variables
-//Colors from top to bottom on styleguide document 
+//Colors from top to bottom on styleguide document
 $color1: #6cb7d7;
 $color2: #39687b;
 $color3: #d54e30;
@@ -15,14 +15,14 @@ $h1FontSize: 31px;
 $h2Font: openSansLight;
 $h2FontSize: 22px;
 $h3Font: openSansBold;
-$h3FontSize: 18px;
+$h3FontSize: 15px;
 $h4Font: openSansRegular;
 $h4FontSize: 17px;
 $h5Font: openSansItalic;
 $h5FontSize: 17px;
 $bodyFont: robotoRegular;
 $bodyFontSize: 14px;
-$navPaddingTop: 2em;
+$navPaddingTop: 1.5em;
 @font-face {
     font-family: 'openSansBold';
     src: url('../fonts/OpenSans-Bold-webfont.eot');
@@ -120,12 +120,16 @@ $navPaddingTop: 2em;
     border-bottom: 3px dotted #fff;
 }
 
+body{
+  color: #4d4d4d;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
 
 .marginRight {
-    margin-right: 1.5em;
+    margin-right: 2.5em;
 }
 
 .navLogoDiv {
@@ -138,11 +142,24 @@ $navPaddingTop: 2em;
 
 .navLogoImage {
     padding-top: 0.5em;
-    height: 120px;
+    height: 80px;
+    padding-left: 5em;
 }
 
 .colorWhite {
     color: #fff;
+}
+
+.textAlignRight{
+  text-align: right;
+  margin: .25em 0;
+  padding-right: 0.2em;
+}
+
+.textAlignLeft{
+  text-align: left;
+  margin: 0.25em 0;
+  padding-left: 0.2em;
 }
 
 //Start Featured Cases Section
@@ -205,7 +222,7 @@ $navPaddingTop: 2em;
     font-family: openSansBold;
 }
 
-//End Feature Cases Section 
+//End Feature Cases Section
 //Start Playground Section
 #homePlayGroundProject {
     font-family: openSansBold;
@@ -267,10 +284,10 @@ $navPaddingTop: 2em;
     font-family: openSansBold;
 }
 
-//End Playground Project Section 
-//Start Want To Work With Us Section 
-#wantToWorkWithUs {
-    background-color: #E8B826;
+//End Playground Project Section
+//Start Want To Work With Us Section
+#contactSection {
+    background-color: #4b4b4b;
     font-family: openSansBold;
     font-size: 14px;
     color: #fff;
@@ -279,19 +296,19 @@ $navPaddingTop: 2em;
     height: 360px
 }
 
-#wantToWorkWithUsImage {
+#contactSectionImage {
     position: relative;
     top: 2em;
 }
 
-#wantToWorkWithUsParagraph1 {
+#contactSectionParagraph1 {
     font-family: openSansLight;
     font-size: 24px;
     margin: 2em 1em 2em;
     text-align: left;
 }
 
-#wantToWorkWithUsParagraph2 {
+#contactSectionParagraph2 {
     border: 3px solid white;
     width: 180px;
     height: 17%;
@@ -301,26 +318,27 @@ $navPaddingTop: 2em;
     top: -1em;
 }
 
-#wantToWorkWithUsButton {
+#contactSectionButton {
     border-color: none;
     border: none;
     height: 100%;
     width: 100%;
 }
 
-#wantToWorkWithUsButtonParagraph {
+#contactSectionButtonParagraph {
     position: relative;
     top: 0.5em;
     font-family: openSansBold;
 }
 
-//End wantToWorkWithUsSection 
-//Start Footer 
+//End contactSectionSection
+//Start Footer
 #footer {
     height: 200px;
     text-align: center;
     padding-top: 2em;
     background-color: #fff;
+    color: #4d4d4d;
 }
 
 
@@ -330,10 +348,8 @@ $navPaddingTop: 2em;
 }
 
 #footerEmail  {
-
-
     a {
-        color: $color3;
+        color: #2c728b;
     }
 }
 
@@ -349,8 +365,7 @@ $navPaddingTop: 2em;
 }
 
 #footerCopyRight {
-    color: #231f20;
-    font-size: 14pt;
+    font-size: 16px;
 }
 
 #largeFooterCopyRight{
@@ -382,7 +397,7 @@ $navPaddingTop: 2em;
 }
 
 
-//Style Guide Section 
+//Style Guide Section
 .styleGuideH1 {
     font-family: openSansLight;
     font-size: 31px;
@@ -391,6 +406,7 @@ $navPaddingTop: 2em;
 .styleGuideH2 {
     font-family: openSansLight;
     font-size: 25px;
+    text-transform: uppercase;
 }
 
 .styleGuideH3 {
@@ -409,7 +425,7 @@ $navPaddingTop: 2em;
 }
 
 //End Style Guide Section
-//Start Happy Clients Section 
+//Start Happy Clients Section
 #happyClientsDiv {
     text-align: center;
 }
@@ -447,29 +463,23 @@ $navPaddingTop: 2em;
 }
 
 #hamburgerMobile {
-    color: $color3;
+    color: #fff;
 }
 
 #mobileNavBar {
     width: 50%;
     display: inline;
     position: relative;
-    top: 0.7em;
-    left: 1.1em;
 }
-
 
 .exploreCaseStudiesLink {
     color: #fff;
     font-family: openSansBold;
     font-size: 12pt;
+    text-align: left;
     button {
         text-transform: uppercase;
     }
-}
-
-#exploreCaseStudiesButton {
-    border-radius: 0;
 }
 
 
@@ -480,9 +490,9 @@ $navPaddingTop: 2em;
 
 #mobileNavLogo {
     position: relative;
-    left: 1.5em;
+    left: -4em;
     z-index: 999;
-    width: 55%;
+    width: 60%;
 }
 
 .navBarLinks {
@@ -498,12 +508,12 @@ $navPaddingTop: 2em;
 
 .navbar-nav {
     a {
-        color: $color2;
+        color: #fff;
         font-family: 'openSansBold';
         font-size: $h3FontSize;
     }
     a:hover {
-        color: $color3;
+        color: #6bbad9;
         text-decoration: none;
     }
 }
@@ -521,7 +531,7 @@ a:hover{
 
 
 
-//Case Study Section Starts 
+//Case Study Section Starts
 
 
 
@@ -622,7 +632,7 @@ a:hover{
 
 //Case Study Section Ends
 
-//View Projects Section Starts 
+//View Projects Section Starts
 
 .vSection1Link2{
     margin-right: 1em;
@@ -758,7 +768,7 @@ a:hover{
 
 
 
-//Contact Page 
+//Contact Page
 
 
 #nonCollapsedMenu .contactContactLink {
@@ -845,29 +855,44 @@ a:hover{
 
 .cSection2 {
     text-align: center;
+    background-image: url(../images/bubbles.png);
+    background-repeat: repeat-y;
+    background-position: right;
     .contactForm {
         padding-top: 2em;
         margin-top: 2em;
         width: 100%;
         height: 520px;
     }
+    @media all and (max-width:24.375em) {
+      background-image: none;
+    }
 }
 
 .contactForm {
     display: inline-block;
-    background-color: $color5;
+    background-image: none;
 }
 
 .contactFormInput {
-    width: 90%;
-    margin-left: 1em;
+    width: 62%;
     border-radius: 0;
+    display: inline-block;
+    font-family: robotoRegular;
 }
 
 .contactFormTextStyle{
     color: #fff;
     font-family: openSansBold;
     font-size: 18pt;
+}
+
+.textAreaDiv{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 0.25em;
 }
 
 .success {
@@ -927,27 +952,40 @@ a:hover{
         color: $color3;
         text-decoration: none;
     }
+    @media all and (max-width:24.375em) {
+      background-color: black;
+      text-align: center;
+      opacity: 1;
+      ul {
+        line-height: 55px;
+      }
+      a {
+          font-size: 28px;
+      }
+    }
 }
 
 .homepageHelpBox {
     h1 {
         line-height: 2em;
-        color: $color2;
         font-family: openSansLight;
-        font-size: 2em;
+        font-size: 28px;
         text-align: center;
         padding-top: 1em;
 
         @media all and (max-width: 900px) {
             line-height: 1em;
+            padding-top: 1em;
         }
     }
     p {
         font-family: openSansRegular;
-        font-size: 17px;
-        color: $color8;
+        font-size: 28px;
         text-align: center;
         padding-top: 1em;
+        @media all and (max-width:24.375em) {
+          font-size: 18px;
+        }
     }
 }
 
@@ -1125,19 +1163,22 @@ a:hover{
 
     p {
         color: #4d4d4d;
-        padding-left: 0.5em;
         padding-right: 0.5em;
     }
 }
 
 .section2Image {
-    padding: 2em;
-    padding-top: 5em;
+    padding: 0.5em;
 }
 
 
 .section2H2Header {
     color: $color2;
+    display: inline-block;
+}
+
+.section2Mobile{
+  text-align: left;
 }
 
 .section2H3Header {
@@ -1147,7 +1188,21 @@ a:hover{
     padding-top: 1.5em;
     text-align: center;
 }
+.imgDivHeader{
+  display: inline-block;
+  width: 30%;
+  float: left;
+}
 
+.h2DivHeader{
+  display: inline-block;
+  width: 70%;
+  padding: 5em 0 0 2.5em;
+}
+
+.clearFloat{
+  clear: both;
+}
 
 .section2Desktop {
     display: none;
@@ -1161,13 +1216,15 @@ a:hover{
     padding-bottom: 3em;
 }
 
+.section3Column:last-child{clear: both;}
+
 
 .section3H2Header{
     color: $color2;
 }
 
 .section3H5Header {
-    color: $color4;
+    color: #6bb9d9;
 }
 
 .section3H3Header{
@@ -1353,16 +1410,23 @@ a:hover{
     text-align: center;
     h3 {
         font-family: openSansBold;
-        font-size: 18pt;
+        font-size: 18px;
         color: $color2;
         text-align: center;
         padding-bottom: 1em;
+        text-transform: uppercase;
     }
     p {
         font-family: robotoRegular;
-        size: 14pt;
+        size: 16px;
         text-align: center;
         color: $color8;
+        margin-left: 18px;
+        margin-right: 18px;
+        @media all and (max-width:24.375em) {
+          margin-left: 0;
+          margin-right: 0;
+        }
     }
     a {
         color: $color3;
@@ -1374,7 +1438,7 @@ a:hover{
         padding-bottom: 2em;
     }
     .serviceImageDiv {
-        padding-top: 1em;
+        padding-top: 1.75em;
         padding-bottom: 2em;
     }
     .callToAction {
@@ -1391,18 +1455,143 @@ a:hover{
 }
 
 #homepageHeroContainer {
-    background-image: url("../images/homepageHero.png");
+    background-image: url("../images/hero.jpg");
     min-height: 100%;
-    height: 320px;
     background-repeat: no-repeat;
     width: 100%;
     min-width: 100%;
     background-size: cover;
     background-position: 100% 20%;
+    .btn{
+      line-height: 2!important;
+    }
+    @media all and (max-width:24.375em) {
+      background-image: url("../images/mobile/hero.jpg");
+      display: inline-block;
+    }
 }
 
 #homepageHeroText {
-    padding-top: 2em;
+    margin-top: 9em;
+    margin-left: 6.5em;
+    margin-right: 38.2em;
+    h1{
+      color:#fff;
+      font-weight: 800;
+      font-size: 36px;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      margin-right: 0.5em;
+    }
+    @media all and (max-width:24.375em) {
+      margin: 7em 0.5em 0em 0.5em;
+      text-align: center;
+      h1{ font-size: 24px;}
+      p{ font-size: 15px;}
+    }
+}
+
+#caseStudies{
+  h1{
+    line-height: 2em;
+    color: #39687b;
+    font-family: openSansLight;
+    font-size: 1.75em;
+    text-align: center;
+    padding-top: 1em;
+    height: 120px;
+  }
+  .box1, .box2{
+    width: 50%;
+    height: 360px;
+    text-align: center;
+    padding-top: 9em;
+    color: #fff;
+    font-size: 18px;
+    a{
+      color: #6bbad9;
+      display: block;
+    }
+    @media (max-width: 24.375em){
+      width: 100%;
+      font-size: 12px;
+    }
+    img{
+      display: block;
+      margin: auto;
+      margin-bottom: .75em;
+    }
+  }
+
+  .box1{
+    background-image: url("../images/linknyc360.jpg");
+    float: left;
+  }
+  .box2{
+    background-image: url("../images/kountable360.jpg");
+    float: right;;
+  }
+
+  .box1:hover{
+    background-image: url("../images/casestudyLinkNYC1-80.jpg");
+    a{ display: none}
+  }
+
+  .box2:hover{
+    background-image: url("../images/casestudyKountable1-80.jpg");
+    a{ display: none}
+  }
+
+  #kountableCase, #linkNYCCase{
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #linkNYCCaseImg{
+    background-image: url("../images/casestudyLinkNYC2-80.jpg");
+    height: 361px;
+    width: 50%;
+    float: right;
+  }
+
+  #kountableCaseText{
+    width: 50%;
+    display: inline-block;
+    background-color: black;
+    color:#fff;
+    height: 361px;
+    p:first-child{padding-top: 3em;}
+    p{padding-left: 1.5em;}
+  }
+
+  #linkNYCCaseText{
+    width: 50%;
+    display: inline-block;
+    background-color: black;
+    color:#fff;
+    height: 361px;
+    p:first-child{padding-top: 3em;}
+    p{padding-left: 1.5em;}
+  }
+
+  #kountableCaseImg{
+    background-image: url("../images/casestudyKountable2-80.jpg");
+    height: 361px;
+    width: 50%;
+    float: left;
+  }
+
+  .box1:hover ~ #linkNYCCase{
+    display: block;
+    width: 100%;
+  }
+
+  .box2:hover ~ #kountableCase{
+    display: block;
+    width: 100%;
+  }
+
 }
 
 .homepageHero {
@@ -1425,6 +1614,7 @@ a:hover{
 }
 
 #exploreCaseStudies {
+    //padding-left: 6.5em;
     span {
         font-family: openSansBold;
         text-transform: uppercase;
@@ -1432,10 +1622,17 @@ a:hover{
         color: #fff;
     }
     button {
-        border: 2px solid white;
-        padding: 0.5em;
-        width: 100%
+        width: 100%;
     }
+}
+
+.blueButton{
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #6bb9d9;
+  border: none;
+  color: #fff;
+  line-height: 2.5!important;
 }
 
 #largeClientImages {
@@ -1463,9 +1660,76 @@ a:hover{
     height: 100%;
 }
 
+#howWeCanHelp{
+  color:#216a85;
+  font-size: 28px;
+}
 
-#largeSocialMediaBar, #largeFooterEmail, #largeFooterCopyrightRow {
-    display: none;
+
+#happyClients{
+  height: 360px;
+  float: left;
+  text-align: center;
+  h1{
+    color:#fff;
+    margin-bottom: 1em;
+  }
+  img{
+    padding: 0 2em;
+  }
+  @media (max-width: 24.375em){
+    height: 600px;
+    img{ padding: 0; margin-bottom: 5.5em;}
+  }
+}
+
+
+.bluebox{
+  width: 100%;
+  background-color: #216a85;
+  background-image: url("../images/bubbles.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  @media (max-width: 24.375em){
+      background-image: none;
+  }
+}
+
+#ourProcess, #servicesSection{
+  height: 245px;
+  h1, p{
+    color:#fff;
+  }
+
+  p{
+    margin-bottom: 1em;
+    padding-top: 0;
+  }
+}
+
+#servicesSection{
+  width: 100%;
+}
+#about{
+  margin-top: 4em;
+  .row:last-child{margin-bottom: 6em;}
+}
+
+#largeFooterEmail{
+  font-size: 28px;
+  p{
+    display: inline-block;
+    text-align: left;
+    padding-top: 2em;
+  }
+}
+.form-group{
+  width: 96%;
+  textarea{
+    width: 62%;
+    display: block;
+    margin: auto;
+  }
 }
 
 //Media Queries
@@ -1476,7 +1740,7 @@ a:hover{
     }
 
     .navLogoImage{
-        padding-top: 2em;
+        padding-top: 0.000em;
         height: inherit;
     }
 
@@ -1577,13 +1841,48 @@ a:hover{
     }
     #homepageHeroText {
         p {
-            margin-left: 0.7em;
-            margin-right: 0.5em;
+            font-size: 18px;
+            /*margin-left: 0.7em;
+            margin-right: 0.5em;*/
         }
     }
 }
 
-@media all and (min-width:24.375em) {
+@media (max-width: 24.375em){
+
+    #about .row:last-child {
+      margin-bottom: 0;
+    }
+
+    .textAlignRight{
+      text-align: left;
+      padding: 0 1em;
+    }
+    .textAlignLeft{
+      padding: 0 1em;
+    }
+    .contactFormInput{
+      width: 100%;
+      padding-top: 0;
+    }
+    .form-group{
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .form-group textarea{
+      width: 100%;
+    }
+
+    .homepageHelpBox p, h1{
+      font-size: 18px;
+    }
+
+    .homepageHelpBox h1{padding-bottom: 1.5em;}
+
+    #homepageHeroContainer{
+      display: inline-block;
+    }
 
     .projectNavigation {
         padding-left: 7em;
@@ -1608,7 +1907,43 @@ a:hover{
 
 @media all and (min-width:24.375em) and (max-width: 33.75em) {
 
+    #about .row:last-child {
+      margin-bottom: 0;
+    }
+    #happyClients{
+      height: 600px;
+      img{ padding: 0; margin-bottom: 5.5em;}
+    }
 
+    .textAlignRight{
+      text-align: left;
+      padding: 0 1em;
+    }
+    .textAlignLeft{
+      padding: 0 1em;
+    }
+    .contactFormInput{
+      width: 100%;
+      padding-top: 0;
+    }
+    .form-group{
+      margin-bottom: 0;
+      width: 100%;
+    }
+    .cSection2, .bluebox{
+      background-image: none;
+    }
+
+    .homepageHelpBox p, h1{
+      font-size: 18px;
+    }
+    .homepageHelpBox h1{padding-bottom: 1.5em;}
+    #homepageHeroText {
+      margin: 7em 0.5em 0em 0.5em;
+      text-align: center;
+      h1{ font-size: 24px;}
+      p{ font-size: 15px;}
+    }
 
     #playgroundProjectParagraph2 {
         margin-left: 19%;
@@ -1625,8 +1960,8 @@ a:hover{
     #homepageHeroText {
         p {
             font-size: 18px;
-            margin-left: 1em;
-            margin-right: 1em;
+            /*margin-left: 1em;
+            margin-right: 1em;*/
         }
     }
     #exploreCaseStudies {
@@ -1636,11 +1971,11 @@ a:hover{
     }
 
 
-    #wantToWorkWithUsParagraph1 {
+    #contactSectionParagraph1 {
         padding-left: 0;
         text-align: center;
     }
-    #wantToWorkWithUsParagraph2 {
+    #contactSectionParagraph2 {
         margin-left: 30%;
     }
 }
@@ -1688,7 +2023,7 @@ a:hover{
 
 
     .contactFormButtonDiv{
-        padding-right: 1.5em;
+        button{width: 30%;}
     }
 
 
@@ -1718,11 +2053,11 @@ a:hover{
         margin-top: 2em;
     }
 
-    #wantToWorkWithUsParagraph2 {
+    #contactSectionParagraph2 {
         margin-left: 34%;
     }
 
-    #wantToWorkWithUsParagraph1 {
+    #contactSectionParagraph1 {
         margin-right: 0;
         text-align: center;
         padding-left: 0;
@@ -1747,7 +2082,7 @@ a:hover{
     #exploreCaseStudiesRow {}
     #exploreCaseStudies {
         p {
-            margin-top: 2em;
+            margin-top: 1em;
         }
         button {
             width: 50%;
@@ -1781,7 +2116,7 @@ a:hover{
     }
 
 
-    #wantToWorkWithUsParagraph2 {
+    #contactSectionParagraph2 {
         margin-left: 35%;
     }
 }
@@ -1808,7 +2143,7 @@ a:hover{
     #mobileClientImages {
         padding: 0 20%;
     }
-    #wantToWorkWithUsParagraph2 {
+    #contactSectionParagraph2 {
         margin-left: 36%;
     }
 }
@@ -1825,7 +2160,7 @@ a:hover{
 
 @media all and (min-width: 43.876em) and (max-width: 47.9375em) {
 
-    #wantToWorkWithUsParagraph2 {
+    #contactSectionParagraph2 {
         margin-left: 37%;
     }
     #playgroundProjectParagraph2 {
@@ -1850,15 +2185,17 @@ a:hover{
 
 @media all and (min-width: 48em) {
 
+    #happyClients img{
+      padding: 0 1em;
+      width: 32%;
+    }
+    .homepageHelpBox h1{
+      padding-top: 1em;
+    }
+
     .projectNavigation {
         padding-left: 65%;
     }
-
-    .cSection2 {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-
 
     .section1 {
         height: 450px;
@@ -1882,7 +2219,7 @@ a:hover{
         display: inline;
     }
 
-    #wantToWorkWithUsParagraph2 {
+    #contactSectionParagraph2 {
         margin-left: 41%;
     }
     #playgroundProjectParagraph2 {
@@ -1919,7 +2256,6 @@ a:hover{
     #tabletNavLogo {
         display: inline;
         position: relative;
-        top: 1em;
     }
     #desktopNavLinks {
         display: none;
@@ -1942,11 +2278,26 @@ a:hover{
             margin-right: 0;
         }
     }
+    #navLogoImage{
+      height: 80px;
+    }
 
     #homepageHeroText {
+        margin-right: 0;
+        margin-left: 3.5em;
+        width: 44%;
         p {
-            margin-left: 7em;
+            text-align: left;
+            margin-top: 0.25em;
+            margin-bottom: 0.25em;
         }
+    }
+    a.uppercase.marginRight.scroll {
+      margin-right: 0.5em;
+    }
+
+    .exploreCaseStudiesLink{
+      button{margin-left: 2.5em;}
     }
 }
 
@@ -1956,7 +2307,7 @@ a:hover{
 
     .navLogoImage{
         padding-top: 0.5em;
-        height: 100px;
+        height: 80px;
     }
 
 
@@ -2229,14 +2580,6 @@ a:hover{
 
     }
 
-    #footerEmailRow, #socialMediaBar, #footerCopyrightRow {
-        display: none;
-    }
-
-    #largeSocialMediaBar, #largeFooterEmail, #largeFooterCopyrightRow {
-        display: inline;
-    }
-
     #largeFooterCopyright {
         position: relative;
         top: 0.5em;
@@ -2244,14 +2587,13 @@ a:hover{
 
     #footer {
         height: 100px;
-        padding-bottom: 6em;
+        padding-bottom: 15em;
     }
 
     #largeSocialMediaBar {
-        position: relative;
-        top: 1em;
+        margin: 1.75em auto;
     }
-    #wantToWorkWithUsParagraph2 {
+    #contactSectionParagraph2 {
         margin-left: 42%;
     }
 
@@ -2311,8 +2653,8 @@ a:hover{
         font-size: 17px;
     }
     .heresHowWeCanHelpParagraph {
-        width: 70%;
-        margin-left: 16%;
+        width: 85%;
+        margin-left: 7%;
     }
     #mobileClientImages {
         display: none;
@@ -2353,11 +2695,13 @@ a:hover{
         }
     }
     #homepageHeroText {
-        padding-top: 8em;
+        //padding-top: 8em;
         p {
-            width: 75%;
-            font-size: 31px !important;
-            margin-left: 4em;
+            width: 100%;
+            font-size: 18px !important;
+            text-align: left;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
         }
     }
     .navbar-toggler {
@@ -2388,7 +2732,7 @@ a:hover{
 @media all and (min-width: 75em)  {
 
 
-    #wantToWorkWithUs{
+    #contactSection{
         clear: both;
     }
 
@@ -2437,25 +2781,24 @@ a:hover{
     .cSection2 {
         padding-bottom: 20em;
         padding-top: 2em;
-        padding-left: 5em;
-        padding-right: 5em;
 
         .contactForm {
             padding-top: 2em;
             margin-top: 2em;
-            width: 500px;
-            height: 520px;
-            background-color: #e8b826;
+            height: 275px;
             margin-right: 5em;
             float: left;
         }
     }
 
+    #formMessages h1{
+      margin-bottom: 1.5em;
+      font-family: robotoRegular;
+    }
 
     #homepageHeroText{
-
         p {
-            margin-left: 5em;
+            //margin-left: 5em;
         }
     }
 
@@ -2468,32 +2811,6 @@ a:hover{
         width: 80%;
     }
 
-    .section2DesktopContentDiv1 {
-        bottom: 1em;
-        right: 5em;
-    }
-
-    .section2DesktopContentDiv2 {
-        right: 5em;
-        top: 12em;
-    }
-
-    .section2DesktopContentDiv3 {
-        top: 24em;
-        right: 5em;
-    }
-
-    .section2DesktopContentDiv4 {
-        top: 10.5em;
-        left: 5em;
-
-    }
-
-    .section2DesktopContentDiv5 {
-        top: 20.5em;
-        left: 5em;
-
-    }
 
 
     .section2Mobile {
@@ -2506,17 +2823,28 @@ a:hover{
 
     .section2DesktopColumn {
         margin-top: 4em;
+        height: 580px;
     }
 
-    .section2DesktopContentDivRight {
-        text-align: left;
-        position: relative;
+    .section2DesktopColLeft{
+      width: 35%;
+      float: left;
+      text-align: right;
     }
 
-    .section2DesktopContentDivLeft {
-        text-align: right;
-        position: relative;
+    .section2DesktopColRight{
+      width: 65%;
+      float: right;
+      text-align: left;
+      padding-right: 18%;
+      padding-left: 10px;
+      h2{font-size: 18px;}
+      p{font-size: 16px;}
     }
+    .section2DesktopColRightDiscovery {margin-bottom: 6em;}
+    .section2DesktopColRightDesign {margin-bottom: 5em;}
+    .section2DesktopColRightPrototyping {margin-bottom: 3.25em;}
+    .section2DesktopColRightDevelop {margin-bottom: 6.3em;}
 
     .section4H2Header:before {
         content: " ";
@@ -2594,14 +2922,13 @@ a:hover{
     }
     #exploreCaseStudies {
         button {
-            width: 20%;
-            margin: 0 auto;
+            width: 24%;
         }
     }
     .homepageHero {
         p {
             width: 65%;
-            margin-left: 8em;
+            //margin-left: 8em;
         }
     }
 }
@@ -2616,12 +2943,6 @@ a:hover{
     #largeClientImagesRow2 {
         padding-left: 12em;
     }
-
-    .cSection2{
-        padding-right: 10em;
-    }
-
-
 }
 
 @media all and (min-width: 85.9375em) {
@@ -2661,16 +2982,11 @@ a:hover{
     }
 
 
-    .cSection2 {
-        padding-left: 20em;
-
-    }
-
     .section3Column {
         padding-left: 4em;
     }
 
-    #wantToWorkWithUsParagraph2 {
+    #contactSectionParagraph2 {
         margin-left: 45%;
     }
 
@@ -2700,7 +3016,7 @@ a:hover{
 @media all and (min-width: 101.85em) {
     #homepageHeroText {
         p {
-            margin-left: 7em;
+            //margin-left: 7em;
         }
     }
 }
@@ -2738,20 +3054,22 @@ a:hover{
 
 .navbar , .mobileNav{
     position: fixed;
-    background-color: #fff;
+    background-color: black;
     top:0px;
     width: 100%;
     z-index: 1000;
-    @media all and (min-width: 800px) {
-        border-bottom: 1px solid #ccc;
+    height: 100px;
+    opacity: 0.75;
+    @media all and (max-width:24.375em) {
+      opacity: 0.9;
     }
-
+    .row:first-child{line-height: 0;}
 }
 
 @media all and (min-width: 1200px) {
 
 
-    #howWeWork {
+    #ourProcessSection {
         height: 1200px;
     }
 }
@@ -2761,11 +3079,7 @@ a:hover{
     padding-bottom: 0px;
 }
 
-#indexContainer {
-    margin-top: 110px;
-}
-
-#wantToWorkWithUs{
+#contactSection{
     height: 100%;
 }
 
