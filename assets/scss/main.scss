@@ -1518,10 +1518,6 @@ a:hover{
       color: #6bbad9;
       display: block;
     }
-    @media (max-width: 24.375em){
-      width: 100%;
-      font-size: 12px;
-    }
     img{
       display: block;
       margin: auto;
@@ -1535,7 +1531,7 @@ a:hover{
   }
   .box2{
     background-image: url("../images/kountable360.jpg");
-    float: right;;
+    float: right;
   }
 
   .box1:hover{
@@ -1598,6 +1594,20 @@ a:hover{
     width: 100%;
   }
 
+}
+
+.up-arrow {
+  border-color: #000 transparent;
+  border-style: solid;
+  border-width: 0 50px 50px;
+  height: 0;
+  width: 0;
+  content: '';
+  position: relative;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .homepageHero {
@@ -1864,6 +1874,9 @@ a:hover{
 }
 
 @media (max-width: 24.375em){
+    #largeSocialMediaBar{
+      margin: 2em 0;
+    }
 
     #largeFooterEmail{
       p{
@@ -1884,6 +1897,35 @@ a:hover{
       clear: both;
     }
 
+    #caseStudies{display: none;}
+
+    #caseStudiesMobile{
+      .box1, .box2{
+        height: 360px;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 9em;
+        color: #fff;
+        img{
+          display: block;
+          margin: 4em auto 0;
+        }
+      }
+      .box1{
+        background-image: url("../images/casestudyLinkNYC1-80.jpg");
+      }
+      .box2{
+        background-image: url("../images/casestudyKountable1-80.jpg");
+        background-position: 50% 20%;
+      }
+      #linkNYCCaseText, #kountableCaseText{
+        background-color: #000;
+        color: #fff;
+        padding: 1em;
+      }
+
+    }
     #about .row:last-child {
       margin-bottom: 0;
     }
@@ -1939,6 +1981,9 @@ a:hover{
 }
 
 @media all and (min-width:24.375em) and (max-width: 33.75em) {
+    #largeSocialMediaBar{
+      margin: 2em 0;
+    }
 
     #largeSocialMediaBar .fa {
       padding: 0 0.45em;
@@ -1964,6 +2009,37 @@ a:hover{
 
     .styleGuideP{
       clear: both;
+    }
+
+    #caseStudies{display: none;}
+    #caseStudiesMobile{
+      display: block;
+      .box1, .box2{
+        height: 360px;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 9em;
+        color: #fff;
+        img{
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .box1{
+        background-image: url("../images/casestudyLinkNYC1-80.jpg");
+        float: left;
+      }
+      .box2{
+        background-image: url("../images/casestudyKountable1-80.jpg");
+        float: right;
+      }
+      #linkNYCCaseText, #kountableCaseText{
+        background-color: #000;
+        color: #fff;
+        padding: 1em;
+      }
+
     }
 
     #about .row:last-child {
