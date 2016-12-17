@@ -152,13 +152,13 @@ body{
 
 .textAlignRight{
   text-align: right;
-  margin: .25em 0;
+  margin: .5em 0;
   padding-right: 0.2em;
 }
 
 .textAlignLeft{
   text-align: left;
-  margin: 0.25em 0;
+  margin: 0.5em 0;
   padding-left: 0.2em;
 }
 
@@ -417,11 +417,12 @@ body{
 
 .styleGuideH5 {
     font-family: openSansItalic;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .styleGuideP {
-    font-family: robotoLight;
+    font-family: roboto;
+    font-weight: 300;
     size: 16px;
     margin: 0;
     line-height: 1.3;
@@ -474,6 +475,7 @@ body{
     width: 50%;
     display: inline;
     position: relative;
+    top:16px;
 }
 
 .exploreCaseStudiesLink {
@@ -500,7 +502,7 @@ body{
 }
 
 .navBarLinks {
-    padding-top: $navPaddingTop;
+    padding-top: 2em;
     padding-bottom: 2em;
     padding-right: 6em;
 }
@@ -866,7 +868,7 @@ a:hover{
         padding-top: 2em;
         margin-top: 2em;
         width: 100%;
-        height: 520px;
+        height: 460px;
     }
     @media all and (max-width:24.375em) {
       background-image: none;
@@ -1181,7 +1183,7 @@ a:hover{
     display: inline-block;
 }
 
-.section2Mobile{
+.section2Mobile, .section2MobileOurProcess{
   text-align: left;
 }
 
@@ -1208,8 +1210,9 @@ a:hover{
   clear: both;
 }
 
-.section2Desktop {
+.section2Desktop, .section2DesktopOurProcess {
     display: none;
+      .section2DesktopColRight p{height: 100%;}
 }
 
 .section3 {
@@ -1421,7 +1424,8 @@ a:hover{
         text-transform: uppercase;
     }
     p {
-        font-family: robotoRegular;
+        font-family: roboto;
+        font-weight: 300;
         size: 16px;
         text-align: center;
         color: $color8;
@@ -1487,6 +1491,7 @@ a:hover{
       margin-top: 0;
       margin-bottom: 0.5em;
       margin-right: 0.5em;
+      font-family: openSansExtraBold;
     }
     @media all and (max-width:24.375em) {
       margin: 7em 0.5em 0em 0.5em;
@@ -1496,6 +1501,10 @@ a:hover{
     }
 }
 
+button#exploreCaseStudiesButton:hover {
+  background-color: #226a85;
+}
+
 #caseStudies{
   h1{
     line-height: 2em;
@@ -1503,13 +1512,13 @@ a:hover{
     font-family: openSansLight;
     font-size: 1.75em;
     text-align: center;
-    padding-top: 1em;
+    padding-top: 1.2em;
     height: 120px;
     margin: 0;
   }
   .box1, .box2{
     width: 50%;
-    height: 360px;
+    height: 356px;
     text-align: center;
     padding-top: 9em;
     color: #fff;
@@ -1527,20 +1536,28 @@ a:hover{
 
   .box1{
     background-image: url("../images/linknyc360.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     float: left;
   }
   .box2{
     background-image: url("../images/kountable360.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     float: right;
   }
 
   .box1:hover{
     background-image: url("../images/casestudyLinkNYC1-80.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;;
     a{ display: none}
   }
 
   .box2:hover{
     background-image: url("../images/casestudyKountable1-80.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     a{ display: none}
   }
 
@@ -1552,9 +1569,11 @@ a:hover{
 
   #linkNYCCaseImg{
     background-image: url("../images/casestudyLinkNYC2-80.jpg");
-    height: 361px;
+    height: 356px;
     width: 50%;
     float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #kountableCaseText{
@@ -1562,7 +1581,7 @@ a:hover{
     display: inline-block;
     background-color: black;
     color:#fff;
-    height: 361px;
+    height: 356px;
     p:first-child{padding-top: 3em;}
     p{padding-left: 1.5em;}
   }
@@ -1572,16 +1591,18 @@ a:hover{
     display: inline-block;
     background-color: black;
     color:#fff;
-    height: 361px;
+    height: 356px;
     p:first-child{padding-top: 3em;}
     p{padding-left: 1.5em;}
   }
 
   #kountableCaseImg{
     background-image: url("../images/casestudyKountable2-80.jpg");
-    height: 361px;
+    height: 356px;
     width: 50%;
     float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .box1:hover ~ #linkNYCCase{
@@ -1648,7 +1669,7 @@ a:hover{
   background-color: #6bb9d9;
   border: none;
   color: #fff;
-  line-height: 2.5!important;
+  line-height: 1.5!important;
 }
 
 #largeClientImages {
@@ -1746,7 +1767,7 @@ a:hover{
 .form-group{
   width: 96%;
   textarea{
-    width: 730px;
+    width: 726px;
     display: block;
     margin: auto;
     border-radius: 0;
@@ -1755,6 +1776,21 @@ a:hover{
 #largeSocialMediaBar .fa {
   color: #216a85;
   padding: 0 0.5em;
+}
+
+.navbar , .mobileNav{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    .row:first-child{line-height: 0;}
+}
+
+a.uppercase.marginRight.scroll {
+  margin-right: 2.5em;
 }
 
 //Media Queries
@@ -1864,16 +1900,40 @@ a:hover{
         text-align: center;
         display: inline;
     }
-    #homepageHeroText {
-        p {
-            font-size: 18px;
-            /*margin-left: 0.7em;
-            margin-right: 0.5em;*/
-        }
-    }
+}
+
+.iconHamburgerSSL{
+  background-image: url("../images/sslHambuger.svg");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  margin-top: 1.2em;
+  margin-left: 2em;
 }
 
 @media (max-width: 24.375em){
+
+  #formMessages h1{
+    font-family: roboto;
+    font-weight: 300;
+  }
+
+    #howWeCanHelp{
+      h1{ padding-bottom: 0;}
+    }
+
+    .styleGuideH5 {
+        font-size: 16px;
+    }
+
+    .longH5{ font-size: 13px;}
+
+    .styleGuideH2 { font-size: 22px; }
+
+    .mobileNav{
+      background-color: rgba(0, 0, 0, 0.75);
+      opacity: 1;
+    }
     #largeSocialMediaBar{
       margin: 2em 0;
     }
@@ -1900,12 +1960,20 @@ a:hover{
     #caseStudies{display: none;}
 
     #caseStudiesMobile{
+      .backgroundBlack{
+        background-color: #000;
+        opacity: .5;
+        height: 360px;
+        padding: 0;
+        margin: 0;
+        padding-top: 9em;
+      }
+
       .box1, .box2{
         height: 360px;
         width: 100%;
         font-size: 12px;
         text-align: center;
-        padding-top: 9em;
         color: #fff;
         img{
           display: block;
@@ -1924,8 +1992,8 @@ a:hover{
         color: #fff;
         padding: 1em;
       }
-
     }
+
     #about .row:last-child {
       margin-bottom: 0;
     }
@@ -1954,7 +2022,6 @@ a:hover{
       font-size: 18px;
     }
 
-    .homepageHelpBox h1{padding-bottom: 1.5em;}
 
     #homepageHeroContainer{
       display: inline-block;
@@ -1981,6 +2048,20 @@ a:hover{
 }
 
 @media all and (min-width:24.375em) and (max-width: 33.75em) {
+
+    .styleGuideH2 { font-size: 22px; }
+
+    .styleGuideH5 {
+        font-size: 16px;
+    }
+
+    .longH5{ font-size: 13px;}
+
+    .mobileNav{
+      background-color: rgba(0, 0, 0, 0.75);
+      opacity: 1;
+    }
+
     #largeSocialMediaBar{
       margin: 2em 0;
     }
@@ -2072,7 +2153,7 @@ a:hover{
     .homepageHelpBox p, h1{
       font-size: 18px;
     }
-    .homepageHelpBox h1{padding-bottom: 1.5em;}
+
     #homepageHeroText {
       margin: 6.2em 0.5em 0em 0.5em;
       text-align: center;
@@ -2092,13 +2173,7 @@ a:hover{
     .caseStudyParagraph2 {
         margin-left: 27%;
     }
-    #homepageHeroText {
-        p {
-            font-size: 18px;
-            /*margin-left: 1em;
-            margin-right: 1em;*/
-        }
-    }
+
     #exploreCaseStudies {
         p {
             margin-top: 2em;
@@ -2208,11 +2283,7 @@ a:hover{
     .caseStudyParagraph2 {
         margin-left: 31%;
     }
-    #homepageHeroText {
-        p {
-            font-size: 18px;
-        }
-    }
+
     #exploreCaseStudiesRow {}
     #exploreCaseStudies {
         p {
@@ -2308,6 +2379,7 @@ a:hover{
     .caseStudyParagraph2 {
         margin-left: 35%;
     }
+
 }
 
 
@@ -2320,13 +2392,77 @@ a:hover{
 
 @media all and (min-width: 48em) {
 
+  .section2MobileOurProcess{
+    display: none;
+  }
+
+  .section2DesktopOurProcess{
+    display: inline-block;
+    .section2DesktopColRight p{height: 157px;}
+    margin-top: 3em;
+    .section2DesktopColLeft{
+      width: 33%;
+      float: left;
+      text-align: right;
+    }
+
+    .section2DesktopColRight{
+      width: 67%;
+      float: right;
+      text-align: left;
+      padding-left: 10px;
+      h2{
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #39687a;
+      }
+      p{
+        font-size: 16px;
+        font-family: roboto;
+        font-weight: 300;
+      }
+    }
+  }
+
+  //#caseStudies{display: none;}
+
+  #caseStudiesMobile{
+    .box1, .box2{
+      height: 360px;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      padding-top: 9em;
+      color: #fff;
+      img{
+        display: block;
+        margin: 4em auto 0;
+      }
+    }
+    .box1{
+      background-image: url("../images/casestudyLinkNYC1-80.jpg");
+      background-size: cover;;
+    }
+    .box2{
+      background-image: url("../images/casestudyKountable1-80.jpg");
+      background-size: cover;
+    }
+    #linkNYCCaseText, #kountableCaseText{
+      background-color: #000;
+      color: #fff;
+      padding: 1em;
+    }
+  }
+
+    #tabletNavLinks .uppercase{
+      font-size: 60%;
+    }
+
     #happyClients img{
       padding: 0 1em;
       width: 28%;
     }
-    .homepageHelpBox h1{
-      padding-top: 1em;
-    }
+
 
     .projectNavigation {
         padding-left: 65%;
@@ -2427,9 +2563,9 @@ a:hover{
             margin-top: 0.25em;
             margin-bottom: 0.25em;
         }
-    }
-    a.uppercase.marginRight.scroll {
-      margin-right: 0.5em;
+        @media all and (min-width: 768px){
+          width: 80%;
+        }
     }
 
     .exploreCaseStudiesLink{
@@ -2438,7 +2574,35 @@ a:hover{
 }
 
 @media all and (min-width: 62em) {
+  //#caseStudies{display: none;}
 
+  #caseStudiesMobile{
+    .box1, .box2{
+      height: 360px;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      padding-top: 9em;
+      color: #fff;
+      img{
+        display: block;
+        margin: 4em auto 0;
+      }
+    }
+    .box1{
+      background-image: url("../images/casestudyLinkNYC1-80.jpg");
+    }
+    .box2{
+      background-image: url("../images/casestudyKountable1-80.jpg");
+      background-position: 50% 20%;
+    }
+    #linkNYCCaseText, #kountableCaseText{
+      background-color: #000;
+      color: #fff;
+      padding: 1em;
+    }
+  }
+    .navBarLinks {padding-right: 2em;}
     .navLogoImage{
         height: 80px;
     }
@@ -2828,10 +2992,8 @@ a:hover{
         }
     }
     #homepageHeroText {
-        //padding-top: 8em;
         p {
             width: 100%;
-            font-size: 18px !important;
             text-align: left;
             margin-top: 0.5em;
             margin-bottom: 0.5em;
@@ -2930,12 +3092,6 @@ a:hover{
       font-weight: 300;
     }
 
-    #homepageHeroText{
-        p {
-            //margin-left: 5em;
-        }
-    }
-
     .leadershipSection{
       width: 92%;
       padding: 0 4em 0;
@@ -2954,12 +3110,13 @@ a:hover{
 
 
 
-    .section2Mobile {
+    .section2Mobile, .section2MobileOurProcess {
         display: none;
     }
 
-    .section2Desktop {
+    .section2Desktop, .section2DesktopOurProcess {
         display: inline;
+        .section2DesktopColRight p{height: 100%;}
     }
 
     .section2DesktopColumn {
@@ -2984,8 +3141,13 @@ a:hover{
         text-transform: uppercase;
         color: #39687a;
       }
-      p{font-size: 16px;}
+      p{
+        font-size: 16px;
+        font-family: roboto;
+        font-weight: 300;
+      }
     }
+
     .section2DesktopColRightDiscovery {margin-bottom: 6em;}
     .section2DesktopColRightDesign {margin-bottom: 5em;}
     .section2DesktopColRightPrototyping {margin-bottom: 3.25em;}
@@ -3157,11 +3319,7 @@ a:hover{
 }
 
 @media all and (min-width: 101.85em) {
-    #homepageHeroText {
-        p {
-            //margin-left: 7em;
-        }
-    }
+
 }
 
 
@@ -3193,22 +3351,6 @@ a:hover{
     color: $color3 !important;
 }
 
-
-
-.navbar , .mobileNav{
-    position: fixed;
-    background-color: black;
-    top:0px;
-    width: 100%;
-    z-index: 1000;
-    height: 100px;
-    opacity: 0.75;
-    @media all and (min-width:24.375em) and (max-width: 33.75em){
-      opacity: 0.9;
-    }
-    .row:first-child{line-height: 0;}
-}
-
 @media all and (min-width: 1200px) {
 
 
@@ -3233,6 +3375,9 @@ a:hover{
 
 #tabletNavLinks .uppercase {
     font-size: 75%;
+    @media all and (min-width: 768px){
+      font-size: 58%;
+    }
 }
 
 
