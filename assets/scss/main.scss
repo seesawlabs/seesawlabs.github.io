@@ -152,14 +152,14 @@ body{
 
 .textAlignRight{
   text-align: right;
-  margin: .5em 0;
-  padding-right: 0.2em;
+  margin: 5px 0;
+  padding-right: 5px;
 }
 
 .textAlignLeft{
   text-align: left;
-  margin: 0.5em 0;
-  padding-left: 0.2em;
+  margin: 5px 0;
+  padding-left: 5px;
 }
 
 //Start Featured Cases Section
@@ -548,10 +548,6 @@ a:hover{
 
 
 
-#nonCollapsedMenu .caseStudiesCaseStudiesLink {
-    color: $color3;
-}
-
 #desktopNavLinks  .caseStudiesCaseStudiesLink {
     color: $color3;
 }
@@ -777,11 +773,6 @@ a:hover{
 
 //Contact Page
 
-
-#nonCollapsedMenu .contactContactLink {
-    color: $color3;
-}
-
 #desktopNavLinks  .contactContactLink {
     color: $color3;
 }
@@ -891,11 +882,17 @@ a:hover{
 }
 
 .textAreaDiv{
-    width: 100%;
-    display: block;
-    text-align: center;
-    padding-bottom: 1em;
-    padding-top: 0.25em;
+  width: 100%;
+  display: block;
+  padding-bottom: 1em;
+  padding-top: 5px;
+}
+
+.form-group textarea {
+  width: 730px;
+  display: block;
+  margin: auto;
+  border-radius: 0;
 }
 
 .success {
@@ -939,14 +936,17 @@ a:hover{
 }
 
 #nonCollapsedMenu {
-    background-color: $color1;
-    text-align: center;
+  background-color: black;
+  text-align: center;
+  opacity: 1;
+
     ul {
         list-style: none;
         text-align: center;
         display: inline;
         padding: 0;
         margin: 0;
+        line-height: 55px;
         li {
             margin: 0.5em;
         }
@@ -954,22 +954,11 @@ a:hover{
     a {
         color: #fff;
         font-family: openSansBold;
-        font-size: 18px;
+        font-size: 28px;
     }
     a:hover {
         color: $color3;
         text-decoration: none;
-    }
-    @media all and (max-width:24.375em) {
-      background-color: black;
-      text-align: center;
-      opacity: 1;
-      ul {
-        line-height: 55px;
-      }
-      a {
-          font-size: 28px;
-      }
     }
 }
 
@@ -1079,9 +1068,6 @@ a:hover{
     padding-right: 1em;
 }
 
-#nonCollapsedMenu .serviceServicesLink {
-    color: $color3;
-}
 
 #desktopNavLinks .serviceServicesLink {
     color: $color3;
@@ -1093,12 +1079,6 @@ a:hover{
 
 //About Page
 
-
-
-
-#nonCollapsedMenu .aboutAboutLink {
-    color: $color3;
-}
 
 #desktopNavLinks  .aboutAboutLink {
     color: $color3;
@@ -1203,19 +1183,21 @@ a:hover{
 
 .imgDivHeader{
   display: inline-block;
-  width: 45%;
+  width: 30%;
   float: left;
   height: 193px;
 }
 
-.h2DivHeader{
-  height: 193px;
+.h2DivHeader {
   display: inline-block;
-  width: 55%;
-  position: absolute;
-  top: 25%;
+  width: 70%;
+  padding: 5em 0 0 2.5em;
 }
-
+.section2ContentDiv2{
+  .h2DivHeader{
+    padding-top: 5.75em;
+  }
+}
 .clearFloat{
   clear: both;
 }
@@ -1505,8 +1487,13 @@ a:hover{
       margin: 7em 0.5em 0em 0.5em;
       text-align: center;
       h1{ font-size: 24px;}
-      p{ font-size: 15px;}
+      p{ font-size: 18px;}
     }
+}
+
+
+div#exploreCaseStudies {
+  padding-left: 0px;
 }
 
 button#exploreCaseStudiesButton:hover {
@@ -1617,6 +1604,14 @@ button#exploreCaseStudiesButton:hover {
   .box2:hover ~ #kountableCase{
     display: block;
     width: 100%;
+  }
+
+  .box1:hover ~ #happyClients{
+      display: none;
+  }
+
+  .box2:hover ~ #happyClients{
+      display: none;
   }
 
 }
@@ -1751,6 +1746,10 @@ button#exploreCaseStudiesButton:hover {
 
 #servicesSection{
   width: 100%;
+  p{
+    max-width: 1180px;
+    display: inline-block;
+  }
 }
 #about{
   margin-top: 4em;
@@ -1950,6 +1949,8 @@ a.uppercase.marginRight.scroll {
     font-family: roboto;
     font-weight: 300;
     padding-bottom: 0.5em;
+    font-size: 28px;
+    margin: 20px 15px;
   }
 
     #howWeCanHelp{
@@ -1981,6 +1982,7 @@ a.uppercase.marginRight.scroll {
     .section3ImageContainer{
       display: inline-block;
       float: left;
+      padding-left: 1em;
     }
 
     .section3H2Header{
@@ -2081,6 +2083,16 @@ a.uppercase.marginRight.scroll {
 }
 
 @media all and (min-width:24.375em) and (max-width: 33.75em) {
+    #homepageHeroText {
+      p{ font-size: 18px;}
+    }
+    #formMessages h1{
+      font-family: roboto;
+      font-weight: 300;
+      padding-bottom: 0.5em;
+      font-size: 28px;
+      margin: 20px 15px;
+    }
 
     #homepageHeroText {
       margin: 8em 0.5em 0;
@@ -2127,6 +2139,7 @@ a.uppercase.marginRight.scroll {
     .section3ImageContainer{
       display: inline-block;
       float: left;
+      padding-left: 1em;
     }
 
     .section3H2Header{
@@ -2274,7 +2287,10 @@ a.uppercase.marginRight.scroll {
 
 
     .contactFormButtonDiv{
-        button{width: 30%;}
+        button{
+          width: 250px;
+          height: 50px;
+        }
     }
 
 
@@ -3238,7 +3254,6 @@ a.uppercase.marginRight.scroll {
     .section3Image {
         float: left;
         position: relative;
-        margin-left: -1.7em;
     }
 
     .section3H2Header {
