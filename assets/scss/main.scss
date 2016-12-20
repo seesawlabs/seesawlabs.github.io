@@ -156,6 +156,15 @@ body{
   padding-right: 5px;
 }
 
+.firstgroup{
+  .textAlignRight{
+    margin-top: 0;
+  }
+  .textAlignLeft{
+    margin-top: 0;
+  }
+}
+
 .textAlignLeft{
   text-align: left;
   margin: 5px 0;
@@ -1703,7 +1712,7 @@ button#exploreCaseStudiesButton:hover {
 
 
 #happyClients{
-  height: 360px;
+  height: 356px;
   float: left;
   text-align: center;
   h1{
@@ -2450,6 +2459,7 @@ a.uppercase.marginRight.scroll {
 
 @media all and (min-width: 48em) {
 
+  .styleGuideP { padding-left: 1em;}
   .section2MobileOurProcess{
     display: none;
   }
