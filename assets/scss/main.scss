@@ -366,8 +366,9 @@ body{
 }
 
 #footerCopyRight {
-    font-size: 18px;
-    font-family: robotoLight;
+  font-size: 18px;
+  font-family: roboto;
+  font-weight: 300;
 }
 
 #largeFooterCopyRight{
@@ -861,14 +862,10 @@ a:hover{
 
 .cSection2 {
     text-align: center;
-    background-image: url(../images/bubbles.png);
-    background-repeat: repeat-y;
-    background-position: right;
     .contactForm {
-        padding-top: 2em;
         margin-top: 2em;
         width: 100%;
-        height: 460px;
+        padding-bottom: 2em;
     }
     @media all and (max-width:24.375em) {
       background-image: none;
@@ -932,8 +929,13 @@ a:hover{
 .cSubmitButton {
     border: 3px solid#fff;
     width: 200px;
-    font-family: openSansBold;
-    font-size: 18pt;
+    font-family: roboto;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.contactFormButtonDiv{
+  padding-top: 1em;
 }
 
 #nonCollapsedMenu {
@@ -1194,16 +1196,24 @@ a:hover{
     padding-top: 1.5em;
     text-align: center;
 }
+
+.section2ContentDiv1{
+  .imgDivHeader {padding-top: 2em;}
+}
+
 .imgDivHeader{
   display: inline-block;
-  width: 30%;
+  width: 45%;
   float: left;
+  height: 193px;
 }
 
 .h2DivHeader{
+  height: 193px;
   display: inline-block;
-  width: 70%;
-  padding: 5em 0 0 2.5em;
+  width: 55%;
+  position: absolute;
+  top: 25%;
 }
 
 .clearFloat{
@@ -1222,8 +1232,6 @@ a:hover{
 .section3Column {
     padding-bottom: 3em;
 }
-
-.section3Column:last-child{clear: both;}
 
 
 .section3H2Header{
@@ -1520,7 +1528,6 @@ button#exploreCaseStudiesButton:hover {
     width: 50%;
     height: 356px;
     text-align: center;
-    padding-top: 9em;
     color: #fff;
     font-size: 18px;
     a{
@@ -1535,29 +1542,26 @@ button#exploreCaseStudiesButton:hover {
   }
 
   .box1{
-    background-image: url("../images/linknyc360.jpg");
+    background-image: url("../images/casestudyLinkNYC1-80.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
   }
   .box2{
-    background-image: url("../images/kountable360.jpg");
+    background-image: url("../images/casestudyKountable1-80.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     float: right;
   }
 
-  .box1:hover{
-    background-image: url("../images/casestudyLinkNYC1-80.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;;
-    a{ display: none}
+  .backgroundBox{
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 9em;
+    height: 356px;
   }
 
-  .box2:hover{
-    background-image: url("../images/casestudyKountable1-80.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  .backgroundBox:hover{
+    background-color: transparent;
     a{ display: none}
   }
 
@@ -1765,7 +1769,7 @@ button#exploreCaseStudiesButton:hover {
   }
 }
 .form-group{
-  width: 96%;
+  width: 100%;
   textarea{
     width: 726px;
     display: block;
@@ -1784,14 +1788,31 @@ button#exploreCaseStudiesButton:hover {
     width: 100%;
     z-index: 1000;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.75);
-    opacity: 1;
+    background-color: rgba(0,0,0,.85);
     .row:first-child{line-height: 0;}
 }
 
 a.uppercase.marginRight.scroll {
   margin-right: 2.5em;
 }
+
+#homepageServiceBoxContainer {
+  max-width: 1180px;
+}
+
+
+.leadershipSection {
+  max-width: 1180px;
+}
+
+.leadershipSection .section3Column {
+  padding-left: 0em;
+}
+
+.leadershipSection .section3ContentDiv {
+  right: 0.5em;
+}
+.navbar-toggler { border-radius: 0;}
 
 //Media Queries
 @include media-breakpoint-up(xs) {
@@ -1913,9 +1934,22 @@ a.uppercase.marginRight.scroll {
 
 @media (max-width: 24.375em){
 
+  #homepageHeroText {
+    margin: 8em 0.5em 0;
+  }
+
+  #homepageHeroText h1 {
+    margin-bottom: 0.75em;
+  }
+
+  #exploreCaseStudies {
+    margin: 1em 0 2em 0;
+  }
+
   #formMessages h1{
     font-family: roboto;
     font-weight: 300;
+    padding-bottom: 0.5em;
   }
 
     #howWeCanHelp{
@@ -1931,7 +1965,7 @@ a.uppercase.marginRight.scroll {
     .styleGuideH2 { font-size: 22px; }
 
     .mobileNav{
-      background-color: rgba(0, 0, 0, 0.75);
+      background-color: rgba(0,0,0,.85);
       opacity: 1;
     }
     #largeSocialMediaBar{
@@ -1955,6 +1989,7 @@ a.uppercase.marginRight.scroll {
 
     .styleGuideP{
       clear: both;
+      padding-left: 1em;
     }
 
     #caseStudies{display: none;}
@@ -2006,7 +2041,6 @@ a.uppercase.marginRight.scroll {
     }
     .contactFormInput{
       width: 100%;
-      padding-top: 0;
     }
     .form-group{
       margin-bottom: 0;
@@ -2048,6 +2082,18 @@ a.uppercase.marginRight.scroll {
 
 @media all and (min-width:24.375em) and (max-width: 33.75em) {
 
+    #homepageHeroText {
+      margin: 8em 0.5em 0;
+    }
+
+    #homepageHeroText h1 {
+      margin-bottom: 0.75em;
+    }
+
+    #exploreCaseStudies {
+      margin: 1em 0 2em 0;
+    }
+
     .styleGuideH2 { font-size: 22px; }
 
     .styleGuideH5 {
@@ -2057,7 +2103,7 @@ a.uppercase.marginRight.scroll {
     .longH5{ font-size: 13px;}
 
     .mobileNav{
-      background-color: rgba(0, 0, 0, 0.75);
+      background-color: rgba(0,0,0,.85);
       opacity: 1;
     }
 
@@ -2089,6 +2135,7 @@ a.uppercase.marginRight.scroll {
 
     .styleGuideP{
       clear: both;
+      padding-left: 1em;
     }
 
     #caseStudies{display: none;}
@@ -2139,7 +2186,6 @@ a.uppercase.marginRight.scroll {
     }
     .contactFormInput{
       width: 100%;
-      padding-top: 0;
     }
     .form-group{
       margin-bottom: 0;
@@ -2224,9 +2270,6 @@ a.uppercase.marginRight.scroll {
 
     .cSection1 {
         height: 320px;
-    }
-    .contactForm {
-        padding-left: 1.5em;
     }
 
 
@@ -2407,9 +2450,11 @@ a.uppercase.marginRight.scroll {
 
     .section2DesktopColRight{
       width: 67%;
-      float: right;
+      float: left;
       text-align: left;
       padding-left: 10px;
+      max-width: 885px;
+      position: relative;
       h2{
         font-size: 18px;
         text-transform: uppercase;
@@ -2460,6 +2505,7 @@ a.uppercase.marginRight.scroll {
     #happyClients img{
       padding: 0 1em;
       width: 28%;
+      max-width: 397px;
     }
 
 
@@ -2564,6 +2610,7 @@ a.uppercase.marginRight.scroll {
         }
         @media all and (min-width: 768px){
           width: 80%;
+          max-width: 580px;
         }
     }
 
@@ -3073,15 +3120,14 @@ a.uppercase.marginRight.scroll {
     }
 
     .cSection2 {
-        padding-bottom: 20em;
         padding-top: 2em;
 
         .contactForm {
             padding-top: 2em;
             margin-top: 2em;
-            height: 275px;
             margin-right: 5em;
             float: left;
+            padding-bottom: 4em;
         }
     }
 
@@ -3147,10 +3193,11 @@ a.uppercase.marginRight.scroll {
       }
     }
 
-    .section2DesktopColRightDiscovery {margin-bottom: 6em;}
-    .section2DesktopColRightDesign {margin-bottom: 5em;}
-    .section2DesktopColRightPrototyping {margin-bottom: 3.25em;}
-    .section2DesktopColRightDevelop {margin-bottom: 6.3em;}
+    .section2DesktopColRightDiscovery {position: absolute; top:0;}
+    .section2DesktopColRightDesign {position: absolute; top:200px;}
+    .section2DesktopColRightPrototyping {position: absolute; top:400px;}
+    .section2DesktopColRightDevelop {position: absolute; top:600px;}
+    .section2DesktopColRightLaunch {position: absolute; top:800px;}
 
     .section4H2Header:before {
         content: " ";
@@ -3365,6 +3412,15 @@ a.uppercase.marginRight.scroll {
 
 #contactSection{
     height: 100%;
+    background-image: url(../images/bubbles.png);
+    background-repeat: repeat-y;
+    background-position: 98%;
+    @media (max-width: 24.375em){
+      background-image: none;
+    }
+    @media all and (min-width:24.375em) and (max-width: 33.75em){
+      background-image: none;
+    }
 }
 
 #mobileNavBar{
