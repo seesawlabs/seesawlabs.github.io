@@ -2466,6 +2466,15 @@ a.uppercase.marginRight.scroll {
 
 @media all and (min-width: 48em) {
 
+  .bluebox{
+    background-image: none;
+  }
+
+  #formMessages h1{
+    margin-bottom: .75em;
+    font-family: roboto;
+    font-weight: 300;
+  }
 
   .section3ContentDiv { padding-left: 1em;}
   .section2MobileOurProcess{
@@ -2655,6 +2664,14 @@ a.uppercase.marginRight.scroll {
 
 @media all and (min-width: 62em) {
   //#caseStudies{display: none;}
+
+  .tabletNavLinks{
+    display: inline;
+  }
+
+  .desktopNavLinks{
+    display: none;
+  }
 
   #caseStudiesMobile{
     .box1, .box2{
@@ -3082,14 +3099,9 @@ a.uppercase.marginRight.scroll {
     .navbar-toggler {
         padding-bottom: 0;
     }
-    #tabletNavLinks {
-        display: none;
-    }
+    
     #tabletNavLogo {
         display: none;
-    }
-    #desktopNavLinks {
-        display: inline;
     }
     #desktopNavLogo {
         display: inline;
@@ -3451,7 +3463,7 @@ a.uppercase.marginRight.scroll {
     @media (max-width: 24.375em){
       background-image: none;
     }
-    @media all and (min-width:24.375em) and (max-width: 33.75em){
+    @media all and (min-width:24.375em) and (max-width: 48em){
       background-image: none;
     }
 }
