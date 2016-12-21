@@ -58,8 +58,12 @@ $(document).ready(function (){
 
 		e.preventDefault();
 		ref= $(this).attr("href");
-
-		scroll = parseInt( $(ref).offset().top) -99;
+		if ($(window).width() < 425){
+			scroll = parseInt( $(ref).offset().top) -75;
+		}
+		else {
+			scroll = parseInt( $(ref).offset().top) -99;
+		}
 		$(this).css({overflow:'hidden'});
 
 		$('html, body').animate({
