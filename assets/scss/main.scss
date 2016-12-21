@@ -1502,7 +1502,7 @@ a:hover{
 
 
 div#exploreCaseStudies {
-  padding-left: 0px;
+  padding-left: 1em;
 }
 
 button#exploreCaseStudiesButton:hover {
@@ -1668,6 +1668,7 @@ button#exploreCaseStudiesButton:hover {
     }
     button {
         width: 100%;
+        height: 50px;
     }
 }
 
@@ -1779,7 +1780,7 @@ button#exploreCaseStudiesButton:hover {
 .form-group{
   width: 100%;
   textarea{
-    width: 726px;
+    width: 730px;
     display: block;
     margin: auto;
     border-radius: 0;
@@ -2000,6 +2001,9 @@ a.uppercase.marginRight.scroll {
 
     .styleGuideP{
       clear: both;
+    }
+
+    .section3ContentDiv{
       padding-left: 1em;
     }
 
@@ -2157,6 +2161,9 @@ a.uppercase.marginRight.scroll {
 
     .styleGuideP{
       clear: both;
+    }
+
+    .section3ContentDiv{
       padding-left: 1em;
     }
 
@@ -2458,9 +2465,9 @@ a.uppercase.marginRight.scroll {
 }
 
 @media all and (min-width: 48em) {
-  
 
-  .styleGuideP { padding-left: 1em;}
+
+  .section3ContentDiv { padding-left: 1em;}
   .section2MobileOurProcess{
     display: none;
   }
@@ -2530,7 +2537,7 @@ a.uppercase.marginRight.scroll {
     }
 
     #happyClients img{
-      padding: 0 1em;
+      padding: 0 3em;
       width: 28%;
       max-width: 397px;
     }
@@ -3491,6 +3498,21 @@ a.uppercase.marginRight.scroll {
     }
 
 
+
+}
+
+
+@media all and (max-width:2000px) and (min-width:1500px) {
+
+  #homepageHeroText {
+    width: 80%;
+    max-width: 750px;
+    padding-left: 10em;
+  }
+
+  div#exploreCaseStudies {
+    padding-left: 11em;
+  }
 
 }
 
