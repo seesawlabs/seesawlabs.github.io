@@ -345,7 +345,6 @@ body{
 #footer {
     height: 200px;
     text-align: center;
-    padding-top: 2em;
     background-color: #fff;
     color: #4d4d4d;
 }
@@ -945,9 +944,10 @@ a:hover{
 }
 
 #nonCollapsedMenu {
-  background-color: black;
+  background-color: rgba(0,0,0,0.9);
   text-align: center;
   opacity: 1;
+  height: 100vh;
 
     ul {
         list-style: none;
@@ -955,9 +955,9 @@ a:hover{
         display: inline;
         padding: 0;
         margin: 0;
-        line-height: 55px;
+        line-height: 30px;
         li {
-            margin: 0.5em;
+            margin: 2em;
         }
     }
     a {
@@ -985,7 +985,7 @@ a:hover{
         }
     }
     p {
-        font-family: openSansRegular;
+        font-family: openSansLight;
         font-size: 28px;
         text-align: center;
         padding-top: 1em;
@@ -1509,7 +1509,7 @@ button#exploreCaseStudiesButton:hover {
   background-color: #226a85;
 }
 
-#caseStudies{
+#caseStudiesDesktop{
   h1{
     line-height: 2em;
     color: #39687b;
@@ -1709,6 +1709,10 @@ button#exploreCaseStudiesButton:hover {
 #howWeCanHelp{
   color:#216a85;
   font-size: 28px;
+  .homepageHelpBox h1 {
+    padding-top: 2em;
+    padding-bottom: 0em;
+  }
 }
 
 
@@ -1737,7 +1741,10 @@ button#exploreCaseStudiesButton:hover {
   background-repeat: no-repeat;
   background-position: 98% center;
   @media (max-width: 24.375em){
-      background-image: none;
+    background-image: none;
+  }
+  @media all and (min-width:24.375em) and (max-width: 48em){
+    background-image: none;
   }
 }
 
@@ -1770,6 +1777,7 @@ button#exploreCaseStudiesButton:hover {
   font-size: 28px;
   span{
     font-weight: 200;
+    font-family: opensanslight;
   }
   p{
     display: inline-block;
@@ -1937,14 +1945,14 @@ a.uppercase.marginRight.scroll {
   background-repeat: no-repeat;
   height: 40px;
   width: 40px;
-  margin-top: 1.2em;
-  margin-left: 2em;
+  margin-top: 1em;
+  margin-left: 2.8em;
 }
 
 @media (max-width: 24.375em){
 
   #homepageHeroText {
-    margin: 8em 0.5em 0;
+    margin: 8em .5em 0;
   }
 
   #homepageHeroText h1 {
@@ -1956,10 +1964,10 @@ a.uppercase.marginRight.scroll {
   }
 
   #formMessages h1{
-    font-family: roboto;
+    font-family: opensanslight;
+    font-size: 28px;
     font-weight: 300;
     padding-bottom: 0.5em;
-    font-size: 28px;
     margin: 20px 15px;
   }
 
@@ -2007,7 +2015,7 @@ a.uppercase.marginRight.scroll {
       padding-left: 1em;
     }
 
-    #caseStudies{display: none;}
+    #caseStudiesDesktop{display: none;}
 
     #caseStudiesMobile{
       .backgroundBlack{
@@ -2100,10 +2108,10 @@ a.uppercase.marginRight.scroll {
       p{ font-size: 18px;}
     }
     #formMessages h1{
-      font-family: roboto;
+      font-family: opensanslight;
+      font-size: 28px;
       font-weight: 300;
       padding-bottom: 0.5em;
-      font-size: 28px;
       margin: 20px 15px;
     }
 
@@ -2167,7 +2175,7 @@ a.uppercase.marginRight.scroll {
       padding-left: 1em;
     }
 
-    #caseStudies{display: none;}
+    #caseStudiesDesktop{display: none;}
     #caseStudiesMobile{
       display: block;
       .box1, .box2{
@@ -2182,6 +2190,14 @@ a.uppercase.marginRight.scroll {
           margin: 0 auto;
         }
       }
+      #tabletNavLinks{
+        display: inline;
+      }
+
+      #desktopNavLinks{
+        display: none;
+      }
+
       .box1{
         background-image: url("../images/casestudyLinkNYC1-80.jpg");
         float: left;
@@ -2466,13 +2482,10 @@ a.uppercase.marginRight.scroll {
 
 @media all and (min-width: 48em) {
 
-  .bluebox{
-    background-image: none;
-  }
 
   #formMessages h1{
     margin-bottom: .75em;
-    font-family: roboto;
+    font-family: opensanslight;
     font-weight: 300;
   }
 
@@ -2613,13 +2626,23 @@ a.uppercase.marginRight.scroll {
         top: 2em;
         padding: 0;
     }
+
     #tabletNavLogo {
         display: inline;
         position: relative;
     }
+
+    #tabletNavLinks {
+        display: inline;
+        position: relative;
+        top: 2em;
+        padding: 0;
+    }
+
     #desktopNavLinks {
         display: none;
     }
+
     #desktopNavLogo {
         display: none;
     }
@@ -2665,12 +2688,12 @@ a.uppercase.marginRight.scroll {
 @media all and (min-width: 62em) {
   //#caseStudies{display: none;}
 
-  .tabletNavLinks{
-    display: inline;
+  #tabletNavLinks{
+    display: none;
   }
 
-  .desktopNavLinks{
-    display: none;
+  #desktopNavLinks{
+    display: inline;
   }
 
   #caseStudiesMobile{
@@ -3099,7 +3122,7 @@ a.uppercase.marginRight.scroll {
     .navbar-toggler {
         padding-bottom: 0;
     }
-    
+
     #tabletNavLogo {
         display: none;
     }
@@ -3169,7 +3192,7 @@ a.uppercase.marginRight.scroll {
         padding-top: 2em;
 
         .contactForm {
-            padding-top: 2em;
+            padding-top: 1em;
             margin-top: 2em;
             margin-right: 5em;
             float: left;
@@ -3178,8 +3201,9 @@ a.uppercase.marginRight.scroll {
     }
 
     #formMessages h1{
-      margin-bottom: 1.5em;
-      font-family: roboto;
+      margin-bottom: 2.25em;
+      font-family: opensanslight;
+      font-size: 28px;
       font-weight: 300;
     }
 
