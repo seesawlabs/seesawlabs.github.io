@@ -508,6 +508,7 @@ body{
     left: -4em;
     z-index: 999;
     width: 60%;
+    height: 60px;
 }
 
 .navBarLinks {
@@ -995,7 +996,7 @@ a:hover{
     }
 }
 
-
+.homepageHelpBox  #howWeCanHelp h1 { padding-top: 2em; padding-bottom: 0em; }
 
 //Services Page
 
@@ -1710,8 +1711,7 @@ button#exploreCaseStudiesButton:hover {
   color:#216a85;
   font-size: 28px;
   .homepageHelpBox h1 {
-    padding-top: 2em;
-    padding-bottom: 0em;
+    padding-top: 2em; padding-bottom: 0em;
   }
 }
 
@@ -1943,16 +1943,19 @@ a.uppercase.marginRight.scroll {
 .iconHamburgerSSL{
   background-image: url("../images/sslHambuger.svg");
   background-repeat: no-repeat;
-  height: 40px;
+  background-repeat: no-repeat;
+  height: 51px;
   width: 40px;
-  margin-top: 1em;
   margin-left: 2.8em;
+  position: relative;
+  right: 0px;
+  top: 11px;
 }
 
 @media (max-width: 24.375em){
 
   #homepageHeroText {
-    margin: 8em .5em 0;
+    margin: 6em .5em 0;
   }
 
   #homepageHeroText h1 {
@@ -1986,6 +1989,7 @@ a.uppercase.marginRight.scroll {
     .mobileNav{
       background-color: rgba(0,0,0,.85);
       opacity: 1;
+      height: 75px;
     }
     #largeSocialMediaBar{
       margin: 2em 0;
@@ -2138,6 +2142,7 @@ a.uppercase.marginRight.scroll {
     .mobileNav{
       background-color: rgba(0,0,0,.85);
       opacity: 1;
+      height: 75px;
     }
 
     #largeSocialMediaBar{
