@@ -1262,6 +1262,9 @@ a.currentLink{
     height: 150px;
     width: 150px;
     border-radius: 5em;
+    @media all and (min-width:45em) and (max-width: 48em){
+      margin-bottom: 1em;
+    }
 }
 
 .section3Paragraph {
@@ -1762,6 +1765,11 @@ button#exploreCaseStudiesButton:hover {
 
 #ourProcess, #servicesSection{
   height: 245px;
+  h1{
+    @media all and (min-width:45em) and (max-width: 48em){
+      padding-bottom: .5em;
+    }
+  }
   h1, p{
     color:#fff;
   }
@@ -1770,6 +1778,10 @@ button#exploreCaseStudiesButton:hover {
     margin: 0;
     padding-top: 0;
     font-family: openSansLight;
+  }
+
+  @media all and (min-width:45em) and (max-width: 48em){
+    line-height: 2.3em;
   }
 }
 
@@ -2615,6 +2627,7 @@ a.uppercase.marginRight.scroll {
       padding-left: 10px;
       max-width: 885px;
       position: relative;
+      padding-right: 10px;
       h2{
         font-size: 18px;
         text-transform: uppercase;
@@ -3603,7 +3616,6 @@ a.uppercase.marginRight.scroll {
     font-size: 75%;
     @media all and (min-width: 768px){
       font-size: 13px;
-      color: yellow;
     }
 }
 
