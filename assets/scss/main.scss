@@ -1834,6 +1834,9 @@ button#exploreCaseStudiesButton:hover {
 
 a.uppercase.marginRight.scroll {
   margin-right: 2.5em;
+  @media all and (min-width:45em) and (max-width: 48em){
+    margin-right: 1.3em;
+  }
 }
 
 #homepageServiceBoxContainer {
@@ -3599,7 +3602,8 @@ a.uppercase.marginRight.scroll {
 #tabletNavLinks .uppercase {
     font-size: 75%;
     @media all and (min-width: 768px){
-      font-size: 58%;
+      font-size: 13px;
+      color: yellow;
     }
 }
 
