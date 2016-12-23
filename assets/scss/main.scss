@@ -992,8 +992,12 @@ a.currentLink{
         font-size: 28px;
         text-align: center;
         padding-top: 1em;
+        padding-bottom: 2em;
         @media all and (max-width:24.375em) {
           font-size: 18px;
+        }
+        @media all and (min-width:45em) and (max-width: 48em){
+          padding-bottom: 0;
         }
     }
 }
@@ -1501,11 +1505,17 @@ a.currentLink{
       h1{ font-size: 24px;}
       p{ font-size: 18px;}
     }
+    @media all and (min-width:45em) and (max-width: 48em){
+      margin-top: 8em;
+    }
 }
 
 
 div#exploreCaseStudies {
   padding-left: 1em;
+  @media all and (min-width:45em) and (max-width: 48em){
+    padding-bottom: 1em;
+  }
 }
 
 button#exploreCaseStudiesButton:hover {
@@ -1713,7 +1723,7 @@ button#exploreCaseStudiesButton:hover {
   color:#216a85;
   font-size: 28px;
   .homepageHelpBox h1 {
-    padding-top: 2em; padding-bottom: 0em;
+    padding-top: 2em; padding-bottom: 0em; margin-bottom: 0;
   }
 }
 
@@ -1745,7 +1755,7 @@ button#exploreCaseStudiesButton:hover {
   @media (max-width: 24.375em){
     background-image: none;
   }
-  @media all and (min-width:24.375em) and (max-width: 48em){
+  @media all and (min-width:24.375em){
     background-image: none;
   }
 }
@@ -1772,7 +1782,15 @@ button#exploreCaseStudiesButton:hover {
 }
 #about{
   margin-top: 4em;
-  .row:last-child{margin-bottom: 6em;}
+  .row:last-child{
+    margin-bottom: 6em;
+    @media all and (min-width:45em) and (max-width: 48em){
+      margin-bottom: 0;
+    }
+  }
+  @media all and (min-width:45em) and (max-width: 48em){
+    margin-top: 0;
+  }
 }
 
 #largeFooterEmail{
@@ -1785,6 +1803,9 @@ button#exploreCaseStudiesButton:hover {
     display: inline-block;
     text-align: left;
     padding-top: 2em;
+    @media all and (min-width:45em) and (max-width: 48em){
+      padding-top: 0;
+    }
   }
 }
 .form-group{
@@ -2685,9 +2706,7 @@ a.uppercase.marginRight.scroll {
     .caseStudyParagraph2 {
         margin-left: 38%;
     }
-    .homepageHelpBox p {
-        margin-bottom: 2em;
-    }
+
     #heresHowWeCanHelpBorder {
         width: 40%;
     }
