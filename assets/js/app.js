@@ -55,7 +55,7 @@ $(document).ready(function (){
 
 
 	$(".scroll").click(function (e) {
-
+		$("a").removeClass('currentLink');
 		e.preventDefault();
 		ref= $(this).attr("href");
 		if ($(window).width() < 425){
@@ -65,7 +65,8 @@ $(document).ready(function (){
 			scroll = parseInt( $(ref).offset().top) -99;
 		}
 		$(this).css({overflow:'hidden'});
-
+		$(this).addClass('currentLink');
+		console.log('this: ', $(this));
 		$('html, body').animate({
 			scrollTop: parseInt(scroll)
 		}, 1000);

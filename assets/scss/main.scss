@@ -436,6 +436,10 @@ body{
     margin: 0;
     line-height: 1.3;
     text-align: left;
+    padding-left: 0px;
+    @media all and (min-width:45em) and (max-width: 48em){
+      padding-left: 1em;
+    }
 }
 
 //End Style Guide Section
@@ -485,6 +489,7 @@ body{
     display: inline;
     position: relative;
     top:16px;
+    padding: 0;
 }
 
 .exploreCaseStudiesLink {
@@ -507,8 +512,8 @@ body{
     position: relative;
     left: -4em;
     z-index: 999;
-    width: 60%;
     height: 60px;
+    top: 8px;
 }
 
 .navBarLinks {
@@ -534,17 +539,14 @@ body{
     }
 }
 
-a:hover{
-    text-decoration: none;
-    color: #fff;
+a.currentLink{
+  color: #6bbad9;
+  text-decoration: none;
 }
 
 .mobileNav {
     display: inline;
 }
-
-
-
 
 
 //Case Study Section Starts
@@ -1944,12 +1946,13 @@ a.uppercase.marginRight.scroll {
   background-image: url("../images/sslHambuger.svg");
   background-repeat: no-repeat;
   background-repeat: no-repeat;
-  height: 51px;
+  height: 28px;
   width: 40px;
   margin-left: 2.8em;
   position: relative;
-  right: 0px;
-  top: 11px;
+  right: 10px;
+  top: 8px;
+  float: right;
 }
 
 @media (max-width: 24.375em){
@@ -1990,6 +1993,9 @@ a.uppercase.marginRight.scroll {
       background-color: rgba(0,0,0,.85);
       opacity: 1;
       height: 75px;
+      .row:first-child {
+        height: 75px;
+      }
     }
     #largeSocialMediaBar{
       margin: 2em 0;
@@ -2143,6 +2149,9 @@ a.uppercase.marginRight.scroll {
       background-color: rgba(0,0,0,.85);
       opacity: 1;
       height: 75px;
+      .row:first-child {
+        height: 75px;
+      }
     }
 
     #largeSocialMediaBar{
@@ -2250,7 +2259,7 @@ a.uppercase.marginRight.scroll {
     }
 
     #homepageHeroText {
-      margin: 6.2em 0.5em 0em 0.5em;
+      margin: 4.7em .5em 0em 0.5em;
       text-align: center;
       h1{ font-size: 24px;}
     }
@@ -2299,6 +2308,78 @@ a.uppercase.marginRight.scroll {
     #heresHowWeCanHelpBorder {
         width: 60%;
     }
+}
+
+@media all and (min-width: 34em) and (max-width: 47.9375em){
+  .mobileNav{
+    height: 75px;
+  }
+
+  #mobileNavLogo {
+
+  }
+
+  #homepageHeroText {
+      margin: 6em .5em 0;
+  }
+  .exploreCaseStudiesLink{
+    p{text-align: center;}
+  }
+
+  #caseStudiesMobile{
+    .backgroundBlack{
+      background-color: rgba(0,0,0,0.5);
+      height: 360px;
+      padding: 0;
+      margin: 0;
+      padding-top: 9em;
+    }
+
+    .box1, .box2{
+      height: 360px;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      color: #fff;
+      img{
+        display: block;
+        margin: 4em auto 0;
+      }
+    }
+    .box1{
+      background-image: url("../images/casestudyLinkNYC1-80.jpg");
+      background-repeat: none;
+      background-size: cover;
+    }
+    .box2{
+      background-image: url("../images/casestudyKountable1-80.jpg");
+      background-repeat: none;
+      background-size: cover;
+      background-position: 50% 20%;
+    }
+    #linkNYCCaseText, #kountableCaseText{
+      background-color: #000;
+      color: #fff;
+      padding: 1em;
+    }
+  }
+
+  .section2MobileOurProcess{
+    .imgDivHeader{
+      width: 100%;
+      display: block;
+      float: none;
+      text-align: center;
+    }
+
+    .h2DivHeader{
+      width: 100%;
+      display: block;
+      float: none;
+      padding: 0;
+      text-align: center;
+    }
+  }
 }
 
 @media all and (min-width: 34em){
@@ -2389,12 +2470,7 @@ a.uppercase.marginRight.scroll {
             max-width: 320px;
         }
     }
-    #mobileNavBar {
-        left: 6em;
-    }
-    #mobileNavLogo {
-        left: 4em;
-    }
+
 }
 
 @media all and (min-width: 34.0625em) {
@@ -2494,7 +2570,6 @@ a.uppercase.marginRight.scroll {
     font-weight: 300;
   }
 
-  .section3ContentDiv { padding-left: 1em;}
   .section2MobileOurProcess{
     display: none;
   }
