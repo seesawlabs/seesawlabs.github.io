@@ -6,471 +6,385 @@ layout: default
 <body>
 {% include nav.html  param="serviceServicesLink" %}
     <div id="indexContainer">
+
         <div id="homepageHeroContainer">
             <div class="row">
-                <div class="col-sm-12 homepageHero p-a-2 text-xs-center">
+                <div class="col-sm-12 homepageHero">
                     <div id="homepageHeroText">
-                        <p><i>The Seesaw, where equal partnership and balance come together to create the joy.</i></p>
-                        <p>SeeSaw Labs is your <b>strategy, design, and development partner</b> on the digital playground.
-                        </p>
-
+                        <h1>We strike the balance between useful complexity and simplistic design.</h1>
+                        <p>Like you, the clients we partner with have great ideas. We strategize, design and develop the tools needed to bring amazing experiences to life.</p>
+                        <p>Taking inspiration from “simple machines”, we build only useful complexity. Rapid prototyping, transparency and agility allow our team to produce simple, clean and useful software products and solutions</p>
                     </div>
                 </div>
             </div>
             <div id="exploreCaseStudiesRow" class="row">
                 <div class="col-sm-12" id="exploreCaseStudies">
-                <a class="exploreCaseStudiesLink scroll" href="#heresHowWeCanHelpHeader">
+                <a class="exploreCaseStudiesLink scroll" href="#howWeCanHelp">
                     <p>
-                        <button id="exploreCaseStudiesButton" type="button" class="btn btn-secondary-outline">Things we love to do</button>
+                        <button id="exploreCaseStudiesButton" type="button" class="btn btn-secondary-outline blueButton">Explore our services</button>
                     </p>
                     </a>
                 </div>
             </div>
         </div>
+
+        <div id="caseStudies" >
+          <div id="caseStudiesDesktop" class="section2Desktop">
+            <div class="row">
+              <h1>Client Case Studies</h1>
+              <div class="box1">
+                <div class="backgroundBox">
+                  <img class="serviceImage" src="./assets/images/clientLinknyc.png" />
+                  <span>Bringing Super Fast WiFi to NYC</span>
+                  <a id="linkNYC" href="/">Learn More</a>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="backgroundBox">
+                  <img src="./assets/images/clientKountable.png" />
+                  <span>Financing Enterpreneurs Across the Globe</span>
+                  <a id="linkKountable" href="/">Learn More</a>
+                </div>
+              </div>
+              <div id="linkNYCCase">
+                <div id="linkNYCCaseText">
+                  <div class="up-arrow"></div>
+                  <p>Seesaw Labs has partnered with CityBridge and Intersection to provide a turnkey solution for implementing the HTML5 advertisements displayed on over 500 LinkNYC kiosks throughout the five boroughs.</p>
+                  <p>The fast, completely free WiFi they provide is funded through its groundbreaking digital OOH advertising network that not only provides a rich context-aware platform, reaching countless New Yorkers and visitors each day, but will also generate more than a half a billion dollars in revenue for New York City.</p>
+                </div>
+                <div id="linkNYCCaseImg"></div>
+              </div>
+              <div id="kountableCase">
+                <div id="kountableCaseImg">
+                </div>
+                <div id="kountableCaseText">
+                  <div class="up-arrow"></div>
+                  <p>Kountable is an online marketplace focused on matching dynamic entrepreneurs in the developing world to investors looking to create immediate positive change in the world.</p>
+                  <p>As kountable’s ongoing technology partner, Seesaw Labs builds and maintains their full product offering including web applications, native mobile applications, and a specialized API for 3rd party consumption.</p>
+                  <p>Through kountable’s custom built web app, an entrepreneur’s digital footprint is translated to a kScore—a metric then used to help investors assess risk.</p>
+                </div>
+              </div>
+              <div id="happyClients" class="bluebox">
+                <h1>Other Happy Clients</h1>
+                <div id="otherClients">
+                  <img src="./assets/images/clientCurlmart.png" />
+                  <img src="./assets/images/clientSbdigital.png" />
+                  <img src="./assets/images/clientFlywheel.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="caseStudiesMobile" class="section2Mobile">
+            <div>
+              <div class="homepageHelpBox row">
+                <h1>Client Case Studies</h1>
+              </div>
+            </div>
+            <div>
+              <div class="row">
+                <div class="box1">
+                  <div class="backgroundBlack">
+                    <img class="serviceImage" src="./assets/images/clientLinknyc.png" />
+                    <span>Bringing Super Fast WiFi to NYC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row">
+                <div id="linkNYCCaseText">
+                  <div class="up-arrow"></div>
+                  <p>Seesaw Labs has partnered with CityBridge and Intersection to provide a turnkey solution for implementing the HTML5 advertisements displayed on over 500 LinkNYC kiosks throughout the five boroughs.</p>
+                  <p>The fast, completely free WiFi they provide is funded through its groundbreaking digital OOH advertising network that not only provides a rich context-aware platform, reaching countless New Yorkers and visitors each day, but will also generate more than a half a billion dollars in revenue for New York City.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row">
+                <div class="box2">
+                  <div class="backgroundBlack">
+                    <img src="./assets/images/clientKountable.png" />
+                    <span>Financing Enterpreneurs Across the Globe</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row">
+                <div id="kountableCaseText">
+                  <div class="up-arrow"></div>
+                  <p>Kountable is an online marketplace focused on matching dynamic entrepreneurs in the developing world to investors looking to create immediate positive change in the world.</p>
+                  <p>As kountable’s ongoing technology partner, Seesaw Labs builds and maintains their full product offering including web applications, native mobile applications, and a specialized API for 3rd party consumption.</p>
+                  <p>Through kountable’s custom built web app, an entrepreneur’s digital footprint is translated to a kScore—a metric then used to help investors assess risk.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="homepageHelpBox">
             <div class="row">
-                <div id="heresHowWeCanHelpHeader" class="col-sm-12">
-                    <h1>We partner with clients to create world class digital products.</h1>
-                    <hr id="heresHowWeCanHelpBorder">
+                <div id="howWeCanHelp" class="col-sm-12">
+                    <h1>How We Can Help You</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
                     <p class="heresHowWeCanHelpParagraph">
-                        Here are a few areas we focus on to help you increase the value of your products.</p>
+                        Our goal is to create new and improve existing applications to help businesses <br/>do their job better and increase the value of their products to the end-user.<br/>Here are some of the ways we help do this:</p>
                 </div>
             </div>
         </div>
+
         <div id="homepageServiceBoxContainer" class="container-fluid">
             <div id="serviceImagesTopRow" class="row">
                 <div class="col-sm-4 serviceImageDiv">
-                    <img class="serviceImage" src="./assets/images/iconTechAssesment.png" />
-                    <h3>SOLUTIONS ARCHITECTURE & STRATEGY</h3>
-                    <p>
-                        We are hands-on consultants, producers, and curators of technical insights. <br> We believe all great projects start by asking questions, without a prejudice to the answer. <br> Only after diving deep into your situation can we craft supportive technology recommendations that will lead to success.
-                    </p>
-                </div>
-
-                <div class="col-sm-4 serviceImageDiv">
-                    <img class="serviceImage" src="./assets/images/iconSocialMedia.png" />
-                    <h3>CUSTOM SOFTWARE DEVELOPMENT</h3>
-                    <p>
-                        Our clients come to us because they need a true development partnership, and not just warm bodies that know how to code. All projects we build, we build as if they are our own. <br>
-                        Our staff, our processes, and our development tools are all geared with client success as a guiding principle.
-                    </p>
+                    <img class="serviceImage" src="./assets/images/iconsTechAssesmentsStrategy.png" />
+                    <h3>Technology Assesments & Strategy</h3>
+                    <p>We are hands-on consultants, producers, and curators of technical insights.</p>
+                    <p>We believe all great projects start by asking questions, without a prejudice to the answer.</p>
+                    <p>Only after diving deep into your situation can we craft supportive technology recommendations that will lead to success.</p>
                 </div>
                 <div class="col-sm-4 serviceImageDiv">
-                    <img class="serviceImage" src="./assets/images/iconRapidPrototyping.png" />
-                    <h3>RAPID PROTOTYPING</h3>
-                    <p>
-                        No matter how well you plan, you almost never achieve a flawless product right out of the gate.
-                        We specialize in quickly building tools that allow our clients to put their ideas through
-                        rigorous testing, evaluation and refinement.  <br>
-                        Then we work with clients to  understand how the prototype examples can best be understood to allow for a collaborative and effective iteration process.
-
-                    </p>
+                    <img class="serviceImage" src="./assets/images/iconsCustomSoftwareDev.png" />
+                    <h3>Custom Software Development</h3>
+                    <p>No matter how well you plan, you almost never achieve a flawless product right out of the gate. We specialize in quickly building tools that allow our clients to put their ideas through rigorous testing, evaluation and refinement.</p>
+                    <p>Then we work with clients to understand how the prototype examples can best be understood to allow for a collaborative and effective iteration process.</p>
                 </div>
-
+                <div class="col-sm-4 serviceImageDiv">
+                    <img class="serviceImage" src="./assets/images/iconsRapidPrototyping.png" />
+                    <h3>Rapid Prototyping</h3>
+                    <p>No matter how well you plan, you almost never achieve a flawless product right out of the gate. We specialize in quickly building tools that allow our clients to put their ideas through rigorous testing, evaluation and refinement.</p>
+                    <p>Then we work with clients to understand how the prototype examples can best be understood to allow for a collaborative and effective iteration process.</p>
+                </div>
             </div>
             <div id="serviceImagesBottomRow" class="row">
-
                 <div class="col-sm-4 serviceImageDiv">
-                    <img class="serviceImage" src="./assets/images/iconCustomCloud.png" />
-                    <h3>CUSTOM CLOUD ARCHITECTURE</h3>
-                    <p>
-                        Cloud infrastructure solution possibilities are many, and navigating the options to arrive at the best solution for your business case can be a daunting task.
-                        We work directly with our clients and use our deep experience in cloud solutions to provide infrastructure recommendations, oversight and implementation to ensure our clients successfully leverage modern cloud solutions.
-                    </p>
+                    <img class="serviceImage" src="./assets/images/iconsCustomCloudArch.png" />
+                    <h3>Custom Cloud Architecture</h3>
+                    <p>No matter how well you plan, you almost never achieve a flawless product right out of the gate. We specialize in quickly building tools that allow our clients to put their ideas through rigorous testing, evaluation and refinement.</p>
+                    <p>Then we work with clients to understand how the prototype examples can best be understood to allow for a collaborative and effective iteration process.</p>
                 </div>
                 <div class="col-sm-4 serviceImageDiv">
-                    <img class="serviceImage" src="./assets/images/iconMobileSoftware.png" />
-                    <h3>MOBILE SOFTWARE</h3>
-                <p>
-                    It's a mobile world, and any software being developed for the end-user to consume must be built with a mobile strategy from the start. Mobile application development can present specific challenges that take experience, talent, and strategy to overcome.
-                    We've got the mobile experience (and the battle scars to prove it) to help you identify and implement the right mobile strategy throuhout the development process.
-
-                </p>
+                    <img class="serviceImage" src="./assets/images/iconsMobileSoftware.png" />
+                    <h3>Mobile Software</h3>
+                    <p>It's a mobile world, and any software being developed for the end-user to consume must be built with a mobile strategy from the start.</p>
+                    <p>Mobile application development can present specific challenges that take experience, talent, and strategy to overcome. We've got the mobile experience (and the battle scars to prove it) to help you identify and implement the right mobile strategy throuhout the development process.</p>
                 </div>
-
                 <div class="col-sm-4 serviceImageDiv">
-                    <img class="serviceImage" src="./assets/images/iconEcommerce.png" />
-                    <h3>E-Comerce</h3>
-                   <p>    With years of experience developing enterprise e-commerce solutions , we know what it takes to help our clients
-                       build a successful and profitable e-comerce experience across the digital sales channel.
-                   </p>
+                    <img class="serviceImage" src="./assets/images/iconsEcommerceSolutions.png" />
+                    <h3>E-Comerce Solutions</h3>
+                    <p>With years of experience developing enterprise e-commerce solutions , we know what it takes to help our clients build a successful and profitable e-comerce experience across the digital sales channel.</p>
                 </div>
             </div>
         </div>
 
-
-        <div id="howWeWork" class="section2">
+        <div id="ourProcessSection" class="section2">
 
             <div class="row">
-                <div id="heresHowWeCanHelpHeader" class="col-sm-12 homepageHelpBox">
-                    <h1> Because We know process is important, but never at the cost of success, <br>our process is strict but not dogmatic.</h1>
-                    <hr id="heresHowWeCanHelpBorder">
-                </div>
-            </div>
-            <!--<h5 class="section2H1Header styleGuideH1">Applies to Custom Application</h5>-->
+              <div id="ourProcess" class="col-sm-12 homepageHelpBox bluebox">
+                  <h1>Our Process</h1>
+                  <p>We know process is important, but never at the cost of success.</p>
+                  <p>Our process is strict but not dogmatic.</p>
+              </div>
 
 
-            <div class="section2Desktop">
-                <div class="row">
-                    <div class="col-md-4 section2DesktopColumn">
-                        <div class="section2DesktopContentDiv4 section2DesktopContentDivLeft">
-                            <h2 class="section2H2Header styleGuideH2">DESIGN</h2>
-                            <p class="styleGuideP"> There is more to our design phase than what meets the eye. Our design phase includes User Interface (UI) design, User Experience (UX) design, Software Architecture design, Hardware Architecture design, designing Quality Assurance (QA) test criteria, and designing a project plan for the remainder of the project.</p>
-                        </div>
-                        <div class="section2DesktopContentDiv5 section2DesktopContentDivLeft">
-                            <h2 class="section2H2Header styleGuideH2">Develop > Test > Develop > Test  (rinse, repeat)</h2>
-                            <p class="styleGuideP"> Review business objectives, identify product features, identify user stories and use cases. Identify success criteria for all the types of users/roles who will be using the product.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 section2DesktopColumn">
-                        <img src="./assets/images/section2DesktopProcess.png" />
-                    </div>
-                    <div class="col-md-4 section2DesktopColumn">
-                        <div class="section2DesktopContentDiv1 section2DesktopContentDivRight">
-                            <h2 class="section2H2Header styleGuideH2">DISCOVERY</h2>
-                            <p class="styleGuideP"> Review business objectives, identify product features, identify user stories and use cases. Identify success criteria for all the types of users/roles who will be using the product.</p>
-                        </div>
-                        <div class="section2DesktopContentDiv2 section2DesktopContentDivRight">
-                            <h2 class="section2H2Header styleGuideH2">RAPID UX PROTOTYPING</h2>
-                            <p class="styleGuideP">
-                                We know that seeing is believing. The rapid UX prototyping phase allows us to quickly showcase the UI and UX design direction to ensure our design is aligned with everyone's expectations. We'll course correct as needed, until we achieve 100% satisfaction from all project stakeholders. This helps to align everyone's expectations.</p>
-                        </div>
-                        <div class="section2DesktopContentDiv3 section2DesktopContentDivRight">
-                            <h2 class="section2H2Header styleGuideH2">LAUNCH</h2>
-                            <p class="styleGuideP">
-                                Here is where we create a release candidate build of the software and make our final production environment configuration and implementation changes. We do final testing against this production environment and then launch into the market. We will also work to identity and address any issues discovered post launch.</p>
-                        </div>
-                    </div>
+              <div class="section2DesktopOurProcess">
+                <div class="section2DesktopColLeft section2DesktopColumn">
+                  <img src="./assets/images/ourProcess.png">
                 </div>
+                <div class="section2DesktopColRight section2DesktopColumn">
+                  <div class="section2DesktopColRightDiscovery">
+                    <h2>Discovery</h2>
+                    <p>Review business objectives, identify product features, identify user stories and use cases. Identify success criteria for all the types of users/roles who will be using the product.</p>
+                  </div>
+                  <div class="section2DesktopColRightDesign">
+                    <h2>Design</h2>
+                    <p>There is more to our design phase than what meets the eye. Our design phase includes User Interface (UI) design, User Experience (UX) design, Software Architecture design, Hardware Architecture design, designing Quality Assurance (QA) test criteria, and designing a project plan for the remainder of the project.</p>
+                  </div>
+                  <div class="section2DesktopColRightPrototyping">
+                    <h2>Rapid UX Prototyping</h2>
+                    <p>We know that seeing is believing. The rapid UX prototyping phase allows us to quickly showcase the UI and UX design direction to ensure our design is aligned with everyone's expectations. We'll course correct as needed, until we achieve 100% satisfaction from all project stakeholders. This helps to align everyone's expectations.</p>
+                  </div>
+                  <div class="section2DesktopColRightDevelop">
+                    <h2>Development And Testing</h2>
+                    <p>Review business objectives, identify product features, identify user stories and use cases. Identify success criteria for all the types of users/roles who will be using the product.</p>
+                  </div>
+                  <div class="section2DesktopColRightLaunch">
+                    <h2>Launch</h2>
+                    <p>Here is where we create a release candidate build of the software and make our final production environment configuration and implementation changes. We do final testing against this production environment and then launch into the market. We will also work to identity and address any issues discovered post launch.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="section2Mobile">
+
+            <div class="section2MobileOurProcess">
 
                 <div class="section2TopRow row">
                     <div class="section2ContentDiv1 col-sm-4">
-                        <img class="section2Image section2Image1" src="./assets/images/processIconDiscovery.png" />
-                        <h2 class="section2H2Header styleGuideH2">DISCOVERY</h2>
-                        <p class="styleGuideP"> Review business objectives, identify product features, identify user stories and use cases. Identify success criteria for all the types of users/roles who will be using the product.</p>
+                        <div class="imgDivHeader">
+                          <img class="section2Image section2Image1" src="./assets/images/processMobile1.png" />
+                        </div>
+                        <div class="h2DivHeader">
+                          <h2 class="section2H2Header styleGuideH2">DISCOVERY</h2>
+                        </div>
+                        <p class="styleGuideP clearFloat"> Review business objectives, identify product features, identify user stories and use cases. Identify success criteria for all the types of users/roles who will be using the product.</p>
                     </div>
                     <div class="section2ContentDiv2 col-sm-4">
-                        <img class="section2Image" src="./assets/images/processIconsDesign.png" />
-                        <h2 class="section2H2Header styleGuideH2">DESIGN</h2>
-                        <p class="styleGuideP"> There is more to our design phase than what meets the eye. Our design phase includes User Interface (UI) design, User Experience (UX) design, Software Architecture design, Hardware Architecture design, designing Quality Assurance (QA) test criteria, and designing a project plan for the remainder of the project.</p>
+                        <div class="imgDivHeader">
+                          <img class="section2Image" src="./assets/images/processMobile2.png" />
+                        </div>
+                        <div class="h2DivHeader">
+                          <h2 class="section2H2Header styleGuideH2">DESIGN</h2>
+                        </div>
+                        <p class="styleGuideP clearFloat"> There is more to our design phase than what meets the eye. Our design phase includes User Interface (UI) design, User Experience (UX) design, Software Architecture design, Hardware Architecture design, designing Quality Assurance (QA) test criteria, and designing a project plan for the remainder of the project.</p>
                     </div>
                     <div class="section2ContentDiv3 col-sm-4">
-                        <img class="section2Image" src="./assets/images/processIconsRapidPrototyping.png" />
-                        <h2 class="section2H2Header styleGuideH2">RAPID UX PROTOTYPING</h2>
-                        <p class="styleGuideP">
+                        <div class="imgDivHeader">
+                          <img class="section2Image" src="./assets/images/processMobile3.png" />
+                        </div>
+                        <div class="h2DivHeader">
+                          <h2 class="section2H2Header styleGuideH2">RAPID UX PROTOTYPING</h2>
+                        </div>
+                        <p class="styleGuideP clearFloat">
                             We know that seeing is believing. The rapid UX prototyping phase allows us to quickly showcase the UI and UX design direction to ensure our design is aligned with everyone's expectations. We'll course correct as needed, until we achieve 100% satisfaction from all project stakeholders. This helps to align everyone's expectations.</p>
                     </div>
                 </div>
                 <div class="section2BottomRow row">
                     <div class="section2ContentDiv4 col-sm-6">
-                        <img class="section2Image" src="./assets/images/processIconsDevelopTest.png" />
-                        <h2 class="section2H2Header styleGuideH2">Develop > Test > Develop > Test  (rinse, repeat)</h2>
-                        <p class="styleGuideP"> Review business objectives, identify product features, identify user stories and use cases. Identify success criteria for all the types of users/roles who will be using the product.</p>
+                        <div class="imgDivHeader">
+                          <img class="section2Image" src="./assets/images/processMobile4.png" />
+                        </div>
+                        <div class="h2DivHeader">
+                          <h2 class="section2H2Header styleGuideH2">Development and Testing</h2>
+                        </div>
+                        <p class="styleGuideP clearFloat"> Review business objectives, identify product features, identify user stories and use cases. Identify success criteria for all the types of users/roles who will be using the product.</p>
                     </div>
                     <div class="section2ContentDiv5 col-sm-6">
-                        <img class="section2Image" src="./assets/images/processIconsLaunch.png" />
-                        <h2 class="section2H2Header styleGuideH2">LAUNCH</h2>
-                        <p class="styleGuideP">
+                        <div class="imgDivHeader">
+                          <img class="section2Image" src="./assets/images/processMobile5.png" />
+                        </div>
+                        <div class="h2DivHeader">
+                          <h2 class="section2H2Header styleGuideH2">LAUNCH</h2>
+                        </div>
+                        <p class="styleGuideP clearFloat">
                             Here is where we create a release candidate build of the software and make our final production environment configuration and implementation changes. We do final testing against this production environment and then launch into the market. We will also work to identity and address any issues discovered post launch.</p>
                     </div>
                 </div>
             </div>
         </div>
+
         <div id="about" class="section3">
 
             <div class="row">
-                <div id="heresHowWeCanHelpHeader" class="col-sm-12 homepageHelpBox">
-                    <h1> From healthcare to haircare, we've been around the block once or twice. <br>
-                        For each client we can ensure our decades of experience and expertise will help lead to success.</h1>
-                    <hr id="heresHowWeCanHelpBorder">
+                <div id="servicesSection" class="col-sm-12 homepageHelpBox bluebox">
+                    <h1>Leadership Team</h1>
+                    <p>From healthcare to haircare, we've been around the block once or twice. For each client we can ensure our decades of experience and expertise will help lead to success.</p>
                 </div>
             </div>
 
 
             <div class="row">
-                <div class="col-sm-6 section3Column">
-                    <div class="section3ImageContainer">
-                        <img class="section3Image" src="./assets/images/jeff_headshot.png"></img>
-                    </div>
-                    <div class="section3ContentDiv">
-                        <h2 class="section3H2Header styleGuideH2"> Jeff Winsett</h2>
-                        <h5 class="section3H5Header styleGuideH5">Partner/CEO</h5>
-                        <hr class="section3Hr">
-                        <p class="styleGuideP">
-
-                            Jeff has spent the past 15 years
-
-                            helping businesses deliver on their
-
-                            bottom line by improving their offerings through technology solutions.
-
-                            His passion about both the technology and the consulting, in concert
-
-                            with his insatiable appetite for process improvement, forms the basis
-
-                            for his desire to forge true partnerships with clients delivering exactly
-
-                            what is needed, when it is needed,
-
-                            and collaborating on creative solutions within business constraints. He
-
-                            is the author of 2 books on the Yii
-
-                            Web-based development framework
-
-                            and one book on Cloud-based architecture solutions utilizing AWS.
-
-                        </p>
-                        <!--<div class="section3SocialMedia">-->
-                            <!--<a href="#"><img src="./assets/images/socialMediaTwitterGray.svg" /></a>-->
-                            <!--<a href="#"> <img src="./assets/images/socialMediaFacebookGray.svg" /></a>-->
-                            <!--<a href="#"> <img src="./assets/images/socialMediaLinkedInGray.svg" /></a>-->
-                        <!--</div>-->
-                    </div>
-                </div>
-                <div class="col-sm-6 section3Column">
-                    <div class="section3ImageContainer">
-                        <img class="section3Image" src="./assets/images/ivan_headshot.png"></img>
-                    </div>
-                    <div class="section3ContentDiv">
-                        <h2 class="section3H2Header styleGuideH2">Ivan Morales</h2>
-                        <h5 class="section3H5Header styleGuideH5">Partner/CTO</h5>
-                        <hr class="section3Hr">
-                        <p class="styleGuideP">
-                            Ivan is living proof that the mythical
-
-                            half-designer / half-developer exists,
-
-                            and embodies the creative technology approach on which SeeSaw
-
-                            Labs focuses. Has spent the past
-
-                            16 years building sophisticated
-
-                            software solutions, using various
-
-                            toolsets across myriad verticals,
-
-                            with strict attention to design and
-
-                            UX details resulting in truly creative, cross-platform products that
-
-                            drive immediate business value.
-                        </p>
-                        <!--<div class="section3SocialMedia">-->
-                            <!--<a href="#"><img src="./assets/images/socialMediaTwitterGray.svg" /></a>-->
-                            <!--<a href="#"> <img src="./assets/images/socialMediaFacebookGray.svg" /></a>-->
-                            <!--<a href="#"> <img src="./assets/images/socialMediaLinkedInGray.svg" /></a>-->
-                        <!--</div>-->
-                    </div>
+                <div class="leadershipSection">
+                  <div class="col-sm-6 section3Column">
+                      <div class="section3ImageContainer">
+                          <img class="section3Image" src="./assets/images/jeff_headshot.jpg"></img>
+                      </div>
+                      <div class="section3ContentDiv">
+                          <h2 class="section3H2Header styleGuideH2"> Jeff Winsett</h2>
+                          <h5 class="section3H5Header styleGuideH5">Partner & SeeEO</h5>
+                          <p class="styleGuideP">
+                              Jeff has spent the past 15 years helping businesses deliver on their bottom line by improving their offerings through technology solutions. His passion about both the technology and the consulting, in concert with his insatiable appetite for process improvement, forms the basis for his desire to forge true partnerships with clients delivering exactly what is needed, when it is needed, and collaborating on creative solutions within business constraints. He is the author of 2 books on the Yii Web-based development framework and one book on Cloud-based architecture solutions utilizing AWS.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 section3Column">
+                      <div class="section3ImageContainer">
+                          <img class="section3Image" src="./assets/images/ivan_headshot.jpg"></img>
+                      </div>
+                      <div class="section3ContentDiv">
+                          <h2 class="section3H2Header styleGuideH2">Ivan Morales</h2>
+                          <h5 class="section3H5Header styleGuideH5">Partner & SeeTO</h5>
+                          <p class="styleGuideP">
+                              Ivan is living proof that the mythical half-designer / half-developer exists, and embodies the creative technology approach on which SeeSaw Labs focuses. Has spent the past 16 years building sophisticated software solutions, using various toolsets across myriad verticals, with strict attention to design and UX details resulting in truly creative, cross-platform products that drive immediate business value.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 section3Column clearFloat">
+                      <div class="section3ImageContainer">
+                          <img class="section3Image" src="./assets/images/matthew_headshot.jpg"></img>
+                      </div>
+                      <div class="section3ContentDiv">
+                          <h2 class="section3H2Header styleGuideH2">Matthew Barnes</h2>
+                          <h5 class="section3H5Header styleGuideH5">Accounts & SeeSO</h5>
+                          <p class="styleGuideP">
+                              Engineer turned marketing aficionado, Matthew brings many years of experience in in Analytics, Customer Experience Optimization, eCommerce Development, Split Testing, CRO, Solutions Architecture and Busines Strategy.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 section3Column">
+                      <div class="section3ImageContainer">
+                          <img class="section3Image" src="./assets/images/teamJose160.jpg"></img>
+                      </div>
+                      <div class="section3ContentDiv">
+                          <h2 class="section3H2Header styleGuideH2">Jose Calderon</h2>
+                          <h5 class="section3H5Header styleGuideH5">SeePO</h5>
+                          <p class="styleGuideP">
+                              Jose is a passionate computer engineer who specializes in delivering high quality projects on time with more that 14 years of programming experience working with amazing teams all over the world and closely with clients serving as production manager. His development background enables him to successfully communicate specific knowledge to the programming teams to achieve the goals set forth.
+                          </p>
+                      </div>
+                  </div>
                 </div>
             </div>
         </div>
 
-    <!--<div id="featuredCaseStudyDiv">-->
-        <!--<p id="homeFeaturedCaseStudy">FEATURED CASE STUDY</p>-->
-        <!--<h2 id="featuredCaseStudyH2" class="colorWhite styleGuideH2">Example Mobile App Project</h2>-->
-        <!--<hr id="featuredCaseStudyBorder">-->
-        <!--<h5 id="featuredCaseStudyH5" class="colorWhite styleGuideH5">Mobile Software, Rapid Prototyping, Design</h5>-->
-        <!--<a class="colorWhite" href="viewProjectsPage.html">-->
-        <!--<p id="featuredCaseParagraph">-->
-            <!--<button type="button" id="featuredCaseButton" class="btn btn-secondary-outline">-->
-                <!--<p class="colorWhite" id="featuredCaseButtonParagraph">SEE CASE STUDY</p>-->
-            <!--</button>-->
-        <!--</p></a>-->
-    <!--</div>-->
-    <div id="happyClientsDiv">
-        <h1 class="styleGuideH1 marginTop1Em">Some Happy Clients</h1>
-        <hr id="happyClientsBorder">
-        <p id="happyClientsParagraph">We love helping businesses large and small launch their digital products.</p>
-        <div id="largeClientImages">
-            <div id="largeClient" class="row">
-
-                <div class="col-sm-2  largeClientImage inlineBlock">
-                    <a href="http://curlmart.com" target="_blank">
-                        <img class="imgFiller " src="./assets/images/partners/curlmart-logo.png"></img>
-                    </a>
-                </div>
-                <div class="col-sm-2 largeClientImage inlineBlock">
-                    <a href="http://link.nyc" target="_blank">
-                    <img class="imgFiller " src="./assets/images/partners/LinkNYC_logo.gif"></img>
-                    </a>
-                </div>
-                <div class="col-sm-2  largeClientImage inlineBlock ">
-                    <a href="http://kountable.com" target="_blank">
-                        <img class="imgFiller dark" src="./assets/images/partners/kountable-logo.png"></img>
-                    </a>
-                </div>
-                <div class="col-sm-2 largeClientImage inlineBlock">
-                    <a href="http://sbdigital.com" target="_blank">
-                    <img class="imgFiller " src="./assets/images/partners/SBD_logo.svg"></img>
-                        </a>
-                </div>
-                <!--<div class="col-sm-2 largeClientImage inlineBlock">-->
-                    <!--<a href="http://texturemediallc.com" target="_blank">-->
-                    <!--<img class="imgFiller " src="./assets/images/partners/texture-media_logo.png"></img>-->
-                        <!--</a>-->
-                <!--</div>-->
-                <div class="col-sm-2 largeClientImage inlineBlock">
-                    <a href="http://flywheelpartners.com" target="_blank">
-                    <img class="imgFiller " src="./assets/images/partners/flywheel_logo.png"></img>
-                        </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="tabletClientImages">
-            <div class="row">
-
-                <div class="col-sm-2  smallClientImage  inlineBlock">
-                    <a href="http://curlmart.com" target="_blank">
-                        <img class="imgFiller " src="./assets/images/partners/curlmart-logo.png"></img>
-                    </a>
-                </div>
-                <div class="col-sm-2 smallClientImage inlineBlock">
-                    <a href="http://link.nyc" target="_blank">
-                        <img class="imgFiller " src="./assets/images/partners/LinkNYC_logo.gif"></img>
-                    </a>
-                </div>
-                <div class="col-sm-2 smallClientImage inlineBlock">
-                    <a href="http://sbdigital.com" target="_blank">
-                        <img class="imgFiller " src="./assets/images/partners/SBD_logo.svg"></img>
-                    </a>
-                </div>
-                <div class="col-sm-2  smallClientImage inlineBlock " >
-                    <a href="http://kountable.com" target="_blank">
-                        <img class="imgFiller dark" src="./assets/images/partners/kountable-logo.png"></img>
-                    </a>
-                </div>
-                <!--<div class="col-sm-2 smallClientImage inlineBlock">-->
-                    <!--<a href="http://texturemediallc.com" target="_blank">-->
-                        <!--<img class="imgFiller " src="./assets/images/partners/texture-media_logo.png"></img>-->
-                    <!--</a>-->
-                <!--</div>-->
-                <div class="col-sm-2 smallClientImage inlineBlock">
-                    <a href="http://flywheelpartners.com" target="_blank">
-                        <img class="imgFiller " src="./assets/images/partners/flywheel_logo.png"></img>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id="mobileClientImages">
-            <div class="row">
-                <div class="col-sm-2 smallClientImage  inlineBlock">
-                    <a href="http://curlmart.com" target="_blank">
-                        <img class="imgFiller " src="./assets/images/partners/curlmart-logo.png"></img>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-            <div class="col-sm-2 smallClientImage inlineBlock">
-                    <a href="http://link.nyc" target="_blank">
-                        <img class="imgFiller " src="./assets/images/partners/LinkNYC_logo.gif"></img>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 smallClientImage inlineBlock">
-                    <a href="http://sbdigital.com" target="_blank">
-                        <img class="imgFiller " src="./assets/images/partners/SBD_logo.svg"></img>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 smallClientImage inlineBlock">
-                    <a href="http://texturemediallc.com" target="_blank">
-                        <img class="imgFiller " src="./assets/images/partners/texture-media_logo.png"></img>
-                        </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2 smallClientImage inlineBlock">
-                    <a href="http://flywheelpartners.com" target="_blank">
-                        <img class="imgFiller " src="./assets/images/partners/flywheel_logo.png"></img>
-                    </a>
-                </div>
-            </div>
-            <!--<div class="row">-->
-                <!--<div class="col-sm-2 largeClientImage inlineBlock">-->
-                    <!--<img class="imgFiller " src="./assets/images/partners/texture-media_logo.png"></img>-->
-                <!--</div>-->
-                <!--<div class="col-sm-2 largeClientImage inlineBlock">-->
-                    <!--<img class="imgFiller " src="./assets/images/partners/flywheel_logo.png"></img>-->
-                <!--</div>-->
-            <!--</div>-->
-            </div>
-        </div>
     </div>
-    <!--<div id="playgroundProjectDiv">-->
-        <!--<p id="homePlayGroundProject">PLAYGROUND PROJECT</p>-->
-        <!--<h1 id="playgroundProjectH1" class="styleGuideH1 colorWhite">Lemlet Private Event Communication</h1>-->
-        <!--<hr id="playgroundProjectBorder">-->
-        <!--<h5 id="playgroundProjectH5" class="colorWhite styleGuideH5">Work we do in house, because we love development that much.</h5>-->
-        <!--<p class="colorWhite" id="playgroundProjectParagraph1"> Lemlet is a private event management and communication tool. We made it especially for groups like your kids sports teams, bachelor parties, pub crawls and other events where it’s like trying to wrangle cats.</p>-->
-        <!--<a class="colorWhite" href="#"> -->
-        <!--<p id="playgroundProjectParagraph2">-->
-            <!--<button type="button" id="playgroundProjectButton" class="btn btn-secondary-outline">-->
-                <!--<a href="http://lemlet.com"><p id="playgroundProjectButtonParagraph" class="colorWhite">GO TO LEMLET ></p></a>-->
-            <!--</button>-->
-        <!--</p></a>-->
-    <!--</div>-->
 
-    <div id="wantToWorkWithUs">
+    <div id="contactSection">
 
-        <div class="cSection2">
+        <div class="cSection2 row">
             <div class="contactForm">
-                <div id="formMessages"></div>
+                <div id="formMessages">
+                  <h1>Let's chat about how we can partner together.</h1>
+                </div>
                 <form id="cSectionForm" class="form-horizontal" action="//formspree.io/hello@seesawlabs.com"
                       method="POST">
                     <fieldset>
                         <!-- Name input-->
-                        <div class="form-group" style="">
-                            <label class="contactFormName contactFormTextStyle control-label" for="name">NAME</label>
-                            <div class="nameDiv">
-                                <input id="name" name="name" type="text" class="contactFormInput form-control" required>
+                        <div class="form-group firstgroup">
+                            <div class="col-sm-6 textAlignRight">
+                                <input id="name" name="name" type="text" class="contactFormInput form-control" required placeholder="Your Name">
+                            </div>
+                            <div class="col-sm-6 textAlignLeft">
+                                <input id="subject" name="subject" type="text" class="contactFormInput form-control" required placeholder="Subject">
                             </div>
                         </div>
                         <!-- Email input-->
                         <div class="form-group">
-                            <label class="contactFormEmail contactFormTextStyle control-label" for="email">EMAIL</label>
-                            <div>
-                                <input id="email" name="email" type="text" class="contactFormInput form-control" required>
+                            <div class="col-sm-6 textAlignRight">
+                              <input id="email" name="email" type="text" class="contactFormInput form-control" required placeholder="Your Email" >
+                            </div>
+                            <div class="col-sm-6 textAlignLeft">
+                              <input id="phone" name="phone" type="text" class="contactFormInput form-control" required placeholder="Phone">
                             </div>
                         </div>
                         <!-- Message body -->
                         <div class="form-group">
-                            <label class="control-label contactFormTextStyle contactFormHelpMessage" for="message">HOW CAN WE HELP YOU</label>
-                            <div class="textAreaDiv contactFormInput">
-                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            <div class="textAreaDiv contactFormInput col-sm-6">
+                                <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
                             </div>
                         </div>
                         <!-- Form actions -->
                         <div class="form-group">
                             <div class="contactFormButtonDiv">
-                                <button type="submit" class="cSubmitButton btn btn-secondary-outline">SUBMIT</button>
+                                <button type="submit" class="cSubmitButton btn btn-secondary-outline blueButton">Send Message</button>
                             </div>
                         </div>
                     </fieldset>
                 </form>
             </div>
-            <div class="locationInfo">
-                <img class="cSectionImage cSectionImage1" src="./assets/images/iconContactPageLightBulb.png">
-                <p class="cSectionParagraph cSectionParagraph1">HELLO@SEESAWLABS.COM</p>
-                <!--<p class="cSectionParagraph cSectionParagraph2">512-555-5555</p>-->
-                <p class="cSectionParagraph cSectionParagraph3">902 EAST 5TH STREET</p>
-                <p class="cSectionParagraph cSectionParagraph3">SUITE 201</p>
-                <p class="cSectionParagraph cSectionParagraph3">AUSTIN, TX 78702</p>
-            </div>
         </div>
 
 
     </div>
-
- 
