@@ -55,13 +55,18 @@ $(document).ready(function (){
 
 
 	$(".scroll").click(function (e) {
-
+		$("a").removeClass('currentLink');
 		e.preventDefault();
 		ref= $(this).attr("href");
-
-		scroll = parseInt( $(ref).offset().top) -110;
+		if ($(window).width() < 425){
+			scroll = parseInt( $(ref).offset().top) -75;
+		}
+		else {
+			scroll = parseInt( $(ref).offset().top) -99;
+		}
 		$(this).css({overflow:'hidden'});
-
+		$(this).addClass('currentLink');
+		console.log('this: ', $(this));
 		$('html, body').animate({
 			scrollTop: parseInt(scroll)
 		}, 1000);
