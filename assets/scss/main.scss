@@ -1796,7 +1796,8 @@ button#exploreCaseStudiesButton:hover {
   height: 245px;
   h1{
     @media all and (min-width:45em) and (max-width: 48em){
-      padding-bottom: .5em;
+      padding-top: 1em;
+      padding-bottom: 1em;
     }
   }
   h1, p{
@@ -1812,6 +1813,18 @@ button#exploreCaseStudiesButton:hover {
   @media all and (min-width:45em) and (max-width: 48em){
     line-height: 2.3em;
   }
+}
+
+#ourProcess p{
+    max-width: 65%;
+    display: block;
+    margin: 0 auto;
+    @media (max-width: 24.375em){
+      max-width: 95%;
+    }
+    @media all and (min-width:45em) and (max-width: 48em){
+      max-width: 95%;
+    }
 }
 
 #servicesSection{
