@@ -1,3 +1,34 @@
+window.onload = function() {
+	setTimeout(function() {
+		new Image().src = '../assets/images/newNavLogo.png';
+		new Image().src = '../assets/images/hero.jpg';
+		new Image().src = '../assets/images/mobile/hero.jpg';
+		new Image().src = '../assets/images/casestudyLinkNYC1-80.jpg';
+		new Image().src = '../assets/images/casestudyKountable1-80.jpg';
+		new Image().src = '../assets/images/casestudyLinkNYC2-80.jpg';
+		new Image().src = '../assets/images/casestudyKountable2-80.jpg';
+		new Image().src = '../assets/images/casestudyLinkNYC1-80.jpg';
+		new Image().src = '../assets/images/bubbles.png';
+		new Image().src = '../assets/images/sslHambuger.svg';
+		new Image().src = '../assets/images/clientCurlmart.png';
+
+		new Image().src = '../assets/images/clientSbdigital.png';
+		new Image().src = '../assets/images/clientFlywheel.png';
+		new Image().src = '../assets/images/iconsTechAssesmentsStrategy.png';
+		new Image().src = '../assets/images/iconsCustomSoftwareDev.png';
+		new Image().src = '../assets/images/iconsRapidPrototyping.png';
+		new Image().src = '../assets/images/iconsCustomCloudArch.png';
+		new Image().src = '../assets/images/iconsMobileSoftware.png';
+		new Image().src = '../assets/images/iconsEcommerceSolutions.png';
+		new Image().src = '../assets/images/ourProcess.png';
+		new Image().src = '../assets/images/jeff_headshot.jpg';
+		new Image().src = '../assets/images/ivan_headshot.jpg';
+		new Image().src = '../assets/images/matthew_headshot.jpg';
+		new Image().src = '../assets/images/teamJose160.jpg';
+
+	}, 1000);
+}
+
 $(function() {
 
 	// Get the form.
@@ -21,19 +52,26 @@ $(function() {
 			data: formData
 		})
 		.done(function(response) {
+			console.log('done');
 			// Make sure that the formMessages div has the 'success' class.
 			$(formMessages).removeClass('error');
 			$(formMessages).addClass('success');
 
 			// Set the message text.
-			$(formMessages).text(response);
-
+			//$(formMessages).text(response);
+			$('#formFields').hide();
+			$('#messageSend').show();
 			// Clear the form.
 			$('#name').val('');
 			$('#email').val('');
 			$('#message').val('');
+			$('#subject').val('');
+			$('#phone').val('');
+
+
 		})
 		.fail(function(data) {
+			console.log('fail');
 			// Make sure that the formMessages div has the 'error' class.
 			$(formMessages).removeClass('success');
 			$(formMessages).addClass('error');
