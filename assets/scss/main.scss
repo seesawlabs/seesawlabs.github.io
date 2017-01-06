@@ -1820,16 +1820,21 @@ button#exploreCaseStudiesButton:hover {
   }
 }
 
-#ourProcess p{
-    max-width: 65%;
-    display: block;
-    margin: 0 auto;
-    @media (max-width: 24.375em){
-      max-width: 95%;
-    }
-    @media all and (min-width:45em) and (max-width: 48em){
-      max-width: 95%;
-    }
+#ourProcess {
+  p{
+      max-width: 850px;
+      display: block;
+      margin: 0 auto;
+      @media (max-width: 24.375em){
+        max-width: 95%;
+      }
+      @media all and (min-width:45em) and (max-width: 48em){
+        max-width: 95%;
+      }
+  }
+  @media all and (min-width:45em) and (max-width: 48em){
+    height: 200px;
+  }
 }
 
 #servicesSection{
@@ -1921,8 +1926,9 @@ a.uppercase.marginRight.scroll {
 
 #messageSend{
   display: none;
+  height: 310px;
   h1{
-    margin-bottom: 4.5em;
+    padding: 3em 0;
     font-family: opensanslight;
     font-size: 28px;
     font-weight: 300;
