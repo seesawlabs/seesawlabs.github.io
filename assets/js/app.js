@@ -1,36 +1,33 @@
 window.onload = function() {
 	setTimeout(function() {
 
-		var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+		var webURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
 
+		new Image().src = webURL + 'assets/images/newNavLogo.png';
+		new Image().src = webURL + 'assets/images/hero.jpg';
+		new Image().src = webURL + 'assets/images/mobile/hero.jpg';
+		new Image().src = webURL + 'assets/images/casestudyLinkNYC1-80.jpg';
+		new Image().src = webURL + 'assets/images/casestudyKountable1-80.jpg';
+		new Image().src = webURL + 'assets/images/casestudyLinkNYC2-80.jpg';
+		new Image().src = webURL + 'assets/images/casestudyKountable2-80.jpg';
+		new Image().src = webURL + 'assets/images/casestudyLinkNYC1-80.jpg';
+		new Image().src = webURL + 'assets/images/bubbles.png';
+		new Image().src = webURL + 'assets/images/sslHambuger.svg';
+		new Image().src = webURL + 'assets/images/clientCurlmart.png';
 
-		console.log('url:', newURL);
-
-		new Image().src = '/assets/images/newNavLogo.png';
-		new Image().src = '/assets/images/hero.jpg';
-		new Image().src = '/assets/images/mobile/hero.jpg';
-		new Image().src = '/assets/images/casestudyLinkNYC1-80.jpg';
-		new Image().src = '/assets/images/casestudyKountable1-80.jpg';
-		new Image().src = '/assets/images/casestudyLinkNYC2-80.jpg';
-		new Image().src = '/assets/images/casestudyKountable2-80.jpg';
-		new Image().src = '/assets/images/casestudyLinkNYC1-80.jpg';
-		new Image().src = '/assets/images/bubbles.png';
-		new Image().src = '/assets/images/sslHambuger.svg';
-		new Image().src = '/assets/images/clientCurlmart.png';
-
-		new Image().src = '/assets/images/clientSbdigital.png';
-		new Image().src = '/assets/images/clientFlywheel.png';
-		new Image().src = '/assets/images/iconsTechAssesmentsStrategy.png';
-		new Image().src = '/assets/images/iconsCustomSoftwareDev.png';
-		new Image().src = '/assets/images/iconsRapidPrototyping.png';
-		new Image().src = '/assets/images/iconsCustomCloudArch.png';
-		new Image().src = '/assets/images/iconsMobileSoftware.png';
-		new Image().src = '/assets/images/iconsEcommerceSolutions.png';
-		new Image().src = '/assets/images/ourProcess.png';
-		new Image().src = '/assets/images/jeff_headshot.jpg';
-		new Image().src = '/assets/images/ivan_headshot.jpg';
-		new Image().src = '/assets/images/matthew_headshot.jpg';
-		new Image().src = '/assets/images/teamJose160.jpg';
+		new Image().src = webURL + 'assets/images/clientSbdigital.png';
+		new Image().src = webURL + 'assets/images/clientFlywheel.png';
+		new Image().src = webURL + 'assets/images/iconsTechAssesmentsStrategy.png';
+		new Image().src = webURL + 'assets/images/iconsCustomSoftwareDev.png';
+		new Image().src = webURL + 'assets/images/iconsRapidPrototyping.png';
+		new Image().src = webURL + 'assets/images/iconsCustomCloudArch.png';
+		new Image().src = webURL + 'assets/images/iconsMobileSoftware.png';
+		new Image().src = webURL + 'assets/images/iconsEcommerceSolutions.png';
+		new Image().src = webURL + 'assets/images/ourProcess.png';
+		new Image().src = webURL + 'assets/images/jeff_headshot.jpg';
+		new Image().src = webURL + 'assets/images/ivan_headshot.jpg';
+		new Image().src = webURL + 'assets/images/matthew_headshot.jpg';
+		new Image().src = webURL + 'assets/images/teamJose160.jpg';
 
 	}, 1000);
 }
