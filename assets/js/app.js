@@ -1,5 +1,11 @@
 window.onload = function() {
 	setTimeout(function() {
+
+		var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+
+
+		console.log('url:', newURL);
+
 		new Image().src = '/assets/images/newNavLogo.png';
 		new Image().src = '/assets/images/hero.jpg';
 		new Image().src = '/assets/images/mobile/hero.jpg';
