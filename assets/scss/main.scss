@@ -1428,7 +1428,7 @@ a.currentLink{
 }
 
 #homepageHeroContainer {
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/fullresolution/hero1200.jpg");
     min-height: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -1439,7 +1439,7 @@ a.currentLink{
       line-height: 2!important;
     }
     @media all and (max-width:24.375em) {
-      background-image: url("../images/mobile/hero.jpg");
+      background-image: url("../images/fullresolution/heroMobile1200.jpg");
       display: inline-block;
     }
 
@@ -1516,28 +1516,16 @@ button#exploreCaseStudiesButton:hover {
   }
 
   .box1{
-    background-image: url("../images/casestudyLinkNYC1-80.jpg");
+    background-image: url("../images/fullresolution/casestudyLinkNYC1-80.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
-    @media
-    screen and (-webkit-min-device-pixel-ratio: 1.5),
-    screen and (-moz-min-device-pixel-ratio: 1.5),
-    screen and (min-device-pixel-ratio: 1.5) {
-      background-image: url('../images/fullresolution/casestudyLinkNYC1@2x-80.jpg');
-    }
   }
   .box2{
-    background-image: url("../images/casestudyKountable1-80.jpg");
+    background-image: url("../images/fullresolution/casestudyKountable1-80.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     float: right;
-    @media
-    screen and (-webkit-min-device-pixel-ratio: 1.5),
-    screen and (-moz-min-device-pixel-ratio: 1.5),
-    screen and (min-device-pixel-ratio: 1.5) {
-      background-image: url('../images/fullresolution/casestudyKountable1@2x-80.jpg');
-    }
   }
 
   .backgroundBox{
@@ -1558,18 +1546,12 @@ button#exploreCaseStudiesButton:hover {
   }
 
   #linkNYCCaseImg{
-    background-image: url("../images/casestudyLinkNYC2-80.jpg");
+    background-image: url("../images/fullresolution/casestudyLinkNYC2-80.jpg");
     height: 356px;
     width: 50%;
     float: right;
     background-repeat: no-repeat;
     background-size: cover;
-    @media
-    screen and (-webkit-min-device-pixel-ratio: 1.5),
-    screen and (-moz-min-device-pixel-ratio: 1.5),
-    screen and (min-device-pixel-ratio: 1.5) {
-      background-image: url('../images/fullresolution/casestudyLinkNYC2@2x-80.jpg');
-    }
   }
 
   #kountableCaseText{
@@ -1593,18 +1575,12 @@ button#exploreCaseStudiesButton:hover {
   }
 
   #kountableCaseImg{
-    background-image: url("../images/casestudyKountable2-80.jpg");
+    background-image: url("../images/fullresolution/casestudyKountable2-80.jpg");
     height: 356px;
     width: 50%;
     float: left;
     background-repeat: no-repeat;
     background-size: cover;
-    @media
-    screen and (-webkit-min-device-pixel-ratio: 1.5),
-    screen and (-moz-min-device-pixel-ratio: 1.5),
-    screen and (min-device-pixel-ratio: 1.5) {
-      background-image: url('../images/fullresolution/casestudyKountable2@2x-80.jpg');
-    }
   }
 
   .box1:hover ~ #linkNYCCase{
@@ -1750,31 +1726,13 @@ button#exploreCaseStudiesButton:hover {
     }
   }
   .clientCurlmartImg{
-    background-image: url("../images/clientCurlmart.png");
-    @media
-    screen and (-webkit-min-device-pixel-ratio: 1.5),
-    screen and (-moz-min-device-pixel-ratio: 1.5),
-    screen and (min-device-pixel-ratio: 1.5) {
-      background-image: url('../images/fullresolution/clientCurlmart.svg');
-    }
+    background-image: url("../images/fullresolution/clientCurlmart.svg");
   }
   .clientSbdigitalImg{
-    background-image: url("../images/clientSbdigital.png");
-    @media
-    screen and (-webkit-min-device-pixel-ratio: 1.5),
-    screen and (-moz-min-device-pixel-ratio: 1.5),
-    screen and (min-device-pixel-ratio: 1.5) {
-      background-image: url('../images/fullresolution/clientSbdigital.svg');
-    }
+    background-image: url("../images/fullresolution/clientSbdigital.svg");
   }
   .clientFlywheelImg{
-    background-image: url("../images/clientFlywheel.png");
-    @media
-    screen and (-webkit-min-device-pixel-ratio: 1.5),
-    screen and (-moz-min-device-pixel-ratio: 1.5),
-    screen and (min-device-pixel-ratio: 1.5) {
-      background-image: url('../images/fullresolution/clientFlywheel.svg');
-    }
+    background-image: url("../images/fullresolution/clientFlywheel.svg");
   }
   @media all and (min-width:24.375em) and (max-width:  26.5625em){
     height: 600px;
@@ -1786,7 +1744,7 @@ button#exploreCaseStudiesButton:hover {
 .bluebox{
   width: 100%;
   background-color: #216a85;
-  background-image: url("../images/bubbles.png");
+  background-image: url("../images/fullresolution/bubbles.svg");
   background-repeat: no-repeat;
   background-position: 98% center;
   @media (max-width: 24.375em){
@@ -1936,47 +1894,29 @@ a.uppercase.marginRight.scroll {
 }
 
 .linkImageBackground{
-  background-image: url("../images/clientLinknyc.png");
+  background-image: url("../images/fullresolution/clientLinknyc.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   height: 42px;
   display: block;
   margin-bottom: .75em;
-  @media
-  screen and (-webkit-min-device-pixel-ratio: 1.5),
-  screen and (-moz-min-device-pixel-ratio: 1.5),
-  screen and (min-device-pixel-ratio: 1.5) {
-    background-image: url('../images/fullresolution/clientLinknyc.svg');
-  }
 }
 
 .kountableImageBackground{
-  background-image: url("../images/clientKountable.png");
+  background-image: url("../images/fullresolution/clientKountable.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   height: 42px;
   display: block;
   margin-bottom: .75em;
-  @media
-  screen and (-webkit-min-device-pixel-ratio: 1.5),
-  screen and (-moz-min-device-pixel-ratio: 1.5),
-  screen and (min-device-pixel-ratio: 1.5) {
-    background-image: url('../images/fullresolution/clientKountable.svg');
-  }
 }
 
 .ourProcessImg{
-  background-image: url("../images/ourProcess.png");
+  background-image: url("../images/fullresolution/ourProcess.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   height: 905px;
   display: block;
-  @media
-  screen and (-webkit-min-device-pixel-ratio: 1.5),
-  screen and (-moz-min-device-pixel-ratio: 1.5),
-  screen and (min-device-pixel-ratio: 1.5) {
-    background-image: url('../images/fullresolution/ourProcess.svg');
-  }
 }
 
 .heresHowWeCanHelpParagraph{
@@ -2223,10 +2163,10 @@ a.uppercase.marginRight.scroll {
         }
       }
       .box1{
-        background-image: url("../images/casestudyLinkNYC1-80.jpg");
+        background-image: url("../images/fullresolution/casestudyLinkNYC1-80.jpg");
       }
       .box2{
-        background-image: url("../images/casestudyKountable1-80.jpg");
+        background-image: url("../images/fullresolution/casestudyKountable1-80.jpg");
         background-position: 50% 20%;
       }
       #linkNYCCaseText, #kountableCaseText{
@@ -3748,7 +3688,7 @@ a.uppercase.marginRight.scroll {
 
 #contactSection{
     height: 100%;
-    background-image: url('../images/bubbles.png');
+    background-image: url('../images/fullresolution/bubbles.svg');
     background-repeat: repeat-y;
     background-position: 98%;
     @media (max-width: 24.375em){
