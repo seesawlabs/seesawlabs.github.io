@@ -32,7 +32,6 @@ window.onload = function() {
 }
 
 $(function() {
-
 	// Get the form.
 	var form = $('#cSectionForm');
 
@@ -106,7 +105,7 @@ $(document).ready(function (){
 		}
 		$(this).css({overflow:'hidden'});
 		$(this).addClass('currentLink');
-		console.log('this: ', $(this));
+
 		$('html, body').animate({
 			scrollTop: parseInt(scroll)
 		}, 1000);
