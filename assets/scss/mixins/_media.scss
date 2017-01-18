@@ -1,0 +1,28 @@
+$tablet: 768px;
+$smallD: 1000px;
+$largeD: 1192px;
+/* Content Include 2 Queries */
+
+@mixin mobile {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: #{$smallD}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$largeD}) {
+    @content;
+  }
+}

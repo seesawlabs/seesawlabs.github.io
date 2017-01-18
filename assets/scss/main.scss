@@ -3,6 +3,7 @@
   // Core
   'mixins/_variables',
   'mixins/_mixins',
+  'mixins/_media',
   // Modules
   'modules/_fonts',
   'modules/_colors',
@@ -18,5 +19,9 @@
 
 // Pages
 @import
+  'pages/_connect',
+  'pages/_contact',
+  'pages/_crew',
   'pages/_home',
-  'pages/_contact';
+  'pages/_process',
+  'pages/_work';
