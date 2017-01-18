@@ -1,0 +1,23 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "fonts/fonts.scss";
+@import "modules/about.scss";
+@import "modules/casestudies.scss";
+@import "modules/contact.scss";
+@import "modules/footer.scss";
+@import "modules/general.scss";
+@import "modules/helpyou.scss";
+@import "modules/hero.scss";
+@import "modules/navbar.scss";
+@import "modules/ourprocess.scss";
+@import "variables/variables.scss";
+
+@mixin header($fontsize, $fontfamily){
+  font-family: $fontfamily;
+  font-weight: 300;
+  font-size: $fontsize
+}
+
+.message_10{ @include header(10px, roboto); }
+.message_16{ @include header(16px, openSansExtraBold); }
+.message_22{ @include header(22px, arial); }
+.message_28{ @include header(28px, Courier); }

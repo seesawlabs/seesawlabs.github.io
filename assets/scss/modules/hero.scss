@@ -1,0 +1,152 @@
+#homepageHeroContainer {
+  background-image: url("../images/fullresolution/hero1200.jpg");
+  min-height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-width: 100%;
+  background-size: cover;
+  background-position: 100% 20%;
+
+  .btn{
+    line-height: 2!important;
+  }
+
+  @media all and (min-width: 62em) {
+    height: 600px;
+  }
+
+  @media all and (max-width:47.9375em) {
+    background-image: url("../images/fullresolution/heroMobile1200.jpg");
+    display: inline-block;
+  }
+
+  .homepageHero {
+    padding: 0 !important;
+    #homepageHeroText {
+      margin-top: 9em;
+      margin-left: 3.5em;
+      margin-right: 24.2em;
+      max-width: 580px;
+      h1{
+        color:#fff;
+        font-weight: 800;
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        margin-right: 0.5em;
+        font-family: openSansExtraBold;
+      }
+      p{
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 1em;
+        color: #fff;
+        font-family: openSansLight;
+        display: inline-block;
+        width: 100%;
+      }
+
+      @media (max-width: 35.937em)  {
+        margin: 6em .5em 0;
+        text-align: center;
+        h1{
+          font-size: 24px;
+          margin-bottom: 0.75em;
+        }
+        p{ font-size: 18px;}
+      }
+
+      @media all and (min-width:24.375em) and (max-width: 33.75em) {
+        text-align: center;
+        h1{
+          font-size: 24px;
+          margin-bottom: 0.75em;
+        }
+        p{ font-size: 18px;}
+      }
+
+      @media all and (min-width: 34em) and (max-width: 47.9375em){
+        margin: 6em .5em 0;
+      }
+
+      @media all and (min-width:45em) and (max-width: 48em){
+        margin-top: 8em;
+      }
+
+      @media (min-width: 48em) and (max-width:61.9375em) {
+        margin-right: 0;
+        margin-left: 3.5em;
+        width: 80%;
+        max-width: 580px;
+        p{
+          font-size: 18px;
+          width: 70%;
+          margin-left: 0;
+          margin-right: 0;
+          text-align: left;
+          margin-top: 0.25em;
+          margin-bottom: 0.25em;
+        }
+      }
+
+      @media (min-width:62em) and (max-width: 74.9375){
+        margin-right: 24.2em;
+      }
+    }
+  }
+
+  #exploreCaseStudiesRow {
+    width: 85%;
+    @media (min-width: 20em) and (max-width: 47.9375em){
+      display: inline;
+    }
+    div#exploreCaseStudies {
+      padding-left: 1em;
+
+      @media
+      all and (max-width:24.375em),
+      all and (min-width: 34em){
+        margin: 1em 0 2em 0;
+      }
+      @media all and (min-width:24.375em) and (max-width: 33.75em) {
+        margin: 1em 0 2em 0;
+      }
+      @media all and (min-width:45em) and (max-width: 48em){
+        padding-bottom: 1em;
+      }
+
+      .exploreCaseStudiesLink {
+          color: #fff;
+          font-family: openSansBold;
+          font-size: 12pt;
+          text-align: left;
+          button {
+              width: 100%;
+              height: 50px;
+              text-transform: uppercase;
+              margin-left: 2.5em;
+              max-width: 320px;
+              @media (min-width: 20em) and (max-width: 47.9375em){
+                margin-left: 0;
+                max-width: 100%;
+              }
+              @media (min-width: 48em) and (max-width:61.9375em) {
+                margin-left: 3em;
+              }
+              @media (min-width: 48em) and (max-width:74.9375) {
+                width: 50%;
+              }
+          }
+          button:hover {
+            background-color: #226a85;
+          }
+          @media all and (min-width:24.375em) and (max-width: 33.75em) {
+            p { margin-top: 2em; }
+          }
+          @media (min-width: 36em) and (max-width: 47.9375em){
+            p{ text-align: center; }
+          }
+      }
+    }
+  }
+}
