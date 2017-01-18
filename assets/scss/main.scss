@@ -1,12 +1,11 @@
 @import
-  '../node_modules/bootstrap/scss/bootstrap.scss',
-  // Core
-  'mixins/_variables',
+  '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import
+  'modules/variables',
   'mixins/_mixins',
   'mixins/_media',
-  // Modules
   'modules/_fonts',
-  'modules/_colors',
   'modules/_about',
   'modules/_casestudies',
   'modules/_contact',
@@ -17,7 +16,7 @@
   'modules/_navbar',
   'modules/_ourprocess';
 
-// Pages
+/* Pages */
 @import
   'pages/_connect',
   'pages/_contact',
