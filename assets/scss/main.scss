@@ -15,17 +15,16 @@
           border-radius: $radius;
 }
 
-@mixin blackbar($height){
-  top: 0px;
-  width: 100%;
-  z-index: 1000;
-  opacity: 1;
-  height: $height;
-  background-color: rgba(0,0,0,.85);
-}
 
+/*start Variables*/
 $space1: 1em;
 $space2: 2.5em;
+$space3: 0.5em;
+$space4: 5em;
+
+$colorWhite: #fff;
+
+/*end Variables*/
 
 .message_10{ @include header(10px, roboto); }
 .message_16{ @include header(16px, openSansExtraBold); }
@@ -34,12 +33,16 @@ $space2: 2.5em;
 
 body{
   background-color: gray;
-  color: #fff;
+  color: $colorWhite;
 }
 
 section{
   padding: 0 1em;
   text-align: center;
+}
+
+.show{
+  display: block;
 }
 
 .btn-secondary-outline {
@@ -51,11 +54,21 @@ section{
     padding: 0em 2em;
 }
 
+.blackbar{
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  opacity: 1;
+  height: 100px;
+  background-color: rgba(0,0,0,.85);
+  @media (min-width: 20em) and (max-width: 47.9375em) {
+    height: 75px;
+  }
+}
 
 /*start navbar*/
 .navbar{
     position: fixed;
-    @include blackbar(100px);
     @include border-radius(0);
 }
 
@@ -71,13 +84,21 @@ section{
     height: 60px;
     padding-left: 5em;
     margin-top: .5em;
+    @media (min-width: 20em) and (max-width: 47.9375em) {
+      padding-left: 0;
+      margin-top: 0;
+    }
+  }
+  @media (min-width: 20em) and (max-width: 47.9375em) {
+    width: 50%;
+    display: inline-block;
   }
 }
 
 #desktopNav, #mobileNav{
   a{
     font-family: openSansBold;
-    color: #fff;
+    color: $colorWhite;
     text-decoration:none;
     display: inline-block;
     margin-right: 4.5em;
@@ -104,15 +125,16 @@ section{
 }
 
 #mobileNav{
-  display: none;
+  display: inline;
   @media (min-width: 20em) and (max-width: 47.9375em) {
-    display: block;
+    display: inline;
   }
 }
 
 #mobileNavBar {
     display: inline;
     padding: 0;
+    width: 50%;
     .iconHamburgerSSL{
       background-image: url("../images/sslHambuger.svg");
       background-repeat: no-repeat;
@@ -152,16 +174,35 @@ section{
 /*end hero*/
 
 
+/*start linkNYC*/
+
+.spaceDivRight{
+  padding-right: $space3;
+}
+
+.spaceDivLeft{
+  padding-left: $space3;
+}
+
+.marginRight{
+  margin-right: $space4;
+}
+
+.marginLeft{
+  margin-left: $space4;
+}
+
+/*end linkNYC*/
+
 
 /*start footer*/
 #footer{
-    @include blackbar(100px);
     @include border-radius(0);
-    color: #fff;
+    color: $colorWhite;
     text-align: center;
     margin-top: 7em;
     .fa-linkedin{
-      color: #fff;
+      color: $colorWhite;
     }
 
     #footerLogo{ padding-top: .75em}
