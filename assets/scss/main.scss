@@ -1,169 +1,22 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "fonts/fonts.scss";
-@import "variables/variables.scss";
+@import
+  '../node_modules/bootstrap/scss/bootstrap.scss',
+  // Core
+  'mixins/_variables',
+  'mixins/_mixins',
+  // Modules
+  'modules/_fonts',
+  'modules/_colors',
+  'modules/_about',
+  'modules/_casestudies',
+  'modules/_contact',
+  'modules/_footer',
+  'modules/_general',
+  'modules/_helpyou',
+  'modules/_hero',
+  'modules/_navbar',
+  'modules/_ourprocess';
 
-@mixin header($fontsize, $fontfamily){
-  font-family: $fontfamily;
-  font-weight: 300;
-  font-size: $fontsize
-}
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
-
-@mixin blackbar($height){
-  top: 0px;
-  width: 100%;
-  z-index: 1000;
-  opacity: 1;
-  height: $height;
-  background-color: rgba(0,0,0,.85);
-}
-
-$space1: 1em;
-$space2: 2.5em;
-
-.message_10{ @include header(10px, roboto); }
-.message_16{ @include header(16px, openSansExtraBold); }
-.message_22{ @include header(22px, arial); }
-.message_28{ @include header(28px, Courier); }
-
-body{
-  background-color: gray;
-  color: #fff;
-}
-
-section{
-  padding: 0 1em;
-  text-align: center;
-}
-
-.btn-secondary-outline {
-    color: #ccc;
-    background-image: none;
-    background-color: #ce9a2b;
-    border-color: transparent;
-    height: 50px;
-    padding: 0em 2em;
-}
-
-
-/*start navbar*/
-.navbar{
-    position: fixed;
-    @include blackbar(100px);
-    @include border-radius(0);
-}
-
-.navbar-toggler {
-    padding: .5rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-}
-
-.sslLogo{
-  z-index: 10000;
-  .logoImage{
-    height: 60px;
-    padding-left: 5em;
-    margin-top: .5em;
-  }
-}
-
-#desktopNav, #mobileNav{
-  a{
-    font-family: openSansBold;
-    color: #fff;
-    text-decoration:none;
-    display: inline-block;
-    margin-right: 4.5em;
-  }
-}
-
-
-#desktopNav{
-  display: inline;
-  @media (min-width: 20em) and (max-width: 47.9375em) {
-    display: none;
-  }
-  #desktopNavLinks{
-    padding-right: 5em;
-    padding-top: 1em;
-    .navItalicFont{
-      text-align: left;
-    }
-
-    .navFont{
-      text-transform: uppercase;
-    }
-  }
-}
-
-#mobileNav{
-  display: none;
-  @media (min-width: 20em) and (max-width: 47.9375em) {
-    display: block;
-  }
-}
-
-#mobileNavBar {
-    display: inline;
-    padding: 0;
-    .iconHamburgerSSL{
-      background-image: url("../images/sslHambuger.svg");
-      background-repeat: no-repeat;
-      height: 28px;
-      width: 40px;
-      float: right;
-      margin-top: 24px;
-      margin-right: 15px;
-    }
-}
-/*end navbar*/
-
-/*start hero*/
-#hero{
-  padding-top: 100px;
-  background-image: url(../images/hero.jpg);
-  min-height: 100%;
-  width: 100%;
-  min-width: 100%;
-  background-size: cover;
-  background-position: 100% 20%;
-  height: 700px;
-  .headercontainer{
-    padding-top: $space2;
-    padding-bottom: $space2;
-  }
-  h1{
-    text-transform: uppercase;
-  }
-  p{
-    padding-bottom: $space1;
-    max-width: 680px;
-    margin: 0 auto;
-    font-size: 22px;
-  }
-}
-/*end hero*/
-
-
-
-/*start footer*/
-#footer{
-    @include blackbar(100px);
-    @include border-radius(0);
-    color: #fff;
-    text-align: center;
-    margin-top: 7em;
-    .fa-linkedin{
-      color: #fff;
-    }
-
-    #footerLogo{ padding-top: .75em}
-}
-/*end footer*/
+// Pages
+@import
+  'pages/_home',
+  'pages/_contact';
