@@ -1,0 +1,44 @@
+@import
+  'modules/_variables',
+  'mixins/_media';
+#footer{
+    @include border-radius(0);
+    color: $colorWhite;
+    text-align: center;
+    //margin-top: 7em;
+    .fa-linkedin{
+      color: $colorWhite;
+      @include mobile{
+        display: none;
+      }
+      @include small{
+        display: none;
+      }
+      @include medium{
+        display: inline;
+      }
+    }
+
+    #footerLogo{
+      padding-top: .75em;
+      @include mobile{
+        display: none;
+      }
+      @include small{
+        display: none;
+      }
+      @include medium{
+        display: inline;
+      }
+      .logoImage{
+        margin-top: 1.25em;
+      }
+    }
+
+    .copyrigth{
+      padding-top: 2.5em;
+    }
+    .socialmedia{
+      padding-top: 1.75em;
+    }
+}

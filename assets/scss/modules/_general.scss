@@ -1,0 +1,34 @@
+body{
+  background-color: gray;
+  color: $colorWhite;
+}
+
+section{
+  padding: 0 .85em;
+  text-align: center;
+}
+
+.show{
+  display: block;
+}
+
+.btn-secondary-outline {
+    color: #ccc;
+    background-image: none;
+    background-color: #ce9a2b;
+    border-color: transparent;
+    height: 50px;
+    padding: 0em 2em;
+}
+
+.blackbar{
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  height: 100px;
+  opacity: 1;
+  background-color: rgba(0,0,0,.85);
+  @media (min-width: 20em) and (max-width: 47.9375em) {
+    height: 75px;
+  }
+}

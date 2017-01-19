@@ -1,5 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "fonts/fonts.scss";
+@import "modules/fonts.scss";
 @import "modules/about.scss";
 @import "modules/casestudies.scss";
 @import "modules/contact.scss";
@@ -9,7 +9,7 @@
 @import "modules/hero.scss";
 @import "modules/navbar.scss";
 @import "modules/ourprocess.scss";
-@import "variables/variables.scss";
+@import "modules/variables.scss";
 
 @mixin header($fontsize, $fontfamily){
   font-family: $fontfamily;

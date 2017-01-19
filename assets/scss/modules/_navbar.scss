@@ -1,0 +1,158 @@
+.navbar{
+    position: fixed;
+    @include border-radius(0);
+}
+
+.navbar-toggler {
+    padding: .5rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+#logoDesktop{
+  @include mobile{
+    display: none;
+  }
+  @include small{
+    display: none;
+  }
+  @include medium{
+    display: inline;
+  }
+}
+
+#logoMobile{
+  @include mobile{
+    display: inline;;
+  }
+  @include small{
+    display: inline;
+  }
+  @include medium{
+    display: none;
+  }
+}
+
+.sslLogo{
+  z-index: 10000;
+  .logoImage{
+    height: 60px;
+    @include mobile{
+      padding-left: 0;
+      margin-top: 0;
+    }
+    @include small{
+      padding-left: 0;
+      margin-top: 0;
+    }
+    @include medium{
+      padding-left: 2em;
+      margin-top: .5em;
+    }
+    @include large{
+      padding-left: 5.2em;
+    }
+  }
+  @include mobile{
+    width: 50%;
+    display: inline-block;
+  }
+  @include small{
+    width: 50%;
+    display: inline-block;
+  }
+  @include medium{
+    width: 15%;
+  }
+}
+
+#desktopNav, #mobileNav{
+  a{
+    font-family: openSansBold;
+    color: $colorWhite;
+    text-decoration:none;
+    display: inline-block;
+    margin-right: 4.5em;
+  }
+}
+
+
+#desktopNav{
+  @include mobile{
+    display: none;
+  }
+  @include small{
+    display: none;
+  }
+  @include medium{
+    display: inline;
+  }
+
+
+  #desktopNavLinks{
+    padding-right: 5em;
+    padding-top: 1em;
+    .navItalicFont{
+      text-align: left;
+    }
+
+    .navFont{
+      text-transform: uppercase;
+    }
+  }
+}
+
+#mobileNav{
+  @include mobile{
+    display: inline;
+  }
+  @include small{
+    display: inline;
+  }
+  @include medium{
+    display: none;
+  }
+}
+
+#mobileNavBar {
+    display: inline;
+    padding: 0;
+    width: 50%;
+    .iconHamburgerSSL{
+      background-image: url("../images/sslHambuger.svg");
+      background-repeat: no-repeat;
+      height: 28px;
+      width: 40px;
+      float: right;
+      margin-top: 16px;
+      margin-right: 15px;
+    }
+}
+
+#nonCollapsedMenu {
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+  opacity: 1;
+  height: 100vh;
+
+    ul {
+        list-style: none;
+        text-align: center;
+        display: inline;
+        padding: 0;
+        margin: 0;
+        line-height: 30px;
+        li {
+            margin: 2em;
+        }
+    }
+    a {
+        color: #fff;
+        font-family: openSansBold;
+        font-size: 28px;
+    }
+    a:hover {
+        color: $color3;
+        text-decoration: none;
+    }
+}

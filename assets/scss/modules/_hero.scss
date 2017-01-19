@@ -1,0 +1,36 @@
+#hero{
+  padding-top: 100px;
+  background-image: url('../images/backgrounds/desktop_hero@2x.jpg');
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+
+  height: 900px;
+  .headercontainer{
+    padding-top: $space2;
+    padding-bottom: $space2;
+  }
+  h1{
+    text-transform: uppercase;
+    @include fontSerif(70px, normal, 800);
+  }
+  p{
+    padding-bottom: $space1;
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 22px;
+  }
+  .letsPlay{
+    text-decoration: none;
+    color: $colorWhite;
+    img{
+        height: 70px;
+    }
+    span{
+      display: block;
+      top: -64px;
+      position: relative;
+    }
+  }
+}

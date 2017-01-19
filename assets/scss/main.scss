@@ -1,210 +1,102 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "fonts/fonts.scss";
-@import "variables/variables.scss";
+@import
+  '../node_modules/bootstrap/scss/bootstrap.scss';
 
-@mixin header($fontsize, $fontfamily){
-  font-family: $fontfamily;
-  font-weight: 300;
-  font-size: $fontsize
-}
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
+@import
+  'modules/_variables',
+  'mixins/_mixins',
+  'mixins/_media',
+  'modules/_fonts',
+  'modules/_general',
+  'modules/_navbar',
+  'modules/_hero',
+  'modules/_digital',
+  'modules/_clients',
+  'modules/_footer';
 
 
-/*start Variables*/
-$space1: 1em;
-$space2: 2.5em;
-$space3: 0.5em;
-$space4: 5em;
+/* Pages */
+@import
+  'pages/_connect',
+  'pages/_contact',
+  'pages/_crew',
+  'pages/_home',
+  'pages/_process',
+  'pages/_work';
 
-$colorWhite: #fff;
 
-/*end Variables*/
+#middleMessage{
+  height: 350px;
+  background-color: #000;
 
-.message_10{ @include header(10px, roboto); }
-.message_16{ @include header(16px, openSansExtraBold); }
-.message_22{ @include header(22px, arial); }
-.message_28{ @include header(28px, Courier); }
-
-body{
-  background-color: gray;
-  color: $colorWhite;
-}
-
-section{
-  padding: 0 1em;
-  text-align: center;
-}
-
-.show{
-  display: block;
-}
-
-.btn-secondary-outline {
-    color: #ccc;
-    background-image: none;
-    background-color: #ce9a2b;
-    border-color: transparent;
-    height: 50px;
-    padding: 0em 2em;
-}
-
-.blackbar{
-  top: 0px;
-  width: 100%;
-  z-index: 1000;
-  opacity: 1;
-  height: 100px;
-  background-color: rgba(0,0,0,.85);
-  @media (min-width: 20em) and (max-width: 47.9375em) {
-    height: 75px;
+  img{
+    height: 85px;
   }
-}
 
-/*start navbar*/
-.navbar{
-    position: fixed;
-    @include border-radius(0);
-}
-
-.navbar-toggler {
-    padding: .5rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-}
-
-.sslLogo{
-  z-index: 10000;
-  .logoImage{
-    height: 60px;
-    padding-left: 5em;
-    margin-top: .5em;
-    @media (min-width: 20em) and (max-width: 47.9375em) {
-      padding-left: 0;
-      margin-top: 0;
-    }
-  }
-  @media (min-width: 20em) and (max-width: 47.9375em) {
-    width: 50%;
-    display: inline-block;
-  }
-}
-
-#desktopNav, #mobileNav{
-  a{
-    font-family: openSansBold;
-    color: $colorWhite;
-    text-decoration:none;
-    display: inline-block;
-    margin-right: 4.5em;
-  }
-}
-
-
-#desktopNav{
-  display: inline;
-  @media (min-width: 20em) and (max-width: 47.9375em) {
-    display: none;
-  }
-  #desktopNavLinks{
-    padding-right: 5em;
-    padding-top: 1em;
-    .navItalicFont{
-      text-align: left;
-    }
-
-    .navFont{
-      text-transform: uppercase;
-    }
-  }
-}
-
-#mobileNav{
-  display: inline;
-  @media (min-width: 20em) and (max-width: 47.9375em) {
-    display: inline;
-  }
-}
-
-#mobileNavBar {
-    display: inline;
-    padding: 0;
-    width: 50%;
-    .iconHamburgerSSL{
-      background-image: url("../images/sslHambuger.svg");
-      background-repeat: no-repeat;
-      height: 28px;
-      width: 40px;
-      float: right;
-      margin-top: 24px;
-      margin-right: 15px;
-    }
-}
-/*end navbar*/
-
-/*start hero*/
-#hero{
-  padding-top: 100px;
-  background-image: url(../images/hero.jpg);
-  min-height: 100%;
-  width: 100%;
-  min-width: 100%;
-  background-size: cover;
-  background-position: 100% 20%;
-  height: 700px;
-  .headercontainer{
-    padding-top: $space2;
-    padding-bottom: $space2;
-  }
-  h1{
-    text-transform: uppercase;
-  }
   p{
-    padding-bottom: $space1;
-    max-width: 680px;
+    max-width: 570px;
     margin: 0 auto;
-    font-size: 22px;
   }
 }
-/*end hero*/
 
+#solutions{
+  height: 350px;
+  .solutions1{
+    background-image: url('../images/backgrounds/desktop_otherServices_hover1@2x.jpg');
+    background-size: cover;
+    height: 350px;
+    padding: 0;
+  }
+  .solutions2{
+    background-image: url('../images/backgrounds/desktop_otherServices_hover2@2x.jpg');
+    background-size: cover;
+    height: 350px;
+  }
+  .solutions3{
+    background-image: url('../images/backgrounds/desktop_otherServices_hover3@2x.jpg');
+    background-size: cover;
+    height: 350px;
+    padding: 0;
+  }
 
-/*start linkNYC*/
-
-.spaceDivRight{
-  padding-right: $space3;
+  .blackbackground{
+    opacity: 1;
+    background-color: rgba(0,0,0,.85);
+    background-size: cover;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 
-.spaceDivLeft{
-  padding-left: $space3;
+
+/*casestudies*/
+#linkNYC{
+  height: 350px;
+  background-image: url('../images/backgrounds/desktop_caseStudy_home@2x.jpg');
+  background-size: cover;
+  overflow: hidden;
+  img{
+    height: 360px;
+    padding-top: 1em;
+  }
 }
 
-.marginRight{
-  margin-right: $space4;
+#lemletLab{
+  height: 350px;
+  background-image: url('../images/backgrounds/desktop_caseStudy_home@2x.jpg');
+  background-size: cover;
+  img{
+    height: 350px;
+    padding-top: 1em;
+  }
 }
 
-.marginLeft{
-  margin-left: $space4;
+/*Clients*/
+#clients{
+  height: 500px;
+  background-color: #141414;
+  img{
+    height: 215px;
+  }
 }
-
-/*end linkNYC*/
-
-
-/*start footer*/
-#footer{
-    @include border-radius(0);
-    color: $colorWhite;
-    text-align: center;
-    margin-top: 7em;
-    .fa-linkedin{
-      color: $colorWhite;
-    }
-
-    #footerLogo{ padding-top: .75em}
-}
-/*end footer*/
