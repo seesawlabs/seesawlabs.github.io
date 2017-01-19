@@ -7,10 +7,11 @@
 
 
 @mixin fontSerif($fontsize, $fontStyle:normal, $fontWeight:normal){
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans script=all rev=1', 'Adobe Blank';
   font-weight: $fontWeight;
   font-size: $fontsize;
   font-style: $fontStyle;
+  letter-spacing: 3px;
 }
 
 
