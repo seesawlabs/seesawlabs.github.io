@@ -18,11 +18,14 @@
     text-transform: uppercase;
     @include fontSans(70px, normal, 800);
   }
+  h3{
+    @include fontBaskerville(40px, nomal, italic);
+  }
   p{
     padding-bottom: $space1;
     max-width: 680px;
     margin: 0 auto;
-    font-size: 22px;
+
   }
   .letsPlay{
     text-decoration: none;

@@ -1,23 +1,23 @@
-@mixin fontBaskerville($fontsize, $fontStyle:normal, $fontWeight:normal){
-  font-family: Baskerville;
-  font-weight: $fontWeight;
-  font-size: $fontsize;
+@mixin fontBaskerville($fontSize, $fontStyle:normal, $fontWeight:normal){
+  font-family: 'Libre Baskerville', serif;
+  font-size: $fontSize;
   font-style: $fontStyle;
+  font-weight: $fontWeight;
 }
 
 
-@mixin fontSerif($fontsize, $fontStyle:normal, $fontWeight:normal){
+@mixin fontSerif($fontSize, $fontStyle:normal, $fontWeight:normal){
   font-family: 'Open Sans', sans-serif;
-  font-weight: $fontWeight;
-  font-size: $fontsize;
+  font-size: $fontSize;
   font-style: $fontStyle;
+  font-weight: $fontWeight;
 }
 
 
-@mixin fontSans($fontsize, $fontStyle:normal, $fontWeight:normal){
+@mixin fontSans($fontSize, $fontStyle:normal, $fontWeight:normal){
   font-family: 'Open Sans', sans-serif;
   //font-weight: $fontWeight;
-  font-size: $fontsize;
+  font-size: $fontSize;
   //font-style: $fontStyle;
   letter-spacing: 1px;
 }
