@@ -12,6 +12,20 @@ section{
   display: block;
 }
 
+.visibledesktop{
+  display: none;
+  @include small{
+    display: inline;
+  }
+}
+
+.visiblemobile{
+  display: inline;
+  @include small{
+    display: none;
+  }
+}
+
 .btn-secondary-outline {
     color: #ccc;
     background-image: none;
@@ -27,11 +41,11 @@ section{
   top: 0px;
   width: 100%;
   z-index: 1000;
-  height: 100px;
+  height: 60px;
   opacity: 1;
   background-color: rgba(0,0,0,.85);
-  @media (min-width: 20em) and (max-width: 47.9375em) {
-    height: 75px;
+  @include small{
+    height: 100px;
   }
 }
 

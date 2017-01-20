@@ -5,16 +5,10 @@
   'modules/_variables',
   'mixins/_mixins',
   'mixins/_media',
-  'modules/_fonts',
-  'modules/_general',
   'modules/_navbar',
-  'modules/_hero',
-  'modules/_digital',
-  'modules/_casestudies',
-  'modules/_clients',
-  'modules/_middlemessage',
-  'modules/_solutions',
+  'modules/_general',
   'modules/_footer';
+
 
 /* Pages */
 @import
@@ -24,3 +18,24 @@
   'pages/_home',
   'pages/_process',
   'pages/_work';
+
+#hero{
+  padding-top: 60px;
+  .headercontainer{
+    padding-top: 57px;
+  }
+  h1{
+    text-transform: uppercase;
+    @include fontSans(23px, normal, 800);
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  h3{
+    @include fontBaskerville(18px, italic, normal);
+  }
+}
+
+
+#lemletLab{
+  img{width: 50%;}
+}

@@ -1,5 +1,6 @@
 @import
   'modules/_variables',
+  'mixins/_media',
   'mixins/_mixins';
 
 .mainbackground{
@@ -23,7 +24,13 @@
     text-transform: uppercase;
     @include fontSans(70px, normal, 800);
     margin-bottom: 5.3px;
-
+    @include large {
+      //@include fontSans(2em, normal, 800);
+      color: yellow!important;
+    }
+    /*@include medium{
+      color: white;
+    }*/
   }
   h3{
     @include fontBaskerville(47px, italic, normal);

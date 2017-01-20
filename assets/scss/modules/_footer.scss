@@ -1,6 +1,8 @@
 @import
   'modules/_variables',
-  'mixins/_media';
+  'mixins/_media',
+  'mixins/_mixins';
+  
 #footer{
     @include border-radius(0);
     color: $colorWhite;
