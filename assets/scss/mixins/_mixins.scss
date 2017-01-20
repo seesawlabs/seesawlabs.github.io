@@ -16,9 +16,9 @@
 
 @mixin fontSans($fontSize, $fontStyle:normal, $fontWeight:normal){
   font-family: 'Open Sans', sans-serif;
-  //font-weight: $fontWeight;
+  font-weight: $fontWeight;
   font-size: $fontSize;
-  //font-style: $fontStyle;
+  font-style: $fontStyle;
   letter-spacing: 1px;
 }
 

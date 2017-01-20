@@ -17,8 +17,10 @@ section{
     background-image: none;
     background-color: #ce9a2b;
     border-color: transparent;
-    height: 50px;
+    height: 62px;
+    width: 178px;
     padding: 0em 2em;
+    @include fontBaskerville(16px, italic, normal);
 }
 
 .blackbar{
@@ -32,3 +34,6 @@ section{
     height: 75px;
   }
 }
+
+.nopaddingRight{padding-right: 0;}
+.nopaddingLeft{padding-left: 0;}

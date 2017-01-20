@@ -1,0 +1,39 @@
+#middleMessage{
+  height: 357px;
+  background-color: #000;
+
+  img{
+    height: 81px;
+    margin-top: 2em;
+    margin-left: 7.2em;
+  }
+
+  p{
+    max-width: 860px;
+    margin: 0 auto;
+    @include fontBaskerville(22px, italic, nomal);
+    padding-top: $space8;
+    letter-spacing: 1px;
+  }
+
+  .messageSSL{
+
+    div{
+      display: inline-block;
+    }
+
+    .nameMessage{
+      position: relative;
+      top: 12px;
+      left: 7px;
+      @include fontBaskerville(24px, italic, normal);
+    }
+
+    .positionMessage{
+      position: relative;
+      top: 33px;
+      left: -117px;
+      @include fontSans(16px, normal, 800);
+    }
+  }
+}

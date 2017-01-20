@@ -1,10 +1,15 @@
 @import
   'modules/_variables',
   'mixins/_mixins';
-#hero{
-  padding-top: 100px;
+
+.mainbackground{
   background-image: url('../images/backgrounds/desktop_hero@2x.jpg');
   background-size: cover;
+  background-position: 51%;
+}
+
+#hero{
+  padding-top: 100px;
   min-height: 100%;
   width: 100%;
   min-width: 100%;
@@ -12,31 +17,37 @@
   height: 900px;
   .headercontainer{
     padding-top: $space2;
-    padding-bottom: $space2;
+    padding-bottom: $space5;
   }
   h1{
     text-transform: uppercase;
     @include fontSans(70px, normal, 800);
+    margin-bottom: 5.3px;
+
   }
   h3{
-    @include fontBaskerville(40px, nomal, italic);
+    @include fontBaskerville(47px, italic, normal);
   }
   p{
     padding-bottom: $space1;
-    max-width: 680px;
+    max-width: 950px;
     margin: 0 auto;
+    line-height: 40px;
 
+    @include fontSans(30px, italic, 400);
   }
   .letsPlay{
     text-decoration: none;
     color: $colorWhite;
     img{
-        height: 70px;
+        height: 90px;
+        margin-top: 0.7em;
     }
     span{
       display: block;
-      top: -64px;
+      top: -76px;
       position: relative;
+      @include fontBaskerville(16px, italic, normal);
     }
   }
 }

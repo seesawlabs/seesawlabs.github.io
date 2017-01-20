@@ -10,7 +10,10 @@
   'modules/_navbar',
   'modules/_hero',
   'modules/_digital',
+  'modules/_casestudies',
   'modules/_clients',
+  'modules/_middlemessage',
+  'modules/_solutions',
   'modules/_footer';
 
 /* Pages */
@@ -21,81 +24,3 @@
   'pages/_home',
   'pages/_process',
   'pages/_work';
-
-
-#middleMessage{
-  height: 350px;
-  background-color: #000;
-
-  img{
-    height: 85px;
-  }
-
-  p{
-    max-width: 570px;
-    margin: 0 auto;
-  }
-}
-
-#solutions{
-  height: 350px;
-  .solutions1{
-    background-image: url('../images/backgrounds/desktop_otherServices_hover1@2x.jpg');
-    background-size: cover;
-    height: 350px;
-    padding: 0;
-  }
-  .solutions2{
-    background-image: url('../images/backgrounds/desktop_otherServices_hover2@2x.jpg');
-    background-size: cover;
-    height: 350px;
-  }
-  .solutions3{
-    background-image: url('../images/backgrounds/desktop_otherServices_hover3@2x.jpg');
-    background-size: cover;
-    height: 350px;
-    padding: 0;
-  }
-
-  .blackbackground{
-    opacity: 1;
-    background-color: rgba(0,0,0,.85);
-    background-size: cover;
-    height: 350px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-}
-
-
-/*casestudies*/
-#linkNYC{
-  height: 350px;
-  background-image: url('../images/backgrounds/desktop_caseStudy_home@2x.jpg');
-  background-size: cover;
-  overflow: hidden;
-  img{
-    height: 360px;
-    padding-top: 1em;
-  }
-}
-
-#lemletLab{
-  height: 350px;
-  background-image: url('../images/backgrounds/desktop_caseStudy_home@2x.jpg');
-  background-size: cover;
-  img{
-    height: 350px;
-    padding-top: 1em;
-  }
-}
-
-/*Clients*/
-#clients{
-  height: 500px;
-  background-color: #141414;
-  img{
-    height: 215px;
-  }
-}

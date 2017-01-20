@@ -46,11 +46,11 @@
       margin-top: 0;
     }
     @include medium{
-      padding-left: 2em;
+      padding-left: 1.4em;
       margin-top: .5em;
     }
     @include large{
-      padding-left: 5.2em;
+      padding-left: 1.4em;
     }
   }
   @include mobile{
@@ -72,7 +72,7 @@
     color: $colorWhite;
     text-decoration:none;
     display: inline-block;
-    margin-right: 4.5em;
+    margin-left: 3em;
   }
 }
 
@@ -90,14 +90,18 @@
 
 
   #desktopNavLinks{
-    padding-right: 5em;
+    padding-right: 1.7em;
     padding-top: 1em;
     .navItalicFont{
       text-align: left;
+      @include fontBaskerville(12px, italic, normal);
+      text-align: left;
+      padding-top: 5px;
     }
 
     .navFont{
       text-transform: uppercase;
+      font-size: 18px;
     }
   }
 }
