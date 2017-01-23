@@ -1,0 +1,31 @@
+@mixin fontBaskerville($fontSize, $fontStyle:normal, $fontWeight:normal){
+  font-family: 'Libre Baskerville', serif;
+  font-size: $fontSize;
+  font-style: $fontStyle;
+  font-weight: $fontWeight;
+}
+
+
+@mixin fontSerif($fontSize, $fontStyle:normal, $fontWeight:normal){
+  font-family: 'Open Sans', sans-serif;
+  font-size: $fontSize;
+  font-style: $fontStyle;
+  font-weight: $fontWeight;
+}
+
+
+@mixin fontSans($fontSize, $fontStyle:normal, $fontWeight:normal){
+  font-family: 'Open Sans', sans-serif;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  font-style: $fontStyle;
+  letter-spacing: 1px;
+}
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}

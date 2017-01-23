@@ -112,4 +112,32 @@ $(document).ready(function (){
 			$(this).css({overflow:'scroll'});
 	});
 
+	var screenSize = $( window ).width();
+	if(screenSize < 767){
+		$("#buttons").css({width: screenSize + 'px'})
+		screenSize = screenSize * 3;
+		$("#rowSolutions").css({width: screenSize + 'px'});
+
+	}
+
 });
+
+
+
+function moveImgRight(){
+	var screenSize = $( window ).width();
+	var leftPos = $('#solutions').scrollLeft();
+  console.log(leftPos);
+	$('#solutions').animate({
+        scrollLeft: leftPos + screenSize
+    }, 800);
+}
+
+function moveImgLeft(){
+	var screenSize = $( window ).width();
+	var leftPos = $('#solutions').scrollLeft();
+  console.log(leftPos);
+	$('#solutions').animate({
+        scrollLeft: leftPos - screenSize
+    }, 800);
+}

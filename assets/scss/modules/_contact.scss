@@ -1,0 +1,205 @@
+#contactSection{
+    height: 100%;
+    background-image: url('../images/fullresolution/bubbles.svg');
+    background-repeat: no-repeat;;
+    background-position: 98%;
+
+    background-color: #4b4b4b;
+    font-family: openSansBold;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+
+    @media (max-width: 24.375em){
+      background-image: none;
+    }
+    @media all and (min-width:24.375em) and (max-width: 48em){
+      background-image: none;
+    }
+
+    .cSection2 {
+        text-align: center;
+        .contactForm {
+            margin-top: 2em;
+            width: 100%;
+            padding-bottom: 2em;
+        }
+
+        @media all and (max-width:24.375em) {
+          background-image: none;
+        }
+
+        @media all and (min-width: 75em)  {
+          padding-top: 2em;
+
+          .contactForm {
+              padding-top: 1em;
+              margin-top: 2em;
+              margin-right: 5em;
+              float: left;
+              padding-bottom: 4em;
+          }
+        }
+
+        .contactForm {
+            display: inline-block;
+            background-image: none;
+
+            #formMessages h1{
+                font-family: opensanslight;
+                font-weight: 300;
+                @media all and (max-width:24.375em) {
+                  font-size: 28px;
+                  padding-bottom: 0.5em;
+                  margin: 20px 15px;
+                }
+                @media all and (min-width:45em) and (max-width: 48em){
+                  font-size: 28px;
+                }
+                @media all and (min-width: 48em) {
+                  margin-bottom: .75em;
+                }
+                @media all and (min-width: 75em)  {
+                  margin-bottom: 2.25em;
+                  font-size: 28px;
+                }
+            }
+
+            .contactFormInput {
+                width: 360px;
+                border-radius: 0;
+                display: inline-block;
+                font-family: robotoRegular;
+                @media all and (max-width:24.375em) {
+                  width: 100%;
+                }
+                @media all and (min-width:24.375em) and (max-width: 33.75em) {
+                  width: 100%;
+                }
+            }
+
+            .textAreaDiv{
+              width: 100%;
+              display: block;
+              padding-bottom: 1em;
+              padding-top: 5px;
+              @media all and (max-width:24.375em) {
+                padding-top: 0;
+              }
+              @media all and (min-width:24.375em) and (max-width: 26.6em){
+                padding-top: 0;
+              }
+            }
+
+            .form-group{
+              width: 100%;
+              @media all and (max-width:24.375em) {
+                margin-bottom: 0;
+                width: 100%;
+              }
+              @media all and (min-width:24.375em) and (max-width: 33.75em) {
+                margin-bottom: 0;
+                width: 100%;
+              }
+            }
+
+            .form-group textarea {
+              width: 730px;
+              display: block;
+              margin: auto;
+              border-radius: 0;
+              @media all and (max-width:24.375em) {
+                width: 100%;
+                padding-top: 0px;
+              }
+              @media all and (min-width:24.375em) and (max-width: 33.75em) {
+                width: 100%;
+              }
+            }
+
+            .textAlignRight{
+              text-align: right;
+              margin: 5px 0;
+              padding-right: 5px;
+              @media all and (max-width:24.375em) {
+                text-align: left;
+                padding: 0 1em;
+              }
+              @media all and (min-width:24.375em) and (max-width: 33.75em) {
+                text-align: left;
+                padding: 0 1em;
+              }
+            }
+
+            .textAlignLeft{
+              text-align: left;
+              margin: 5px 0;
+              padding-left: 5px;
+              @media all and (max-width:24.375em) {
+                padding: 0 1em;
+              }
+              @media all and (min-width:24.375em) and (max-width: 33.75em) {
+                padding: 0 1em;
+              }
+            }
+
+            .firstgroup{
+              .textAlignRight{
+                margin-top: 0;
+              }
+              .textAlignLeft{
+                margin-top: 0;
+              }
+            }
+
+            .contactFormButtonDiv{
+              padding-top: 1em;
+
+              .cSubmitButton {
+                  font-family: roboto;
+                  font-size: 18px;
+                  text-transform: uppercase;
+                  color: #fff;
+                  width: 250px;
+                  height: 50px;
+              }
+            }
+        }
+    }
+}
+
+.success {
+    padding: 1em;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #468847;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.error {
+    padding: 1em;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #b94a48;
+    background-color: #f2dede;
+    border: 1px solid rgba(185, 74, 72, 0.3);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#messageSend{
+  display: none;
+  height: 310px;
+  h1{
+    padding: 3em 0;
+    font-family: opensanslight;
+    font-size: 28px;
+    font-weight: 300;
+  }
+}

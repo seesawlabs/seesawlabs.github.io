@@ -1,0 +1,37 @@
+.digital{
+  background-image: url('../images/backgrounds/desktop_focus@2x.jpg');
+  background-size: cover;
+  height: 481px;
+  h2{
+    @include fontSans(50px, normal, 800);
+    margin-top: $space6;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-bottom: $space7;
+  }
+  p{
+    @include fontSans(22px, italic, 400);
+    line-height: 29px;
+    margin-bottom: $space1;
+  }
+  .digital-execution{
+    h2{
+      padding-left: 0.5em;
+    }
+    p{
+      padding-left: 0.8em;
+      padding-right: 4.5em;
+    }
+  }
+
+  .digital-innovtion{
+    h2{
+      padding-left: 1.45em;
+    }
+    p{
+      padding-left: 5.4em;
+      padding-right: 1em;
+    }
+  }
+}

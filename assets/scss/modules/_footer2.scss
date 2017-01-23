@@ -1,0 +1,72 @@
+#footer {
+    text-align: center;
+    background-color: #fff;
+    color: #4d4d4d;
+    margin-top: 0;
+
+    #largeFooterEmail{
+      font-size: 28px;
+      
+      span{
+        font-weight: 200;
+        font-family: opensanslight;
+      }
+
+      p{
+        display: inline-block;
+        text-align: left;
+        padding-top: 2em;
+        @media all and (max-width:24.375em) {
+          padding-top: 0;
+        }
+        @media all and (min-width:24.375em) and (max-width: 33.75em) {
+          padding-top: 0;
+        }
+        @media all and (min-width:45em) and (max-width: 48em){
+          padding-top: 0;
+        }
+      }
+
+      #footerEmail  {
+          a {
+              color: #2c728b;
+              font-weight: 300;
+          }
+      }
+
+      @media all and (max-width:24.375em) {
+        padding-top: 1.5em;
+      }
+    }
+
+    #largeSocialMediaBar {
+      margin: 1.75em auto;
+
+      img {
+        height: 35px;
+        margin-left: 0;
+        margin-right: 1em;
+      }
+
+      .fa {
+        color: #216a85;
+        padding: 0 0.5em;
+      }
+
+      #footerCopyRight {
+        font-size: 18px;
+        font-family: roboto;
+        font-weight: 300;
+      }
+
+      @media all and (max-width:24.375em) {
+        margin: 2em 0;
+      }
+      @media all and (min-width:24.375em) and (max-width: 33.75em) {
+        margin: 2em 0;
+      }
+      @media all and (min-width:45em) and (max-width: 48em){
+        margin: 1.5em 0;
+      }
+    }
+}

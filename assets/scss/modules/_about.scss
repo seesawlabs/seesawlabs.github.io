@@ -1,0 +1,124 @@
+@import
+  'modules/variables';
+
+#about{
+  margin-top: 4em;
+  .row:last-child{
+    margin-bottom: 6em;
+    @media all and (max-width:24.375em) {
+      margin-bottom: 0;
+    }
+    @media all and (min-width:24.375em) and (max-width: 33.75em) {
+      margin-bottom: 0;
+    }
+    @media all and (min-width:45em) and (max-width: 48em){
+      margin-bottom: 2em;
+    }
+  }
+  @media all and (min-width:45em) and (max-width: 48em){
+    margin-top: 0;
+  }
+}
+
+.section3 {
+  text-align: center;
+
+  #servicesSection{
+    width: 100%;
+    p{
+      max-width: 1180px;
+      display: inline-block;
+    }
+  }
+
+  .leadershipSection {
+    max-width: 1180px;
+
+    @media all and (min-width: 75em){
+      padding: 0 4em 0;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .section3Column {
+      padding-left: 1em;
+      padding-bottom: 3em;
+
+      @media (max-width: 35.9375em){
+        padding-left: 0em;
+      }
+
+      @media (min-width: 36em) and (max-width: 47.9375em){
+        padding-left: 0em;
+      }
+
+      .section3ImageContainer{
+        @media all and (max-width:24.375em) {
+          display: inline-block;
+          float: left;
+          padding-left: 1em;
+        }
+        @media all and (min-width:24.375em) and (max-width: 33.75em) {
+          display: inline-block;
+          float: left;
+          padding-left: 1em;
+        }
+      }
+
+      .section3Image {
+          margin-top: 2em;
+          margin-bottom: 2em;
+          height: 150px;
+          width: 150px;
+          border-radius: 5em;
+          @media all and (min-width:45em) and (max-width: 48em){
+            margin-bottom: 1em;
+          }
+          @media all and (min-width: 75em)  {
+            float: left;
+            position: relative;
+          }
+      }
+    }
+
+    .section3ContentDiv{
+      right: 0.5em;
+
+      @media all and (max-width:24.375em) {
+        padding-left: 1em;
+      }
+
+      @media all and (min-width:24.375em) and (max-width: 33.75em) {
+        padding-left: 1em;
+      }
+
+      @media all and (min-width: 75em)  {
+        display: inline-block;
+        width: 320px;
+        text-align: left;
+        padding-top: 4em;
+      }
+
+      .section3H2Header{
+          color: $color2;
+          @media all and (max-width:24.375em) {
+            padding-top: 3em;
+          }
+          @media all and (min-width:24.375em) and (max-width: 33.75em) {
+            padding-top: 3em;
+          }
+          @media all and (min-width: 75em)  {
+            padding: 0;
+            margin: 0;
+          }
+      }
+
+      .section3H5Header {
+          color: #36bad9;
+          @media all and (min-width: 75em)  {
+            margin-bottom: 1em;
+          }
+      }
+    }
+  }
+}

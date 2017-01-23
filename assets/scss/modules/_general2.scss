@@ -1,0 +1,192 @@
+body{
+  color: #4d4d4d;
+}
+
+.show{
+  display: block;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.marginRight {
+    margin-right: 2.5em;
+}
+
+.navLogoDiv {
+    z-index: 999;
+}
+
+.row {
+    margin: 0;
+}
+
+.colorWhite {
+    color: #fff;
+}
+
+.homepageHelpBox {
+    h1 {
+        line-height: 2em;
+        font-family: openSansLight;
+        font-size: 28px;
+        text-align: center;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin-bottom: 0;
+
+        @media all and (max-width: 900px) {
+            line-height: 1em;
+            padding-top: 1em;
+        }
+    }
+    p {
+        font-family: openSansLight;
+        font-size: 28px;
+        text-align: center;
+        padding-top: 1em;
+        @media all and (max-width:24.375em) {
+          font-size: 18px;
+        }
+        @media all and (min-width:24.375em) and (max-width: 33.75em) {
+          font-size: 18px;
+        }
+        @media all and (min-width:45em) and (max-width: 48em){
+          padding-bottom: 0;
+        }
+    }
+    p:last-child {
+      padding-bottom: 2em;
+      @media all and (max-width:24.375em) {
+        padding-bottom: 0em;
+      }
+    }
+}
+
+.homepageHelpBox  #howWeCanHelp h1 {
+  padding-top: 2em;
+  padding-bottom: 0;
+
+  @media all and (max-width:24.375em) {
+    padding-top: 1em;
+  }
+}
+
+.robotoRegular {
+    font-family: robotoRegular;
+    font-size: 14px;
+}
+
+.styleGuideH2 {
+    font-family: openSansLight;
+    font-size: 25px;
+    @media all and (max-width:24.375em) {
+      font-size: 22px;
+    }
+    @media all and (min-width:24.375em) and (max-width: 33.75em) {
+      font-size: 22px;
+    }
+}
+
+.styleGuideH5 {
+    font-family: openSansItalic;
+    font-size: 18px;
+    @media all and (max-width:24.375em) {
+      font-size: 16px;
+    }
+    @media all and (min-width:24.375em) and (max-width: 33.75em) {
+      font-size: 16px;
+    }
+}
+
+.styleGuideP {
+    font-family: roboto;
+    font-weight: 300;
+    size: 16px;
+    margin: 0;
+    line-height: 1.3;
+    text-align: left;
+    padding-left: 0px;
+    @media all and (max-width:24.375em) {
+      clear: both;
+    }
+    @media all and (min-width:24.375em) and (max-width: 33.75em) {
+      clear: both;
+    }
+    @media all and (min-width:45em) and (max-width: 48em){
+      padding-left: 1em;
+    }
+}
+
+.section2 {
+    text-align: center;
+
+    p {
+        color: #4d4d4d;
+        padding-right: 0.5em;
+    }
+}
+
+.section2Mobile, .section2MobileOurProcess{
+  text-align: left;
+}
+
+.blueButton{
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: $color5;
+  border: none;
+  color: #fff;
+  line-height: 1.5!important;
+}
+
+.bluebox{
+  width: 100%;
+  background-color: #216a85;
+  background-image: url("../images/fullresolution/bubbles.svg");
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  @media (max-width: 24.375em){
+    background-image: none;
+  }
+  @media all and (min-width:24.375em) and (max-width: 33.75em) {
+    background-image: none;
+  }
+  @media all and (min-width:45em) and (max-width: 48em){
+    background-image: none;
+  }
+}
+
+#ourProcess, #servicesSection{
+  height: 245px;
+  h1{
+    @media all and (min-width:45em) and (max-width: 48em){
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
+  h1, p{
+    color:#fff;
+  }
+  p{
+    margin: 0;
+    padding-top: 0;
+    font-family: openSansLight;
+  }
+  @media all and (min-width:45em) and (max-width: 48em){
+    line-height: 2.3em;
+  }
+}
+/*** Serna class hack **/
+.current{
+    color: $color3 !important;
+}
+
+.dark{
+    background-color: #2b2d2f;
+}
+
+.clearFloat{
+  clear: both;
+}
