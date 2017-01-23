@@ -14,8 +14,8 @@
   min-height: 100%;
   width: 100%;
   min-width: 100%;
-
   height: 900px;
+
   .headercontainer{
     padding-top: $space2;
     padding-bottom: $space5;
@@ -24,13 +24,6 @@
     text-transform: uppercase;
     @include fontSans(70px, normal, 800);
     margin-bottom: 5.3px;
-    @include large {
-      //@include fontSans(2em, normal, 800);
-      color: yellow!important;
-    }
-    /*@include medium{
-      color: white;
-    }*/
   }
   h3{
     @include fontBaskerville(47px, italic, normal);
@@ -40,7 +33,6 @@
     max-width: 950px;
     margin: 0 auto;
     line-height: 40px;
-
     @include fontSans(30px, italic, 400);
   }
   .letsPlay{

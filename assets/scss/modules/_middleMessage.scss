@@ -13,7 +13,8 @@
     margin: 0 auto;
     @include fontBaskerville(22px, italic, nomal);
     padding-top: $space8;
-    letter-spacing: 1px;
+    letter-spacing: 0.85px;
+    line-height: 32.9px;
   }
 
   .messageSSL{

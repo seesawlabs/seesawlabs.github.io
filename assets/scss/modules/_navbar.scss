@@ -11,6 +11,12 @@
     padding: .5rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
+    @include small{
+      padding: 0 .75rem;
+    }
+    @include medium{
+      padding: .5rem .75rem;
+    }
 }
 
 #logoDesktop{
@@ -46,12 +52,14 @@
       margin-top: 0;
     }
     @include small{
-      padding-left: 0;
-      margin-top: 0;
+      padding-left: 1.4em;
+      margin-top: .5em;
+      height: 45px;
     }
     @include medium{
       padding-left: 1.4em;
       margin-top: .5em;
+      height: 60px;
     }
     @include large{
       padding-left: 1.4em;
@@ -62,7 +70,7 @@
     display: inline-block;
   }
   @include small{
-    width: 50%;
+    width: 15%;
     display: inline-block;
   }
   @include medium{
@@ -77,16 +85,23 @@
     text-decoration:none;
     display: inline-block;
     margin-left: 3em;
+    @include small{
+      margin-left: 1em;
+    }
+    @include medium{
+      margin-left: 3em;
+    }
   }
 }
 
 
 #desktopNav{
+
   @include mobile{
     display: none;
   }
   @include small{
-    display: none;
+    display: inline;
   }
   @include medium{
     display: inline;
@@ -98,7 +113,7 @@
     display: inline;
   }
   @include small{
-    display: inline;
+    display: none;
   }
   @include medium{
     display: none;
@@ -134,7 +149,9 @@
         margin: 0;
         line-height: 30px;
         li {
+          @include medium{
             margin: 2em;
+          }
         }
     }
     a {
@@ -147,18 +164,48 @@
     }
 }
 
+
 #desktopNavLinks, #nonCollapsedMenu{
-  padding-right: 1.7em;
-  padding-top: 1em;
+
   .navItalicFont{
     text-align: left;
-    @include fontBaskerville(12px, italic, normal);
-    text-align: left;
-    padding-top: 5px;
+    padding-top: 2.1em;
+    @include fontBaskerville(18px, italic, normal);
+    @include small{
+      @include fontBaskerville(8px, italic, normal);
+    }
+    @include medium{
+      @include fontBaskerville(12px, italic, normal);
+      padding-top: 5px;
+    }
   }
 
   .navFont{
     text-transform: uppercase;
-    font-size: 18px;
+    text-align: left;
+    margin-top: -12px;
+    @include fontSans(22px, normal, 800);
+    @include small{
+      margin-top: 0;
+      @include fontSans(11px, normal, 800);
+      padding-right: 1.5em;
+    }
+    @include medium{
+      margin-top: 0;
+      @include fontSans(18px, normal, 800);
+      padding-right: 0;
+    }
+
+  }
+  @include small{
+    padding-right: 0;
+    padding-top: 0;
+    display: block;
+    float: right;
+  }
+  @include medium{
+    padding-right: 1.7em;
+    padding-top: 1em;
+
   }
 }

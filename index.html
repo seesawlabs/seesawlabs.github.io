@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include nav.html  param="serviceServicesLink" %}
+{% include nav.html %}
     <div id="indexContainer">
       <section id="hero" class="mainbackground">
         <div class="row">
@@ -12,7 +12,7 @@ layout: default
               <h3>We'll Be Your Tech Roadies</h3>
             </div>
             <p>Consistent execution separates the legends from one-hit-wonders, but it takes a team of dedicated roadies to make it happen.</p>
-            <p>SeeSaw Labs is a creative technology company--your team of experienced roadies--climbing on board to execute each new idea more impressive than the last.</p>
+            <p>SeeSaw Labs is a creative technology company─your team of experienced roadies─climbing on board to execute each new idea more impressively than the last.</p>
             <a class="letsPlay visibledesktop" href="">
               <img src="./assets/images/pick.svg" alt="Let's Play"/><span>Let's</span><span>Play</span>
             </a>
@@ -24,11 +24,14 @@ layout: default
           <div class="col-md-6 col-sm-12 digital-execution">
             <h2>Digital Execution</h2>
             <p>The difference between stellar execution and "almost works" happens backstage.</p>
-            <p>We rock at full-lifecycle, cross-platform execution--taking you from big idea to production reality...and keeping you there.</p>
+            <p>We rock at full-lifecycle, cross-platform execution─taking you from big idea to production reality...and keeping you there.</p>
+          </div>
+          <div class="col-sm-12 visiblemobile">
+            <button id="goBackstage" type="button" class="btn btn-secondary-outline marginLeft">Go Backstage</button>
           </div>
           <div class="col-md-6 col-sm-12 digital-innovtion">
             <h2>Digital Innovation</h2>
-            <p>Virtual reality, artificial intelligence, chat bots, touch screen interfaces--we can't get enough of building cool stuff.</p>
+            <p>Virtual reality, artificial intelligence, chat bots, touch screen interfaces─we can't get enough of building cool stuff.</p>
             <p>Let's blaze a new trail together.</p>
           </div>
         </div>
@@ -36,7 +39,7 @@ layout: default
       <section id="middleMessage">
         <div class="row">
           <div class="col-md-12">
-            <p>"SeeSaw has been like an extension of the team. As we've grown, SeeSaw has grown with us and been and adaptable partner and an on-demand pool of talent we couldn't have done without"</p>
+            <p class="txtmesssage">"SeeSaw has been like an extension of the team. As we've grown, SeeSaw has grown with us and been an adaptable partner and an on-demand pool of talent we couldn't have done without"</p>
             <div class="messageSSL">
               <img src="../assets/images/quoteHeadshot.svg" alt=""/>
               <div class="nameMessage"><span id="name">Chris Hale</span></div>
@@ -45,54 +48,67 @@ layout: default
           </div>
         </div>
       </section>
-      <section id="solutions">
-        <div class="row">
-          <div class="col-md-4 solutions1">
-            <div class="blackbackground">
-              <h2>Tech Strategy</h2>
-              <p>We'll assess what you have and help plan what's next.</p>
+      <section id="containersolutions">
+        <div id="solutions">
+          <div id="rowSolutions" class="row">
+            <div id="buttons" class="col-md-12 visiblemobile">
+              <i class="fa fa-chevron-left fa-3x" aria-hidden="true" onclick="moveImgLeft()"></i>
+              <i class="fa fa-chevron-right fa-3x" aria-hidden="true" onclick="moveImgRight()"></i>
             </div>
-          </div>
-          <div class="col-md-4 solutions2">
-            <h2>eCommerce Solutions</h2>
-            <p>Analytics, CRO, full platform development, to name a few.</p>
-          </div>
-          <div class="col-md-4 solutions3">
-            <div class="blackbackground">
-              <h2>Cloud Solutioning</h2>
-              <p>We live, eat, and breath AWS</p>
+            <div class="col-md-4 solutions1">
+              <div class="blackbackground">
+                <h2>Tech Strategy</h2>
+                <p>We'll assess what you have and help plan what's next.</p>
+              </div>
+            </div>
+            <div class="col-md-4 solutions2">
+              <h2>eCommerce Solutions</h2>
+              <p>Analytics, CRO, full platform development, to name a few.</p>
+            </div>
+            <div class="col-md-4 solutions3">
+              <div class="blackbackground">
+                <h2>Cloud Solutioning</h2>
+                <p>We live, eat, and breath AWS</p>
+              </div>
             </div>
           </div>
         </div>
+
       </section>
       <section id="linkNYC" class="backgroungLink">
         <div class="row">
-          <div class="col-md-6 text-xs-right nopaddingRight">
+          <div class="col-md-8 col-sm-6 floatleftsection">
             <h4>Case Study</h4>
             <h2>LinkNYC KIOSKS</h2>
             <p>A dynamic, context-aware, cutting edge digital advertising platform on over 500 LinkNYC kiosks throughout NYC.</p>
-            <p>The best part? Super fast, completly free WiFi for all.</p>
+            <p>The best part? Super fast, completely free WiFi for all.</p>
           </div>
-          <div class="col-md-6 text-xs-left spaceDivLeft">
+          <div class="col-md-4 col-sm-6 floatrightsection">
             <img src="../assets/images/caseStudy_linknyc@2x.png" alt=""/>
+            <button id="goBackstage" type="button" class="btn btn-secondary-outline marginLeft visibletabletDesktop">Go Backstage</button>
+          </div>
+          <div class="col-sm-12 btnBackstage visiblemobile">
             <button id="goBackstage" type="button" class="btn btn-secondary-outline marginLeft">Go Backstage</button>
           </div>
         </div>
       </section>
       <section id="lemletLab" class="backgroungletLab">
         <div class="row">
-          <div class="col-md-6 text-xs-right">
-            <button id="goBackstage" type="button" class="btn btn-secondary-outline marginRight">Go Backstage</button>
+          <div class="col-md-6 floatleftsection">
+            <button id="goOurCrew" type="button" class="btn btn-secondary-outline marginRight visibletabletDesktop">Our Crew</button>
             <img src="./assets/images/labs_lemlet@2x.png" alt=""/>
           </div>
-          <div class="col-md-6 text-xs-left nopaddingLeft">
+          <div class="col-md-6 floatrightsection">
             <h4>From the Lab</h4>
             <h2>LEMLET</h2>
-            <p>Private group texting for bachelor parties, pub crawls, and even your kid´s sports team.</p>
+            <p>Private group texting for bachelor parties, pub crawls, and even your kid's sports team.</p>
             <p>
-              <span>No app to down.</span>
-              <span>No need to store anyone´s number.</span>
+              <span>No app to download.</span>
+              <span>No need to store anyone's number.</span>
             </p>
+          </div>
+          <div class="col-md-12 btnBackstage visiblemobile">
+            <button id="goOurCrew" type="button" class="btn btn-secondary-outline marginRight">Our Crew</button>
           </div>
         </div>
       </section>
@@ -102,12 +118,12 @@ layout: default
             <h2>Some of Our Favorite Rockstars</h2>
           </div>
           <div class="col-md-12">
-            <img src="../assets/images/rockstars.png" alt="" class="visibledesktop"/>
+            <img src="../assets/images/rockstars.png" alt="" class="visibletabletDesktop"/>
             <img src="../assets/images/rockstars_mobile.png" alt="" class="visiblemobile"/>
           </div>
         </div>
         <div class="col-md-12">
-          <button id="goBackstage" type="button" class="btn btn-secondary-outline">Go Backstage</button>
+          <button id="goBackstage" type="button" class="btn btn-secondary-outline">Let's Connect</button>
         </div>
       </section>
     </div>

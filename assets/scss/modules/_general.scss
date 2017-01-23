@@ -1,28 +1,55 @@
 body{
-  background-color: gray;
+  background-color: #141414;
   color: $colorWhite;
 }
 
 section{
-  padding: 0 .85em;
+  //padding: 0 .5em;
   text-align: center;
+  padding: 0 .9375em;
+}
+
+.row{
+  margin-left: -.9375rem;
+  margin-right: -.9375rem;
 }
 
 .show{
   display: block;
 }
 
-.visibledesktop{
+.visibletablet{
   display: none;
   @include small{
     display: inline;
   }
+  @include medium{
+    display: none;
+  }
+}
+
+.visibledesktop{
+  display: none;
+  @include medium{
+    display: inline;
+  }
+
 }
 
 .visiblemobile{
   display: inline;
   @include small{
-    display: none;
+    display: none!important;
+  }
+}
+
+.visibletabletDesktop{
+  display: none;
+  @include small{
+    display: inline;
+  }
+  @include medium{
+    display: inline;;
   }
 }
 
@@ -31,20 +58,30 @@ section{
     background-image: none;
     background-color: #ce9a2b;
     border-color: transparent;
-    height: 62px;
+    height: 45px;
     width: 178px;
     padding: 0em 2em;
-    @include fontBaskerville(16px, italic, normal);
+    @include fontBaskerville(15px, italic, normal);
+    @include small{
+      @include fontBaskerville(11px, italic, normal);
+      height: 39px;
+      width: 122px;
+    }
+    @include medium{
+      @include fontBaskerville(15px, italic, normal);
+      height: 60px;
+      width: 178px;
+    }
 }
 
 .blackbar{
-  top: 0px;
+  display: inline-table;
   width: 100%;
   z-index: 1000;
   height: 60px;
   opacity: 1;
   background-color: rgba(0,0,0,.85);
-  @include small{
+  @include medium{
     height: 100px;
   }
 }
