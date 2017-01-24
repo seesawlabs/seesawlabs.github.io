@@ -18,6 +18,14 @@ section{
   display: block;
 }
 
+.nostyleAnchor {
+  text-decoration: none !important;
+  color: $colorWhite;
+  &:hover, &:focus {
+    color: $colorWhite;
+  }
+}
+
 .visibletablet{
   display: none;
   @include small{
