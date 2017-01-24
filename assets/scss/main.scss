@@ -28,6 +28,15 @@
     }
   }
 
+  .ourworkbackground{
+    background-image: url('../images/backgrounds/mobile_work_hero.jpg');
+    background-size: cover;
+    background-position: center;
+    @include medium{
+      background-image: url('../images/backgrounds/desktop_work_hero@2x.jpg');
+    }
+  }
+
 #hero{
   padding-top: 60px;
   height: 420px;
@@ -128,18 +137,20 @@ section.digital{
       @include fontSans(24px, normal, 800);
       letter-spacing: 1px;
       margin-bottom: 1.6em;
+      letter-spacing: -1px;
     }
     @include medium{
       @include fontSans(46px, normal, 800);
       padding-top: $space6;
       text-transform: uppercase;
-      letter-spacing: -1px;
       text-align: left;
       margin-bottom: $space7;
       text-align: center;
+      letter-spacing: -1px;
     }
     @include large{
       @include fontSans(50px, normal, 800);
+      letter-spacing: -1px;
     }
   }
 
@@ -385,6 +396,8 @@ section.digital{
       float: left;
       width: 33.3%;
       height: 210px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .solutions1{
@@ -458,8 +471,8 @@ section.digital{
     position:absolute;
     z-index:5;
     left: 0;
-    margin-top: 4em;
-    padding: 0;
+    margin-top: 1.8em;
+    padding: 0 1em;
     .fa-angle-right, .fa-angle-left{
       opacity: .5;
       cursor: pointer;
@@ -798,5 +811,25 @@ section.digital{
   }
   @include medium{
     display: block;;
+  }
+}
+
+#ourworkContainer{
+  #linkNYC, #lemletLab{
+    height: 550px;
+  }
+  #linkNYC{
+    img{
+      float: right;
+      height: 206px;
+      margin-top: 1.7em;
+      margin-right: 2.5em;
+    }
+    .floatleftsection{
+      width: 100%;
+    }
+    p:first-child{
+      max-width: 225px;
+    }
   }
 }

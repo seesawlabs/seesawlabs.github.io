@@ -114,7 +114,7 @@ $(document).ready(function (){
 
 	var screenSize = $( window ).width();
 	if(screenSize < 767){
-		$("#buttons").css({width: screenSize + 'px'})
+		$("#buttons").css({width: screenSize + 'px'});
 		screenSize = screenSize * 3;
 		$("#rowSolutions").css({width: screenSize + 'px'});
 
@@ -127,17 +127,22 @@ $(document).ready(function (){
 function moveImgRight(){
 	var screenSize = $( window ).width();
 	var leftPos = $('#solutions').scrollLeft();
-  console.log(leftPos);
-	$('#solutions').animate({
-        scrollLeft: leftPos + screenSize
-    }, 800);
+	console.log(leftPos);
+  if((leftPos + screenSize)  <= (screenSize*3)){
+		$('#solutions').animate({
+					scrollLeft: leftPos + screenSize
+			}, 800);
+	}
+
 }
 
 function moveImgLeft(){
 	var screenSize = $( window ).width();
 	var leftPos = $('#solutions').scrollLeft();
   console.log(leftPos);
-	$('#solutions').animate({
-        scrollLeft: leftPos - screenSize
-    }, 800);
+	if(leftPos >= 0){
+		$('#solutions').animate({
+					scrollLeft: leftPos - screenSize
+			}, 800);
+	}
 }
