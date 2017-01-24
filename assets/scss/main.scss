@@ -151,12 +151,12 @@ section.digital{
       line-height: 16px;
     }
     @include medium{
-      @include fontSans(22px, italic, 400);
-      line-height: 29px;
-      max-width: 520px;
+      @include fontSans(24px, italic, 400);
+      line-height: 27px;
+      max-width: 512px;
       display: block;
-      margin: .9em auto;
-      padding: .1em .65em .2em;
+      margin: .6em auto;
+      padding: .1em .65em .6em;
       letter-spacing: 0;
     }
   }
@@ -180,11 +180,46 @@ section.digital{
       @include small{
         padding-top: 2em;
       }
+      @include medium{
+        padding-top: 1.8em;
+      }
     }
     @include small{
       height: 255px;
     }
+    @include medium{
+      height: 481px;
+      padding-right: 0;
+    }
   }
+
+  .goBackstagetablet{
+    text-decoration: none;
+    color: $colorWhite;
+    img{
+      height: 77px;
+      margin-top: 6.1em;
+    }
+    span{
+      display: block;
+      top: -58px;
+      position: relative;
+      line-height: 14px;
+      @include fontBaskerville(10px, italic, normal);
+    }
+  }
+  .col-md-5{
+    width: 46%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .col-md-2{
+    width: 8%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @include small{
     background-image: url('../images/backgrounds/desktop_focus@2x.jpg');
     height: 255px;
@@ -457,7 +492,7 @@ section.digital{
   h4{
     @include fontBaskerville(14px, italic, normal);
     padding-top: 3.1em;
-    padding-left: .44em;
+
     margin-bottom: 0;
     @include small{
       padding-top: 2.7em;
@@ -472,8 +507,7 @@ section.digital{
   h2{
     @include fontSans(24px, normal, 800);
     padding-bottom: 1.1em;
-    padding-left: .3em;
-    letter-spacing: 0;
+    letter-spacing: 0px;
     @include small{
       letter-spacing: 1px;
       padding-bottom: 0;
@@ -482,8 +516,8 @@ section.digital{
     @include medium{
       @include fontSans(46px, normal, 800);
       padding-bottom: .2em;
-      letter-spacing: 0;
-      margin-bottom: 8;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
     }
   }
   p{
@@ -502,7 +536,7 @@ section.digital{
       line-height: 23px;
       margin-bottom: 1.2em;
       letter-spacing: 0;
-      line-height: 17px;
+      line-height: 20px;
     }
   }
 
@@ -528,9 +562,9 @@ section.digital{
       margin-top: 1em;
     }
     @include medium{
-      height: 360px;
-      margin-top: 1.8em;
-      width: 118px;
+      height: 400px;
+      margin-top: 1.7em;
+      width: 126px;
     }
   }
 
@@ -561,7 +595,7 @@ section.digital{
       text-align: left;
     }
     @include medium{
-      width: 47%;
+      width: 46%;
       display: inline-block;
       text-align: left;
     }
@@ -574,8 +608,8 @@ section.digital{
       margin-left: 2.3em;
     }
     @include medium{
-      margin-left: 4em;
-      margin-top: 0;
+      margin-left: 5em;
+      margin-top: -5em;
     }
   }
 
@@ -602,12 +636,13 @@ section.digital{
       height: 180px;
       margin-top: .8em;
       float: right;
+      margin-left: -0.9em;
     }
     @include medium{
-      height: 343px;
-      margin-top: -12em;
-      margin-left: 20.5em;
-      float: none;
+      height: 325px;
+      margin-top: 1.7em;
+      width: 280px;
+      margin-left: -1.5em;
     }
   }
 
@@ -624,12 +659,12 @@ section.digital{
     @include small{
       width: 49%;
       padding: 0;
-      text-align: left;
+      text-align: right;
     }
     @include medium{
       width: 50%;
       padding: 0 .9375em;
-      text-align: left;
+      text-align: right;
     }
   }
 
@@ -646,7 +681,7 @@ section.digital{
     @include medium{
       width: 50%;
       text-align: left;
-      padding: 0 .9375em;
+      padding: 0;
     }
   }
 
@@ -654,11 +689,11 @@ section.digital{
     margin-top: -8em;
     @include small{
       margin-top: 7em;
-      margin-left: 10.8em;
     }
     @include medium{
       margin-top: 10em;
-      margin-left: 11.5em;
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 
@@ -673,8 +708,8 @@ section.digital{
       max-width: 256px;
     }
     @include medium{
-      padding-left: .6em;
-      max-width: 474px;
+      padding-left: 0;
+      max-width: 465px;
     }
   }
 }
@@ -695,17 +730,21 @@ section.digital{
         @include fontBaskerville(60px, italic, normal);
         padding-top: 1.7em;
         padding-bottom: 2.1em;
+        line-height: 71px;
       }
     }
     img{
       height: 100%;
       padding-bottom: 3.7em;
+      margin: 0 auto;
       @include small{
         width: 76%;
+        max-width: 561px;
+        max-height: 160px;
         padding-bottom: 2.7em;
       }
       @include medium{
-        width: 100%;
+        width: 65%;
         padding-bottom: 6em;
         margin-bottom: 0;
       }
@@ -714,6 +753,24 @@ section.digital{
       height: 384px;
     }
     @include medium{
-      height: 728px;
+      height: 532px;
     }
+}
+
+#readytorock{
+  background-image: url('../images/backgrounds/desktop_readyToRock.jpg');
+  background-size: cover;
+  height: 256px;
+  h2{
+    @include fontBaskerville(60px, italic, normal);
+    font-size: 48px;
+    padding-top: .4em;
+    padding-bottom: .5em;
+  }
+  @include small{
+    display: none;
+  }
+  @include medium{
+    display: inline;
+  }
 }

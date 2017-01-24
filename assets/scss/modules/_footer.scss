@@ -37,8 +37,10 @@
           height: 35px;
         }
         @include medium{
-          margin-top: 1.25em;
+          display: block;
+          margin: 1.25em auto;
           height: 60px;
+          padding-left: 0;
         }
 
       }
@@ -61,7 +63,7 @@
         @include fontSans(12px, normal, 300);
         padding-top: 3.5em;
         text-align: left;
-        padding-left: 3.3em;
+        padding-left: 10em;
       }
     }
     .socialmedia{
@@ -73,7 +75,7 @@
       }
       @include medium{
 
-        padding-right: 4.4em;
+        padding-right: 13em;
         font-size: 9px;
         padding-top: 4em;
       }

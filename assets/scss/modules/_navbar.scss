@@ -57,12 +57,12 @@
       height: 45px;
     }
     @include medium{
-      padding-left: 1.4em;
+      padding-left: 5.4em;
       margin-top: .5em;
       height: 60px;
     }
     @include large{
-      padding-left: 1.4em;
+      padding-left: 5.4em;
     }
   }
   @include mobile{
@@ -89,7 +89,7 @@
       margin-left: 1em;
     }
     @include medium{
-      margin-left: 3em;
+      margin-left: 2.75em;
     }
   }
 }
@@ -169,7 +169,7 @@
 
   .navItalicFont{
     text-align: left;
-    padding-top: 2.1em;
+    padding-top: 2.4em;
     @include fontBaskerville(18px, italic, normal);
     @include small{
       @include fontBaskerville(8px, italic, normal);
@@ -204,8 +204,8 @@
     float: right;
   }
   @include medium{
-    padding-right: 1.7em;
-    padding-top: 1em;
+    padding-right: 5.95em;
+    padding-top: .9em;
 
   }
 }
