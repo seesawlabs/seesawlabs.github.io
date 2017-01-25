@@ -662,18 +662,18 @@ section.digital{
   img{
     height: 263px;
     margin-left: -4em;
-    margin-top: 3.1em;
+    margin-top: 4.5em;
     @include small{
       height: 180px;
+      margin-left: -0.9em;
       margin-top: .8em;
       float: right;
-      margin-left: -0.9em;
     }
     @include medium{
       height: 325px;
+      margin-left: -1.5em;
       margin-top: 1.7em;
       width: 280px;
-      margin-left: -1.5em;
     }
   }
 
@@ -746,6 +746,7 @@ section.digital{
 }
 
 #clients{
+    overflow: hidden;
     height: 650px;
     clear: both;
     background-color: #141414;
@@ -755,13 +756,14 @@ section.digital{
       line-height: 27px;
       @include small{
         @include fontBaskerville(32px, italic, normal);
-        padding: 1.6em 2.5em 1.4em;
+        padding: 1.6em 0em 1.4em;
       }
       @include medium{
         @include fontBaskerville(60px, italic, normal);
         padding-bottom: 2.1em;
         margin-top: 6px;
       }
+
     }
     img{
       height: 100%;
@@ -806,9 +808,12 @@ section.digital{
     font-size: 48px;
     padding-top: .4em;
     padding-bottom: .55em;
+    @include medium{
+      padding-top: 1.1em;
+    }
   }
   @include medium{
-    display: block;;
+    display: block;
   }
 }
 
@@ -859,6 +864,7 @@ section.digital{
   }
 
   #lemletLab{
+
     h4{
       padding-left: .4em;
     }
