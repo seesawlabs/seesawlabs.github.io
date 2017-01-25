@@ -633,14 +633,14 @@ section.digital{
   }
 
   .btn-secondary-outline{
-    margin-top: -1.3em;
+    margin-top: -4.5em;
     @include small{
       margin-top: -3em;
       margin-left: 2.3em;
     }
     @include medium{
-      margin-left: 4.5em;
       margin-top: -4.5em;
+      margin-left: 4.5em;
     }
   }
 
@@ -662,7 +662,7 @@ section.digital{
   img{
     height: 263px;
     margin-left: -4em;
-    margin-top: 6.1em;
+    margin-top: 3.1em;
     @include small{
       height: 180px;
       margin-top: .8em;
