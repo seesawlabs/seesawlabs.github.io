@@ -759,9 +759,8 @@ section.digital{
       }
       @include medium{
         @include fontBaskerville(60px, italic, normal);
-        padding-top: 1.7em;
         padding-bottom: 2.1em;
-        line-height: 71px;
+        margin-top: 6px;
       }
     }
     img{
@@ -782,7 +781,7 @@ section.digital{
         max-height: none;
       }
       @include large{
-        width: 50%;
+        width: 65%;
       }
     }
     @include small{
