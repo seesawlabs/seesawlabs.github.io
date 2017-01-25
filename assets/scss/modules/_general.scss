@@ -18,6 +18,14 @@ section{
   display: block;
 }
 
+.nostyleAnchor {
+  text-decoration: none !important;
+  color: $colorWhite;
+  &:hover, &:focus {
+    color: $colorWhite;
+  }
+}
+
 .visibletablet{
   display: none;
   @include small{
@@ -64,9 +72,9 @@ section{
 }
 
 .btn-secondary-outline {
-    color: #ccc;
+    color: $colorWhite;
     background-image: none;
-    background-color: #ce9a2b;
+    background-color: $yellow;
     border-color: transparent;
     height: 45px;
     width: 178px;
@@ -82,7 +90,16 @@ section{
       height: 60px;
       width: 178px;
     }
+
+
 }
+
+.btn-secondary-outline:hover {
+  background-color: $lighter-blue;
+  border-color: $lighter-blue;
+}
+
+
 
 .blackbar{
   display: inline-table;
