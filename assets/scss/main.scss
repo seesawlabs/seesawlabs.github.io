@@ -37,6 +37,15 @@
     }
   }
 
+  .ourcrewbackground{
+    background-image: url('../images/backgrounds/mobile_crew_hero.jpg');
+    background-size: cover;
+    background-position: center;
+    @include medium{
+      background-image: url('../images/backgrounds/desktop_crew_hero@2x.jpg');
+    }
+  }
+
 #hero{
   padding-top: 60px;
   height: 420px;
@@ -1143,4 +1152,8 @@ section.digital{
       }
     }
   }
+}
+
+#ourcrewContainer{
+
 }
