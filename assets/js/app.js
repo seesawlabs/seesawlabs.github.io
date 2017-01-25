@@ -1,5 +1,5 @@
 window.onload = function() {
-	setTimeout(function() {
+	/*setTimeout(function() {
 
 		var webURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
 
@@ -28,7 +28,7 @@ window.onload = function() {
 		new Image().src = webURL + 'assets/images/matthew_headshot.jpg';
 		new Image().src = webURL + 'assets/images/teamJose160.jpg';
 
-	}, 1000);
+	}, 1000);*/
 }
 
 $(function() {
