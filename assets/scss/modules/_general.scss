@@ -54,10 +54,10 @@ section{
 .visibletabletDesktop{
   display: none;
   @include small{
-    display: inline;
+    display: inline-block;
   }
   @include medium{
-    display: inline;;
+    display: inline-block;
   }
 }
 
