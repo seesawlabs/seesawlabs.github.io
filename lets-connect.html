@@ -6,10 +6,11 @@ permalink: /lets-connect/
 
 <body>
 {% include nav.html %}
+<div id="indexContainer">
+  <section id="hero" class="mainbackground">
     <div id="googleMap"></div>
     <div class="cSection1">
         <h3 class="cSection1H3Header styleGuideH3">CONTACT US</h3>
-        <h1 class="cSection1H1Header styleGuideH1">We love problem solving. Tell us a bit about your needs and let’s talk about how we can make your digital project a success.</h1>
     </div>
     <div class="cSection2">
         <div class="contactForm">
@@ -48,14 +49,16 @@ permalink: /lets-connect/
             </form>
         </div>
         <div class="locationInfo">
-            <img class="cSectionImage cSectionImage1" src="/assets/images/iconContactPageLightBulb.png">
+            <img class="cSectionImage cSectionImage1" src="{{site.baseurl}}/assets/images/iconContactPageLightBulb.png">
             <p class="cSectionParagraph cSectionParagraph1">HELLO@SEESAWLABS.COM</p>
             <p class="cSectionParagraph cSectionParagraph2">512-555-5555</p>
             <p class="cSectionParagraph cSectionParagraph3">555 EAST 6TH STREET</p>
             <p class="cSectionParagraph cSectionParagraph3">AUSTIN, TX 78702</p>
         </div>
     </div>
-    </div>
+  </section>
+</div>
+
 
        <script src="http://maps.googleapis.com/maps/api/js"></script>
         <script>
