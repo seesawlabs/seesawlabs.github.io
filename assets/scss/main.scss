@@ -639,8 +639,8 @@ section.digital{
       margin-left: 2.3em;
     }
     @include medium{
-      margin-left: 5em;
-      margin-top: -5em;
+      margin-left: 4.5em;
+      margin-top: -4.5em;
     }
   }
 
@@ -759,9 +759,8 @@ section.digital{
       }
       @include medium{
         @include fontBaskerville(60px, italic, normal);
-        padding-top: 1.7em;
         padding-bottom: 2.1em;
-        line-height: 71px;
+        margin-top: 6px;
       }
     }
     img{
@@ -782,7 +781,7 @@ section.digital{
         max-height: none;
       }
       @include large{
-        width: 50%;
+        width: 65%;
       }
     }
     @include small{
@@ -792,7 +791,7 @@ section.digital{
       height: 532px;
     }
     @include large{
-      height: 660px;
+      height: 532px;
     }
 }
 
@@ -806,7 +805,7 @@ section.digital{
     @include fontBaskerville(60px, italic, normal);
     font-size: 48px;
     padding-top: .4em;
-    padding-bottom: .5em;
+    padding-bottom: .55em;
   }
   @include medium{
     display: block;;
@@ -1060,6 +1059,8 @@ section.digital{
       }
     }
   }
+
+
 
   #ourworksolutions{
     background-color: #151d20;

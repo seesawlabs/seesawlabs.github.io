@@ -1,18 +1,18 @@
 
     <nav class="navbar navbar-nav navbar-toggler blackbar">
         <div class="row">
-            <a href="/">
+            <a href="{{site.baseurl}}/">
             <div id="navLogo" class="sslLogo col-sm-2 inline">
-                <img class="logoImage" id="logoDesktop" src="./assets/images/desktopLogo.svg" alt="Desktop SeeSaw Logo" />
-                <img class="logoImage" id="logoMobile" src="./assets/images/mobileLogo.svg" alt="Mobile SeeSaw Logo" />
+                <img class="logoImage" id="logoDesktop" src="{{site.baseurl}}/assets/images/desktopLogo.svg" alt="Desktop SeeSaw Logo" />
+                <img class="logoImage" id="logoMobile" src="{{site.baseurl}}/assets/images/mobileLogo.svg" alt="Mobile SeeSaw Logo" />
             </div>
             </a>
             <div id="desktopNav">
               <div id="desktopNavLinks" class="col-sm-10 inline navBarLinks text-xs-right">
-                  <a class="uppercase marginRight" href="/our-work/"><div class="navItalicFont">Our</div><div class="navFont">Work</div></a>
-                  <a class="uppercase marginRight" href="/our-process/"><div class="navItalicFont">Our</div><div class="navFont">Process</div></a>
-                  <a class="uppercase marginRight" href="/our-crew/"><div class="navItalicFont">Our</div><div class="navFont">Crew</div></a>
-                  <a class="uppercase marginRight" href="/lets-connect/"><div class="navItalicFont">Let's</div><div class="navFont">Connect</div></a>
+                  <a class="uppercase marginRight" href="{{site.baseurl}}/our-work/"><div class="navItalicFont">Our</div><div class="navFont">Work</div></a>
+                  <a class="uppercase marginRight" href="{{site.baseurl}}/our-process/"><div class="navItalicFont">Our</div><div class="navFont">Process</div></a>
+                  <a class="uppercase marginRight" href="{{site.baseurl}}/our-crew/"><div class="navItalicFont">Our</div><div class="navFont">Crew</div></a>
+                  <a class="uppercase marginRight" href="{{site.baseurl}}/lets-connect/"><div class="navItalicFont">Let's</div><div class="navFont">Connect</div></a>
               </div>
             </div>
             <div id="mobileNav">
@@ -25,16 +25,16 @@
                 <div id="nonCollapsedMenu" class="bg-inverse p-a-1">
                     <ul>
                         <li>
-                             <a class="uppercase {% if current[1] == 'caseStudies.html' %} current{% endif %} scroll" href="#caseStudies" data-toggle="collapse" data-target="#exCollapsingNavbar"><div class="navItalicFont">Our</div><div class="navFont">Work</div></a>
+                             <a class="uppercase {% if current[1] == '/our-work/' %} current{% endif %}" href="{{site.baseurl}}/our-work/"><div class="navItalicFont">Our</div><div class="navFont">Work</div></a>
                         </li>
                         <li>
-                             <a class="uppercase {% if current[1] == 'services.html' %} current{% endif %} scroll" href="#howWeCanHelp" data-toggle="collapse" data-target="#exCollapsingNavbar"><div class="navItalicFont">Our</div><div class="navFont">Process</div></a>
+                             <a class="uppercase {% if current[1] == '/our-process/' %} current{% endif %}" href="{{site.baseurl}}/our-process/" ><div class="navItalicFont">Our</div><div class="navFont">Process</div></a>
                         </li>
                         <li>
-                            <a class="uppercase {% if current[1] == 'process.html' %} current{% endif %} scroll" href="#ourProcessSection" data-toggle="collapse" data-target="#exCollapsingNavbar"><div class="navItalicFont">Our</div><div class="navFont">Crew</div></a>
+                            <a class="uppercase {% if current[1] == '/our-crew/' %} current{% endif %}" href="{{site.baseurl}}/our-crew/"><div class="navItalicFont">Our</div><div class="navFont">Crew</div></a>
                         </li>
                         <li>
-                            <a class="uppercase {% if current[1] == 'about.html' %} current{% endif %}  scroll" href="#about" data-toggle="collapse" data-target="#exCollapsingNavbar"><div class="navItalicFont">Let's</div><div class="navFont">Connect</div></a>
+                            <a class="uppercase {% if current[1] == '/lets-connect/' %} current{% endif %}" href="{{site.baseurl}}/lets-connect/"><div class="navItalicFont">Let's</div><div class="navFont">Connect</div></a>
                         </li>
                     </ul>
                 </div>
