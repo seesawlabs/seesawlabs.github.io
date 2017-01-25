@@ -10,15 +10,6 @@
   'modules/_general',
   'modules/_footer';
 
-/* Pages */
-@import
-  'pages/_connect',
-  'pages/_contact',
-  'pages/_crew',
-  'pages/_home',
-  'pages/_process',
-  'pages/_work';
-
   .mainbackground{
     background-image: url('../images/backgrounds/mobile_hero.jpg');
     background-size: cover;
@@ -1164,3 +1155,11 @@ section.digital{
 #ourcrewContainer{
 
 }
+
+/* Pages */
+@import
+  'pages/_home',
+  'pages/_work',
+  'pages/_process',
+  'pages/_crew',
+  'pages/_connect';
