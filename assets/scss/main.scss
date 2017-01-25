@@ -820,8 +820,16 @@ section.digital{
     background-position: center;
     overflow: hidden;
     @include medium{
-      background-image: url('../images/backgrounds/mobile_work_caseStudy2.jpg');
+      background-image: url('../images/backgrounds/desktop_work_caseStudy1@2x.jpg');
       background-position: 100%;
+    }
+  }
+
+  #hero{
+    @include medium{
+      p{
+        max-width: 970px;
+      }
     }
   }
 
@@ -834,7 +842,7 @@ section.digital{
     }
   }
   #linkNYC, #lemletLab{
-    height: 520px;
+    height: 560px;
     h2{
       padding-bottom: 1em;
     }
@@ -842,42 +850,203 @@ section.digital{
       float: right;
       height: 206px;
       margin-top: 1.7em;
-      margin-right: 2.5em;
+      margin-right: 3.5em;
+      @include small{
+        float: right;
+        height: 361px;
+        margin-top: 4.3em;
+        margin-right: 2.1em;
+        width: 134px;
+      }
+      @include medium{
+        float: right;
+        height: 461px;
+        margin-top: 4.3em;
+        margin-right: 2.1em;
+        width: 134px;
+      }
     }
     p{
       line-height: 17px;
       padding-right: .95200em;
     }
-    .floatleftsection{
-      width: 100%;
+    @include small{
+      height: 460px;
     }
+    @include medium{
+      height: 600px;
+    }
+    /*.floatleftsection, .floatrightsection{
+      padding-left: 0; padding-right: 0;
+    }*/
   }
   #linkNYC{
+    h4{
+      @include small{
+        margin-right: 2.2em;
+      }
+      @include medium{
+        margin-right: 2.2em;
+      }
+    }
+    h2{
+      @include small{
+        margin-right: 1.2em;
+        padding-bottom: .2em;
+      }
+      @include medium{
+        margin-right: 1.2em;
+        padding-bottom: .2em;
+      }
+    }
+    p{
+      @include small{
+        display: inline-block;
+        margin-right: 2.2em;
+        max-width: 625px;
+        line-height: 21px;
+        margin-bottom: 1.3em;
+      }
+      @include medium{
+        display: inline-block;
+        margin-right: 2.2em;
+        max-width: 625px;
+        line-height: 21px;
+        margin-bottom: 1.3em;
+      }
+    }
     .firstParagraph{
-      max-width: 231px;
-      margin-bottom: .7em;
+
+      margin-bottom: .8em;
+      @include small{
+        margin-bottom: 1.37em;
+        max-width: 625px;
+      }
+      @include medium{
+        margin-bottom: 1.37em;
+        max-width: 625px;
+      }
+    }
+    .floatleftsection{
+      width: 100%;
+      @include small{
+        width: 55%;
+      }
+      @include medium{
+        width: 55%;
+      }
+      img{
+        @include mobile{
+          margin-right: 9%;
+        }
+      }
+    }
+    .floatrightsection{
+      @include mobile{
+        display: none;
+      }
+      @include small{
+        display: inline;
+      }
+      float: right;
+      width: 45%;
+      img{
+        float: left;
+      }
     }
   }
 
   #lemletLab{
     h4{
       padding-left: .4em;
+      @include small{
+        padding-left: 1.1em;
+      }
+      @include medium{
+        padding-left: 1.1em;
+      }
     }
     h2{
       text-transform: uppercase;
       padding-left: 0.3em;
+      @include small{
+        padding-left: 0.6em;
+        padding-bottom: .2em;
+      }
+      @include medium{
+        padding-left: 0.6em;
+        padding-bottom: .2em;
+      }
     }
     p{
       padding-left: 0.5em;
+      @include small{
+        max-width: 525px;
+        padding-left: 1.6em;
+        line-height: 21px;
+        letter-spacing: .3px;
+      }
+      @include medium{
+        max-width: 525px;
+        padding-left: 1.6em;
+        line-height: 21px;
+        letter-spacing: .3px;
+      }
     }
     img{
-      height: 182px;
+
       margin-top: 2.4em;
       margin-right: .7em;
+      @include mobile{
+        margin-left: 0;
+        height: 26%;
+        width: 42%;
+      }
+      @include small{
+        height: 383px;
+        width: 324px;
+        margin-top: 3em;
+        margin-right: .9em;
+      }
+      @include medium{
+        height: 483px;
+        width: 393px;
+        margin-top: 4em;
+        margin-right: .9em;
+      }
     }
     .firstParagraph{
-      max-width: 200px;
+
       margin-bottom: .9em;
+      @include small{
+        max-width: 520px;
+        margin-bottom: 1.4em;
+      }
+      @include medium{
+        max-width: 520px;
+        margin-bottom: 1.4em;
+      }
+    }
+    .floatleftsection{
+      @include mobile{
+        display: none;
+      }
+      @include small{
+        display: inline;
+      }
+      width: 48%;
+    }
+    .floatrightsection{
+      width: 100%;
+      text-align: left;
+      @include small{
+        float: right;
+        width: 52%;
+      }
+      @include medium{
+        float: right;
+        width: 52%;
+      }
     }
   }
 
@@ -885,6 +1054,9 @@ section.digital{
     .digital-innovtion{
       h2{
         padding-top: 2em;
+        @include medium{
+          padding-top: 1.8em;
+        }
       }
     }
   }
@@ -894,44 +1066,74 @@ section.digital{
     padding-left: 0;
     padding-right: 0;
     h2{
-        @include fontBaskerville(24px, italic, normal);
-        padding: 2.2em 0 1.3em;
+      @include fontBaskerville(24px, italic, normal);
+      padding: 2.2em 0 1.3em;
+      @include medium{
+        @include fontBaskerville(36px, italic, normal);
+        padding: 1.2em 0 .8em;
+      }
     }
     p{
       @include fontSans(14px, normal, 300);
       letter-spacing: 0;
       display: block;
       margin: 0 auto;
-      max-width: 322px;
+      max-width: 335px;
       line-height: 17px;
       margin-bottom: 1.2em;
+      @include medium{
+        max-width: 965px;
+        @include fontSans(18px, normal, 300);
+        letter-spacing: 0;
+        line-height: 21px;
+      }
     }
     .oursolutions1, .oursolutions2, .oursolutions3{
       height: 239px;
+      @include small{
+        height: 241px;
+        background-color: #151d20;
+      }
+      @include medium{
+        height: 241px;
+        background-color: #151d20;
+      }
     }
     .oursolutions1{
       background-image: url(../images/backgrounds/services1.svg);
       background-position: left;
       background-repeat: no-repeat;
-      background-size: 81%;
+      background-size: 303px;
       background-position-x: -64px;
       background-position-y: -26px;
+      @include medium{
+        background-position-x: 2em;
+        background-position-y: -26px;
+      }
     }
     .oursolutions2{
       background-image: url(../images/backgrounds/services2.svg);
       background-position: right;
       background-repeat: no-repeat;
       background-color: #141414;
-      background-size: 81%;
+      background-size: 303px;
       background-position-x: 129px;
       background-position-y: -31px;
+      @include medium{
+        background-position-x: 98%;
+        background-position-y: -31px;
+      }
     }
     .oursolutions3{
       background-image: url(../images/backgrounds/services3.svg);
       background-position: left;
       background-repeat: no-repeat;
-      background-size: 81%;
+      background-size: 303px;
       background-position-x: -58px;
+      @include medium{
+        background-position-x: 2em;
+        background-position-y: -26px;
+      }
     }
   }
 }
