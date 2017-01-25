@@ -76,30 +76,28 @@ section{
     background-image: none;
     background-color: $yellow;
     border-color: transparent;
-    height: 45px;
     width: 178px;
-    padding: 0em 2em;
+    padding: 0.7em 0em;
     @include fontBaskerville(15px, italic, normal);
     @include small{
       @include fontBaskerville(11px, italic, normal);
-      height: 39px;
-      width: 122px;
+      //height: 39px;
+      width: 122px !important;
+      padding: 0.95em 0em;
     }
     @include medium{
       @include fontBaskerville(15px, italic, normal);
-      height: 60px;
-      width: 178px;
+      //height: 60px;
+      width: 178px !important;
+      //padding: 19px 43px;
     }
 
-
+    &:hover, &:focus {
+      background-color: $lighter-blue;
+      border-color: $lighter-blue;
+      border-width: 1px;
+    }
 }
-
-.btn-secondary-outline:hover {
-  background-color: $lighter-blue;
-  border-color: $lighter-blue;
-}
-
-
 
 .blackbar{
   display: inline-table;
