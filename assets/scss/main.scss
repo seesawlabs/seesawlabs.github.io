@@ -183,15 +183,25 @@ section.digital{
 
   .digital-execution{
     height: 269px;
+    &:hover {
+      background-color: $darker-red;
+    }
+    @include medium {
+      height: 481px;
+    }
     h2{
       padding-top: 2em;
       @include medium{
         padding-top: $space6;
       }
     }
+
   }
   .digital-innovtion{
     height: 269px;
+    &:hover {
+      background-color: $darker-blue;
+    }
     h2{
       @include small{
         padding-top: 2em;
