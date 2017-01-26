@@ -372,6 +372,12 @@ section.digital{
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: hidden;
+    @include small {
+      background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     @include medium {
       background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
       background-size: cover;
@@ -417,57 +423,67 @@ section.digital{
       width: 33.3%;
       height: 210px;
       padding: 0px 0px;
-      //padding-left: 0;
-      //padding-right: 0;
     }
 
-    .solutions1{
+    .solutions1 {
+      background-image: url('../images/backgrounds/desktop_otherServices_hover1@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       @include small{
-        height: 192px;
-      }
-      @include medium{
+        background-image: none;
         &:hover {
           background-image: url('../images/backgrounds/desktop_otherServices_hover1@2x.jpg');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
+        height: 192px;
+      }
+      @include medium{
         height: 361px;
         h2{
           text-align: center;
-        }
-        p{
-
         }
       }
     }
 
     .solutions2{
+      background-image: url('../images/backgrounds/desktop_otherServices_hover2@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       @include small{
-        height: 192px;
-      }
-      @include medium{
+        background-image: none;
         &:hover {
           background-image: url('../images/backgrounds/desktop_otherServices_hover2@2x.jpg');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
+        height: 192px;
+      }
+      @include medium{
         height: 361px;
       }
     }
 
     .solutions3{
+      background-image: url('../images/backgrounds/desktop_otherServices_hover3@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       @include small{
-        height: 192px;
-      }
-      @include medium{
+        background-image: none;
         &:hover {
           background-image: url('../images/backgrounds/desktop_otherServices_hover3@2x.jpg');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
+        height: 192px;
+      }
+      @include medium{
         height: 361px;
         h2{
           text-align: center;
