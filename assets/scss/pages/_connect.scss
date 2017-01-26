@@ -16,14 +16,18 @@
     .first {
       margin: 0px auto;
       word-spacing: -1px;
+      @include small {
+        margin: 70px auto 0px auto;
+        width: 65%;
+      }
     }
   }
   .contact {
     margin-top: 56px;
 
     @include small {
-      margin: 0px auto;
-      width: 60%;
+      margin: 145px auto;
+      width: 78%;
     }
     input, textarea {
       border: 2px solid $colorWhite;
@@ -43,6 +47,10 @@
         font-weight: 100;
         letter-spacing: 1px;
         padding: 0px;
+
+        @include small {
+          font-size: 22px;
+        }
       }
     }
     label {
@@ -61,15 +69,23 @@
       margin: 0px;
       margin-bottom: 34px;
       padding: 0px 4px 0px 5px;
-      @include small {
-        float: left;
-        width: 50%;
-      }
       &.textarea, &.submit {
         float: none;
         margin: 0 auto;
         margin-bottom: 27px;
         width: 100%;
+      }
+      @include small {
+        float: left;
+        width: 50%;
+        margin-bottom: 93px;
+        width: 45%;
+        &.left {
+          margin-right: 10%;
+        }
+        &.textarea {
+          margin-bottom: 61px;
+        }
       }
     }
   }
