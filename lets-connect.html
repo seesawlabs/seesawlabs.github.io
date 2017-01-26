@@ -5,62 +5,50 @@ permalink: /lets-connect/
 
 {% include nav.html %}
 <div id="connectContainer">
-  <section id="hero" class="mainbackground">
+  <section id="hero" class="letsconnectbackground">
     <div class="row">
       <div class="col-md-12">
         <div class="headercontainer">
-          <h1>Contact Us</h1>
+          <h1>Ready to Rock?</h1>
+          <h3>Let's Partner Together</h3>
         </div>
+        <p class="first">Looking for then right team to pull off your cutting edge idea? Need to chat about overhauling your existing infrastructure?</p>
+        <p>Drop us a line below, or if email is more your style, hit us up at hello@seesawlabs.com</p>
       </div>
     </div>
-
+  </section>
+  <section class="contact">
     <div class="row">
       <div class="col-md-12">
-        <div class="cSection2">
-          <div class="contactForm">
-            <div id="formMessages"></div>
-              <form id="cSectionForm" class="form-horizontal" action="//formspree.io/hello@seesawlabs.com" method="POST">
-                <fieldset>
-                  <!-- Name input-->
-                  <div class="form-group">
-                    <label class="contactFormName contactFormTextStyle control-label" for="name">NAME</label>
-                    <div class="nameDiv">
-                        <input id="name" name="name" type="text" class="contactFormInput form-control" required>
-                    </div>
-                  </div>
-                  <!-- Email input-->
-                  <div class="form-group">
-                    <label class="contactFormEmail contactFormTextStyle control-label" for="email">EMAIL</label>
-                    <div>
-                        <input id="email" name="email" type="text" class="contactFormInput form-control" required>
-                    </div>
-                  </div>
-                  <!-- Message body -->
-                  <div class="form-group">
-                    <label class="control-label contactFormTextStyle contactFormHelpMessage" for="message">HOW CAN WE HELP YOU</label>
-                    <div class="textAreaDiv contactFormInput">
-                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                    </div>
-                  </div>
-                  <!-- Form actions -->
-                  <div class="form-group">
-                    <div class="contactFormButtonDiv">
-                        <button type="submit" class="cSubmitButton btn btn-secondary-outline">SUBMIT</button>
-                    </div>
-                  </div>
-                </fieldset>
-              </form>
+        <form id="cSectionForm" class="form-horizontal" action="//formspree.io/hello@seesawlabs.com" method="POST">
+          <fieldset>
+            <!-- Name input-->
+            <div class="form-group">
+              <input id="name" name="name" type="text" class="form-control" placeholder="Name*" required>
             </div>
-            <div class="locationInfo">
-              <img class="cSectionImage cSectionImage1" src="{{site.baseurl}}/assets/images/iconContactPageLightBulb.png">
-              <p class="cSectionParagraph cSectionParagraph1">
-                HELLO@SEESAWLABS.COM<br/>
-                512-555-5555<br/>
-                555 EAST 6TH STREET<br/>
-                AUSTIN, TX 78702
-              </p>
+            <!-- Email input-->
+            <div class="form-group">
+              <input id="email" name="email" type="text" class="form-control" placeholder="Email*" required>
             </div>
-        </div>
+            <!-- Subject input-->
+            <div class="form-group">
+              <input id="subject" name="subject" type="text" class="form-control" placeholder="Subject*" required>
+            </div>
+            <!-- Phone input-->
+            <div class="form-group">
+              <input id="phone" name="phone" type="text" class="form-control" placeholder="Phone">
+            </div>
+            <!-- Message body -->
+            <div class="form-group textarea">
+              <label class="control-label" for="message">Message*</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <!-- Form actions -->
+            <div class="form-group submit">
+              <button type="submit" class="btn btn-secondary-outline">Send Message</button>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </div>
   </section>

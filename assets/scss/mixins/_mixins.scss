@@ -29,3 +29,10 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin placeHolder {
+  &::-webkit-input-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+}
