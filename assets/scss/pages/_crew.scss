@@ -1,0 +1,303 @@
+.ourcrewbackground{
+  background-image: url('../images/backgrounds/mobile_crew_hero.jpg');
+  background-size: cover;
+  background-position: center;
+  @include medium{
+    background-image: url('../images/backgrounds/desktop_crew_hero@2x.jpg');
+  }
+}
+
+#ourcrewContainer{
+
+  #hero{
+    p{
+      margin: 0 .2em;
+      @include small{
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .backgroundOCfromthelab{
+    background-image: url('../images/backgrounds/desktop_crew_lab1@2x.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    @include medium{
+      background-image: url('../images/backgrounds/desktop_crew_lab1@2x.jpg');
+      background-position: 100%;
+    }
+  }
+
+  .backgroundOClemlet{
+    background-image: url('../images/backgrounds/desktop_crew_lab2@2x.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    @include medium{
+      background-image: url('../images/backgrounds/mobile_crew_lab2.jpg');
+      background-position: 100%;
+    }
+  }
+
+  #linkNYC, #lemletLab{
+    height: 520px;
+    @include small{
+      height: 420px;
+    }
+    img{
+      height: 128px;
+      margin: 0 auto;
+      display: block;
+    }
+    p{
+      margin-bottom: 1.2em;
+      padding: 0 .4em;
+      line-height: 17px;
+    }
+    .floatleftsection {
+      width: 100%;
+      @include small{
+        width: 51%;
+      }
+      @include medium{
+        width: 51%;
+      }
+    }
+
+  }
+
+  #linkNYC{
+    .floatrightsection{
+      img{
+        width: 86%;
+        margin-top: 6em;
+        height: 100%;
+      }
+      @include mobile{
+        display: none;
+      }
+      @include small{
+        display: inline-block;
+      }
+    }
+  }
+
+  #lemletLab{
+
+    h4{
+      padding-left: .4em;
+      @include small{
+        padding-left: 1.1em;
+      }
+      @include medium{
+        padding-left: 1.1em;
+      }
+    }
+    h2{
+      text-transform: uppercase;
+      padding-left: 0.3em;
+      @include small{
+        padding-left: 0.6em;
+        padding-bottom: .2em;
+      }
+      @include medium{
+        padding-left: 0.6em;
+        padding-bottom: .2em;
+      }
+    }
+    p{
+      padding-left: 0.5em;
+      @include small{
+        max-width: 525px;
+        padding-left: 1.6em;
+        line-height: 21px;
+        letter-spacing: .3px;
+      }
+      @include medium{
+        max-width: 525px;
+        padding-left: 1.6em;
+        line-height: 21px;
+        letter-spacing: .3px;
+      }
+    }
+    img{
+
+      margin-top: 2.4em;
+      margin-right: .7em;
+      @include mobile{
+        margin-left: 0;
+        height: 26%;
+        width: 42%;
+      }
+      @include small{
+        height: 383px;
+        width: 324px;
+        margin-top: 3em;
+        margin-right: .9em;
+      }
+      @include medium{
+        height: 510px;
+        width: 421px;
+        margin-top: 2em;
+        margin-right: .5em;
+      }
+    }
+    .firstParagraph{
+
+      margin-bottom: .9em;
+      @include small{
+        max-width: 520px;
+        margin-bottom: 1.4em;
+      }
+      @include medium{
+        max-width: 520px;
+        margin-bottom: 1.4em;
+      }
+    }
+    .floatleftsection{
+      @include mobile{
+        display: none;
+      }
+      @include small{
+        display: inline;
+      }
+      width: 48%;
+    }
+    .floatrightsection{
+      width: 100%;
+      text-align: left;
+      img{
+        float: right;
+        margin-left: 0;
+        height: 31%;
+        width: 34%;
+        margin-right: 2em;
+        margin-top: 1.4em;
+        margin-left: 1.5em;
+      }
+      @include small{
+        float: right;
+        width: 52%;
+      }
+      @include medium{
+        float: right;
+        width: 52%;
+      }
+    }
+  }
+  #leadership{
+    h2{
+      @include fontSans(23px, normal, 800);
+      text-transform: uppercase;
+      margin: 2.5em 0 1.4em;
+      @include small{
+        @include fontSans(30px, normal, 800);
+        margin: 1.2em 0 1.2em;
+      }
+      @include medium{
+        @include fontSans(47px, normal, 800);
+        margin: 4% 0;
+      }
+    }
+    p{
+      @include fontSans(14px, italic, 300);
+      letter-spacing: 0;
+      line-height: 18px;
+      padding: 0 .1em;
+      @include small{
+        @include fontSans(22px, italic, 300);
+        padding: 0 1em;
+        line-height: 28px;
+      }
+      @include medium{
+        @include fontSans(30px, italic, 300);
+        width: 76%;
+        margin: 0 auto;
+        line-height: 37px;
+      }
+    }
+    .leadershiteam
+    {
+      width: 96%;
+      padding-left: 12.5%;
+      .section3Column{
+        padding: 0;
+        .section3ImageContainer {
+          display: inline-block;
+          float: left;
+          img{
+            margin-top: 3.4em;
+            height: 94px;
+            width: 94px;
+            border-radius: 5em;
+            margin-left: .2em;
+            @include medium{
+              height: 185px;
+              width: 185px;
+              margin-top: 4.4em;
+            }
+          }
+        }
+        .section3ContentDiv {
+          right: .5em;
+          h3{
+            padding-top: 3.2em;
+            @include fontSans(24px, italic, normal);
+            letter-spacing: 0;
+            text-align: left;
+            margin-left: 5.2em;
+            margin-bottom: .1em;
+            @include medium{
+              padding-top: 5.8em;
+              margin-left: 8.85em;
+              margin-bottom: 0;
+            }
+          }
+          h5{
+            text-align: left;
+            @include fontSans(18px, normal, normal);
+            letter-spacing: 0;
+            margin-left: 7em;
+            margin-bottom: 2.8em;
+            @include medium{
+              margin-bottom: 18%;
+              margin-left: 11.8em;
+            }
+          }
+          p{
+            @include fontSans(18px, normal, normal);
+            letter-spacing: 0;
+            text-align: left;
+            padding-left: .4em;
+            line-height: 21px;
+            margin-bottom: 0;
+            @include small{
+              @include fontSans(15px, normal, normal);
+              padding-left: 0.2em;
+              line-height: 20px;
+              width: 82%;
+            }
+            @include medium{
+              padding-left: 0.2em;
+              line-height: 22px;
+              width: 82%;
+            }
+          }
+        }
+      }
+      .section3Column:last-child{
+        width: 50%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    @include medium{
+      height: 1600px;
+    }
+    @include medium{
+      height: 1820px;
+    }
+  }
+}

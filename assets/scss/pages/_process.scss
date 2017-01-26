@@ -1,0 +1,137 @@
+.ourprocessbackground{
+  background-image: url('../images/backgrounds/mobile_process_hero.jpg');
+  background-size: cover;
+  background-position: center;
+  @include medium{
+    background-image: url('../images/backgrounds/desktop_process_hero@2x.jpg');
+  }
+}
+
+#ourprocessContainer{
+
+  #discovery, #design, #rapid, #develop, #launch{
+    height: 360px;
+    @include small{
+      height: 280px;
+    }
+
+    @include medium{
+      height: 240px;
+    }
+
+    h2{
+      @include fontBaskerville(24px, italic, normal);
+      padding-top: 2.1em;
+      margin-bottom: 1.6em;
+      @include small{
+        @include fontBaskerville(28px, italic, normal);
+        padding-top: 2.6em;
+        margin-bottom: 1.1em;
+      }
+      @include medium{
+        @include fontBaskerville(36px, italic, normal);
+        padding-top: 1.1em;
+        margin-bottom: 1.1em;
+      }
+    }
+    p{
+      @include fontSans(18px, normal, 300);
+      letter-spacing: 0;
+      line-height: 22px;
+      padding: 0 .5em;
+      margin-bottom: 1.2em;
+      @include small{
+        @include fontSans(14px, normal, 300);
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      @include medium{
+        width: 69%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  #discovery{
+    background-image: url('../images/backgrounds/process1.svg');
+    background-size: 335px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: -8.5em;
+    background-color: $lighter-gray;
+    @include small{
+      background-size: 280px;
+      background-position-x: 5%;
+    }
+    @include medium{
+      background-size: 235px;
+      background-position-x: 5%;
+    }
+  }
+  #design{
+    background-image: url('../images/backgrounds/process2.svg');
+    background-size: 335px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: 11em;
+    background-color: $lighter-green;
+    @include small{
+      background-size: 280px;
+      background-position: 95%;
+    }
+    @include medium{
+      background-size: 235px;
+      background-position: 95%;
+    }
+  }
+  #rapid{
+    background-image: url('../images/backgrounds/process3.svg');
+    background-size: 335px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: -8.5em;
+    background-color: $lighter-yellow;
+    @include small{
+      background-size: 280px;
+      background-position-x: 5%;
+    }
+    @include medium{
+      background-size: 235px;
+      background-position-x: 5%;
+    }
+  }
+  #develop{
+    background-image: url('../images/backgrounds/process4.svg');
+    background-size: 335px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: 11em;
+    background-color: $lighter-red;
+    @include small{
+      background-size: 280px;
+      background-position: 95%;
+    }
+    @include medium{
+      background-size: 235px;
+      background-position: 95%;
+    }
+  }
+  #launch{
+    background-image: url('../images/backgrounds/process5.svg');
+    background-size: 335px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: -8.5em;
+    background-color: $lighter-black;
+    @include small{
+      background-size: 280px;
+      background-position-x: 5%;
+    }
+    @include medium{
+      background-size: 235px;
+      background-position-x: 5%;
+    }
+  }
+}

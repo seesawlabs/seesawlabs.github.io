@@ -1,0 +1,837 @@
+.mainbackground{
+  background-image: url('../images/backgrounds/mobile_hero.jpg');
+  background-size: cover;
+  background-position: center;
+  @include medium{
+    background-image: url('../images/backgrounds/desktop_hero@2x.jpg');
+  }
+}
+
+#hero{
+  padding-top: 60px;
+  height: 420px;
+  .headercontainer{
+    padding-top: 3.5em;
+    padding-bottom: 2em;
+    @include small {
+      padding-top: 3.9em;
+      padding-bottom: 3.3em;
+    }
+    @include medium {
+      padding-top: $space2;
+      padding-bottom: $space5;
+    }
+
+  }
+  h1{
+    text-transform: uppercase;
+    @include fontSans(23px, normal, 800);
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    @include small {
+      @include fontSans(36px, normal, 800);
+    }
+    @include medium{
+      @include fontSans(70px, normal, 800);
+      margin-bottom: 5.3px;
+    }
+  }
+  h3{
+    @include fontBaskerville(18px, italic, normal);
+    @include small {
+      @include fontBaskerville(26px, italic, normal);
+    }
+    @include medium {
+      @include fontBaskerville(47px, italic, normal);
+    }
+  }
+  p{
+    padding-bottom: 1.2em;
+    margin: 0 .63em;
+    line-height: 17px;
+    @include fontSans(14px, italic, 400);
+    letter-spacing: 0;
+    @include small {
+      @include fontSans(18px, italic, 400);
+      letter-spacing: 0;
+      margin: 0 auto;
+      max-width: 524px;
+      line-height: 20px;
+    }
+    @include medium {
+      padding-bottom: $space1;
+      max-width: 950px;
+      margin: 0 auto;
+      line-height: 40px;
+      @include fontSans(30px, italic, 400);
+    }
+  }
+  .letsPlay{
+    text-decoration: none;
+    color: $colorWhite;
+    img{
+        height: 90px;
+        margin-top: 0.7em;
+    }
+    span{
+      display: block;
+      top: -76px;
+      position: relative;
+      @include fontBaskerville(16px, italic, normal);
+    }
+  }
+  @include small{
+    height: 480px;
+  }
+  @include medium {
+    padding-top: 100px;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+    height: 900px;
+  }
+}
+
+section.digital{
+  background-image: url('../images/backgrounds/mobile_focus.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 538px;
+  text-align: center;
+  h2 {
+    @include fontSans(23px, normal, 800);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-bottom: 1.85em;
+    @include small {
+      @include fontSans(24px, normal, 800);
+      letter-spacing: 1px;
+      margin-bottom: 1.6em;
+      letter-spacing: -1px;
+    }
+    @include medium {
+      @include fontSans(46px, normal, 800);
+      padding-top: $space6;
+      text-transform: uppercase;
+      text-align: left;
+      margin-bottom: $space7;
+      text-align: center;
+      letter-spacing: -1px;
+    }
+    @include large {
+      @include fontSans(50px, normal, 800);
+      letter-spacing: -1px;
+    }
+  }
+
+  p{
+    @include fontSans(14px, italic, 400);
+    letter-spacing: 0;
+    padding: .1em .65em .2em;
+    margin-bottom: 1.2em;
+    line-height: 17px;
+    @include small {
+      @include fontSans(12px, italic, 400);
+      padding: .1em 3.7em .2em;
+      letter-spacing: .5px;
+      line-height: 16px;
+    }
+    @include medium {
+      @include fontSans(24px, italic, 400);
+      line-height: 27px;
+      max-width: 512px;
+      display: block;
+      margin: .6em auto;
+      padding: .1em .65em .6em;
+      letter-spacing: 0;
+    }
+  }
+  .btn-secondary-outline{
+    position: relative;
+    top: -20px;
+  }
+
+  .digital-execution{
+    height: 269px;
+    @include medium {
+      height: 481px;
+      &:hover {
+        background-color: $darker-red;
+      }
+    }
+    h2{
+      padding-top: 2em;
+      @include medium {
+        padding-top: $space6;
+      }
+    }
+
+  }
+  .digital-innovtion{
+    height: 269px;
+    h2{
+      @include small {
+        padding-top: 2em;
+      }
+      @include medium {
+        padding-top: 1.8em;
+      }
+    }
+    @include small {
+      height: 255px;
+    }
+    @include medium {
+      height: 481px;
+      padding-right: 0;
+      &:hover {
+        background-color: $darker-blue;
+      }
+    }
+  }
+
+  .goBackstagetablet{
+    text-decoration: none;
+    color: $colorWhite;
+    img{
+      height: 77px;
+      margin-top: 6.1em;
+    }
+    span{
+      display: block;
+      top: -58px;
+      position: relative;
+      line-height: 14px;
+      @include fontBaskerville(10px, italic, normal);
+    }
+  }
+  .col-md-5{
+    width: 100%;
+    @include small{
+      width: 46%;
+    }
+    @include medium{
+      width: 50%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include large{
+      width: 50%;
+    }
+  }
+
+  .col-md-2{
+    width: 8%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include small {
+    background-image: url('../images/backgrounds/desktop_focus@2x.jpg');
+    height: 255px;
+    background-position: 50%;
+  }
+  @include medium {
+    background-image: url('../images/backgrounds/desktop_focus@2x.jpg');
+    height: 481px;
+    background-position: 50%;
+  }
+}
+
+#middleMessage{
+  height: 330px;
+  background-color: $black;
+  .col-md-12{
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  p.txtmesssage {
+    @include fontBaskerville(18px, italic, 400);
+    letter-spacing: 0;
+    margin: 0 .85em 1.2em;
+    line-height: 24px;
+    padding-top: 3.2em;
+    @include small{
+      @include fontBaskerville(16px, italic, nomal);
+      padding-top: 1.2em;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    @include medium{
+      max-width: 860px;
+      margin: 0 auto;
+      @include fontBaskerville(22px, italic, nomal);
+      padding-top: $space8;
+      letter-spacing: 0.85px;
+      line-height: 32.9px;
+    }
+  }
+  img{
+    height: 64px;
+    position: relative;
+    left: 42px;
+    top: 8px;
+    @include small{
+      height: 45px;
+    }
+    @include medium{
+      height: 81px;
+      margin-top: 2em;
+      margin-left: 7.2em;
+    }
+  }
+  div.messageSSL{
+
+    div{
+      display: inline-block;
+    }
+
+    .nameMessage{
+      position: relative;
+      top: 3px;
+      left: 51px;
+      @include fontBaskerville(22px, italic, normal);
+      letter-spacing: 1px;
+      @include small{
+        @include fontBaskerville(12px, italic, normal);
+        left: 39px;
+      }
+      @include medium{
+        position: relative;
+        top: 12px;
+        left: 51px;
+        @include fontBaskerville(24px, italic, normal);
+      }
+    }
+
+
+    .positionMessage{
+      position: relative;
+      top: 20px;
+      right: 73px;
+      @include fontSans(13px, normal, normal)
+      letter-spacing: 0;
+      @include small{
+        @include fontSans(9px, normal, normal)
+        right: 34px;
+      }
+      @include medium{
+        position: relative;
+        right: 73px;
+        top: 33px;
+        left: -81px;
+        @include fontSans(16px, normal, 800);
+      }
+    }
+  }
+  @include small{
+    height: 193px;
+  }
+  @include medium{
+    height: 357px;
+    background-color: $black;
+  }
+}
+
+
+#containersolutions{
+  padding: 0;
+  #solutions{
+    .row {
+      margin: 0px;
+    }
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    @include small {
+      background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    @include medium {
+      background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    h2{
+        @include fontBaskerville(24px, italic, normal);
+        padding-top: 2em;
+        padding-bottom: 1.6em;
+        @include small{
+          @include fontBaskerville(19px, italic, nomal);
+          padding-top: 3em;
+        }
+        @include medium{
+          @include fontBaskerville(36px, italic, nomal);
+          padding-top: $space9;
+          padding-bottom: 1.9em;
+        }
+    }
+
+    p{
+      @include fontSans(14px, normal, 300);
+      letter-spacing: 0px;
+      max-width: 237px;
+      margin: 0 auto;
+      line-height: 16px;
+      height: 40px;
+      @include small{
+        @include fontSans(11px, normal, 300);
+        max-width: 140px;
+      }
+      @include medium{
+        max-width: 243px;
+        line-height: 22px;
+        @include fontSans(18px, normal, 300);
+        letter-spacing: 0px;
+      }
+    }
+
+    .solutions1, .solutions2, .solutions3{
+      float: left;
+      width: 33.3%;
+      height: 210px;
+      padding: 0px 0px;
+    }
+
+    .solutions1 {
+      background-image: url('../images/backgrounds/desktop_otherServices_hover1@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      @include small{
+        background-image: none;
+        &:hover {
+          background-image: url('../images/backgrounds/desktop_otherServices_hover1@2x.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        height: 192px;
+      }
+      @include medium{
+        height: 361px;
+        h2{
+          text-align: center;
+        }
+      }
+    }
+
+    .solutions2{
+      background-image: url('../images/backgrounds/desktop_otherServices_hover2@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      @include small{
+        background-image: none;
+        &:hover {
+          background-image: url('../images/backgrounds/desktop_otherServices_hover2@2x.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        height: 192px;
+      }
+      @include medium{
+        height: 361px;
+      }
+    }
+
+    .solutions3{
+      background-image: url('../images/backgrounds/desktop_otherServices_hover3@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      @include small{
+        background-image: none;
+        &:hover {
+          background-image: url('../images/backgrounds/desktop_otherServices_hover3@2x.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        height: 192px;
+      }
+      @include medium{
+        height: 361px;
+        h2{
+          text-align: center;
+        }
+      }
+    }
+
+    @include small{
+      .blackbackground{
+        background-color: rgba(0,0,0,.65);
+        background-size: cover;
+        height: 192px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+    }
+    @include medium{
+      height: 361px;
+      .blackbackground{
+        height: 361px;
+      }
+    }
+  }
+
+  #buttons{
+    position:absolute;
+    z-index:5;
+    left: 0;
+    margin-top: 1.8em;
+    padding: 0 1em;
+    .fa-angle-right, .fa-angle-left{
+      opacity: .5;
+      cursor: pointer;
+    }
+
+    .fa-angle-right{
+      float: right;
+    }
+
+    .fa-angle-left{
+      float: left;
+    }
+  }
+
+  #buttons  > div {
+    position: relative;
+    top:60px;
+    left: -10px;
+    width : 150px;
+    height : 30px;
+  }
+}
+
+
+.backgroungLink{
+  background-image: url('../images/backgrounds/mobile_caseStudy_home.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  @include medium{
+    background-image: url('../images/backgrounds/desktop_caseStudy_home@2x.jpg');
+    background-position: 100%;
+  }
+}
+
+.backgroungletLab{
+  background-image: url('../images/backgrounds/mobile_labs_home.jpg');
+  background-size: cover;
+  background-position: center;
+  @include medium{
+    background-image: url('../images/backgrounds/desktop_labs_home@2x.jpg');
+  }
+}
+
+#linkNYC, #lemletLab{
+  height: 360px;
+  text-align: left;
+  h4{
+    @include fontBaskerville(14px, italic, normal);
+    padding-top: 3.1em;
+
+    margin-bottom: 0;
+    @include small{
+      padding-top: 2.7em;
+    }
+    @include medium{
+      @include fontBaskerville(25px, italic, normal);
+      padding-top: 3.6em;
+      margin-bottom: -7px;
+      margin-right: -5px
+    }
+  }
+  h2{
+    @include fontSans(24px, normal, 800);
+    padding-bottom: 1.1em;
+    letter-spacing: 0px;
+    @include small{
+      letter-spacing: 1px;
+      padding-bottom: 0;
+      margin-bottom: 2px;
+    }
+    @include medium{
+      @include fontSans(46px, normal, 800);
+      padding-bottom: .2em;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+  }
+  p{
+    @include fontSans(14px, normal, 300);
+    letter-spacing: 0px;
+    padding-left: .35em;
+    padding-right: 2em;
+    line-height: 16px;
+    @include small{
+      @include fontSans(12px, normal, 300);
+      letter-spacing: 0px;
+      line-height: 16px;
+    }
+    @include medium{
+      @include fontSans(18px, normal, 300);
+      line-height: 23px;
+      margin-bottom: 1.2em;
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+  }
+
+  .btnBackstage{
+    clear: both;
+    text-align: center;
+    display: block;
+  }
+  @include small{
+    height: 192px;
+  }
+  @include medium{
+    height: 361px;
+  }
+}
+
+#linkNYC{
+  img{
+    height: 206px;
+    margin-top: 6.4em;
+    @include small{
+      height: 211px;
+      margin-top: 1em;
+    }
+    @include medium{
+      height: 400px;
+      margin-top: 1.7em;
+      width: 126px;
+    }
+  }
+
+  .floatleftsection{
+    float: left;
+    width: 65%;
+
+    @include small{
+      float: none;
+      width: 52%;
+      display: inline-block;
+      text-align: right;
+    }
+    @include medium{
+      float: none;
+      width: 51%;
+      display: inline-block;
+      text-align: right;
+    }
+  }
+  .floatrightsection{
+    float: right;
+    width: 35%;
+    display: inline;
+    @include small{
+      width: 46%;
+      display: inline-block;
+      text-align: left;
+    }
+    @include medium{
+      width: 46%;
+      display: inline-block;
+      text-align: left;
+    }
+  }
+
+  .btn-secondary-outline{
+    margin-top: -1.5em;
+    @include small{
+      margin-top: -3em;
+      margin-left: 2.3em;
+    }
+    @include medium{
+      margin-top: -4.5em;
+      margin-left: 4.5em;
+    }
+  }
+
+  p{
+    padding-right: 0;
+    @include small{
+      max-width: 254px;
+      display: inline-block;
+    }
+    @include medium{
+      max-width: 535px;
+    }
+  }
+}
+
+#lemletLab{
+  clear: both;
+  overflow: hidden;
+  img{
+    height: 263px;
+    margin-left: -4em;
+    margin-top: 6.1em;
+    @include small{
+      height: 180px;
+      margin-left: -0.9em;
+      margin-top: .8em;
+      float: right;
+    }
+    @include medium{
+      height: 325px;
+      margin-left: -1.5em;
+      margin-top: 1.7em;
+      width: 280px;
+    }
+  }
+
+  h4{
+    @include medium{
+      letter-spacing: -.5px;
+    }
+  }
+
+  .floatleftsection{
+    float: left;
+    width: 40%;
+    display: inline;
+    @include small{
+      width: 49%;
+      padding: 0;
+      text-align: right;
+    }
+    @include medium{
+      width: 50%;
+      padding: 0 .9375em;
+      text-align: right;
+    }
+  }
+
+  .floatrightsection{
+    float: right;
+    width: 60%;
+    display: inline;
+    text-align: right;
+    @include small{
+      width: 51%;
+      text-align: left;
+      padding: 0;
+    }
+    @include medium{
+      width: 50%;
+      text-align: left;
+      padding: 0;
+    }
+  }
+
+  .btn-secondary-outline{
+    margin-top: -8em;
+    @include small{
+      margin-top: 7em;
+    }
+    @include medium{
+      margin-top: 10em;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  p{
+    padding-right: 0;
+    padding-left: 2em;
+    span{
+      display: block;
+    }
+    @include small{
+      padding-left: .7em;
+      max-width: 256px;
+    }
+    @include medium{
+      padding-left: 0;
+      max-width: 465px;
+    }
+  }
+}
+
+#clients{
+    overflow: hidden;
+    height: 650px;
+    clear: both;
+    background-color: $black;
+    h2{
+      @include fontBaskerville(24px, italic, normal);
+      padding: 1.4em 2.5em 2.3em;
+      line-height: 27px;
+      @include small{
+        @include fontBaskerville(32px, italic, normal);
+        padding: 1.6em 0em 1.4em;
+      }
+      @include medium{
+        @include fontBaskerville(60px, italic, normal);
+        padding-bottom: 2.1em;
+        margin-top: 6px;
+      }
+
+    }
+    img{
+      height: 100%;
+      padding-bottom: 3.7em;
+      margin: 0 auto;
+      @include small{
+        width: 76%;
+        max-width: 561px;
+        max-height: 160px;
+        padding-bottom: 2.7em;
+      }
+      @include medium{
+        width: 65%;
+        padding-bottom: 6em;
+        margin-bottom: 0;
+        max-width: none;
+        max-height: none;
+      }
+      @include large{
+        width: 65%;
+      }
+    }
+    .btn-secondary-outline {
+      margin-top: -1em;
+      @include small{
+        margin-top: 1em;
+      }
+    }
+    @include small{
+      height: 384px;
+    }
+    @include medium{
+      height: 532px;
+    }
+    @include large{
+      height: 532px;
+    }
+}
+
+#readytorock{
+  display: none;
+  background-image: url('../images/backgrounds/desktop_readyToRock.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 256px;
+  h2{
+    @include fontBaskerville(60px, italic, normal);
+    font-size: 48px;
+    padding-top: .4em;
+    padding-bottom: .55em;
+    @include medium{
+      padding-top: 1.1em;
+    }
+  }
+  @include medium{
+    display: inherit;
+    width: 100%;
+  }
+}
