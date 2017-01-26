@@ -11,7 +11,7 @@
   'modules/_footer';
 
   .mainbackground{
-    background-image: url('../images/backgrounds/mobile_hero.jpg');
+    background-image: url('../images/backgrounds/mobile_hero@2x.jpg');
     background-size: cover;
     background-position: center;
     @include medium{
@@ -20,7 +20,7 @@
   }
 
   .ourworkbackground{
-    background-image: url('../images/backgrounds/mobile_work_hero.jpg');
+    background-image: url('../images/backgrounds/mobile_work_hero@2x.jpg');
     background-size: cover;
     background-position: center;
     @include medium{
@@ -29,7 +29,7 @@
   }
 
   .ourcrewbackground{
-    background-image: url('../images/backgrounds/mobile_crew_hero.jpg');
+    background-image: url('../images/backgrounds/mobile_crew_hero@2x.jpg');
     background-size: cover;
     background-position: center;
     @include medium{
@@ -38,7 +38,7 @@
   }
 
   .ourprocessbackground{
-    background-image: url('../images/backgrounds/mobile_process_hero.jpg');
+    background-image: url('../images/backgrounds/mobile_process_hero@2x.jpg');
     background-size: cover;
     background-position: center;
     @include medium{
