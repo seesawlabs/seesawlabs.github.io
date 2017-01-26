@@ -366,7 +366,12 @@ section.digital{
 #containersolutions{
   padding: 0;
   #solutions{
+    .row {
+      margin: 0px;
+    }
     overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
     @include medium {
       background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
       background-size: cover;
