@@ -192,12 +192,19 @@ section.digital{
 
   .digital-execution{
     height: 269px;
+    @include medium {
+      height: 481px;
+      &:hover {
+        background-color: $darker-red;
+      }
+    }
     h2{
       padding-top: 2em;
       @include medium{
         padding-top: $space6;
       }
     }
+
   }
   .digital-innovtion{
     height: 269px;
@@ -215,6 +222,9 @@ section.digital{
     @include medium{
       height: 481px;
       padding-right: 0;
+      &:hover {
+        background-color: $darker-blue;
+      }
     }
   }
 
@@ -365,8 +375,24 @@ section.digital{
 #containersolutions{
   padding: 0;
   #solutions{
-
+    .row {
+      margin: 0px;
+    }
     overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    @include small {
+      background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    @include medium {
+      background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     h2{
         @include fontBaskerville(24px, italic, normal);
         padding-top: 2em;
@@ -405,26 +431,28 @@ section.digital{
       float: left;
       width: 33.3%;
       height: 210px;
-      padding-left: 0;
-      padding-right: 0;
+      padding: 0px 0px;
     }
 
-    .solutions1{
+    .solutions1 {
       background-image: url('../images/backgrounds/desktop_otherServices_hover1@2x.jpg');
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       @include small{
+        background-image: none;
+        &:hover {
+          background-image: url('../images/backgrounds/desktop_otherServices_hover1@2x.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
         height: 192px;
       }
       @include medium{
         height: 361px;
-        padding: 0;
-        background-position: 100%;
         h2{
           text-align: center;
-        }
-        p{
-
         }
       }
     }
@@ -433,7 +461,15 @@ section.digital{
       background-image: url('../images/backgrounds/desktop_otherServices_hover2@2x.jpg');
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       @include small{
+        background-image: none;
+        &:hover {
+          background-image: url('../images/backgrounds/desktop_otherServices_hover2@2x.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
         height: 192px;
       }
       @include medium{
@@ -445,13 +481,19 @@ section.digital{
       background-image: url('../images/backgrounds/desktop_otherServices_hover3@2x.jpg');
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       @include small{
+        background-image: none;
+        &:hover {
+          background-image: url('../images/backgrounds/desktop_otherServices_hover3@2x.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
         height: 192px;
       }
       @include medium{
         height: 361px;
-        padding: 0;
-        background-position: 100%;
         h2{
           text-align: center;
         }
