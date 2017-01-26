@@ -183,11 +183,11 @@ section.digital{
 
   .digital-execution{
     height: 269px;
-    &:hover {
-      background-color: $darker-red;
-    }
     @include medium {
       height: 481px;
+      &:hover {
+        background-color: $darker-red;
+      }
     }
     h2{
       padding-top: 2em;
@@ -199,9 +199,6 @@ section.digital{
   }
   .digital-innovtion{
     height: 269px;
-    &:hover {
-      background-color: $darker-blue;
-    }
     h2{
       @include small{
         padding-top: 2em;
@@ -216,6 +213,9 @@ section.digital{
     @include medium{
       height: 481px;
       padding-right: 0;
+      &:hover {
+        background-color: $darker-blue;
+      }
     }
   }
 
@@ -368,9 +368,10 @@ section.digital{
   #solutions{
     overflow: scroll;
     @include medium {
-      background-image: url('../images/backgrounds/desktop_otherServices.jpg');
+      background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
       background-size: cover;
-      background-position: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     h2{
         @include fontBaskerville(24px, italic, normal);
@@ -410,23 +411,23 @@ section.digital{
       float: left;
       width: 33.3%;
       height: 210px;
-      padding-left: 0;
-      padding-right: 0;
+      padding: 0px 0px;
+      //padding-left: 0;
+      //padding-right: 0;
     }
 
     .solutions1{
-      background-size: cover;
-      background-position: center;
       @include small{
         height: 192px;
       }
       @include medium{
         &:hover {
-          background-image: url('../images/backgrounds/desktop_otherServices_hover1.jpg');
+          background-image: url('../images/backgrounds/desktop_otherServices_hover1@2x.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
         }
         height: 361px;
-        padding: 0;
-        background-position: 100%;
         h2{
           text-align: center;
         }
@@ -437,34 +438,32 @@ section.digital{
     }
 
     .solutions2{
-      background-image: url('../images/backgrounds/desktop_otherServices.jpg');
-      background-size: cover;
-      background-position: center;
       @include small{
         height: 192px;
       }
       @include medium{
         &:hover {
-          background-image: url('../images/backgrounds/desktop_otherServices_hover2.jpg');
+          background-image: url('../images/backgrounds/desktop_otherServices_hover2@2x.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
         }
         height: 361px;
       }
     }
 
     .solutions3{
-
-      background-size: cover;
-      background-position: center;
       @include small{
         height: 192px;
       }
       @include medium{
         &:hover {
-          background-image: url('../images/backgrounds/desktop_otherServices_hover3.jpg');
+          background-image: url('../images/backgrounds/desktop_otherServices_hover3@2x.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
         }
         height: 361px;
-        padding: 0;
-        background-position: 100%;
         h2{
           text-align: center;
         }
