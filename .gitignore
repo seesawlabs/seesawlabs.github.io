@@ -4,3 +4,4 @@ _site
 CNAME
 assets/node_modules
 assets/css
+node_modules
