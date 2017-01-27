@@ -53,13 +53,11 @@ $(function() {
 			data: formData
 		})
 		.done(function(response) {
-			console.log('done');
 			// Make sure that the formMessages div has the 'success' class.
 			$(formMessages).removeClass('error');
 			$(formMessages).addClass('success');
 
 			// Set the message text.
-			//$(formMessages).text(response);
 			$('#formFields').hide();
 			$('#messageSend').show();
 			// Clear the form.
@@ -72,7 +70,6 @@ $(function() {
 
 		})
 		.fail(function(data) {
-			console.log('fail');
 			// Make sure that the formMessages div has the 'error' class.
 			$(formMessages).removeClass('success');
 			$(formMessages).addClass('error');
