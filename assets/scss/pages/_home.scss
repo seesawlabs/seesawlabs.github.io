@@ -829,7 +829,7 @@ section.digital{
 
 #readytorock{
   display: none;
-  background-image: url('../images/backgrounds/mobile_readyToRock.jpg');
+  background-image: url('../images/backgrounds/mobile_readyToRock@2x.jpg');
   background-size: cover;
   background-position: center;
   height: 210px;
@@ -846,14 +846,11 @@ section.digital{
     }
   }
   @include medium{
-    background-image: url('../images/backgrounds/mobile_readyToRock@2x.jpg');
+    background-image: url('../images/backgrounds/desktop_readyToRock@2x.jpg');
     background-size: cover;
     background-position: center;
     height: 256px;
     display: inherit;
     width: 100%;
-    @include medium{
-      background-image: url('../images/backgrounds/desktop_readyToRock@2x.jpg');
-    }
   }
 }
