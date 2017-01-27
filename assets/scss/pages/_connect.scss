@@ -95,12 +95,12 @@
       width: 78%;
     }
   }
-
+  
   input:-moz-placeholder {
     box-shadow:none !important;
   }
 
-  input:invalid {
-      box-shadow:0 0 3px lime;
+  input:invalid{
+    box-shadow:none !important;
   }
 }
