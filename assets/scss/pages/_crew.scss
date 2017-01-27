@@ -42,8 +42,9 @@
     }
   }
 
+
   .backgroundOCfromthelab{
-    background-image: url('../images/backgrounds/desktop_crew_lab1@2x.jpg');
+    background-image: url('../images/backgrounds/mobile_crew_lab1@2x.jpg');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -54,12 +55,12 @@
   }
 
   .backgroundOClemlet{
-    background-image: url('../images/backgrounds/desktop_crew_lab2@2x.jpg');
+    background-image: url('../images/backgrounds/mobile_crew_lab2@2x.jpg');
     background-size: cover;
     background-position: center;
     overflow: hidden;
     @include medium{
-      background-image: url('../images/backgrounds/mobile_crew_lab2.jpg');
+      background-image: url('../images/backgrounds/desktop_crew_lab2@2x.jpg');
       background-position: 100%;
     }
   }

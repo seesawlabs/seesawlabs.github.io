@@ -7,6 +7,10 @@
     @include border-radius(0);
 }
 
+.navbar-nav{
+  position: fixed;
+}
+
 .navbar-toggler {
     padding: .5rem .75rem;
     font-size: 1.25rem;
