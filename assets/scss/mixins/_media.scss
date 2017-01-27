@@ -1,7 +1,7 @@
 $xs-mobile: 320px;
 $tablet: 768px;
 $smallD: 1023px;
-$largeD: 1192px;
+$largeD: 1352px;
 /* Content Include 2 Queries */
 @mixin xs-mobile {
   @media (max-width: #{$xs-mobile}) {
