@@ -806,8 +806,10 @@ section.digital{
         max-width: none;
         max-height: none;
       }
-      @include large{
-        width: 65%;
+      @include x-large{
+        width: 60%;
+        max-width: 1385px;
+        max-height: 389px;
       }
     }
     .btn-secondary-outline {
@@ -823,7 +825,10 @@ section.digital{
       height: 532px;
     }
     @include large{
-      height: 532px;
+      height: 550px;
+    }
+    @include x-large{
+      height: 650px;
     }
 }
 

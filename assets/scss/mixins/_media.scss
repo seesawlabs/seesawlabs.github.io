@@ -3,6 +3,7 @@ $xs-small: 415px;
 $tablet: 768px;
 $smallD: 1023px;
 $largeD: 1352px;
+$xlargeD: 1600px;
 /* Content Include 2 Queries */
 @mixin xs-mobile {
   @media (max-width: #{$xs-mobile}) {
@@ -36,6 +37,12 @@ $largeD: 1352px;
 
 @mixin large {
   @media (min-width: #{$largeD}) {
+    @content;
+  }
+}
+
+@mixin x-large {
+  @media (min-width: #{$xlargeD}) {
     @content;
   }
 }
