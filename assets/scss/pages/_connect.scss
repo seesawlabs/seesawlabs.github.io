@@ -1,0 +1,108 @@
+.letsconnectbackground{
+  background-image: url('../images/backgrounds/mobile_connect_hero@2x.jpg');
+  background-position: center;
+  background-size: cover;
+  @include medium{
+    background-image: url('../images/backgrounds/desktop_connect_hero@2x.jpg');
+  }
+}
+
+#connectContainer {
+  margin-bottom: 31px;
+  #hero {
+    height: 22.4em;
+    padding-top: 0px;
+    .headercontainer {
+      padding-bottom: 34px;
+      padding-top: 3.4em;
+    }
+    .first {
+      margin: 0px auto;
+      word-spacing: -1px;
+      @include medium {
+        margin: 70px auto 0px auto;
+        width: 65%;
+      }
+    }
+    @include small {
+      height: 49.9em;
+      padding-top: 4.4em;
+    }
+  }
+  .contact {
+    margin-top: 56px;
+    input, textarea {
+      border: 2px solid $colorWhite;
+      background-color: $black;
+      border-radius: 0px;
+      color: $colorWhite;
+    }
+    input {
+      border: 0px;
+      border-bottom: 2px solid $colorWhite;
+      padding: 0px;
+
+      @include placeHolder {
+        color: $colorWhite;
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 100;
+        letter-spacing: 1px;
+        padding: 0px;
+
+        @include small {
+          font-size: 22px;
+        }
+      }
+    }
+    label {
+      font-size: 1.3em;
+      font-style: italic;
+      font-weight: 100;
+      margin-bottom: 1px;
+      letter-spacing: 1px;
+      text-align: left;
+      width: 100%;
+    }
+    textarea {
+      height: 242px;
+    }
+    .form-group {
+      margin: 0px;
+      margin-bottom: 34px;
+      padding: 0px 4px 0px 5px;
+      &.textarea, &.submit {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 27px;
+        width: 100%;
+      }
+      #formFields
+      {
+        input:-moz-placeholder {
+          box-shadow:none !important;
+        }
+
+        input:invalid{
+          box-shadow:none !important;
+        }
+      }
+      @include small {
+        float: left;
+        width: 50%;
+        margin-bottom: 93px;
+        width: 45%;
+        &.left {
+          margin-right: 10%;
+        }
+        &.textarea {
+          margin-bottom: 61px;
+        }
+      }
+    }
+    @include small {
+      margin: 145px auto;
+      width: 78%;
+    }
+  }
+}
