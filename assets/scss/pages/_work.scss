@@ -36,7 +36,7 @@
     }
   }
   #linkNYC, #lemletLab{
-    height: 560px;
+    height: 100%;
     h2{
       padding-bottom: 1em;
     }
@@ -70,9 +70,6 @@
     @include medium{
       height: 600px;
     }
-    /*.floatleftsection, .floatrightsection{
-      padding-left: 0; padding-right: 0;
-    }*/
   }
   #linkNYC{
     h4{
