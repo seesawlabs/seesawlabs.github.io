@@ -1,4 +1,5 @@
 $xs-mobile: 320px;
+$xs-small: 415px;
 $tablet: 768px;
 $smallD: 1023px;
 $largeD: 1352px;
@@ -11,6 +12,12 @@ $largeD: 1352px;
 
 @mixin mobile {
   @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin xs-small {
+  @media (min-width: #{$xs-small}) {
     @content;
   }
 }
