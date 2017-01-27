@@ -10,11 +10,35 @@
 #ourcrewContainer{
 
   #hero{
+    height: 358px;
+    padding-top: 55px;
+    .headercontainer{
+      padding-top: 0;
+      h3{
+        @include small{
+          margin-bottom: 1.4em
+        }
+      }
+      @include small {
+        padding-top: 3.9em;
+        padding-bottom: 3.3em;
+      }
+    }
     p{
-      margin: 0 .2em;
+      margin: 0 .18em;
       @include small{
         margin: 0 auto;
       }
+    }
+    @include small{
+      height: 384px;
+      padding-top: 60px;
+    }
+    @include medium{
+      height: 800px;
+    }
+    @include large{
+      height: 800px;
     }
   }
 
@@ -64,7 +88,9 @@
         width: 51%;
       }
     }
-
+    @include medium{
+      height: 538px;
+    }
   }
 
   #linkNYC{
@@ -182,120 +208,133 @@
   }
   #leadership{
     h2{
-      @include fontSans(23px, normal, 800);
+      @include fontSans(24px, normal, 800);
+      letter-spacing: 0;
       text-transform: uppercase;
-      margin: 2.5em 0 1.4em;
+      margin: 2.3em 0 1.4em .1em;
       @include small{
         @include fontSans(30px, normal, 800);
         margin: 1.2em 0 1.2em;
       }
-      @include medium{
+      @include large{
         @include fontSans(47px, normal, 800);
-        margin: 4% 0;
+        margin: 2em 0 1.2em;
       }
     }
-    p{
+    p.head{
       @include fontSans(14px, italic, 300);
       letter-spacing: 0;
-      line-height: 18px;
-      padding: 0 .1em;
+      line-height: 17px;
+      padding: 0 .2em;
+      margin-bottom: 4.75rem;
       @include small{
         @include fontSans(22px, italic, 300);
         padding: 0 1em;
         line-height: 28px;
       }
-      @include medium{
+      @include large{
         @include fontSans(30px, italic, 300);
-        width: 76%;
+        width: 75%;
         margin: 0 auto;
         line-height: 37px;
+        margin-bottom: 3em;
       }
     }
-    .leadershiteam
-    {
-      //width: 96%;
-      //padding-left: 12.5%;
-      .section3Column{
-        padding: 0;
-        .section3ImageContainer {
-          display: inline-block;
-          float: left;
-          img{
-            margin-top: 3.4em;
-            height: 94px;
-            width: 94px;
-            border-radius: 5em;
-            margin-left: .2em;
-            @include medium{
-              height: 185px;
-              width: 185px;
-              margin-top: 4.4em;
-            }
+
+    .section3Column{
+      .section3ImageContainer {
+        display: inline-block;
+        float: left;
+        img{
+          height: 92px;
+          width: 92px;
+          border-radius: 5em;
+          margin-left: .3em;
+          @include large{
+            height: 185px;
+            width: 185px;
+
           }
         }
-        .section3ContentDiv {
-          right: .5em;
-          h3{
-            padding-top: 3.2em;
-            @include fontSans(24px, italic, normal);
-            letter-spacing: 0;
-            text-align: left;
-            margin-left: 5.2em;
-            margin-bottom: .1em;
-            @include medium{
-              padding-top: 5.8em;
-              margin-left: 8.85em;
-              margin-bottom: 0;
-            }
-          }
-          h5{
-            text-align: left;
-            @include fontSans(18px, normal, normal);
-            letter-spacing: 0;
-            margin-left: 7em;
-            margin-bottom: 2.8em;
-            @include medium{
-              margin-bottom: 18%;
-              margin-left: 11.8em;
-            }
-          }
-          p{
-            @include fontSans(18px, normal, normal);
-            letter-spacing: 0;
-            text-align: left;
-            padding-left: .4em;
-            line-height: 21px;
+      }
+      .section3ContentDiv {
+        clear: both;
+        display: inline-block;
+        h3{
+          margin-top: -3em;
+          @include fontSans(24px, italic, normal);
+          letter-spacing: 0;
+          text-align: left;
+          margin-left: 5.2em;
+          margin-bottom: .1em;
+          @include large{
+            margin-left: 9.1em;
             margin-bottom: 0;
-            @include small{
-              @include fontSans(15px, normal, normal);
-              padding-left: 0.2em;
-              line-height: 20px;
-              width: 82%;
-            }
-            @include medium{
-              padding-left: 0.2em;
-              line-height: 22px;
-              width: 82%;
-            }
+            margin-top: -4.95em;
+          }
+        }
+        h5{
+          text-align: left;
+          @include fontSans(17px, normal, normal);
+          letter-spacing: 0.5px;
+          margin-left: 7em;
+          margin-bottom: 3em;
+          padding-left: .5em;
+          @include large{
+            margin-bottom: 5.8em;
+            margin-left: 12.3em;
+          }
+        }
+        p{
+          @include fontSans(18px, normal, normal);
+          letter-spacing: 0;
+          text-align: left;
+          padding-left: .3em;
+          line-height: 21px;
+          margin-bottom: 2.5em;
+          @include small{
+            @include fontSans(15px, normal, normal);
+            line-height: 20px;
+            padding-left: 0.2em;
+          }
+          @include large{
+            @include fontSans(18px, normal, normal);
+            letter-spacing: 0;
+            line-height: 22px;
+            margin: 0;
+            padding-left: 0.4em;
+            padding-right: 2.4em;
+            margin-bottom: 3.5em;
           }
         }
       }
-      .section3Column:last-child{
-        width: 100%;
+      @include large{
+        padding-left: 3.2em;
+      }
+    }
+    .section3Column:last-child{
+      width: 100%;
+      float: none;
+      @include small{
+        width: 50%;
         float: none;
-        @include small{
-          width: 50%;
-          float: none;
-          display: block;
-          margin: 0 auto;
-        }
+        display: block;
+        margin: 0 auto;
       }
     }
     @include medium{
-      height: 1600px;
+      height: 1300px;
+      width: 93%;
+      margin: 0 auto;
     }
-    @include medium{
+    @include large{
       height: 1820px;
+      width: 81%;
+      margin: 0 auto;
     }
+  }
+  #readytorock{
+    display: block;
+    width: 100%;
   }
 }
