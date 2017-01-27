@@ -56,7 +56,7 @@
       }
     }
     label {
-      font-size: 13px;
+      font-size: 1.3em;
       font-style: italic;
       font-weight: 100;
       margin-bottom: 1px;
@@ -94,5 +94,13 @@
       margin: 145px auto;
       width: 78%;
     }
+  }
+
+  input:-moz-placeholder {
+    box-shadow:none !important;
+  }
+
+  input:invalid {
+      box-shadow:0 0 3px lime;
   }
 }

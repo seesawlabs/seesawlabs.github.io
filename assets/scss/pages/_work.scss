@@ -295,6 +295,10 @@
       background-size: 303px;
       background-position-x: -64px;
       background-position-y: -26px;
+      float: none;
+      @include xs-small{
+        background-position: left -2em top;
+      }
       @include medium{
         background-position-x: 2em;
         background-position-y: -26px;
@@ -308,6 +312,10 @@
       background-size: 303px;
       background-position-x: 129px;
       background-position-y: -31px;
+      float: none;
+      @include xs-small{
+        background-position: right -2em top;
+      }
       @include medium{
         background-position-x: 98%;
         background-position-y: -31px;
@@ -319,6 +327,10 @@
       background-repeat: no-repeat;
       background-size: 303px;
       background-position-x: -58px;
+      float: none;
+      @include xs-small{
+        background-position: left -2em top;
+      }
       @include medium{
         background-position-x: 2em;
         background-position-y: -26px;
