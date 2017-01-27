@@ -73,9 +73,8 @@
   #design{
     background-image: url('../images/backgrounds/process2.svg');
     background-size: 335px;
-    background-position: center;
+    background-position: right -140px center;
     background-repeat: no-repeat;
-    background-position-x: 11em;
     background-color: $lighter-green;
     @include small{
       background-size: 280px;
@@ -105,9 +104,8 @@
   #develop{
     background-image: url('../images/backgrounds/process4.svg');
     background-size: 335px;
-    background-position: center;
+    background-position: right -140px center;
     background-repeat: no-repeat;
-    background-position-x: 11em;
     background-color: $lighter-red;
     @include small{
       background-size: 280px;
