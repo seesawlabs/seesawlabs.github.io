@@ -1,0 +1,116 @@
+body{
+  background-color: $black;
+  color: $colorWhite;
+}
+
+section{
+  text-align: center;
+  padding: 0 .9375em;
+}
+
+.row{
+  margin-left: -.9375rem;
+  margin-right: -.9375rem;
+}
+
+.show{
+  display: block;
+}
+
+.nostyleAnchor {
+  text-decoration: none !important;
+  color: $colorWhite;
+  &:hover, &:focus {
+    color: $colorWhite;
+  }
+}
+
+.visibletablet{
+  display: none;
+  @include small{
+    display: inline;
+  }
+  @include medium{
+    display: none;
+  }
+}
+
+.visibledesktop{
+  display: none;
+  @include medium{
+    display: inline;
+  }
+
+}
+
+.visiblemobile{
+  display: inline;
+  @include small{
+    display: none!important;
+  }
+}
+
+.visibletabletDesktop{
+  display: none;
+  @include small{
+    display: inline-block;
+  }
+  @include medium{
+    display: inline-block;
+  }
+}
+
+.visibletabletMobile{
+  display: inline;
+  @include small{
+    display: inline;
+  }
+  @include medium{
+    display: none;
+  }
+}
+
+.btn-secondary-outline {
+    color: $colorWhite;
+    background-image: none;
+    background-color: $yellow;
+    border-color: transparent;
+    width: 178px;
+    padding: 0.7em 0em;
+    @include fontBaskerville(15px, italic, normal);
+    @include small{
+      @include fontBaskerville(11px, italic, normal);
+      width: 122px !important;
+      padding: 0.95em 0em;
+    }
+    @include medium{
+      @include fontBaskerville(15px, italic, normal);
+      width: 178px !important;
+      padding: 1.2em 0em;
+    }
+
+    &:hover, &:focus {
+      background-color: $lighter-blue;
+      border-color: $lighter-blue;
+      border-width: 1px;
+    }
+}
+
+.blackbar{
+  display: inline-table;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+  opacity: 1;
+  background-color: rgba(0,0,0,.85);
+  @include medium{
+    height: 100px;
+  }
+}
+
+.nopaddingRight{padding-right: 0;}
+.nopaddingLeft{padding-left: 0;}
+
+.clearfloat{
+  clear: both;
+}

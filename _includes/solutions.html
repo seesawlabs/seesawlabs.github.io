@@ -1,0 +1,26 @@
+<section id="containersolutions">
+  <div id="solutions">
+    <div id="rowSolutions" class="row">
+      <div id="buttonleft" class="col-md-1 visiblemobile">
+        <i class="fa fa-angle-left fa-4x" aria-hidden="true" onclick="moveImgLeft()"></i>
+      </div>
+      <div id="buttonright" class="col-md-1 visiblemobile">
+        <i class="fa fa-angle-right fa-4x" aria-hidden="true" onclick="moveImgRight()"></i>
+      </div>
+      {% if page.url != "/our-work/" %}<a class="nostyleAnchor" href="{{site.baseurl}}/our-work/">{% endif %}
+      <div class="col-md-4 solutions1">
+        <h2>Tech Strategy</h2>
+        <p>We'll assess what you have and help plan what's next.</p>
+      </div>
+      <div class="col-md-4 solutions2">
+        <h2>eCommerce Solutions</h2>
+        <p>Analytics, CRO, full platform development, to name a few.</p>
+      </div>
+      <div class="col-md-4 solutions3">
+        <h2>Cloud Solutioning</h2>
+        <p>We live, eat, and breath AWS</p>
+      </div>
+      {% if page.url != "/our-work/" %}</a>{% endif %}
+    </div>
+  </div>
+</section>

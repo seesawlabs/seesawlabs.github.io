@@ -1,0 +1,48 @@
+$xs-mobile: 320px;
+$xs-small: 415px;
+$tablet: 768px;
+$smallD: 1023px;
+$largeD: 1352px;
+$xlargeD: 1600px;
+/* Content Include 2 Queries */
+@mixin xs-mobile {
+  @media (max-width: #{$xs-mobile}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin xs-small {
+  @media (min-width: #{$xs-small}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: #{$smallD}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$largeD}) {
+    @content;
+  }
+}
+
+@mixin x-large {
+  @media (min-width: #{$xlargeD}) {
+    @content;
+  }
+}

@@ -1,0 +1,186 @@
+@import
+  'modules/_variables',
+  'mixins/_media',
+  'mixins/_mixins';
+.navbar{
+    position: static;
+    @include border-radius(0);
+}
+
+.navbar-nav{
+  position: fixed;
+}
+
+.navbar-toggler {
+    padding: .5rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    @include small{
+      padding: 0 .75rem;
+    }
+    @include medium{
+      padding: .5rem .75rem;
+    }
+}
+
+#logoDesktop{
+  display: none;
+  @include medium{
+    display: inline;
+  }
+}
+
+#logoMobile{
+  display: inline;;
+  @include medium{
+    display: none;
+  }
+}
+
+.sslLogo{
+  z-index: 10000;
+  .logoImage{
+    height: 45px;
+    margin-top: 0;
+    padding-left: 0;
+    @include small{
+      padding-left: 1.4em;
+      margin-top: .5em;
+      height: 45px;
+    }
+    @include medium{
+      padding-left: 5.4em;
+      margin-top: .5em;
+      height: 60px;
+    }
+    @include large{
+      padding-left: 5.4em;
+    }
+  }
+  width: 50%;
+  display: inline-block;
+  @include small{
+    width: 15%;
+  }
+}
+
+#desktopNav, #mobileNav{
+  a{
+    font-family: openSansBold;
+    color: $colorWhite;
+    text-decoration:none;
+    display: inline-block;
+    margin-left: 3em;
+    @include small{
+      margin-left: 1em;
+    }
+    @include medium{
+      margin-left: 2.75em;
+    }
+  }
+}
+
+
+#desktopNav{
+  display: none;
+  @include small{
+    display: inline;
+  }
+}
+
+#mobileNav{
+  display: inline;
+  @include small{
+    display: none;
+  }
+}
+
+#mobileNavBar {
+    display: inline;
+    padding: 0;
+    width: 50%;
+    .iconHamburgerSSL{
+      background-image: url("../images/hamburger.svg");
+      background-repeat: no-repeat;
+      float: right;
+      height: 28px;
+      margin-top: 7px;
+      margin-right: 7px;
+      width: 50px;
+    }
+}
+
+#nonCollapsedMenu {
+  background-color: rgba(0,0,0,0.9);
+  text-align: center;
+  opacity: 1;
+  height: 100vh;
+
+    ul {
+        list-style: none;
+        text-align: center;
+        display: inline;
+        padding: 0;
+        margin: 0;
+        line-height: 30px;
+        li {
+          @include medium{
+            margin: 2em;
+          }
+        }
+    }
+    a {
+        color: #fff;
+        font-size: 28px;
+    }
+    a:hover {
+        color: $color3;
+        text-decoration: none;
+    }
+}
+
+
+#desktopNavLinks, #nonCollapsedMenu{
+
+  .navItalicFont{
+    text-align: left;
+    padding-top: 2.4em;
+    @include fontBaskerville(18px, italic, normal);
+    @include small{
+      @include fontBaskerville(8px, italic, normal);
+    }
+    @include medium{
+      @include fontBaskerville(12px, italic, normal);
+      padding-top: 5px;
+    }
+  }
+
+  .navFont{
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: -12px;
+    @include fontSans(22px, normal, 800);
+    @include small{
+      margin-top: 0;
+      @include fontSans(11px, normal, 800);
+      padding-right: 1.5em;
+    }
+    @include medium{
+      margin-top: 0;
+      @include fontSans(18px, normal, 800);
+      padding-right: 0;
+    }
+
+  }
+  @include small{
+    padding-right: 0;
+    padding-top: 0;
+    display: block;
+    float: right;
+  }
+  @include medium{
+    padding-right: 5.95em;
+    padding-top: .9em;
+
+  }
+}

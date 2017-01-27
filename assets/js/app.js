@@ -1,5 +1,4 @@
 $(function() {
-
 	// Get the form.
 	var form = $('#cSectionForm');
 
@@ -26,14 +25,16 @@ $(function() {
 			$(formMessages).addClass('success');
 
 			// Set the message text.
-			$(formMessages).text(response);
-
+			$('#formFields').hide();
+			$('#messageSend').show();
 			// Clear the form.
 			$('#name').val('');
 			$('#email').val('');
 			$('#message').val('');
 			$('#subject').val('');
 			$('#phone').val('');
+
+
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
@@ -68,11 +69,46 @@ $(document).ready(function (){
 		}
 		$(this).css({overflow:'hidden'});
 		$(this).addClass('currentLink');
-		console.log('this: ', $(this));
+
 		$('html, body').animate({
 			scrollTop: parseInt(scroll)
 		}, 1000);
 			$(this).css({overflow:'scroll'});
 	});
 
+	var screenSize = $( window ).width();
+	if(screenSize < 767){
+		$("#buttons").css({width: screenSize + 'px'});
+		screenSize = screenSize * 3;
+		$("#rowSolutions").css({width: screenSize + 'px'});
+
+	}
+
+	$('#messageSend').hide();
+
 });
+
+
+
+function moveImgRight(){
+	var screenSize = $( window ).width();
+	var leftPos = $('#solutions').scrollLeft();
+	console.log(leftPos);
+  if((leftPos + screenSize)  <= (screenSize*3)){
+		$('#solutions').animate({
+					scrollLeft: leftPos + screenSize
+			}, 800);
+	}
+
+}
+
+function moveImgLeft(){
+	var screenSize = $( window ).width();
+	var leftPos = $('#solutions').scrollLeft();
+  console.log(leftPos);
+	if(leftPos >= 0){
+		$('#solutions').animate({
+					scrollLeft: leftPos - screenSize
+			}, 800);
+	}
+}
