@@ -3,7 +3,7 @@
   'mixins/_media',
   'mixins/_mixins';
 .navbar{
-    position: fixed;
+    position: static;
     @include border-radius(0);
 }
 

@@ -287,10 +287,16 @@
         }
       }
       .section3Column:last-child{
-        width: 50%;
-        float: none;
-        display: block;
-        margin: 0 auto;
+        @include mobile{
+          width: 100%;
+          float: none;
+        }
+        @include small{
+          width: 50%;
+          float: none;
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
     @include medium{
