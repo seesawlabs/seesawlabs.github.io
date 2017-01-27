@@ -2,6 +2,4 @@ _site
 .sass-cache
 .jekyll-metadata
 CNAME
-assets/node_modules
 assets/css
-node_modules
