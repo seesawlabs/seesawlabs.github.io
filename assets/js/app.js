@@ -1,36 +1,3 @@
-window.onload = function() {
-	/*setTimeout(function() {
-
-		var webURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
-
-		new Image().src = webURL + 'assets/images/newNavLogo.png';
-		new Image().src = webURL + 'assets/images/fullresolution/hero1200.jpg';
-		new Image().src = webURL + 'assets/images/fullresolution/heroMobile1200.jpg';
-		new Image().src = webURL + 'assets/images/fullresolution/casestudyLinkNYC1-80.jpg';
-		new Image().src = webURL + 'assets/images/fullresolution/casestudyKountable1-80.jpg';
-		new Image().src = webURL + 'assets/images/fullresolution/casestudyLinkNYC2-80.jpg';
-		new Image().src = webURL + 'assets/images/fullresolution/casestudyKountable2-80.jpg';
-		new Image().src = webURL + 'assets/images/fullresolution/bubbles.svg';
-		new Image().src = webURL + 'assets/images/sslHambuger.svg';
-		new Image().src = webURL + 'assets/images/fullresolution/clientCurlmart.svg';
-
-		new Image().src = webURL + 'assets/images/fullresolution/clientSbdigital.svg';
-		new Image().src = webURL + 'assets/images/fullresolution/clientFlywheel.svg';
-		new Image().src = webURL + 'assets/images/fullresolution/iconsTechAssesmentsStrategy.svg';
-		new Image().src = webURL + 'assets/images/fullresolution/iconsCustomSoftwareDev.svg';
-		new Image().src = webURL + 'assets/images/fullresolution/iconsRapidPrototyping.svg';
-		new Image().src = webURL + 'assets/images/fullresolution/iconsCustomCloudArch.svg';
-		new Image().src = webURL + 'assets/images/fullresolution/iconsMobileSoftware.svg';
-		new Image().src = webURL + 'assets/images/fullresolution/iconsEcommerceSolutions.svg';
-		new Image().src = webURL + 'assets/images/fullresolution/ourProcess.svg';
-		new Image().src = webURL + 'assets/images/jeff_headshot.jpg';
-		new Image().src = webURL + 'assets/images/ivan_headshot.jpg';
-		new Image().src = webURL + 'assets/images/matthew_headshot.jpg';
-		new Image().src = webURL + 'assets/images/teamJose160.jpg';
-
-	}, 1000);*/
-}
-
 $(function() {
 	// Get the form.
 	var form = $('#cSectionForm');
