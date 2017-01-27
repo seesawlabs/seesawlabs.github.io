@@ -1,8 +1,13 @@
-$xsDevice: 374px;
+$xs-mobile: 320px;
 $tablet: 768px;
 $smallD: 1023px;
 $largeD: 1192px;
 /* Content Include 2 Queries */
+@mixin xs-mobile {
+  @media (max-width: #{$xs-mobile}) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media (max-width: #{$tablet}) {
