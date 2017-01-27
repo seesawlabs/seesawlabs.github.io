@@ -31,11 +31,6 @@
   }
   .contact {
     margin-top: 56px;
-
-    @include small {
-      margin: 145px auto;
-      width: 78%;
-    }
     input, textarea {
       border: 2px solid $colorWhite;
       background-color: $black;
@@ -94,6 +89,10 @@
           margin-bottom: 61px;
         }
       }
+    }
+    @include small {
+      margin: 145px auto;
+      width: 78%;
     }
   }
 }

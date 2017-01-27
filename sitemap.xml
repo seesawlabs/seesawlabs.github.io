@@ -1,22 +1,32 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-<loc>https://www.seesawlabs.com/</loc>
-<lastmod>2017-01-23T23:40:18+00:00</lastmod>
+  <loc>http://www.seesawlabs.com/</loc>
+  <lastmod>2017-01-27T13:15:53+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-<loc>https://www.seesawlabs.com/our-work/</loc>
-<lastmod>2017-01-23T23:40:18+00:00</lastmod>
+  <loc>http://www.seesawlabs.com/our-work/</loc>
+  <lastmod>2017-01-27T13:15:53+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-<loc>https://www.seesawlabs.com/our-process/</loc>
-<lastmod>2017-01-23T23:40:18+00:00</lastmod>
+  <loc>http://www.seesawlabs.com/our-process/</loc>
+  <lastmod>2017-01-27T13:15:53+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-<loc>https://www.seesawlabs.com/our-crew/</loc>
-<lastmod>2017-01-23T23:40:18+00:00</lastmod>
+  <loc>http://www.seesawlabs.com/our-crew/</loc>
+  <lastmod>2017-01-27T13:15:53+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-<loc>https://www.seesawlabs.com/lets-connect/</loc>
-<lastmod>2017-01-23T23:40:18+00:00</lastmod>
+  <loc>http://www.seesawlabs.com/lets-connect/</loc>
+  <lastmod>2017-01-27T13:15:53+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 </urlset>
