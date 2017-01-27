@@ -77,6 +77,16 @@
         margin-bottom: 27px;
         width: 100%;
       }
+      #formFields
+      {
+        input:-moz-placeholder {
+          box-shadow:none !important;
+        }
+
+        input:invalid{
+          box-shadow:none !important;
+        }
+      }
       @include small {
         float: left;
         width: 50%;
@@ -93,16 +103,6 @@
     @include small {
       margin: 145px auto;
       width: 78%;
-    }
-  }
-  #formFields
-  {
-    input:-moz-placeholder {
-      box-shadow:none !important;
-    }
-
-    input:invalid{
-      box-shadow:none !important;
     }
   }
 }

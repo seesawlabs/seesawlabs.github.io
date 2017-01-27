@@ -120,6 +120,8 @@ $(document).ready(function (){
 
 	}
 
+	$('#messageSend').hide();
+
 });
 
 
