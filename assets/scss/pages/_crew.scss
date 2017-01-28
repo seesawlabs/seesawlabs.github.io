@@ -12,18 +12,6 @@
   #hero{
     height: 358px;
     padding-top: 55px;
-    .headercontainer{
-      padding-top: 0;
-      h3{
-        @include small{
-          margin-bottom: 1.4em
-        }
-      }
-      @include small {
-        padding-top: 3.9em;
-        padding-bottom: 3.3em;
-      }
-    }
     p{
       margin: 0 .18em;
       @include small{
@@ -35,9 +23,6 @@
       padding-top: 60px;
     }
     @include medium{
-      height: 800px;
-    }
-    @include large{
       height: 800px;
     }
   }
