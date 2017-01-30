@@ -11,7 +11,6 @@
   margin-bottom: 31px;
   #hero {
     height: 22.4em;
-    padding-top: 0px;
     .headercontainer {
       padding-bottom: 34px;
       padding-top: 3.4em;
@@ -32,14 +31,14 @@
   .contact {
     margin-top: 56px;
     input, textarea {
-      border: 2px solid $colorWhite;
+      border: 1px solid $colorWhite;
       background-color: $black;
       border-radius: 0px;
       color: $colorWhite;
     }
     input {
       border: 0px;
-      border-bottom: 2px solid $colorWhite;
+      border-bottom: 1px solid $colorWhite;
       padding: 0px;
 
       @include placeHolder {
