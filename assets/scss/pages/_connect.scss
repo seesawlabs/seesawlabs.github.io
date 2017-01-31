@@ -43,21 +43,21 @@
 
       @include placeHolder {
         color: $colorWhite;
-        font-size: 13px;
-        font-style: italic;
-        font-weight: 100;
+
+        @include fontSans(13px, italic, 100);
         letter-spacing: 1px;
         padding: 0px;
 
         @include small {
-          font-size: 22px;
+          @include fontSans(22px, italic, 100);
         }
       }
     }
     label {
-      font-size: 1.3em;
-      font-style: italic;
-      font-weight: 100;
+      //font-size: 1.3em;
+      //font-style: italic;
+      //font-weight: 100;
+      @include fontSans(1.3em, italic, 100);
       margin-bottom: 1px;
       letter-spacing: 1px;
       text-align: left;
@@ -97,6 +97,9 @@
         &.textarea {
           margin-bottom: 61px;
         }
+      }
+      .form-control{
+        @include fontSans(22px, italic, 100);
       }
     }
     @include small {
