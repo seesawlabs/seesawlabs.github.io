@@ -76,12 +76,6 @@
         margin-bottom: 27px;
         width: 100%;
       }
-      #messageSend, #formFields{
-        height: 354px;
-        @include small{
-          height: 676px;
-        }
-      }
       #formFields{
         input:-moz-placeholder {
           box-shadow:none !important;
@@ -110,6 +104,12 @@
     @include small {
       margin: 145px auto;
       width: 78%;
+    }
+    #messageSend, #formFields{
+      height: 354px;
+      @include small{
+        height: 676px;
+      }
     }
   }
 }
