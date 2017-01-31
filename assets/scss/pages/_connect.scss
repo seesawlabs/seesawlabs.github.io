@@ -76,8 +76,13 @@
         margin-bottom: 27px;
         width: 100%;
       }
-      #formFields
-      {
+      #messageSend, #formFields{
+        height: 354px;
+        @include small{
+          height: 676px;
+        }
+      }
+      #formFields{
         input:-moz-placeholder {
           box-shadow:none !important;
         }
