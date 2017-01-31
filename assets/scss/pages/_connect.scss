@@ -28,6 +28,12 @@
       padding-top: 4.4em;
     }
   }
+  #messageSend{
+    h2{
+      position: absolute;
+      top:50%;
+    }
+  }
   .contact {
     margin-top: 56px;
     input, textarea {
@@ -109,12 +115,6 @@
       height: 354px;
       @include small{
         height: 676px;
-      }
-    }
-    #messageSend{
-      h2{
-        position: absolute;
-        top:50%;
       }
     }
   }
