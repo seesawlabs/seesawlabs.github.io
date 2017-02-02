@@ -690,10 +690,19 @@ section.digital{
       float: right;
     }
     @include medium{
-      height: 250px;
-      margin-left: -1.5em;
+      height: 260px;
+      margin-left: -84%;
       margin-top: 5.5em;
-      width: 410px;
+      width: 100%;
+      position: absolute;
+    }
+    @include large{
+      margin-left: -65%;
+      width: 70%;
+    }
+    @include x-large{
+      margin-left: -51%;
+      width: 55%;
     }
   }
 
@@ -777,6 +786,7 @@ section.digital{
       height: 100%;
       padding-bottom: 3.7em;
       margin: 0 auto;
+      width: 70%;
       @include small{
         width: 76%;
         max-width: 561px;

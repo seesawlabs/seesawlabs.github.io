@@ -318,10 +318,10 @@
         background-position: right -2em top;
       }
       @include small{
-        background-size: 303px;
         background-size: auto;
       }
       @include medium{
+        background-size: 303px;
         background-position-x: 98%;
         background-position-y: -31px;
       }
