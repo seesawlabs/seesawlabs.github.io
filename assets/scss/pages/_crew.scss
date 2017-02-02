@@ -13,7 +13,7 @@
     height: 358px;
     padding-top: 55px;
     .headercontainer{
-      
+
       h3{
         @include small{
           margin-bottom: 1.4em
@@ -106,6 +106,12 @@
         display: inline-block;
       }
     }
+    p{
+      @include small{
+        line-height: 21px;
+        letter-spacing: .3px;
+      }
+    }
   }
 
   #lemletLab{
@@ -134,12 +140,6 @@
     p{
       padding-left: 0.5em;
       @include small{
-        max-width: 525px;
-        padding-left: 1.6em;
-        line-height: 21px;
-        letter-spacing: .3px;
-      }
-      @include medium{
         max-width: 525px;
         padding-left: 1.6em;
         line-height: 21px;
