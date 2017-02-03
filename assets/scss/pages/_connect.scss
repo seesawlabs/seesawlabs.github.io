@@ -11,6 +11,10 @@
   margin-bottom: 31px;
   #hero {
     height: 22.4em;
+    .headercontainer {
+      padding-bottom: 34px;
+      padding-top: 3.4em;
+    }
     .first {
       margin: 0px auto;
       word-spacing: -1px;
@@ -24,36 +28,42 @@
       padding-top: 4.4em;
     }
   }
+  #messageSend{
+    h2{
+      position: relative;
+      top:50%;
+    }
+  }
   .contact {
     margin-top: 56px;
     input, textarea {
-      border: 2px solid $colorWhite;
+      border: 1px solid $colorWhite;
       background-color: $black;
       border-radius: 0px;
       color: $colorWhite;
     }
     input {
       border: 0px;
-      border-bottom: 2px solid $colorWhite;
+      border-bottom: 1px solid $colorWhite;
       padding: 0px;
 
       @include placeHolder {
         color: $colorWhite;
-        font-size: 13px;
-        font-style: italic;
-        font-weight: 100;
+
+        @include fontSans(13px, italic, 100);
         letter-spacing: 1px;
         padding: 0px;
 
         @include small {
-          font-size: 22px;
+          @include fontSans(22px, italic, 100);
         }
       }
     }
     label {
-      font-size: 1.3em;
-      font-style: italic;
-      font-weight: 100;
+      //font-size: 1.3em;
+      //font-style: italic;
+      //font-weight: 100;
+      @include fontSans(1.3em, italic, 100);
       margin-bottom: 1px;
       letter-spacing: 1px;
       text-align: left;
@@ -72,8 +82,7 @@
         margin-bottom: 27px;
         width: 100%;
       }
-      #formFields
-      {
+      #formFields{
         input:-moz-placeholder {
           box-shadow:none !important;
         }
@@ -94,10 +103,19 @@
           margin-bottom: 61px;
         }
       }
+      .form-control{
+        @include fontSans(22px, italic, 100);
+      }
     }
     @include small {
       margin: 145px auto;
       width: 78%;
+    }
+    #messageSend, #formFields{
+      height: 354px;
+      @include small{
+        height: 676px;
+      }
     }
   }
 }

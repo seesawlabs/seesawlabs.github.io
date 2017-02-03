@@ -347,12 +347,6 @@ section.digital{
       background-position: center;
       background-repeat: no-repeat;
     }
-    @include medium {
-      background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
     h2{
         @include fontBaskerville(24px, italic, normal);
         padding-top: 2em;
@@ -525,7 +519,6 @@ section.digital{
   background-image: url('../images/backgrounds/mobile_caseStudy_home.jpg');
   background-size: cover;
   background-position: center;
-  overflow: hidden;
   @include medium{
     background-image: url('../images/backgrounds/desktop_caseStudy_home@2x.jpg');
     background-position: 100%;
@@ -533,11 +526,11 @@ section.digital{
 }
 
 .backgroungletLab{
-  background-image: url('../images/backgrounds/mobile_labs_home.jpg');
+  background-image: url('../images/backgrounds/mobile_labsVR_home@2x.jpg');
   background-size: cover;
   background-position: center;
   @include medium{
-    background-image: url('../images/backgrounds/desktop_labs_home@2x.jpg');
+    background-image: url('../images/backgrounds/desktop_labsVR_home@2x.jpg');
   }
 }
 
@@ -596,9 +589,10 @@ section.digital{
   }
 
   .btnBackstage{
-    clear: both;
+    height: 0;
     text-align: center;
-    display: block;
+    min-height: 0px;
+    clear: both;
   }
   @include small{
     height: 192px;
@@ -613,11 +607,11 @@ section.digital{
     height: 206px;
     margin-top: 6.4em;
     @include small{
-      height: 211px;
+      height: 177px;
       margin-top: 1em;
     }
     @include medium{
-      height: 400px;
+      height: 334px;
       margin-top: 1.7em;
       width: 126px;
     }
@@ -657,14 +651,15 @@ section.digital{
   }
 
   .btn-secondary-outline{
-    margin-top: -1.5em;
+    margin-top: 2em;
+    display: inline-block;
     @include small{
-      margin-top: -3em;
-      margin-left: 2.3em;
+      margin-top: -2em;
+      margin-right: 4.3em;
     }
     @include medium{
-      margin-top: -4.5em;
-      margin-left: 4.5em;
+      margin-top: -2.5em;
+      margin-left: -2.5em;
     }
   }
 
@@ -677,27 +672,37 @@ section.digital{
     @include medium{
       max-width: 535px;
     }
+    @include large{
+      max-width: 70%;
+    }
   }
 }
 
 #lemletLab{
   clear: both;
-  overflow: hidden;
+
   img{
-    height: 263px;
-    margin-left: -4em;
-    margin-top: 6.1em;
+    float: left;
+    height: 150px;
     @include small{
-      height: 180px;
       margin-left: -0.9em;
-      margin-top: .8em;
+      margin-top: 2.5em;
       float: right;
     }
     @include medium{
-      height: 325px;
-      margin-left: -1.5em;
-      margin-top: 1.7em;
-      width: 280px;
+      height: 260px;
+      margin-left: -84%;
+      margin-top: 5.5em;
+      width: 100%;
+      position: absolute;
+    }
+    @include large{
+      margin-left: -65%;
+      width: 70%;
+    }
+    @include x-large{
+      margin-left: -51%;
+      width: 55%;
     }
   }
 
@@ -709,12 +714,12 @@ section.digital{
 
   .floatleftsection{
     float: left;
-    width: 40%;
-    display: inline;
+    display: none;
     @include small{
       width: 49%;
       padding: 0;
       text-align: right;
+      display: inline;
     }
     @include medium{
       width: 50%;
@@ -725,7 +730,7 @@ section.digital{
 
   .floatrightsection{
     float: right;
-    width: 60%;
+    width: 100%;
     display: inline;
     text-align: right;
     @include small{
@@ -740,18 +745,6 @@ section.digital{
     }
   }
 
-  .btn-secondary-outline{
-    margin-top: -8em;
-    @include small{
-      margin-top: 7em;
-    }
-    @include medium{
-      margin-top: 10em;
-      margin-right: 0;
-      margin-left: 0;
-    }
-  }
-
   p{
     padding-right: 0;
     padding-left: 2em;
@@ -759,8 +752,8 @@ section.digital{
       display: block;
     }
     @include small{
-      padding-left: .7em;
-      max-width: 256px;
+      padding-left: 0em;
+      max-width: 310px;
     }
     @include medium{
       padding-left: 0;
@@ -793,6 +786,7 @@ section.digital{
       height: 100%;
       padding-bottom: 3.7em;
       margin: 0 auto;
+      width: 70%;
       @include small{
         width: 76%;
         max-width: 561px;
