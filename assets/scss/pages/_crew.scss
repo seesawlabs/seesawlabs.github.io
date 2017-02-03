@@ -13,7 +13,6 @@
     height: 358px;
     padding-top: 55px;
     .headercontainer{
-
       h3{
         @include small{
           margin-bottom: 1.4em
@@ -24,6 +23,7 @@
         padding-bottom: 3.3em;
       }
     }
+
     p{
       margin: 0 .18em;
       @include small{
@@ -35,9 +35,6 @@
       padding-top: 60px;
     }
     @include medium{
-      height: 800px;
-    }
-    @include large{
       height: 800px;
     }
   }
