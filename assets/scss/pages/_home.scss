@@ -110,7 +110,7 @@ section.digital{
       letter-spacing: -1px;
     }
     @include medium {
-      @include fontSans(46px, normal, 800);
+      @include fontSans(45px, normal, 800);
       padding-top: $space6;
       text-transform: uppercase;
       text-align: left;
@@ -339,7 +339,6 @@ section.digital{
       margin: 0px;
     }
     overflow: scroll;
-    overflow-x: hidden;
     overflow-y: hidden;
     @include small {
       background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
@@ -764,7 +763,6 @@ section.digital{
 
 #clients{
     overflow: hidden;
-    height: 650px;
     clear: both;
     background-color: $black;
     h2{
@@ -808,21 +806,10 @@ section.digital{
     }
     .btn-secondary-outline {
       margin-top: -1em;
+      margin-bottom: 2em;
       @include small{
         margin-top: 1em;
       }
-    }
-    @include small{
-      height: 384px;
-    }
-    @include medium{
-      height: 532px;
-    }
-    @include large{
-      height: 550px;
-    }
-    @include x-large{
-      height: 650px;
     }
 }
 

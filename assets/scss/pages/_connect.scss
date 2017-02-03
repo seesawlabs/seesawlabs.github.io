@@ -63,11 +63,14 @@
       //font-size: 1.3em;
       //font-style: italic;
       //font-weight: 100;
-      @include fontSans(1.3em, italic, 100);
-      margin-bottom: 1px;
-      letter-spacing: 1px;
+      @include fontSans(.8em, italic, 100);
       text-align: left;
       width: 100%;
+      @include small {
+        @include fontSans(1.3em, italic, 100);
+        margin-bottom: 1px;
+        letter-spacing: 1px;
+      }
     }
     textarea {
       height: 242px;
@@ -112,7 +115,7 @@
       width: 78%;
     }
     #messageSend, #formFields{
-      height: 354px;
+      height: 625px;
       @include small{
         height: 676px;
       }
