@@ -36,7 +36,7 @@
     }
   }
   #linkNYC, #lemletLab{
-    height: 560px;
+    height: 100%;
     h2{
       padding-bottom: 1em;
     }
@@ -70,9 +70,6 @@
     @include medium{
       height: 600px;
     }
-    /*.floatleftsection, .floatrightsection{
-      padding-left: 0; padding-right: 0;
-    }*/
   }
   #linkNYC{
     h4{
@@ -299,7 +296,11 @@
       @include xs-small{
         background-position: left -2em top;
       }
+      @include small{
+        background-size: auto;
+      }
       @include medium{
+        background-size: 303px;
         background-position-x: 2em;
         background-position-y: -26px;
       }
@@ -316,7 +317,11 @@
       @include xs-small{
         background-position: right -2em top;
       }
+      @include small{
+        background-size: auto;
+      }
       @include medium{
+        background-size: 303px;
         background-position-x: 98%;
         background-position-y: -31px;
       }
@@ -331,7 +336,11 @@
       @include xs-small{
         background-position: left -2em top;
       }
+      @include small{
+        background-size: auto;
+      }
       @include medium{
+        background-size: 303px;
         background-position-x: 2em;
         background-position-y: -26px;
       }
