@@ -10,7 +10,6 @@
 #connectContainer {
   margin-bottom: 31px;
   #hero {
-    height: 22.4em;
     .first {
       margin: 0px auto;
       word-spacing: -1px;
@@ -18,9 +17,6 @@
         margin: 70px auto 0px auto;
         width: 65%;
       }
-    }
-    @include small {
-      height: 24.4em;
     }
   }
   #messageSend{
