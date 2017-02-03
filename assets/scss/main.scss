@@ -1,6 +1,7 @@
 @import
   '../node_modules/bootstrap/scss/bootstrap.scss';
 
+
 @import
   'modules/_variables',
   'mixins/_mixins',
@@ -8,6 +9,7 @@
   'modules/_navbar',
   'modules/_general',
   'modules/_footer';
+
 
 /* Pages */
 @import
