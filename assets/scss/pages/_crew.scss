@@ -1,0 +1,326 @@
+.ourcrewbackground{
+  background-image: url('../images/backgrounds/mobile_crew_hero@2x.jpg');
+  background-size: cover;
+  background-position: center;
+  @include medium{
+    background-image: url('../images/backgrounds/desktop_crew_hero@2x.jpg');
+  }
+}
+
+#ourcrewContainer{
+
+  #hero{
+    height: 358px;
+    padding-top: 55px;
+    p{
+      margin: 0 .18em;
+      @include small{
+        margin: 0 auto;
+      }
+    }
+    @include small{
+      height: 384px;
+      padding-top: 60px;
+    }
+    @include medium{
+      height: 800px;
+    }
+  }
+
+
+  .backgroundOCfromthelab{
+    background-image: url('../images/backgrounds/mobile_crew_lab1@2x.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    @include medium{
+      background-image: url('../images/backgrounds/desktop_crew_lab1@2x.jpg');
+      background-position: 100%;
+    }
+  }
+
+  .backgroundOClemlet{
+    background-image: url('../images/backgrounds/mobile_crew_lab2@2x.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    @include medium{
+      background-image: url('../images/backgrounds/desktop_crew_lab2@2x.jpg');
+      background-position: 100%;
+    }
+  }
+
+  #linkNYC, #lemletLab{
+    height: 520px;
+    @include small{
+      height: 420px;
+    }
+    img{
+      height: 128px;
+      margin: 0 auto;
+      display: block;
+    }
+    p{
+      margin-bottom: 1.2em;
+      padding: 0 .4em;
+      line-height: 17px;
+    }
+    .floatleftsection {
+      width: 100%;
+      @include small{
+        width: 51%;
+      }
+      @include medium{
+        width: 51%;
+      }
+    }
+    @include medium{
+      height: 538px;
+    }
+  }
+
+  #linkNYC{
+    .floatrightsection{
+      display: none;
+      img{
+        width: 86%;
+        margin-top: 6em;
+        height: 100%;
+      }
+      @include small{
+        display: inline-block;
+      }
+    }
+  }
+
+  #lemletLab{
+
+    h4{
+      padding-left: .4em;
+      @include small{
+        padding-left: 1.1em;
+      }
+      @include medium{
+        padding-left: 1.1em;
+      }
+    }
+    h2{
+      text-transform: uppercase;
+      padding-left: 0.3em;
+      @include small{
+        padding-left: 0.6em;
+        padding-bottom: .2em;
+      }
+      @include medium{
+        padding-left: 0.6em;
+        padding-bottom: .2em;
+      }
+    }
+    p{
+      padding-left: 0.5em;
+      @include small{
+        max-width: 525px;
+        padding-left: 1.6em;
+        line-height: 21px;
+        letter-spacing: .3px;
+      }
+      @include medium{
+        max-width: 525px;
+        padding-left: 1.6em;
+        line-height: 21px;
+        letter-spacing: .3px;
+      }
+    }
+    img{
+      margin-top: 2.4em;
+      margin-right: .7em;
+      margin-left: 0;
+      height: 26%;
+      width: 42%;
+
+      @include small{
+        height: 383px;
+        width: 324px;
+        margin-top: 3em;
+        margin-right: .9em;
+      }
+      @include medium{
+        height: 510px;
+        width: 421px;
+        margin-top: 2em;
+        margin-right: .5em;
+      }
+    }
+    .firstParagraph{
+
+      margin-bottom: .9em;
+      @include small{
+        max-width: 520px;
+        margin-bottom: 1.4em;
+      }
+      @include medium{
+        max-width: 520px;
+        margin-bottom: 1.4em;
+      }
+    }
+    .floatleftsection{
+      display: none;
+      width: 48%;
+      @include small{
+        display: inline;
+      }
+    }
+    .floatrightsection{
+      width: 100%;
+      text-align: left;
+      img{
+        float: right;
+        margin-left: 0;
+        height: 31%;
+        width: 34%;
+        margin-right: 2em;
+        margin-top: 1.4em;
+        margin-left: 1.5em;
+      }
+      @include small{
+        float: right;
+        width: 52%;
+      }
+      @include medium{
+        float: right;
+        width: 52%;
+      }
+    }
+  }
+  #leadership{
+    h2{
+      @include fontSans(24px, normal, 800);
+      letter-spacing: 0;
+      text-transform: uppercase;
+      margin: 2.3em 0 1.4em .1em;
+      @include small{
+        @include fontSans(30px, normal, 800);
+        margin: 1.2em 0 1.2em;
+      }
+      @include large{
+        @include fontSans(47px, normal, 800);
+        margin: 2em 0 1.2em;
+      }
+    }
+    p.head{
+      @include fontSans(14px, italic, 300);
+      letter-spacing: 0;
+      line-height: 17px;
+      padding: 0 .2em;
+      margin-bottom: 4.75rem;
+      @include small{
+        @include fontSans(22px, italic, 300);
+        padding: 0 1em;
+        line-height: 28px;
+      }
+      @include large{
+        @include fontSans(30px, italic, 300);
+        width: 75%;
+        margin: 0 auto;
+        line-height: 37px;
+        margin-bottom: 3em;
+      }
+    }
+
+    .section3Column{
+      .section3ImageContainer {
+        display: inline-block;
+        float: left;
+        img{
+          height: 92px;
+          width: 92px;
+          border-radius: 5em;
+          margin-left: .3em;
+          @include large{
+            height: 185px;
+            width: 185px;
+
+          }
+        }
+      }
+      .section3ContentDiv {
+        clear: both;
+        display: inline-block;
+        h3{
+          margin-top: -3em;
+          @include fontSans(24px, italic, normal);
+          letter-spacing: 0;
+          text-align: left;
+          margin-left: 5.2em;
+          margin-bottom: .1em;
+          @include large{
+            margin-left: 9.1em;
+            margin-bottom: 0;
+            margin-top: -4.95em;
+          }
+        }
+        h5{
+          text-align: left;
+          @include fontSans(17px, normal, normal);
+          letter-spacing: 0.5px;
+          margin-left: 7em;
+          margin-bottom: 3em;
+          padding-left: .5em;
+          @include large{
+            margin-bottom: 5.8em;
+            margin-left: 12.3em;
+          }
+        }
+        p{
+          @include fontSans(18px, normal, normal);
+          letter-spacing: 0;
+          text-align: left;
+          padding-left: .3em;
+          line-height: 21px;
+          margin-bottom: 2.5em;
+          @include small{
+            @include fontSans(15px, normal, normal);
+            line-height: 20px;
+            padding-left: 0.2em;
+          }
+          @include large{
+            @include fontSans(18px, normal, normal);
+            letter-spacing: 0;
+            line-height: 22px;
+            margin: 0;
+            padding-left: 0.4em;
+            padding-right: 2.4em;
+            margin-bottom: 3.5em;
+          }
+        }
+      }
+      @include large{
+        padding-left: 3.2em;
+      }
+    }
+    .section3Column:last-child{
+      width: 100%;
+      float: none;
+      @include small{
+        width: 50%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    @include medium{
+      height: 1300px;
+      width: 93%;
+      margin: 0 auto;
+    }
+    @include large{
+      height: 1820px;
+      width: 81%;
+      margin: 0 auto;
+    }
+  }
+  #readytorock{
+    display: block;
+    width: 100%;
+  }
+}

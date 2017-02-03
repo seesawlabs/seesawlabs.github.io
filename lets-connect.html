@@ -1,0 +1,61 @@
+---
+layout: default
+permalink: /lets-connect/
+title: Let's Connect | SeeSaw Labs
+description: Looking for the right team to pull off your cutting edge idea?� Need to chat about overhauling your existing infrastructure? Let's connect and make it happen.
+---
+
+{% include nav.html %}
+<div id="connectContainer">
+  <section id="hero" class="letsconnectbackground">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="headercontainer">
+          <h1>Ready to Rock?</h1>
+          <h3>Let's Partner Together</h3>
+        </div>
+        <p class="first">Looking for then right team to pull off your cutting edge idea? Need to chat about overhauling your existing infrastructure?</p>
+        <p>Drop us a line below, or if email is more your style, hit us up at hello@seesawlabs.com</p>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="row">
+      <div id="formFields" class="col-md-12">
+        <form id="cSectionForm" class="form-horizontal" action="//formspree.io/hello@seesawlabs.com" method="POST">
+          <input type="hidden" name="_replyto" value="hello@seesawlabs.com"/>
+          <fieldset>
+            <!-- Name input-->
+            <div class="form-group left">
+              <input id="name" name="name" type="text" class="form-control" placeholder="Name*" autocomplete="off" required>
+            </div>
+            <!-- Email input-->
+            <div class="form-group">
+              <input id="email" name="email" type="text" class="form-control" placeholder="Email*" autocomplete="off" required>
+            </div>
+            <!-- Subject input-->
+            <div class="form-group left">
+              <input id="subject" name="subject" type="text" class="form-control" placeholder="Subject*" autocomplete="off" required>
+            </div>
+            <!-- Phone input-->
+            <div class="form-group">
+              <input id="phone" name="phone" type="text" class="form-control" placeholder="Phone" autocomplete="off">
+            </div>
+            <!-- Message body -->
+            <div class="form-group textarea">
+              <label class="control-label" for="message">Message*</label>
+              <textarea class="form-control" id="message" name="message" rows="5" autocomplete="off" required></textarea>
+            </div>
+            <!-- Form actions -->
+            <div class="form-group submit">
+              <button type="submit" class="btn btn-secondary-outline">Send Message</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div id="messageSend" class="col-md-12">
+        <h2>Message was send successfully!</h2>
+      </div>
+    </div>
+  </section>
+</div>
