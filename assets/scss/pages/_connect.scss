@@ -11,10 +11,6 @@
   margin-bottom: 31px;
   #hero {
     height: 22.4em;
-    .headercontainer {
-      padding-bottom: 34px;
-      padding-top: 3.4em;
-    }
     .first {
       margin: 0px auto;
       word-spacing: -1px;
@@ -25,7 +21,6 @@
     }
     @include small {
       height: 24.4em;
-      padding-top: 4.4em;
     }
   }
   #messageSend{
