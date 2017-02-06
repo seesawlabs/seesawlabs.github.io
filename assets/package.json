@@ -25,5 +25,8 @@
     "gulp-uglify": "1.5.1",
     "jshint": "^2.9.2",
     "merge-stream": "1.0.0"
+  },
+  "dependencies": {
+    "swiper": "^3.4.1"
   }
 }

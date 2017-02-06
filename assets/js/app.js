@@ -79,22 +79,30 @@ $(document).ready(function (){
 
 	var screenSize = $( window ).width();
 	if(screenSize < 767){
-		$("#buttons").css({width: screenSize + 'px'});
-		screenSize = screenSize * 3;
-		$("#rowSolutions").css({width: screenSize + 'px'});
-
+		$("#desktopSection").removeClass("displayinline");
+		screenSize = screenSize;
+		$("#containersolutions").css({width: screenSize + 'px'});
+		var mySwiper = new Swiper ('.swiper-container', {
+	      // Optional parameters
+				pagination: '.swiper-pagination',
+	      paginationClickable: true,
+	      nextButton: '.swiper-button-next',
+	      prevButton: '.swiper-button-prev',
+	      spaceBetween: 0
+	    });
+	}
+	else{
+		$("#desktopSection").addClass("displayinline");
 	}
 
-	$('#messageSend').hide();
+
 
 });
-
 
 
 function moveImgRight(){
 	var screenSize = $( window ).width();
 	var leftPos = $('#solutions').scrollLeft();
-	console.log(leftPos);
   if((leftPos + screenSize)  <= (screenSize*3)){
 		$('#solutions').animate({
 					scrollLeft: leftPos + screenSize
@@ -106,7 +114,6 @@ function moveImgRight(){
 function moveImgLeft(){
 	var screenSize = $( window ).width();
 	var leftPos = $('#solutions').scrollLeft();
-  console.log(leftPos);
 	if(leftPos >= 0){
 		$('#solutions').animate({
 					scrollLeft: leftPos - screenSize
