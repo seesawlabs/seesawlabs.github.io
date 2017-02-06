@@ -7,6 +7,10 @@
   }
 }
 
+.displayinline{
+    display: inline!important;
+}
+
 #hero{
   padding-top: 60px;
   height: 420px;
@@ -110,7 +114,7 @@ section.digital{
       letter-spacing: -1px;
     }
     @include medium {
-      @include fontSans(46px, normal, 800);
+      @include fontSans(45px, normal, 800);
       padding-top: $space6;
       text-transform: uppercase;
       text-align: left;
@@ -334,13 +338,9 @@ section.digital{
 
 #containersolutions{
   padding: 0;
+  height: 210px;
   #solutions{
-    .row {
-      margin: 0px;
-    }
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    margin: 0px;
     @include small {
       background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
       background-size: cover;
@@ -380,12 +380,13 @@ section.digital{
         letter-spacing: 0px;
       }
     }
-
-    .solutions1, .solutions2, .solutions3{
-      float: left;
-      width: 33.3%;
-      height: 210px;
-      padding: 0px 0px;
+    #rowSolutions{
+      .solutions1, .solutions2, .solutions3{
+        float: left;
+        width: 33.3%;
+        height: 210px;
+        padding: 0px 0px;
+      }
     }
 
     .solutions1 {
@@ -764,7 +765,6 @@ section.digital{
 
 #clients{
     overflow: hidden;
-    height: 650px;
     clear: both;
     background-color: $black;
     h2{
@@ -808,21 +808,10 @@ section.digital{
     }
     .btn-secondary-outline {
       margin-top: -1em;
+      margin-bottom: 2em;
       @include small{
         margin-top: 1em;
       }
-    }
-    @include small{
-      height: 384px;
-    }
-    @include medium{
-      height: 532px;
-    }
-    @include large{
-      height: 550px;
-    }
-    @include x-large{
-      height: 650px;
     }
 }
 

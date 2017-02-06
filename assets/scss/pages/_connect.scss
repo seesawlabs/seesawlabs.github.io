@@ -10,11 +10,6 @@
 #connectContainer {
   margin-bottom: 31px;
   #hero {
-    height: 22.4em;
-    .headercontainer {
-      padding-bottom: 34px;
-      padding-top: 3.4em;
-    }
     .first {
       margin: 0px auto;
       word-spacing: -1px;
@@ -22,10 +17,6 @@
         margin: 70px auto 0px auto;
         width: 65%;
       }
-    }
-    @include small {
-      height: 24.4em;
-      padding-top: 4.4em;
     }
   }
   #messageSend{
@@ -60,14 +51,14 @@
       }
     }
     label {
-      //font-size: 1.3em;
-      //font-style: italic;
-      //font-weight: 100;
-      @include fontSans(1.3em, italic, 100);
-      margin-bottom: 1px;
-      letter-spacing: 1px;
+      @include fontSans(.8em, italic, 100);
       text-align: left;
       width: 100%;
+      @include small {
+        @include fontSans(1.3em, italic, 100);
+        margin-bottom: 1px;
+        letter-spacing: 1px;
+      }
     }
     textarea {
       height: 242px;
@@ -112,7 +103,7 @@
       width: 78%;
     }
     #messageSend, #formFields{
-      height: 354px;
+      height: 625px;
       @include small{
         height: 676px;
       }
