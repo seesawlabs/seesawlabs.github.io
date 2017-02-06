@@ -341,9 +341,6 @@ section.digital{
   height: 210px;
   #solutions{
     margin: 0px;
-    /*overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: hidden;*/
     @include small {
       background-image: url('../images/backgrounds/desktop_otherServices@2x.jpg');
       background-size: cover;
