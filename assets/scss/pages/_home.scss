@@ -338,7 +338,6 @@ section.digital{
 
 #containersolutions{
   padding: 0;
-  height: 210px;
   #solutions{
     margin: 0px;
     @include small {
@@ -384,7 +383,6 @@ section.digital{
       .solutions1, .solutions2, .solutions3{
         float: left;
         width: 33.3%;
-        height: 210px;
         padding: 0px 0px;
       }
     }
