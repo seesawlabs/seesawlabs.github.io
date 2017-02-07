@@ -97,6 +97,7 @@
 }
 
 section.digital{
+  .row{margin: 0}
   background-image: url('../images/backgrounds/mobile_focus.jpg');
   background-size: cover;
   background-position: center;
@@ -114,7 +115,7 @@ section.digital{
       letter-spacing: -1px;
     }
     @include medium {
-      @include fontSans(45px, normal, 800);
+      @include fontSans(44px, normal, 800);
       padding-top: $space6;
       text-transform: uppercase;
       text-align: left;
@@ -380,6 +381,7 @@ section.digital{
       }
     }
     #rowSolutions{
+      margin: 0;
       .solutions1, .solutions2, .solutions3{
         float: left;
         width: 33.3%;
@@ -684,6 +686,7 @@ section.digital{
     float: left;
     height: 150px;
     @include small{
+      height: 150px;
       margin-left: -0.9em;
       margin-top: 2.5em;
       float: right;

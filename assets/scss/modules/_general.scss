@@ -11,6 +11,10 @@ section{
 .row{
   margin-left: -.9375rem;
   margin-right: -.9375rem;
+  @include small{
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .show{
