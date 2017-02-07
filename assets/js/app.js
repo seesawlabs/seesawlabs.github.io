@@ -95,7 +95,7 @@ $(document).ready(function (){
 		$("#desktopSection").addClass("displayinline");
 	}
 
-
+	$('#messageSend').hide();
 
 });
 
