@@ -685,9 +685,6 @@ section.digital{
   img{
     float: left;
     height: 150px;
-    @include xs-mobile{
-      height: 125px;
-    }
     @include small{
       height: 150px;
       margin-left: -0.9em;
