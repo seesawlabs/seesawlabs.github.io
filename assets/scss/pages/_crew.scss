@@ -66,8 +66,8 @@
     }
     img{
       height: 128px;
-      margin: 0 auto;
       display: block;
+      margin-top: 0;
     }
     p{
       margin-bottom: 1.2em;
@@ -93,8 +93,15 @@
       display: none;
       img{
         width: 86%;
-        margin-top: 6em;
         height: 100%;
+        margin-top: 0;
+        @include small{
+          margin:  6em 0 0;
+          width: 100%;
+        }
+        @include x-large{
+          width: 65%;
+        }
       }
       @include small{
         display: inline-block;
@@ -105,6 +112,9 @@
         line-height: 21px;
         letter-spacing: .3px;
       }
+    }
+    .mobileourcrewlab1img{
+      margin: 0 auto;
     }
   }
 
@@ -142,22 +152,19 @@
     }
     img{
       margin-top: 2.4em;
-      margin-right: .7em;
       margin-left: 0;
       height: 26%;
       width: 42%;
-
+      position: static;
       @include small{
         height: 383px;
         width: 324px;
         margin-top: 3em;
-        margin-right: .9em;
       }
       @include medium{
         height: 510px;
         width: 421px;
         margin-top: 2em;
-        margin-right: .5em;
       }
     }
     .firstParagraph{
@@ -323,9 +330,12 @@
       margin: 0 auto;
     }
     @include large{
-      height: 1820px;
+      height: 1870px;
       width: 81%;
       margin: 0 auto;
+    }
+    @include x-large{
+      height: 1750px;
     }
   }
   #readytorock{
