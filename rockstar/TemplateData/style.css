@@ -23,6 +23,6 @@ div.title { height: 38px; line-height: 38px; padding: 0 10px; margin: 0 1px 0 0;
 .template-wrap canvas { margin: 0 0 10px 0; position: relative; z-index: 9; box-shadow: 0 10px 30px rgba(0,0,0,0.2); -moz-box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
 .fullscreen { float: right; position: relative; z-index: 10; }
 
-body.template { }
+body { background-image: url("vrbackground.jpg"); background-size: cover; }
 .template .template-wrap { }
 .template .template-wrap canvas { }
