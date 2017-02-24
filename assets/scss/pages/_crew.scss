@@ -64,7 +64,7 @@
     @include small{
       height: 420px;
     }
-    img{
+    img.ourcrewlab1img{
       height: 128px;
       display: block;
       margin-top: 0;
@@ -91,7 +91,7 @@
   #linkNYC{
     .floatrightsection{
       display: none;
-      img{
+      img.ourcrewlab1img{
         width: 86%;
         height: 100%;
         margin-top: 0;
@@ -115,6 +115,23 @@
     }
     .mobileourcrewlab1img{
       margin: 0 auto;
+    }
+    .sectionbuttons{
+      @include mobile{
+        margin-top: 2em;
+      }
+      @include xs-small{
+        margin-top: 4em;
+      }
+      @include small{
+        margin-top: 0;
+      }
+      .downloadbutton{
+        @include x-large{
+          float: right;
+        }
+      }
+
     }
   }
 
@@ -150,7 +167,7 @@
         letter-spacing: .3px;
       }
     }
-    img{
+    img.ourcrewlab1img{
       margin-top: 2.4em;
       margin-left: 0;
       height: 26%;
@@ -189,7 +206,7 @@
     .floatrightsection{
       width: 100%;
       text-align: left;
-      img{
+      img.ourcrewlab1img{
         float: right;
         margin-left: 0;
         height: 31%;

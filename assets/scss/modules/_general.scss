@@ -118,3 +118,99 @@ section{
 .clearfloat{
   clear: both;
 }
+
+.sectionbuttons{
+  clear: both;
+  .downloadbutton{
+    display: inline-block;
+    width: 50%;
+    float: left;
+    img{
+      height: 45px;
+      margin: 0;
+      padding: 0;
+      bottom: 0;
+      top:auto;
+      @include xs-mobile{
+        width: 130px;
+      }
+      @include mobile{
+        width: 160px;
+      }
+      @include xs-small {
+        width: 170px;
+      }
+      @include small{
+        width: 165px;
+        height: 50px;
+      }
+      @include medium{
+        width: 150px;
+      }
+      @include large{
+        height: 60px;
+        width: 190px;
+      }
+    }
+
+    @include medium{
+      width: 33%;
+    }
+    @include x-large{
+      width: 18%;
+    }
+    .imgAppStore{
+      float: left;
+      @include medium{
+        float: none;
+      }
+    }
+    .imgPlayStore{
+      float: right;
+      @include medium{
+        float: none;
+      }
+    }
+  }
+  .btn-play-browser{
+    width: 150px!important;
+    height: 50px;
+    padding: .9em 0;
+    display: none!important;
+    @include small{
+      width: 165px!important;;
+    }
+    @include medium{
+      width: 150px!important;
+      margin: 0!important;
+      display: inline-block!important;
+    }
+    @include large{
+      height: 60px;
+      padding: 1.2em 0;
+      width: 190px!important;
+    }
+  }
+  @include mobile{
+    margin-top: 6em;
+  }
+  @include small{
+    margin-top: 0;
+  }
+  @include medium{
+    float: left;
+    width: 100%;
+  }
+}
+
+.sectionbackgroundBand{
+  background-image: url('../images/backgrounds/vrScreenshot_Mobile@2x.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  @include small{
+    height: 200px;
+    background-image: url('../images/backgrounds/vrScreenshots@2x.jpg');
+    background-position: 100%;
+  }
+}

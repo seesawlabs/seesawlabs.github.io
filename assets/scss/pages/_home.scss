@@ -604,7 +604,7 @@ section.digital{
 }
 
 #linkNYC{
-  img{
+  img.lab{
     height: 206px;
     margin-top: 6.4em;
     @include small{
@@ -682,7 +682,7 @@ section.digital{
 #lemletLab{
   clear: both;
   height: 440px;
-  img{
+  img.lab{
     float: left;
     height: 150px;
     @include small{
@@ -746,71 +746,6 @@ section.digital{
       padding: 0;
     }
 
-    .sectionbuttons{
-      clear: both;
-      .downloadbutton{
-        display: inline-block;
-        width: 46%;
-        img{
-          height: 40px;
-          margin: 0;
-          padding: 0;
-          bottom: 0;
-          top:auto;
-          @include xs-mobile{
-            width: 120px;
-          }
-          @include mobile{
-            width: 140px;
-          }
-          @include small{
-            width: 165px;
-            height: 50px;
-          }
-          @include medium{
-            width: 150px;
-          }
-          @include large{
-            height: 60px;
-            width: 190px;
-          }
-        }
-
-        @include xs-small{
-          width: 46%;
-        }
-        @include medium{
-          width: 31%;
-        }
-        @include x-large{
-          width: 18%;
-        }
-      }
-      .btn-secondary-outline{
-        width: 150px!important;
-        height: 50px;
-        padding: .9em 0;
-        display: none;
-        @include small{
-          width: 165px!important;;
-        }
-        @include medium{
-          width: 150px!important;
-          display: inline-block;
-        }
-        @include large{
-          height: 60px;
-          padding: 1.2em 0;
-          width: 190px!important;
-        }
-      }
-      @include mobile{
-        margin-top: 6em;
-      }
-      @include small{
-        margin-top: 0;
-      }
-    }
   }
 
   p{
@@ -836,18 +771,6 @@ section.digital{
   }
   @include medium{
     height: 390px;
-  }
-}
-
-.sectionbackgroundBand{
-  background-image: url('../images/backgrounds/vrScreenshot_Mobile@2x.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  @include small{
-    height: 200px;
-    background-image: url('../images/backgrounds/vrScreenshots@2x.jpg');
-    background-position: 100%;
   }
 }
 
