@@ -123,53 +123,46 @@ section{
   clear: both;
   .downloadbutton{
     display: inline-block;
-    width: 50%;
-    float: left;
+    width: 49%;
+
     img{
-      height: 45px;
-      margin: 0;
-      padding: 0;
       bottom: 0;
+      height: 40px;
+      margin: 0 .625em;
+      padding: 0;
       top:auto;
-      @include xs-mobile{
-        width: 130px;
-      }
-      @include mobile{
-        width: 160px;
-      }
-      @include xs-small {
-        width: 170px;
-      }
+      width: 130px;
+
       @include small{
-        width: 165px;
-        height: 50px;
+        width: 135px;
+        height: 40px;
       }
-      @include medium{
-        width: 150px;
-      }
-      @include large{
+      @include x-large{
         height: 60px;
         width: 190px;
       }
     }
-
-    @include medium{
-      width: 33%;
-    }
-    @include x-large{
-      width: 18%;
-    }
     .imgAppStore{
-      float: left;
-      @include medium{
+      float: right;
+      @include small{
+        margin-right: 1.875em;
+        margin-left: 0;
         float: none;
       }
     }
     .imgPlayStore{
-      float: right;
-      @include medium{
+      float: left;
+      @include small{
+        margin-right: 1.875em;
+        margin-left: 0;
         float: none;
       }
+    }
+    @include small{
+      width: 165px;
+    }
+    @include x-large{
+      width: 18%;
     }
   }
   .btn-play-browser{
@@ -178,14 +171,16 @@ section{
     padding: .9em 0;
     display: none!important;
     @include small{
-      width: 165px!important;;
+
     }
     @include medium{
-      width: 150px!important;
+      width: 135px!important;;
+      height: 40px;
       margin: 0!important;
       display: inline-block!important;
+      padding: .5em 0;
     }
-    @include large{
+    @include x-large{
       height: 60px;
       padding: 1.2em 0;
       width: 190px!important;

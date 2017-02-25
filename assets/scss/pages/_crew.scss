@@ -126,12 +126,6 @@
       @include small{
         margin-top: 0;
       }
-      .downloadbutton{
-        @include x-large{
-          float: right;
-        }
-      }
-
     }
   }
 
