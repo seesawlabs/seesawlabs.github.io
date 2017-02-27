@@ -1,0 +1,32 @@
+
+/****************************************
+  ==== RESETS
+****************************************/
+
+html,body,div,canvas { margin: 0; padding: 0; }
+::-moz-selection { color: #333; text-shadow: none; }
+::selection {  color: #333; text-shadow: none; }
+.clear:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clear { display: inline-table; clear: both; }
+/* Hides from IE-mac \*/ * html .clear { height: 1%; } .clear { display: block; } /* End hide from IE-mac */
+
+/****************************************
+  ==== LAYOUT
+****************************************/
+
+html, body { width: 100%; height: 100%; font-family: Open Sans, Helvetica, Verdana, Arial, sans-serif; }
+body { }
+p.header, p.footer { display: none; }
+div.logo { width: 201px; height: 57px; float: left; background: url(logo.png) 0 0 no-repeat; position: relative; z-index: 10; background-size: contain;}
+div.title { height: 38px; line-height: 38px; padding: 0 10px; margin: 10px 1px 0 0; float: right; color: #fff; text-align: right; font-size: 18px; position: relative; z-index: 10; }
+.template-wrap { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.template-wrap canvas { margin: 0 0 10px 0; position: relative; z-index: 9; box-shadow: 0 10px 30px rgba(0,0,0,0.2); -moz-box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+.fullscreen { float: right; position: relative; z-index: 10; padding-top: 10px;}
+.title a {color:white; text-decoration: none; font-size: 115%;}
+
+div.rockstarVRContainer { 
+    background-image: url("vrbackground.jpg"); background-size: cover; 
+    min-height: 900px;
+}
+.template .template-wrap { }
+.template .template-wrap canvas { }
