@@ -745,7 +745,27 @@ section.digital{
       text-align: left;
       padding: 0;
     }
-
+    .sectionbuttons{
+      margin-top: 2em;
+      .downloadbutton{
+        .imgPlayStore{
+          float: none;
+          display: block;
+          margin: 0 auto;
+          @include small{
+            display: inline-block;
+            margin-right: 30px;
+          }
+        }
+        width: 100%;
+        @include small{
+          width: 165px;
+        }
+      }
+      @include small{
+        margin-top: 0;
+      }
+    }
   }
 
   p{
