@@ -33,7 +33,7 @@ description: At SeeSaw Labs we get startups started, build Agencies' creatives, 
             <p>The best part? Super fast, completely free WiFi for all.</p>
           </div>
           <div class="col-md-4 col-sm-6 floatrightsection">
-            <img src="{{site.baseurl}}/assets/images/caseStudy_linknyc@2x.png" alt=""/>
+            <img src="{{site.baseurl}}/assets/images/caseStudy_linknyc@2x.png" class="lab" alt=""/>
           </div>
           <div class="col-sm-12 btnBackstage">
             <a class="btn btn-secondary-outline marginLeft" href="{{site.baseurl}}/our-work/">Go Backstage</a>
@@ -43,17 +43,19 @@ description: At SeeSaw Labs we get startups started, build Agencies' creatives, 
       <section id="lemletLab" class="backgroungletLab">
         <div class="row">
           <div class="col-md-6 col-sm-12 floatleftsection">
-            <img src="{{site.baseurl}}/assets/images/labsVR@2x.png" alt="" class="visibletabletDesktop"/>
+            <img src="{{site.baseurl}}/assets/images/labsVR@2x.png" alt="" class="lab visibletabletDesktop"/>
           </div>
           <div class="col-md-6 col-sm-12 floatrightsection">
             <h4>Latest From the Lab</h4>
             <h2>ROCKSTAR VR EXPERIENCE</h2>
-            <img src="{{site.baseurl}}/assets/images/labs_vr_mobile@2x.png" alt="" class="visiblemobile"/>
-            <p>We made a virtual rock show to test the boundaries of what your phone and Google Cardboard can handle.</p>
+            <img src="{{site.baseurl}}/assets/images/labs_vr_mobile@2x.png" alt="" class="lab visiblemobile"/>
+            <p class="nomarginbottom">We made a virtual rock show to test the boundaries of what your phone and Google Cardboard can handle.</p>
             <p>Our crew is equipped to bring your virtual experience to life─be it an immersive 360 video or full simulation.</p>
+            {% include vr_buttons.html %}
           </div>
         </div>
       </section>
+      {% include vr_background.html %}
       {% include clients.html %}
       {% include ready-rock.html %}
     </div>
