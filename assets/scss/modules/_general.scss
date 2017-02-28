@@ -118,3 +118,86 @@ section{
 .clearfloat{
   clear: both;
 }
+
+.sectionbuttons{
+  clear: both;
+  .downloadbutton{
+    display: inline-block;
+    width: 49%;
+
+    img{
+      bottom: 0;
+      height: 40px;
+      margin: 0 .625em;
+      padding: 0;
+      top:auto;
+      width: 130px;
+
+      @include small{
+        width: 135px;
+        height: 40px;
+      }
+    }
+    .imgAppStore{
+      float: right;
+      @include small{
+        margin-right: 1.875em;
+        margin-left: 0;
+        float: none;
+      }
+    }
+    .imgPlayStore{
+      float: left;
+      @include small{
+        margin-right: 1.875em;
+        margin-left: 0;
+        float: none;
+      }
+    }
+    @include small{
+      width: 165px;
+    }
+  }
+  .btn-play-browser{
+    width: 150px!important;
+    height: 50px;
+    padding: .9em 0;
+    display: none!important;
+    @include small{
+
+    }
+    @include medium{
+      width: 135px!important;;
+      height: 40px;
+      margin: 0!important;
+      display: inline-block!important;
+      padding: .5em 0;
+    }
+  }
+  @include mobile{
+    margin-top: 6em;
+  }
+  @include small{
+    margin-top: 0;
+  }
+  @include medium{
+    float: left;
+    width: 100%;
+  }
+}
+
+.sectionbackgroundBand{
+  background-image: url('../images/backgrounds/vrScreenshot_Mobile@2x.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  @include small{
+    height: 200px;
+    background-image: url('../images/backgrounds/vrScreenshots@2x.jpg');
+    background-position: 100%;
+  }
+}
+
+.hideSectionorElement{
+  display: none!important;
+}
