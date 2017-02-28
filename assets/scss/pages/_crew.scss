@@ -117,21 +117,6 @@
       margin: 0 auto;
     }
     .sectionbuttons{
-      .downloadbutton{
-        width: 100%;
-        .imgPlayStore{
-          float: none;
-          display: block;
-          margin: 0 auto;
-          @include small{
-            display: inline-block;
-            margin-right: 30px;
-          }
-        }
-        @include small{
-          width: 165px;
-        }
-      }
       @include mobile{
         margin-top: 2em;
       }
