@@ -3,3 +3,5 @@ _site
 .jekyll-metadata
 CNAME
 node_modules
+*.swp
+*.log

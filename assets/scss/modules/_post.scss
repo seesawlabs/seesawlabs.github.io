@@ -1,0 +1,53 @@
+@import
+'modules/_variables',
+'mixins/_media',
+'mixins/_mixins';
+
+@media screen and (max-width: 769px) {
+  header.post-header > h1 {
+    padding-top: 125px!important;
+    font-size: 36px!important;
+  }
+  header.post-header > p {
+    font-size: 18px!important;
+  }    
+  header.post-header {
+    height: 250px!important;
+  }
+}
+
+header.post-header {
+  background-image: url('https://www.seesawlabs.com/assets/images/backgrounds/desktop_crew_lab1@2x.jpg');
+  height: 500px;
+}
+
+header.post-header > h1 {
+  text-align:center;
+  padding-top: 225px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+header.post-header > p {
+  text-align:center;
+  font-family: 'Libre Baskerville',serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.post-content {
+  max-width: 1260px;
+  margin: 50px auto;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 200;
+  padding: 0px 20px;
+}
+
+.post-content code {
+  color:#d4322d;
+}
