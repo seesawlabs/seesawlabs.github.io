@@ -1,0 +1,9 @@
+@import
+'mixins/_media';
+
+.vimeo-frame {
+  height: 320px;
+  @include small {
+    height: 540px;
+  }
+}

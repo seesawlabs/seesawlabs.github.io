@@ -187,13 +187,13 @@ section{
 }
 
 .sectionbackgroundBand{
-  background-image: url('../images/backgrounds/vrScreenshot_Mobile@2x.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+  visibility: hidden;
+
   @include small{
+    visibility: visible;
     height: 200px;
     background-image: url('../images/backgrounds/vrScreenshots@2x.jpg');
+    background-size: cover;
     background-position: 100%;
   }
 }
